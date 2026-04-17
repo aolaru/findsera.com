@@ -1,0 +1,9 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#F8FAFC"/>
+  <circle cx="512" cy="98" r="58" fill="#D7EFFC"/>
+  <rect x="160" y="106" width="320" height="184" rx="26" fill="#111827"/>
+  <rect x="184" y="128" width="272" height="140" rx="14" fill="#38BDF8"/>
+  <path d="M288 314H352" stroke="#475569" stroke-width="14" stroke-linecap="round"/>
+  <path d="M320 290V314" stroke="#475569" stroke-width="14" stroke-linecap="round"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Portable Monitor</text>
+</svg>

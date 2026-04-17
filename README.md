@@ -1,46 +1,66 @@
-# Astro Starter Kit: Basics
+# Findsera
 
-```sh
-npm create astro@latest -- --template basics
-```
+Production-ready Astro MVP for an affiliate product discovery site focused on SEO, static generation, and source-driven affiliate content publishing.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Stack
 
-## 🚀 Project Structure
+- Astro
+- Tailwind CSS 4 via the Vite plugin
+- Static site generation
+- Source-to-catalog JSON content pipeline
+- Cloudflare Pages-friendly output
 
-Inside of your Astro project, you'll see the following folders and files:
+## Project structure
 
 ```text
 /
 ├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
+│   ├── images/
+│   └── robots.txt
+├── src/
+│   ├── components/
+│   ├── data/
+│   │   ├── generated/
+│   │   └── source/
+│   ├── layouts/
+│   ├── pages/
+│   └── styles/
+├── scripts/
+├── astro.config.mjs
 └── package.json
 ```
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+## Local development
 
-## 🧞 Commands
+```bash
+npm install
+npm run dev
+```
 
-All commands are run from the root of the project, from a terminal:
+Open `http://localhost:4321`.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## Production build
 
-## 👀 Want to learn more?
+```bash
+npm run build
+```
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+The production output is generated into `dist/`.
+
+## Content workflow
+
+```bash
+npm run content:build
+```
+
+Edit `src/data/source/products.source.json` and `src/data/source/roundups.source.json`, then regenerate the catalog. The generator validates references and builds Amazon affiliate search links using `tag=kreativauto-20`.
+
+## Deployment notes
+
+- Build command: `npm run build`
+- Output directory: `dist`
+- Target platform: Cloudflare Pages
+
+## Content model
+
+Source content lives in `src/data/source/`. Generated runtime data is written to `src/data/generated/`, which powers the homepage, category pages, and roundup routes.

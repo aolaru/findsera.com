@@ -1,0 +1,8 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#FFF8EC"/>
+  <circle cx="494" cy="92" r="52" fill="#FDE1B2"/>
+  <ellipse cx="324" cy="232" rx="160" ry="84" fill="#EAB36B"/>
+  <ellipse cx="324" cy="212" rx="136" ry="62" fill="#FFF4DE"/>
+  <path d="M214 182C246 204 280 172 308 192C336 212 376 178 434 198" stroke="#EDC68B" stroke-width="12" stroke-linecap="round"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Air Fryer Liners</text>
+</svg>

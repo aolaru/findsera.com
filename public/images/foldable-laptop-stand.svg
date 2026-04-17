@@ -1,0 +1,9 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#F7FAFC"/>
+  <circle cx="128" cy="92" r="54" fill="#DBEAFE"/>
+  <path d="M174 248H448L384 154H236L174 248Z" fill="#94A3B8"/>
+  <path d="M212 280H424" stroke="#111827" stroke-width="14" stroke-linecap="round"/>
+  <path d="M246 154L214 280" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+  <path d="M390 154L422 280" stroke="#475569" stroke-width="12" stroke-linecap="round"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Foldable Laptop Stand</text>
+</svg>

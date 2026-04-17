@@ -1,0 +1,9 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#EFF8FF"/>
+  <circle cx="506" cy="96" r="52" fill="#CBE7FF"/>
+  <rect x="178" y="102" width="140" height="230" rx="32" fill="#1D4ED8"/>
+  <rect x="204" y="132" width="88" height="172" rx="22" fill="#E5F0FF"/>
+  <rect x="330" y="146" width="122" height="168" rx="26" fill="#111827"/>
+  <circle cx="391" cy="230" r="42" stroke="#F8FAFC" stroke-width="18"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Magnetic Power Bank</text>
+</svg>

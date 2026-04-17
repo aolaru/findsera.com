@@ -1,0 +1,9 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#FFFDF7"/>
+  <circle cx="486" cy="126" r="76" fill="#FFE8A6"/>
+  <rect x="300" y="242" width="158" height="22" rx="11" fill="#111827"/>
+  <path d="M332 248L250 148" stroke="#111827" stroke-width="16" stroke-linecap="round"/>
+  <path d="M250 148L374 92" stroke="#111827" stroke-width="16" stroke-linecap="round"/>
+  <rect x="366" y="78" width="128" height="28" rx="14" fill="#F59E0B"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Smart LED Desk Lamp</text>
+</svg>

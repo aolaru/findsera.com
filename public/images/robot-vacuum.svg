@@ -1,0 +1,10 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#F8FAFC"/>
+  <circle cx="482" cy="92" r="48" fill="#DCEAFE"/>
+  <circle cx="320" cy="218" r="104" fill="#111827"/>
+  <circle cx="320" cy="218" r="70" fill="#E2E8F0"/>
+  <circle cx="320" cy="218" r="20" fill="#94A3B8"/>
+  <path d="M212 284L178 318" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <path d="M428 284L462 318" stroke="#94A3B8" stroke-width="10" stroke-linecap="round"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Robot Vacuum</text>
+</svg>

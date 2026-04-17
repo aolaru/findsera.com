@@ -1,0 +1,119 @@
+---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import FAQList from "../../components/FAQList.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import RoundupCard from "../../components/RoundupCard.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import {
+  categories,
+  categoryDescriptions,
+  categoryLabels,
+  getProductsByCategory,
+  getRoundupsByCategory
+} from "../../data/catalog";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return categories.map((category) => ({
+    params: { slug: category.slug },
+    props: {
+      slug: category.slug,
+      label: category.label,
+      description: category.description,
+      products: getProductsByCategory(category.slug),
+      roundups: getRoundupsByCategory(category.slug)
+    }
+  }));
+}
+
+const { slug, label, description, products, roundups } = Astro.props;
+const title = `${label} Finds | Findsera`;
+const metaDescription = `Browse ${label.toLowerCase()} picks on Findsera. ${description}`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: title,
+  description: metaDescription,
+  url: `https://findsera.com/category/${slug}`,
+  about: label,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: products.map((product, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      url: product.affiliateUrl,
+      name: product.title
+    }))
+  }
+};
+---
+
+<Layout title={title} description={metaDescription} structuredData={structuredData}>
+  <section class="section-spacing">
+    <div class="container-shell">
+      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/category/${slug}`, label }]} />
+      <span class="eyebrow">Category page</span>
+      <div class="mt-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+        <div class="max-w-3xl">
+          <h1 class="font-serif text-5xl font-semibold tracking-tight text-ink-900">{label}</h1>
+          <p class="mt-4 text-lg leading-8 text-ink-700">{description}</p>
+        </div>
+        <a
+          href="/"
+          class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+        >
+          Back to homepage
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="container-shell">
+      <SectionHeader
+        title={`Best ${categoryLabels[slug]} Products`}
+        description={`${categoryDescriptions[slug]} This category page is powered by the same generated catalog used for roundup automation.`}
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {products.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  {
+    roundups.length > 0 && (
+      <section class="section-spacing">
+        <div class="container-shell">
+          <SectionHeader
+            title={`Related ${label} Roundups`}
+            description="Internal roundup links help the site behave like a topic cluster instead of a set of disconnected pages."
+          />
+          <div class="grid gap-6 lg:grid-cols-3">
+            {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <FAQList
+        title={`About ${label}`}
+        items={[
+          {
+            question: `How should ${label.toLowerCase()} pages scale over time?`,
+            answer:
+              "Category pages should stay broad while related roundups target more specific intent. That keeps the site architecture clean and supports internal linking as the page count grows."
+          },
+          {
+            question: "Why keep the catalog in generated JSON for now?",
+            answer:
+              "Generated local data is extremely fast on static hosting, easy to version, and a clean foundation for later automation before adding a CMS or database."
+          }
+        ]}
+      />
+    </div>
+  </section>
+</Layout>

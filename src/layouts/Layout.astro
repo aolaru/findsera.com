@@ -1,23 +1,56 @@
+---
+import Footer from "../components/Footer.astro";
+import Header from "../components/Header.astro";
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+  canonicalPath?: string;
+  structuredData?: Record<string, unknown>;
+}
+
+const {
+  title,
+  description,
+  canonicalPath = Astro.url.pathname,
+  structuredData
+} = Astro.props;
+
+const canonicalUrl = new URL(canonicalPath, Astro.site ?? Astro.url.origin).toString();
+---
+
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro Basics</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Findsera" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    {
+      structuredData && (
+        <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />
+      )
+    }
+  </head>
+  <body class="m-0">
+    <Header />
+    <main>
+      <slot />
+    </main>
+    <Footer />
+  </body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

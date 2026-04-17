@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Avenir Next", "Segoe UI", "Helvetica Neue", sans-serif;
+  --font-serif: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+
+  --color-sand-50: #fffdf8;
+  --color-sand-100: #f8f1e5;
+  --color-sand-200: #efd9b7;
+  --color-ink-700: #374151;
+  --color-ink-900: #111827;
+  --color-accent-500: #e77d2f;
+  --color-accent-600: #ca6320;
+  --color-sky-100: #d7efff;
+  --color-sky-500: #1593d0;
+
+  --shadow-card: 0 18px 45px -24px rgba(17, 24, 39, 0.25);
+}
+
+:root {
+  color-scheme: light;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  min-height: 100vh;
+  background:
+    radial-gradient(circle at top left, rgba(231, 125, 47, 0.1), transparent 24rem),
+    linear-gradient(180deg, #fffefb 0%, #ffffff 26%, #fffaf0 100%);
+  color: var(--color-ink-900);
+  font-family: var(--font-sans);
+}
+
+a,
+button {
+  transition:
+    color 160ms ease,
+    background-color 160ms ease,
+    border-color 160ms ease,
+    box-shadow 160ms ease,
+    transform 160ms ease;
+}
+
+.container-shell {
+  margin-inline: auto;
+  width: min(100% - 1.5rem, 76rem);
+}
+
+.section-spacing {
+  padding-block: 3.5rem;
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid rgba(231, 125, 47, 0.18);
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 0.4rem 0.8rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--color-accent-600);
+}
+
+.hero-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .hero-grid {
+    grid-template-columns: minmax(0, 1.3fr) minmax(22rem, 0.9fr);
+    align-items: center;
+  }
+}

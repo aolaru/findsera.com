@@ -1,0 +1,150 @@
+---
+import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
+import Breadcrumbs from "../components/Breadcrumbs.astro";
+import FAQList from "../components/FAQList.astro";
+import ProductCard from "../components/ProductCard.astro";
+import RoundupCard from "../components/RoundupCard.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import { allRoundups, getProductsForRoundup } from "../data/catalog";
+import Layout from "../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return allRoundups.map((roundup) => ({
+    params: { slug: roundup.slug },
+    props: {
+      roundup,
+      products: getProductsForRoundup(roundup),
+      relatedRoundups: allRoundups
+        .filter((entry) => entry.slug !== roundup.slug && entry.category === roundup.category)
+        .slice(0, 3)
+    }
+  }));
+}
+
+const { roundup, products, relatedRoundups } = Astro.props;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://findsera.com/" },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: roundup.title,
+          item: `https://findsera.com/${roundup.slug}`
+        }
+      ]
+    },
+    {
+      "@type": "CollectionPage",
+      name: roundup.seoTitle,
+      description: roundup.description,
+      url: `https://findsera.com/${roundup.slug}`,
+      dateModified: roundup.updatedAt,
+      mainEntity: {
+        "@type": "ItemList",
+        itemListElement: products.map((product, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: product.title,
+          url: product.affiliateUrl
+        }))
+      }
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: roundup.faqs.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer }
+      }))
+    }
+  ]
+};
+---
+
+<Layout title={roundup.seoTitle} description={roundup.description} structuredData={structuredData}>
+  <section class="section-spacing">
+    <div class="container-shell">
+      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/${roundup.slug}`, label: roundup.title }]} />
+      <span class="eyebrow">{roundup.eyebrow}</span>
+      <div class="mt-6 grid gap-8 lg:grid-cols-[minmax(0,1fr),20rem]">
+        <div>
+          <h1 class="max-w-4xl font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+            {roundup.title}
+          </h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{roundup.intro}</p>
+        </div>
+
+        <aside class="rounded-[2rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Page snapshot</p>
+          <dl class="mt-5 space-y-4 text-sm text-ink-700">
+            <div>
+              <dt class="font-semibold text-ink-900">Updated</dt>
+              <dd>{roundup.updatedAt}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-ink-900">Products</dt>
+              <dd>{products.length}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-ink-900">Purpose</dt>
+              <dd>Intent-driven SEO roundup with automated affiliate URLs.</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-10">
+    <div class="container-shell space-y-8">
+      <AffiliateDisclosure />
+      <SectionHeader
+        title="Top Picks"
+        description="Products selected for clearer buying intent, better internal-link potential, and straightforward scalability inside a larger affiliate content system."
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {products.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell grid gap-6 xl:grid-cols-2">
+      {
+        roundup.sections.map((section) => (
+          <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+            <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">{section.title}</h2>
+            <p class="mt-4 text-sm leading-7 text-ink-700">{section.body}</p>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <FAQList items={roundup.faqs} />
+    </div>
+  </section>
+
+  {
+    relatedRoundups.length > 0 && (
+      <section class="section-spacing">
+        <div class="container-shell">
+          <SectionHeader
+            title="Related Roundups"
+            description="These internal links deepen the cluster and make the site easier to scale past the initial MVP."
+          />
+          <div class="grid gap-6 lg:grid-cols-3">
+            {relatedRoundups.map((entry) => <RoundupCard roundup={entry} />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</Layout>

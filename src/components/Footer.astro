@@ -1,0 +1,48 @@
+---
+import { allRoundups, categories } from "../data/catalog";
+---
+
+<footer class="border-t border-black/5 bg-white/90">
+  <div class="container-shell grid gap-10 py-12 md:grid-cols-[1.1fr,0.9fr]">
+    <div class="space-y-4">
+      <p class="font-serif text-2xl font-semibold text-ink-900">Findsera</p>
+      <p class="max-w-xl text-sm leading-7 text-ink-700">
+        Findsera surfaces trending and practical product discoveries with clean pages, strong SEO
+        structure, and room to scale into a larger affiliate publishing system.
+      </p>
+    </div>
+
+    <div class="grid gap-8 sm:grid-cols-2">
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Browse</p>
+        <ul class="mt-4 space-y-3 text-sm text-ink-700">
+          <li><a href="/" class="hover:text-accent-600">Homepage</a></li>
+          {
+            allRoundups.slice(0, 3).map((roundup) => (
+              <li>
+                <a href={`/${roundup.slug}`} class="hover:text-accent-600">
+                  {roundup.title}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+
+      <div>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Categories</p>
+        <ul class="mt-4 space-y-3 text-sm text-ink-700">
+          {
+            categories.map((category) => (
+              <li>
+                <a href={`/category/${category.slug}`} class="hover:text-accent-600">
+                  {category.label}
+                </a>
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>

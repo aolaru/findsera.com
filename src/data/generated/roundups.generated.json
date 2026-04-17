@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "best-amazon-gadgets-2026",
+    "title": "Best Amazon Gadgets in 2026",
+    "seoTitle": "Best Amazon Gadgets in 2026 | Findsera",
+    "description": "A curated roundup of practical gadgets worth buying in 2026, focused on travel, desk setup, and everyday utility.",
+    "eyebrow": "2026 gadget roundup",
+    "category": "gadgets",
+    "updatedAt": "2026-04-17",
+    "intro": "This list focuses on gadgets that solve daily friction instead of looking impressive for a week. The strongest picks here improve charging, typing, navigation, or compact desk setups without demanding a full workspace overhaul.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim",
+      "logitech-mx-anywhere-3s",
+      "logitech-mx-keys-mini"
+    ],
+    "sections": [
+      {
+        "title": "What makes a gadget worth the click",
+        "body": "The best-performing gadget pages usually combine portability, low learning curve, and a clear everyday use case. For this list, the filter was simple: every product needed to feel helpful within the first day of ownership."
+      },
+      {
+        "title": "Best fit for travel and hybrid work",
+        "body": "Charging gear and compact peripherals still dominate affiliate interest because they fit obvious intent. A power bank, a travel mouse, and a compact keyboard cover airport use, coffee-shop work, and home-office cleanup without forcing buyers into a larger setup."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What kind of gadgets convert best in affiliate roundups?",
+        "answer": "Portable products with immediate utility tend to convert best: charging accessories, compact peripherals, and travel-friendly desk gear. Buyers understand the value quickly and usually need less education before clicking."
+      },
+      {
+        "question": "Why use Amazon search links instead of hard-coded product pages?",
+        "answer": "For an MVP, search-based affiliate links are easier to maintain and safer to scale while product availability changes. Once you settle on stable ASINs, those can be upgraded to exact product URLs later."
+      }
+    ],
+    "productCount": 3
+  },
+  {
+    "slug": "best-products-under-50",
+    "title": "Best Products Under $50",
+    "seoTitle": "Best Products Under $50 | Findsera",
+    "description": "Useful products under $50 for coffee, air quality, and low-risk home upgrades that still feel genuinely worthwhile.",
+    "eyebrow": "Budget-friendly picks",
+    "category": null,
+    "updatedAt": "2026-04-17",
+    "intro": "Products under $50 work best when they solve a very specific problem without introducing setup friction. This page leans into low-consideration buys that still have strong word-of-mouth appeal and gifting potential.",
+    "productIds": [
+      "aeropress-original-coffee-maker",
+      "levoit-core-mini-air-purifier"
+    ],
+    "sections": [
+      {
+        "title": "How to evaluate budget-friendly products",
+        "body": "The strongest sub-$50 recommendations usually win on repetition. If a product gets used every day, it does not need a luxury price point to feel like a good purchase."
+      },
+      {
+        "title": "What to avoid in low-ticket roundups",
+        "body": "Avoid filler accessories with vague promises or items that depend on bundles to feel useful. Budget pages perform better when every product stands on its own and the buyer understands exactly where it fits."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Are under-$50 pages worth building for SEO?",
+        "answer": "Yes, especially when the page has clear intent and strong supporting copy. These pages can capture high-volume discovery searches while also supporting internal linking into more specific roundups and category pages."
+      },
+      {
+        "question": "Should every product on the page be under $50 today?",
+        "answer": "Ideally yes. In practice, prices move often, which is why the content pipeline should re-check and refresh price fields regularly."
+      }
+    ],
+    "productCount": 2
+  },
+  {
+    "slug": "best-home-office-upgrades",
+    "title": "Best Home Office Upgrades",
+    "seoTitle": "Best Home Office Upgrades | Findsera",
+    "description": "Home office upgrades that improve comfort, typing, cursor control, air quality, and coffee routines without a full desk rebuild.",
+    "eyebrow": "Home office edit",
+    "category": "home",
+    "updatedAt": "2026-04-17",
+    "intro": "The best home office products remove small daily annoyances: clutter, weak peripherals, stale air, and coffee that goes cold. This page focuses on upgrades that feel meaningful inside a normal apartment or small studio setup.",
+    "productIds": [
+      "logitech-mx-anywhere-3s",
+      "logitech-mx-keys-mini",
+      "ember-mug-2",
+      "levoit-core-mini-air-purifier"
+    ],
+    "sections": [
+      {
+        "title": "Build around repeated use, not aesthetic trends",
+        "body": "Desk content often gets trapped in style-first recommendations. For affiliate performance, function-first picks usually do better because the buyer already knows the exact pain point they want to fix."
+      },
+      {
+        "title": "Compact gear wins more often than oversized setups",
+        "body": "Many readers are not furnishing dedicated offices. Compact products that work on smaller desks usually have broader relevance, which makes them stronger candidates for evergreen SEO pages."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the easiest home office upgrades to justify?",
+        "answer": "Input devices, air quality products, and drinkware tend to be the easiest because the benefit is immediate and personal. Buyers can usually imagine the improvement before they click."
+      },
+      {
+        "question": "Should a home office roundup include only desk products?",
+        "answer": "Not necessarily. Products that improve comfort around the desk, like a purifier or temperature-control mug, often support the intent better than another purely decorative accessory."
+      }
+    ],
+    "productCount": 4
+  },
+  {
+    "slug": "best-coffee-gear-for-home",
+    "title": "Best Coffee Gear for Home",
+    "seoTitle": "Best Coffee Gear for Home | Findsera",
+    "description": "Coffee gear for home brewers who want better consistency, temperature control, and a cleaner daily brewing routine.",
+    "eyebrow": "Coffee gear guide",
+    "category": "kitchen",
+    "updatedAt": "2026-04-17",
+    "intro": "Coffee gear converts best when each recommendation maps clearly to a ritual: brewing, boiling, temperature control, or keeping the drink hot. This roundup keeps the stack tight and useful instead of turning into an enthusiast shopping list.",
+    "productIds": [
+      "aeropress-original-coffee-maker",
+      "fellow-stagg-ekg-electric-kettle",
+      "ember-mug-2"
+    ],
+    "sections": [
+      {
+        "title": "A tighter coffee stack usually performs better",
+        "body": "Readers searching for coffee gear rarely need fifteen products at once. A smaller set of strongly differentiated recommendations usually reads better, converts better, and is easier to maintain."
+      },
+      {
+        "title": "Temperature control is the easiest value proposition",
+        "body": "The most intuitive coffee upgrades focus on water temperature and drink retention. Those benefits are easy to explain, easy to visualize, and highly relevant for both beginners and repeat buyers."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should a beginner coffee gear page include?",
+        "answer": "A simple brewer, a controllable kettle, and one product that improves drinking experience are usually enough. Beyond that, pages can become too technical for general-intent search traffic."
+      },
+      {
+        "question": "Do premium coffee products work in affiliate content?",
+        "answer": "Yes, if the use case is obvious. Premium coffee gear can perform well when positioned as a daily ritual upgrade rather than a niche enthusiast purchase."
+      }
+    ],
+    "productCount": 3
+  },
+  {
+    "slug": "best-kitchen-tools-for-precision-cooking",
+    "title": "Best Kitchen Tools for Precision Cooking",
+    "seoTitle": "Best Kitchen Tools for Precision Cooking | Findsera",
+    "description": "Kitchen tools that improve temperature control, repeatability, and confidence for home cooks who want fewer guesswork moments.",
+    "eyebrow": "Precision cooking picks",
+    "category": "kitchen",
+    "updatedAt": "2026-04-17",
+    "intro": "Precision cooking tools tend to attract buyers who are already motivated by outcomes: better steak doneness, more repeatable coffee, and fewer misses in the oven. That makes them especially useful in intent-driven affiliate content.",
+    "productIds": [
+      "thermoworks-thermapen-one",
+      "fellow-stagg-ekg-electric-kettle",
+      "aeropress-original-coffee-maker"
+    ],
+    "sections": [
+      {
+        "title": "Why precision tools convert",
+        "body": "Precision products are easy to explain because they remove uncertainty. When a buyer feels they can consistently improve results, the value proposition becomes much clearer."
+      },
+      {
+        "title": "This is a strong cluster for internal linking",
+        "body": "Precision cooking content supports adjacent pages naturally: grilling guides, coffee gear, sous-vide picks, and kitchen gadgets. That makes it a strong content cluster to expand later."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Which kitchen tool has the clearest performance upgrade?",
+        "answer": "An instant-read thermometer is often the strongest first upgrade because it affects many cooking scenarios at once and reduces guesswork immediately."
+      },
+      {
+        "question": "Can precision cooking pages be evergreen?",
+        "answer": "Yes. The search intent behind these pages stays stable, and the category supports frequent refreshes without rewriting the whole page."
+      }
+    ],
+    "productCount": 3
+  }
+]

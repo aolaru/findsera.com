@@ -1,0 +1,49 @@
+---
+const navItems = [
+  { href: "/", label: "Home" },
+  { href: "/category/gadgets", label: "Gadgets" },
+  { href: "/category/kitchen", label: "Kitchen" },
+  { href: "/best-products-under-50", label: "Under $50" },
+  { href: "/best-home-office-upgrades", label: "Guides" }
+];
+
+const currentPath = Astro.url.pathname;
+---
+
+<header class="sticky top-0 z-40 border-b border-black/5 bg-white/88 backdrop-blur-lg">
+  <div class="container-shell flex items-center justify-between gap-6 py-4">
+    <a href="/" class="inline-flex items-center gap-3 text-ink-900">
+      <span class="grid h-10 w-10 place-items-center rounded-2xl bg-[linear-gradient(135deg,#f8d7aa,#e77d2f)] font-serif text-lg font-bold text-white shadow-lg shadow-orange-200/70">
+        F
+      </span>
+      <span>
+        <span class="block font-serif text-xl font-semibold tracking-tight">Findsera</span>
+        <span class="block text-xs font-medium uppercase tracking-[0.2em] text-ink-700/80">
+          Curated product picks
+        </span>
+      </span>
+    </a>
+
+    <nav aria-label="Primary" class="hidden items-center gap-2 md:flex">
+      {
+        navItems.map((item) => {
+          const active = currentPath === item.href;
+
+          return (
+            <a
+              href={item.href}
+              class:list={[
+                "rounded-full px-4 py-2 text-sm font-semibold",
+                active
+                  ? "bg-ink-900 text-white shadow-md"
+                  : "text-ink-700 hover:bg-sand-100 hover:text-ink-900"
+              ]}
+            >
+              {item.label}
+            </a>
+          );
+        })
+      }
+    </nav>
+  </div>
+</header>

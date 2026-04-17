@@ -1,11 +1,148 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
+import ProductCard from "../components/ProductCard.astro";
+import RoundupCard from "../components/RoundupCard.astro";
+import SectionHeader from "../components/SectionHeader.astro";
+import {
+  allRoundups,
+  getProductsByCategory,
+  getProductsUnderPrice,
+  getTrendingProducts,
+  sortProductsByPrice
+} from "../data/catalog";
+import Layout from "../layouts/Layout.astro";
 
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const trendingProducts = getTrendingProducts().slice(0, 6);
+const underFifty = sortProductsByPrice(getProductsUnderPrice(50)).slice(0, 6);
+const gadgetPicks = getProductsByCategory("gadgets").slice(0, 4);
+const homeAndKitchen = [...getProductsByCategory("home"), ...getProductsByCategory("kitchen")].slice(0, 6);
+
+const title = "Findsera | Find better products faster";
+const description =
+  "Discover real products, affiliate-ready roundup pages, and scalable SEO content across gadgets, home, and kitchen on Findsera.";
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: "Findsera",
+  url: "https://findsera.com/",
+  description
+};
 ---
 
-<Layout>
-	<Welcome />
+<Layout title={title} description={description} structuredData={structuredData}>
+  <section class="section-spacing">
+    <div class="container-shell hero-grid">
+      <div class="space-y-6">
+        <span class="eyebrow">Affiliate discovery, simplified</span>
+        <div class="max-w-3xl space-y-5">
+          <h1 class="font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+            Find better products faster
+          </h1>
+          <p class="max-w-2xl text-lg leading-8 text-ink-700">
+            Real products, structured roundup pages, and Amazon-tagged affiliate links built for SEO
+            depth and static performance.
+          </p>
+        </div>
+
+        <div class="flex flex-wrap gap-3">
+          <a
+            href="#trending-now"
+            class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
+          >
+            Browse trending
+          </a>
+          <a
+            href="/best-home-office-upgrades"
+            class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+          >
+            Explore guides
+          </a>
+        </div>
+      </div>
+
+      <aside class="rounded-[2rem] border border-black/6 bg-white p-6 shadow-card">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Today’s mix</p>
+        <div class="mt-6 space-y-4">
+          <div class="rounded-[1.5rem] bg-sand-50 p-5">
+            <p class="text-sm font-semibold text-ink-700">Live catalog products</p>
+            <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{trendingProducts.length}</p>
+          </div>
+          <div class="grid gap-4 sm:grid-cols-2">
+            <div class="rounded-[1.5rem] bg-sky-100/60 p-5">
+              <p class="text-sm font-semibold text-ink-700">SEO roundup pages</p>
+              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allRoundups.length}</p>
+            </div>
+            <div class="rounded-[1.5rem] bg-sand-100 p-5">
+              <p class="text-sm font-semibold text-ink-700">Core categories</p>
+              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">3</p>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section id="trending-now" class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="Trending Now"
+        description="Real product picks with current-source pricing and Amazon-tagged affiliate links."
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {trendingProducts.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="Under $50"
+        description="Low-risk purchases with clearer utility and stronger potential for budget-intent SEO pages."
+        href="/best-products-under-50"
+        linkLabel="See the full list"
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {underFifty.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="Gadget Picks"
+        description="Charging gear and compact peripherals built around travel, hybrid work, and practical everyday use."
+        href="/category/gadgets"
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
+        {gadgetPicks.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="Home & Kitchen"
+        description="Coffee gear, air quality, and comfort-focused products that support slower daily routines."
+        href="/category/kitchen"
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {homeAndKitchen.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="SEO Roundups"
+        description="Intent-based roundup pages generated from source data with richer copy, FAQs, and reusable internal linking."
+      />
+      <div class="grid gap-6 lg:grid-cols-3">
+        {allRoundups.map((roundup) => <RoundupCard roundup={roundup} />)}
+      </div>
+    </div>
+  </section>
 </Layout>

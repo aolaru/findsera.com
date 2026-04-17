@@ -1,0 +1,8 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#FFF9F0"/>
+  <circle cx="136" cy="102" r="58" fill="#FDE8C8"/>
+  <rect x="254" y="96" width="132" height="206" rx="34" fill="#8B5E34"/>
+  <rect x="278" y="122" width="84" height="146" rx="20" fill="#EED8B7"/>
+  <rect x="286" y="70" width="68" height="34" rx="17" fill="#111827"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Cold Brew Maker</text>
+</svg>
