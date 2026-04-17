@@ -55,6 +55,18 @@ npm run content:build
 
 Edit `src/data/source/products.source.json` and `src/data/source/roundups.source.json`, then regenerate the catalog. The generator validates references and builds Amazon affiliate search links using `tag=kreativauto-20`.
 
+## Import and refresh workflow
+
+```bash
+npm run content:import -- src/data/source/import-products.sample.json
+npm run content:refresh -- src/data/source/refresh-overrides.sample.json
+npm run content:report
+```
+
+- `content:import` upserts products into the source catalog from a JSON file
+- `content:refresh` applies price/image/Amazon URL overrides in bulk
+- `content:report` lists products still missing exact Amazon product URLs
+
 ## Deployment notes
 
 - Build command: `npm run build`
@@ -63,4 +75,4 @@ Edit `src/data/source/products.source.json` and `src/data/source/roundups.source
 
 ## Content model
 
-Source content lives in `src/data/source/`. Generated runtime data is written to `src/data/generated/`, which powers the homepage, category pages, and roundup routes.
+Source content lives in `src/data/source/`. Generated runtime data is written to `src/data/generated/`, which powers the homepage, roundup routes, category pages, topic pages, and SEO cluster landing pages.

@@ -1,9 +1,13 @@
 ---
+import ClusterCard from "../components/ClusterCard.astro";
 import ProductCard from "../components/ProductCard.astro";
 import RoundupCard from "../components/RoundupCard.astro";
 import SectionHeader from "../components/SectionHeader.astro";
+import TopicBadgeList from "../components/TopicBadgeList.astro";
 import {
+  allClusters,
   allRoundups,
+  allTopics,
   getProductsByCategory,
   getProductsUnderPrice,
   getTrendingProducts,
@@ -18,18 +22,10 @@ const homeAndKitchen = [...getProductsByCategory("home"), ...getProductsByCatego
 
 const title = "Findsera | Find better products faster";
 const description =
-  "Discover real products, affiliate-ready roundup pages, and scalable SEO content across gadgets, home, and kitchen on Findsera.";
-
-const structuredData = {
-  "@context": "https://schema.org",
-  "@type": "WebSite",
-  name: "Findsera",
-  url: "https://findsera.com/",
-  description
-};
+  "Discover real products, exact affiliate-ready links, topic clusters, and scalable SEO content across gadgets, home, and kitchen on Findsera.";
 ---
 
-<Layout title={title} description={description} structuredData={structuredData}>
+<Layout title={title} description={description}>
   <section class="section-spacing">
     <div class="container-shell hero-grid">
       <div class="space-y-6">
@@ -39,11 +35,10 @@ const structuredData = {
             Find better products faster
           </h1>
           <p class="max-w-2xl text-lg leading-8 text-ink-700">
-            Real products, structured roundup pages, and Amazon-tagged affiliate links built for SEO
-            depth and static performance.
+            Real products, exact affiliate URLs when available, and static SEO clusters built to scale
+            far beyond the first handful of roundup pages.
           </p>
         </div>
-
         <div class="flex flex-wrap gap-3">
           <a
             href="#trending-now"
@@ -52,10 +47,10 @@ const structuredData = {
             Browse trending
           </a>
           <a
-            href="/best-home-office-upgrades"
+            href="/clusters/home-office"
             class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
           >
-            Explore guides
+            Explore clusters
           </a>
         </div>
       </div>
@@ -73,8 +68,8 @@ const structuredData = {
               <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allRoundups.length}</p>
             </div>
             <div class="rounded-[1.5rem] bg-sand-100 p-5">
-              <p class="text-sm font-semibold text-ink-700">Core categories</p>
-              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">3</p>
+              <p class="text-sm font-semibold text-ink-700">Topic clusters</p>
+              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allClusters.length}</p>
             </div>
           </div>
         </div>
@@ -86,7 +81,7 @@ const structuredData = {
     <div class="container-shell">
       <SectionHeader
         title="Trending Now"
-        description="Real product picks with current-source pricing and Amazon-tagged affiliate links."
+        description="Real product picks with current-source pricing and affiliate links that prefer exact Amazon destinations over search fallback."
       />
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {trendingProducts.map((product) => <ProductCard product={product} />)}
@@ -131,6 +126,28 @@ const structuredData = {
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {homeAndKitchen.map((product) => <ProductCard product={product} />)}
       </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="Topic Clusters"
+        description="Cluster landing pages organize roundups into larger SEO systems instead of isolated keyword pages."
+      />
+      <div class="grid gap-6 lg:grid-cols-3">
+        {allClusters.map((cluster) => <ClusterCard cluster={cluster} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="Topic Tags"
+        description="Tag pages create additional indexable paths for recurring search themes across the catalog."
+      />
+      <TopicBadgeList topics={allTopics.slice(0, 8)} />
     </div>
   </section>
 

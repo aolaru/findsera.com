@@ -1,0 +1,9 @@
+[
+  {
+    "id": "sample-product-id",
+    "price": 44.99,
+    "priceCheckedAt": "2026-04-17",
+    "image": "https://example.com/new-image.jpg",
+    "amazonUrl": "https://www.amazon.com/dp/NEWASIN"
+  }
+]

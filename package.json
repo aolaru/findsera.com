@@ -8,6 +8,9 @@
   "scripts": {
     "content:build": "node scripts/generate-content.mjs",
     "content:check": "node scripts/generate-content.mjs",
+    "content:import": "node scripts/import-products.mjs",
+    "content:refresh": "node scripts/refresh-products.mjs",
+    "content:report": "node scripts/report-affiliate-gaps.mjs",
     "predev": "npm run content:build",
     "prebuild": "npm run content:build",
     "dev": "astro dev",

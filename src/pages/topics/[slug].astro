@@ -1,0 +1,60 @@
+---
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import RoundupCard from "../../components/RoundupCard.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import { allTopics, getProductsForTopic, getRoundupsForTopic } from "../../data/catalog";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return allTopics.map((topic) => ({
+    params: { slug: topic.slug },
+    props: {
+      topic,
+      products: getProductsForTopic(topic),
+      roundups: getRoundupsForTopic(topic)
+    }
+  }));
+}
+
+const { topic, products, roundups } = Astro.props;
+---
+
+<Layout title={`${topic.title} | Findsera`} description={topic.description}>
+  <section class="section-spacing">
+    <div class="container-shell">
+      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/topics/${topic.slug}`, label: topic.title }]} />
+      <span class="eyebrow">Topic tag</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900">{topic.title}</h1>
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{topic.description}</p>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="container-shell">
+      <SectionHeader
+        title="Products"
+        description="Products connected to this recurring topic across the Findsera catalog."
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {products.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+
+  {
+    roundups.length > 0 && (
+      <section class="section-spacing">
+        <div class="container-shell">
+          <SectionHeader
+            title="Related Roundups"
+            description="Roundups that reinforce this topic and expand the internal linking graph."
+          />
+          <div class="grid gap-6 lg:grid-cols-3">
+            {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</Layout>

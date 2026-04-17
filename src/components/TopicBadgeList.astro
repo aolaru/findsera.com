@@ -1,0 +1,20 @@
+---
+interface Props {
+  topics: { slug: string; title: string }[];
+}
+
+const { topics } = Astro.props;
+---
+
+<div class="flex flex-wrap gap-3">
+  {
+    topics.map((topic) => (
+      <a
+        href={`/topics/${topic.slug}`}
+        class="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+      >
+        {topic.title}
+      </a>
+    ))
+  }
+</div>

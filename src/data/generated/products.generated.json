@@ -9,6 +9,7 @@
     "description": "A slim Qi2-compatible magnetic battery pack designed for travel days, commute charging, and lighter everyday carry.",
     "sourceUrl": "https://www.anker.com/products/a1664-maggo-10000mah-slim-power-bank",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B0DZHPCP3K",
     "amazonQuery": "Anker MagGo Power Bank 10K Slim",
     "tags": [
       "charging",
@@ -24,7 +25,8 @@
     "isTrending": true,
     "slug": "anker-maggo-power-bank-10k-slim",
     "priceLabel": "$72.21",
-    "affiliateUrl": "https://www.amazon.com/s?k=Anker+MagGo+Power+Bank+10K+Slim&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/dp/B0DZHPCP3K?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "logitech-mx-anywhere-3s",
@@ -36,6 +38,7 @@
     "description": "A compact premium mouse built for remote work, travel desks, and multi-device setups with fast scrolling and quiet clicks.",
     "sourceUrl": "https://www.logitech.com/en-us/shop/p/mx-anywhere-3s",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B0C6FG3XRB",
     "amazonQuery": "Logitech MX Anywhere 3S",
     "tags": [
       "productivity",
@@ -51,7 +54,8 @@
     "isTrending": true,
     "slug": "logitech-mx-anywhere-3s",
     "priceLabel": "$79.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Logitech+MX+Anywhere+3S&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/dp/B0C6FG3XRB?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "logitech-mx-keys-mini",
@@ -63,6 +67,7 @@
     "description": "A compact wireless keyboard for cleaner desks and hybrid work setups, with smart backlighting and a strong typing feel.",
     "sourceUrl": "https://www.logitech.com/en-us/shop/p/mx-keys-mini",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B098JPSVKY",
     "amazonQuery": "Logitech MX Keys Mini",
     "tags": [
       "keyboard",
@@ -78,7 +83,8 @@
     "isTrending": true,
     "slug": "logitech-mx-keys-mini",
     "priceLabel": "$99.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Logitech+MX+Keys+Mini&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/dp/B098JPSVKY?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "fellow-stagg-ekg-electric-kettle",
@@ -105,7 +111,8 @@
     "isTrending": true,
     "slug": "fellow-stagg-ekg-electric-kettle",
     "priceLabel": "$179.95",
-    "affiliateUrl": "https://www.amazon.com/s?k=Fellow+Stagg+EKG+Electric+Kettle&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/s?k=Fellow+Stagg+EKG+Electric+Kettle&tag=kreativauto-20",
+    "affiliateMode": "search"
   },
   {
     "id": "aeropress-original-coffee-maker",
@@ -117,6 +124,7 @@
     "description": "A compact press brewer that makes smooth coffee quickly and travels far better than a full drip setup.",
     "sourceUrl": "https://www.aeropress.com/products/aeropress-coffee-maker",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B0047BIWSK",
     "amazonQuery": "AeroPress Original Coffee Maker",
     "tags": [
       "coffee",
@@ -132,7 +140,8 @@
     "isTrending": true,
     "slug": "aeropress-original-coffee-maker",
     "priceLabel": "$39.95",
-    "affiliateUrl": "https://www.amazon.com/s?k=AeroPress+Original+Coffee+Maker&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/dp/B0047BIWSK?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "thermoworks-thermapen-one",
@@ -159,7 +168,8 @@
     "isTrending": false,
     "slug": "thermoworks-thermapen-one",
     "priceLabel": "$115",
-    "affiliateUrl": "https://www.amazon.com/s?k=ThermoWorks+Thermapen+ONE&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/s?k=ThermoWorks+Thermapen+ONE&tag=kreativauto-20",
+    "affiliateMode": "search"
   },
   {
     "id": "ember-mug-2",
@@ -186,7 +196,8 @@
     "isTrending": true,
     "slug": "ember-mug-2",
     "priceLabel": "$129.95",
-    "affiliateUrl": "https://www.amazon.com/s?k=Ember+Mug+2&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/s?k=Ember+Mug+2&tag=kreativauto-20",
+    "affiliateMode": "search"
   },
   {
     "id": "levoit-core-mini-air-purifier",
@@ -198,6 +209,7 @@
     "description": "A small-footprint air purifier for bedside tables, apartments, and compact workspaces that need quieter air cleanup.",
     "sourceUrl": "https://levoit.com/products/core-mini-air-purifier",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B09GTRVJQM",
     "amazonQuery": "Levoit Core Mini Air Purifier",
     "tags": [
       "air quality",
@@ -213,6 +225,7 @@
     "isTrending": true,
     "slug": "levoit-core-mini-air-purifier",
     "priceLabel": "$39.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Levoit+Core+Mini+Air+Purifier&tag=kreativauto-20"
+    "affiliateUrl": "https://www.amazon.com/dp/B09GTRVJQM?tag=kreativauto-20",
+    "affiliateMode": "exact"
   }
 ]

@@ -1,0 +1,438 @@
+[
+  {
+    "slug": "air-quality",
+    "title": "Air Quality",
+    "description": "Findsera content related to air quality.",
+    "productIds": [
+      "levoit-core-mini-air-purifier"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "bedroom",
+    "title": "Bedroom",
+    "description": "Findsera content related to bedroom.",
+    "productIds": [
+      "levoit-core-mini-air-purifier"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "brewing",
+    "title": "Brewing",
+    "description": "Findsera content related to brewing.",
+    "productIds": [
+      "aeropress-original-coffee-maker"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "budget-finds",
+    "title": "Budget Finds",
+    "description": "Budget Finds guides, products, and roundup pages on Findsera.",
+    "productIds": [],
+    "roundupSlugs": [
+      "best-products-under-50"
+    ],
+    "categoryCounts": {},
+    "productCount": 0,
+    "roundupCount": 1
+  },
+  {
+    "slug": "charging",
+    "title": "Charging",
+    "description": "Findsera content related to charging.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "coffee",
+    "title": "Coffee",
+    "description": "Findsera content related to coffee.",
+    "productIds": [
+      "fellow-stagg-ekg-electric-kettle",
+      "aeropress-original-coffee-maker",
+      "ember-mug-2"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 2,
+      "home": 1
+    },
+    "productCount": 3,
+    "roundupCount": 0
+  },
+  {
+    "slug": "coffee-gear",
+    "title": "Coffee Gear",
+    "description": "Coffee Gear guides, products, and roundup pages on Findsera.",
+    "productIds": [],
+    "roundupSlugs": [
+      "best-coffee-gear-for-home",
+      "best-gifts-for-coffee-lovers"
+    ],
+    "categoryCounts": {},
+    "productCount": 0,
+    "roundupCount": 2
+  },
+  {
+    "slug": "cooking",
+    "title": "Cooking",
+    "description": "Findsera content related to cooking.",
+    "productIds": [
+      "thermoworks-thermapen-one"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "countertop",
+    "title": "Countertop",
+    "description": "Findsera content related to countertop.",
+    "productIds": [
+      "fellow-stagg-ekg-electric-kettle"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "desk",
+    "title": "Desk",
+    "description": "Findsera content related to desk.",
+    "productIds": [
+      "ember-mug-2"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "desk-setup",
+    "title": "Desk Setup",
+    "description": "Findsera content related to desk setup.",
+    "productIds": [
+      "logitech-mx-keys-mini"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "gift",
+    "title": "Gift",
+    "description": "Findsera content related to gift.",
+    "productIds": [
+      "ember-mug-2"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "grilling",
+    "title": "Grilling",
+    "description": "Findsera content related to grilling.",
+    "productIds": [
+      "thermoworks-thermapen-one"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "home",
+    "title": "Home",
+    "description": "Findsera content related to home.",
+    "productIds": [
+      "levoit-core-mini-air-purifier"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "home-office",
+    "title": "Home Office",
+    "description": "Home Office guides, products, and roundup pages on Findsera.",
+    "productIds": [],
+    "roundupSlugs": [
+      "best-home-office-upgrades",
+      "best-desk-setup-products"
+    ],
+    "categoryCounts": {},
+    "productCount": 0,
+    "roundupCount": 2
+  },
+  {
+    "slug": "iphone",
+    "title": "Iphone",
+    "description": "Findsera content related to iphone.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "keyboard",
+    "title": "Keyboard",
+    "description": "Findsera content related to keyboard.",
+    "productIds": [
+      "logitech-mx-keys-mini"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "kitchen",
+    "title": "Kitchen",
+    "description": "Findsera content related to kitchen.",
+    "productIds": [
+      "thermoworks-thermapen-one"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "mouse",
+    "title": "Mouse",
+    "description": "Findsera content related to mouse.",
+    "productIds": [
+      "logitech-mx-anywhere-3s"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "office",
+    "title": "Office",
+    "description": "Findsera content related to office.",
+    "productIds": [
+      "logitech-mx-anywhere-3s"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "portable",
+    "title": "Portable",
+    "description": "Findsera content related to portable.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "pour-over",
+    "title": "Pour Over",
+    "description": "Findsera content related to pour over.",
+    "productIds": [
+      "fellow-stagg-ekg-electric-kettle"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "precision",
+    "title": "Precision",
+    "description": "Findsera content related to precision.",
+    "productIds": [
+      "thermoworks-thermapen-one"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "precision-cooking",
+    "title": "Precision Cooking",
+    "description": "Precision Cooking guides, products, and roundup pages on Findsera.",
+    "productIds": [],
+    "roundupSlugs": [
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "categoryCounts": {},
+    "productCount": 0,
+    "roundupCount": 1
+  },
+  {
+    "slug": "productivity",
+    "title": "Productivity",
+    "description": "Findsera content related to productivity.",
+    "productIds": [
+      "logitech-mx-anywhere-3s",
+      "logitech-mx-keys-mini"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 2
+    },
+    "productCount": 2,
+    "roundupCount": 0
+  },
+  {
+    "slug": "smart-home",
+    "title": "Smart Home",
+    "description": "Findsera content related to smart home.",
+    "productIds": [
+      "ember-mug-2"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "tea",
+    "title": "Tea",
+    "description": "Findsera content related to tea.",
+    "productIds": [
+      "fellow-stagg-ekg-electric-kettle"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "travel",
+    "title": "Travel",
+    "description": "Findsera content related to travel.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim",
+      "logitech-mx-anywhere-3s",
+      "aeropress-original-coffee-maker"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 2,
+      "kitchen": 1
+    },
+    "productCount": 3,
+    "roundupCount": 0
+  },
+  {
+    "slug": "travel-tech",
+    "title": "Travel Tech",
+    "description": "Travel Tech guides, products, and roundup pages on Findsera.",
+    "productIds": [],
+    "roundupSlugs": [
+      "best-amazon-gadgets-2026",
+      "best-travel-tech-essentials"
+    ],
+    "categoryCounts": {},
+    "productCount": 0,
+    "roundupCount": 2
+  },
+  {
+    "slug": "under-50",
+    "title": "Under 50",
+    "description": "Findsera content related to under-50.",
+    "productIds": [
+      "aeropress-original-coffee-maker",
+      "levoit-core-mini-air-purifier"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "kitchen": 1,
+      "home": 1
+    },
+    "productCount": 2,
+    "roundupCount": 0
+  },
+  {
+    "slug": "wireless",
+    "title": "Wireless",
+    "description": "Findsera content related to wireless.",
+    "productIds": [
+      "logitech-mx-keys-mini"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  }
+]

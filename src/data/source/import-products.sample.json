@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sample-product-id",
+    "title": "Sample Product Title",
+    "brand": "Brand",
+    "category": "gadgets",
+    "price": 49.99,
+    "image": "https://example.com/product-image.jpg",
+    "description": "Short commercial description used on cards and list pages.",
+    "sourceUrl": "https://example.com/product-page",
+    "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/ASINHERE",
+    "amazonQuery": "Sample Product Title",
+    "tags": ["keyword", "topic", "cluster"],
+    "highlights": ["Highlight one", "Highlight two", "Highlight three"],
+    "isTrending": false
+  }
+]

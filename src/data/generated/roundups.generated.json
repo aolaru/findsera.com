@@ -6,6 +6,7 @@
     "description": "A curated roundup of practical gadgets worth buying in 2026, focused on travel, desk setup, and everyday utility.",
     "eyebrow": "2026 gadget roundup",
     "category": "gadgets",
+    "cluster": "travel-tech",
     "updatedAt": "2026-04-17",
     "intro": "This list focuses on gadgets that solve daily friction instead of looking impressive for a week. The strongest picks here improve charging, typing, navigation, or compact desk setups without demanding a full workspace overhaul.",
     "productIds": [
@@ -29,8 +30,8 @@
         "answer": "Portable products with immediate utility tend to convert best: charging accessories, compact peripherals, and travel-friendly desk gear. Buyers understand the value quickly and usually need less education before clicking."
       },
       {
-        "question": "Why use Amazon search links instead of hard-coded product pages?",
-        "answer": "For an MVP, search-based affiliate links are easier to maintain and safer to scale while product availability changes. Once you settle on stable ASINs, those can be upgraded to exact product URLs later."
+        "question": "Why use exact Amazon product links when possible?",
+        "answer": "Exact affiliate URLs reduce ambiguity, improve click accuracy, and make it easier to trust the recommendation. Search links are a fallback, not the ideal destination."
       }
     ],
     "productCount": 3
@@ -42,6 +43,7 @@
     "description": "Useful products under $50 for coffee, air quality, and low-risk home upgrades that still feel genuinely worthwhile.",
     "eyebrow": "Budget-friendly picks",
     "category": null,
+    "cluster": "budget-finds",
     "updatedAt": "2026-04-17",
     "intro": "Products under $50 work best when they solve a very specific problem without introducing setup friction. This page leans into low-consideration buys that still have strong word-of-mouth appeal and gifting potential.",
     "productIds": [
@@ -77,6 +79,7 @@
     "description": "Home office upgrades that improve comfort, typing, cursor control, air quality, and coffee routines without a full desk rebuild.",
     "eyebrow": "Home office edit",
     "category": "home",
+    "cluster": "home-office",
     "updatedAt": "2026-04-17",
     "intro": "The best home office products remove small daily annoyances: clutter, weak peripherals, stale air, and coffee that goes cold. This page focuses on upgrades that feel meaningful inside a normal apartment or small studio setup.",
     "productIds": [
@@ -114,6 +117,7 @@
     "description": "Coffee gear for home brewers who want better consistency, temperature control, and a cleaner daily brewing routine.",
     "eyebrow": "Coffee gear guide",
     "category": "kitchen",
+    "cluster": "coffee-gear",
     "updatedAt": "2026-04-17",
     "intro": "Coffee gear converts best when each recommendation maps clearly to a ritual: brewing, boiling, temperature control, or keeping the drink hot. This roundup keeps the stack tight and useful instead of turning into an enthusiast shopping list.",
     "productIds": [
@@ -150,6 +154,7 @@
     "description": "Kitchen tools that improve temperature control, repeatability, and confidence for home cooks who want fewer guesswork moments.",
     "eyebrow": "Precision cooking picks",
     "category": "kitchen",
+    "cluster": "precision-cooking",
     "updatedAt": "2026-04-17",
     "intro": "Precision cooking tools tend to attract buyers who are already motivated by outcomes: better steak doneness, more repeatable coffee, and fewer misses in the oven. That makes them especially useful in intent-driven affiliate content.",
     "productIds": [
@@ -175,6 +180,118 @@
       {
         "question": "Can precision cooking pages be evergreen?",
         "answer": "Yes. The search intent behind these pages stays stable, and the category supports frequent refreshes without rewriting the whole page."
+      }
+    ],
+    "productCount": 3
+  },
+  {
+    "slug": "best-travel-tech-essentials",
+    "title": "Best Travel Tech Essentials",
+    "seoTitle": "Best Travel Tech Essentials | Findsera",
+    "description": "Travel-friendly gear for charging, navigation, and compact work setups that stays useful after the trip is over.",
+    "eyebrow": "Travel tech cluster",
+    "category": "gadgets",
+    "cluster": "travel-tech",
+    "updatedAt": "2026-04-17",
+    "intro": "Travel-tech pages work when every recommendation earns its place in a bag. That means smaller footprints, better battery behavior, and fewer accessories that exist only for edge cases.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim",
+      "logitech-mx-anywhere-3s",
+      "aeropress-original-coffee-maker"
+    ],
+    "sections": [
+      {
+        "title": "The best travel gear reduces setup time",
+        "body": "The strongest travel products do not require explanation once they are unpacked. They either keep you powered, make a compact workspace viable, or simplify a daily ritual on the road."
+      },
+      {
+        "title": "Cross-category pages broaden the cluster",
+        "body": "Travel intent often overlaps gadgets, coffee gear, and low-footprint accessories. Mixed roundups can capture broader search demand while still linking cleanly into narrower pages."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "Should travel tech pages include non-electronic products?",
+        "answer": "Yes, if the use case is clear. Compact coffee gear or other travel-friendly tools can strengthen the page when they align with the same packing mindset."
+      },
+      {
+        "question": "What makes a good travel-tech affiliate product?",
+        "answer": "A good pick is small, durable, and immediately useful. Readers should understand why it belongs in a bag within seconds."
+      }
+    ],
+    "productCount": 3
+  },
+  {
+    "slug": "best-desk-setup-products",
+    "title": "Best Desk Setup Products",
+    "seoTitle": "Best Desk Setup Products | Findsera",
+    "description": "Desk setup products that improve typing, navigation, focus, and coffee routines without turning the page into aesthetics-only gear.",
+    "eyebrow": "Desk setup cluster",
+    "category": "home",
+    "cluster": "home-office",
+    "updatedAt": "2026-04-17",
+    "intro": "Desk setup pages can get visually repetitive fast. The more useful version focuses on products that reduce friction in the space instead of just changing how it looks.",
+    "productIds": [
+      "logitech-mx-keys-mini",
+      "logitech-mx-anywhere-3s",
+      "ember-mug-2",
+      "levoit-core-mini-air-purifier"
+    ],
+    "sections": [
+      {
+        "title": "Usefulness beats decoration",
+        "body": "Products that affect typing quality, pointer control, comfort, or air quality give the page stronger commercial intent than general desk accessories with vague utility."
+      },
+      {
+        "title": "Desk setup content benefits from cluster depth",
+        "body": "This topic can expand into ergonomic pages, compact office roundups, cable management pages, and productivity tools. That breadth makes it a strong long-term cluster."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should a desk setup page avoid?",
+        "answer": "Avoid filler accessories that only exist to pad the list. Stronger pages keep the buyer focused on functional improvements with obvious outcomes."
+      },
+      {
+        "question": "Why mix home-office and desk-setup content?",
+        "answer": "The search intent overlaps heavily, and cross-linking the two creates better topical depth than treating them as isolated silos."
+      }
+    ],
+    "productCount": 4
+  },
+  {
+    "slug": "best-gifts-for-coffee-lovers",
+    "title": "Best Gifts for Coffee Lovers",
+    "seoTitle": "Best Gifts for Coffee Lovers | Findsera",
+    "description": "Giftable coffee products that feel premium, useful, and easy to understand for shoppers buying on someone else’s behalf.",
+    "eyebrow": "Gift guide cluster",
+    "category": "kitchen",
+    "cluster": "coffee-gear",
+    "updatedAt": "2026-04-17",
+    "intro": "Gift guides work best when the buyer can understand the payoff without already being deep in the hobby. Coffee is a strong category for that because temperature, brewing, and daily ritual are easy to explain.",
+    "productIds": [
+      "ember-mug-2",
+      "fellow-stagg-ekg-electric-kettle",
+      "aeropress-original-coffee-maker"
+    ],
+    "sections": [
+      {
+        "title": "Giftability depends on obvious value",
+        "body": "The best coffee gifts feel intuitive at a glance. Temperature-control drinkware, elegant kettles, and compact brewers all communicate value without needing technical context."
+      },
+      {
+        "title": "This page supports seasonal expansion",
+        "body": "Coffee gift guides can branch naturally into holiday pages, under-$100 versions, and beginner-brewer roundups. That makes them useful building blocks inside the broader cluster."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What makes a coffee product gift-worthy?",
+        "answer": "It should be easy to use, visually appealing, and clearly useful in a daily routine. If the product needs too much explanation, it is weaker as a gift recommendation."
+      },
+      {
+        "question": "Should coffee gift pages only include low-ticket items?",
+        "answer": "No. Higher-priced products can work well when the value is obvious and the use case feels elevated enough to justify gift status."
       }
     ],
     "productCount": 3

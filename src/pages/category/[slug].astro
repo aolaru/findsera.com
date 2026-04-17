@@ -4,7 +4,9 @@ import FAQList from "../../components/FAQList.astro";
 import ProductCard from "../../components/ProductCard.astro";
 import RoundupCard from "../../components/RoundupCard.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
+import TopicBadgeList from "../../components/TopicBadgeList.astro";
 import {
+  allTopics,
   categories,
   categoryDescriptions,
   categoryLabels,
@@ -21,12 +23,15 @@ export function getStaticPaths() {
       label: category.label,
       description: category.description,
       products: getProductsByCategory(category.slug),
-      roundups: getRoundupsByCategory(category.slug)
+      roundups: getRoundupsByCategory(category.slug),
+      topics: allTopics
+        .filter((topic) => Object.keys(topic.categoryCounts).includes(category.slug))
+        .slice(0, 6)
     }
   }));
 }
 
-const { slug, label, description, products, roundups } = Astro.props;
+const { slug, label, description, products, roundups, topics } = Astro.props;
 const title = `${label} Finds | Findsera`;
 const metaDescription = `Browse ${label.toLowerCase()} picks on Findsera. ${description}`;
 
@@ -92,6 +97,20 @@ const structuredData = {
           <div class="grid gap-6 lg:grid-cols-3">
             {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}
           </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    topics.length > 0 && (
+      <section class="pb-16">
+        <div class="container-shell">
+          <SectionHeader
+            title={`${label} Topics`}
+            description="These tag pages add another layer of internal linking and help broader category pages branch into narrower search intents."
+          />
+          <TopicBadgeList topics={topics.map((topic) => ({ slug: topic.slug, title: topic.title }))} />
         </div>
       </section>
     )

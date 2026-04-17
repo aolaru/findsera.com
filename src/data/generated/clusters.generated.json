@@ -1,0 +1,63 @@
+[
+  {
+    "slug": "budget-finds",
+    "title": "Budget Finds",
+    "description": "Budget Finds cluster pages on Findsera.",
+    "roundupSlugs": [
+      "best-products-under-50"
+    ],
+    "categories": [],
+    "roundupCount": 1
+  },
+  {
+    "slug": "coffee-gear",
+    "title": "Coffee Gear",
+    "description": "Coffee Gear cluster pages on Findsera.",
+    "roundupSlugs": [
+      "best-coffee-gear-for-home",
+      "best-gifts-for-coffee-lovers"
+    ],
+    "categories": [
+      "kitchen"
+    ],
+    "roundupCount": 2
+  },
+  {
+    "slug": "home-office",
+    "title": "Home Office",
+    "description": "Home Office cluster pages on Findsera.",
+    "roundupSlugs": [
+      "best-home-office-upgrades",
+      "best-desk-setup-products"
+    ],
+    "categories": [
+      "home"
+    ],
+    "roundupCount": 2
+  },
+  {
+    "slug": "precision-cooking",
+    "title": "Precision Cooking",
+    "description": "Precision Cooking cluster pages on Findsera.",
+    "roundupSlugs": [
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "categories": [
+      "kitchen"
+    ],
+    "roundupCount": 1
+  },
+  {
+    "slug": "travel-tech",
+    "title": "Travel Tech",
+    "description": "Travel Tech cluster pages on Findsera.",
+    "roundupSlugs": [
+      "best-amazon-gadgets-2026",
+      "best-travel-tech-essentials"
+    ],
+    "categories": [
+      "gadgets"
+    ],
+    "roundupCount": 2
+  }
+]

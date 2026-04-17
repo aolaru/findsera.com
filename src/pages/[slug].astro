@@ -5,7 +5,8 @@ import FAQList from "../components/FAQList.astro";
 import ProductCard from "../components/ProductCard.astro";
 import RoundupCard from "../components/RoundupCard.astro";
 import SectionHeader from "../components/SectionHeader.astro";
-import { allRoundups, getProductsForRoundup } from "../data/catalog";
+import TopicBadgeList from "../components/TopicBadgeList.astro";
+import { allRoundups, allTopics, getProductsForRoundup } from "../data/catalog";
 import Layout from "../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -16,12 +17,13 @@ export function getStaticPaths() {
       products: getProductsForRoundup(roundup),
       relatedRoundups: allRoundups
         .filter((entry) => entry.slug !== roundup.slug && entry.category === roundup.category)
-        .slice(0, 3)
+        .slice(0, 3),
+      relatedTopics: allTopics.filter((topic) => topic.roundupSlugs.includes(roundup.slug)).slice(0, 5)
     }
   }));
 }
 
-const { roundup, products, relatedRoundups } = Astro.props;
+const { roundup, products, relatedRoundups, relatedTopics } = Astro.props;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -105,13 +107,27 @@ const structuredData = {
       <AffiliateDisclosure />
       <SectionHeader
         title="Top Picks"
-        description="Products selected for clearer buying intent, better internal-link potential, and straightforward scalability inside a larger affiliate content system."
+        description="Products selected for clearer buying intent, better internal-link potential, and stronger affiliate-link precision where exact Amazon URLs are available."
       />
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {products.map((product) => <ProductCard product={product} />)}
       </div>
     </div>
   </section>
+
+  {
+    relatedTopics.length > 0 && (
+      <section class="pb-10">
+        <div class="container-shell">
+          <SectionHeader
+            title="Topic Tags"
+            description="Tag pages create more searchable entry points around the same commercial intent."
+          />
+          <TopicBadgeList topics={relatedTopics.map((topic) => ({ slug: topic.slug, title: topic.title }))} />
+        </div>
+      </section>
+    )
+  }
 
   <section class="section-spacing">
     <div class="container-shell grid gap-6 xl:grid-cols-2">

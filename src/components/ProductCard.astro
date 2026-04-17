@@ -52,6 +52,10 @@ const { product } = Astro.props;
       Price checked {product.priceCheckedAt}
     </p>
 
+    <p class="mt-2 text-xs font-medium uppercase tracking-[0.14em] text-ink-700/70">
+      {product.affiliateMode === "exact" ? "Exact Amazon link" : "Amazon search fallback"}
+    </p>
+
     <a
       href={product.affiliateUrl}
       target="_blank"
