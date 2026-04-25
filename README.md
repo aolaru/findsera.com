@@ -90,7 +90,7 @@ Source content lives in `src/data/source/`. Generated runtime data is written to
 - Weekly guide schedule: Mondays at `05:30 UTC`
 
 The workflow:
-- adds up to 2 products per run from the backlog queue
+- adds 1 product per daily run from the backlog queue
 - daily workflow adds 0 guides by default
 - weekly workflow adds up to 1 guide per run from the guide backlog queue
 - regenerates the content catalog
