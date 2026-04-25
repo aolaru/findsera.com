@@ -11,6 +11,7 @@
     "content:import": "node scripts/import-products.mjs",
     "content:refresh": "node scripts/refresh-products.mjs",
     "content:report": "node scripts/report-affiliate-gaps.mjs",
+    "content:maintain": "node scripts/daily-maintenance.mjs",
     "predev": "npm run content:build",
     "prebuild": "npm run content:build",
     "dev": "astro dev",

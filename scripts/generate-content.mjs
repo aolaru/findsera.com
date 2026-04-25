@@ -41,6 +41,9 @@ const formatPrice = (price) =>
 
 const createAmazonAffiliateUrl = (rawUrl) => {
   const url = new URL(rawUrl);
+  if (!["amazon.com", "www.amazon.com"].includes(url.hostname)) {
+    fail(`Amazon URL must use amazon.com for affiliate linking: ${rawUrl}`);
+  }
   url.searchParams.set("tag", AMAZON_TAG);
   return url.toString();
 };
