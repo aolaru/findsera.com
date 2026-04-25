@@ -96,6 +96,7 @@
     "description": "A precision gooseneck kettle for pour-over coffee and tea, with variable temperature control and standout countertop design.",
     "sourceUrl": "https://fellowproducts.com/products/stagg-ekg-electric-pour-over-kettle",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B077JBQZPX",
     "amazonQuery": "Fellow Stagg EKG Electric Kettle",
     "tags": [
       "coffee",
@@ -111,8 +112,8 @@
     "isTrending": true,
     "slug": "fellow-stagg-ekg-electric-kettle",
     "priceLabel": "$179.95",
-    "affiliateUrl": "https://www.amazon.com/s?k=Fellow+Stagg+EKG+Electric+Kettle&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B077JBQZPX?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "aeropress-original-coffee-maker",
@@ -153,6 +154,7 @@
     "description": "A fast, premium instant-read thermometer for grilling, roasting, and repeatable kitchen accuracy.",
     "sourceUrl": "https://www.thermoworks.com/thermapen-one/",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B0DC8MWQ8K",
     "amazonQuery": "ThermoWorks Thermapen ONE",
     "tags": [
       "grilling",
@@ -168,8 +170,8 @@
     "isTrending": false,
     "slug": "thermoworks-thermapen-one",
     "priceLabel": "$115",
-    "affiliateUrl": "https://www.amazon.com/s?k=ThermoWorks+Thermapen+ONE&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B0DC8MWQ8K?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "ember-mug-2",
@@ -181,6 +183,7 @@
     "description": "A temperature-control mug for slower coffee mornings, home offices, and people tired of reheating drinks.",
     "sourceUrl": "https://ember.com/products/ember-mug-2",
     "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B08D3XPCZR",
     "amazonQuery": "Ember Mug 2",
     "tags": [
       "coffee",
@@ -196,8 +199,8 @@
     "isTrending": true,
     "slug": "ember-mug-2",
     "priceLabel": "$129.95",
-    "affiliateUrl": "https://www.amazon.com/s?k=Ember+Mug+2&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B08D3XPCZR?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "levoit-core-mini-air-purifier",

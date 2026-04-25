@@ -91,11 +91,12 @@
     "productIds": [],
     "roundupSlugs": [
       "best-coffee-gear-for-home",
-      "best-gifts-for-coffee-lovers"
+      "best-gifts-for-coffee-lovers",
+      "best-coffee-gear-for-beginners"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 2
+    "roundupCount": 3
   },
   {
     "slug": "cooking",
@@ -202,11 +203,13 @@
     "productIds": [],
     "roundupSlugs": [
       "best-home-office-upgrades",
-      "best-desk-setup-products"
+      "best-desk-setup-products",
+      "best-tech-for-small-desks",
+      "best-home-office-gifts"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 2
+    "roundupCount": 4
   },
   {
     "slug": "iphone",
@@ -399,11 +402,12 @@
     "productIds": [],
     "roundupSlugs": [
       "best-amazon-gadgets-2026",
-      "best-travel-tech-essentials"
+      "best-travel-tech-essentials",
+      "best-travel-tech-for-remote-work"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 2
+    "roundupCount": 3
   },
   {
     "slug": "under-50",

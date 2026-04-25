@@ -253,6 +253,42 @@
     ]
   },
   {
+    "slug": "best-tech-for-small-desks",
+    "title": "Best Tech for Small Desks",
+    "seoTitle": "Best Tech for Small Desks | Findsera",
+    "description": "Compact desk tech for small apartments, narrow work surfaces, and hybrid setups where every inch needs to earn its keep.",
+    "eyebrow": "Small-space desk guide",
+    "category": "home",
+    "cluster": "home-office",
+    "updatedAt": "2026-04-25",
+    "intro": "Small-desk buyers are rarely looking for more gear. They are looking for less friction. This page focuses on products that keep a workspace useful without swallowing the whole surface area.",
+    "productIds": [
+      "logitech-mx-keys-mini",
+      "logitech-mx-anywhere-3s",
+      "levoit-core-mini-air-purifier"
+    ],
+    "sections": [
+      {
+        "title": "The right compact product creates usable space",
+        "body": "Small-desk pages work when the products reduce clutter, shrink footprints, or eliminate one extra object from the setup. Compact input devices and low-footprint comfort products are usually the highest-signal picks."
+      },
+      {
+        "title": "A narrow desk needs clearer buyer intent",
+        "body": "People searching for small-desk tech already know space is the constraint. That makes these pages commercially strong because the recommendation can be framed around a single, highly practical buying problem."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What matters most when buying tech for a small desk?",
+        "answer": "Footprint, multi-function utility, and daily comfort matter most. The best products either reduce clutter directly or make a smaller surface feel more usable."
+      },
+      {
+        "question": "Should a small-desk page include decorative accessories?",
+        "answer": "Usually no. Functional picks with immediate practical value tend to serve the search intent better than aesthetic filler."
+      }
+    ]
+  },
+  {
     "slug": "best-gifts-for-coffee-lovers",
     "title": "Best Gifts for Coffee Lovers",
     "seoTitle": "Best Gifts for Coffee Lovers | Findsera",
@@ -285,6 +321,114 @@
       {
         "question": "Should coffee gift pages only include low-ticket items?",
         "answer": "No. Higher-priced products can work well when the value is obvious and the use case feels elevated enough to justify gift status."
+      }
+    ]
+  },
+  {
+    "slug": "best-coffee-gear-for-beginners",
+    "title": "Best Coffee Gear for Beginners",
+    "seoTitle": "Best Coffee Gear for Beginners | Findsera",
+    "description": "Simple coffee gear for beginners who want better results at home without falling into an expensive enthusiast setup too early.",
+    "eyebrow": "Beginner coffee picks",
+    "category": "kitchen",
+    "cluster": "coffee-gear",
+    "updatedAt": "2026-04-25",
+    "intro": "Beginner coffee pages convert when the recommendations feel approachable. This list avoids hobbyist overload and focuses on products that make the first upgrade obvious and easy to stick with.",
+    "productIds": [
+      "aeropress-original-coffee-maker",
+      "fellow-stagg-ekg-electric-kettle",
+      "ember-mug-2"
+    ],
+    "sections": [
+      {
+        "title": "Beginners need confidence more than complexity",
+        "body": "The strongest first-buy coffee products shorten the learning curve. That means easier brewing, clearer temperature control, and upgrades that are easy to feel in the first week."
+      },
+      {
+        "title": "Starter guides can lead into deeper coffee clusters",
+        "body": "This page can naturally support later-stage content like pour-over gear, coffee gift guides, under-$50 coffee picks, and premium home-brewing upgrades."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the best first coffee upgrade for most beginners?",
+        "answer": "A brewer that is simple to use and easy to clean is usually the best first move. It lowers the barrier to consistency and makes the value obvious quickly."
+      },
+      {
+        "question": "Do beginner coffee pages need grinders and scales right away?",
+        "answer": "Not always. General-intent buyers often respond better to a smaller shortlist that solves the biggest pain points first."
+      }
+    ]
+  },
+  {
+    "slug": "best-travel-tech-for-remote-work",
+    "title": "Best Travel Tech for Remote Work",
+    "seoTitle": "Best Travel Tech for Remote Work | Findsera",
+    "description": "Travel tech for remote work setups that need reliable charging, better cursor control, and a more usable temporary desk anywhere.",
+    "eyebrow": "Remote-work travel tech",
+    "category": "gadgets",
+    "cluster": "travel-tech",
+    "updatedAt": "2026-04-25",
+    "intro": "Remote-work travel pages perform best when every pick solves a repeated problem: weak charging, bad temporary peripherals, or a workday that falls apart once you leave the main desk.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim",
+      "logitech-mx-anywhere-3s",
+      "logitech-mx-keys-mini"
+    ],
+    "sections": [
+      {
+        "title": "Portable productivity beats generic travel gear",
+        "body": "The strongest remote-work travel pages prioritize tools that support actual work output instead of novelty. Charging stability and compact peripherals usually create the clearest case for purchase."
+      },
+      {
+        "title": "This intent is easy to expand",
+        "body": "The same buyer can branch into compact desk gear, travel organization, mobile office pages, and hybrid-work roundups. That makes this a strong commercial bridge page."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What should remote-work travel tech solve first?",
+        "answer": "Power, cursor control, and typing comfort come first because they affect whether a temporary setup is actually usable for work."
+      },
+      {
+        "question": "Is travel tech different from general gadget content?",
+        "answer": "Yes. Travel-intent pages need smaller, more durable products that still feel useful after the trip is over."
+      }
+    ]
+  },
+  {
+    "slug": "best-home-office-gifts",
+    "title": "Best Home Office Gifts",
+    "seoTitle": "Best Home Office Gifts | Findsera",
+    "description": "Useful home office gifts that feel thoughtful, practical, and easy to appreciate without knowing every detail of someone’s desk setup.",
+    "eyebrow": "Giftable office upgrades",
+    "category": "home",
+    "cluster": "home-office",
+    "updatedAt": "2026-04-25",
+    "intro": "Home office gift pages work when the products feel both personal and practical. The best picks are easy to understand at a glance and useful enough to avoid becoming desk clutter.",
+    "productIds": [
+      "ember-mug-2",
+      "logitech-mx-anywhere-3s",
+      "levoit-core-mini-air-purifier"
+    ],
+    "sections": [
+      {
+        "title": "Giftability depends on obvious payoff",
+        "body": "A home office gift should improve the workday in a way that is easy to explain. Better coffee temperature, cleaner air, and smoother cursor control all communicate that payoff quickly."
+      },
+      {
+        "title": "These pages support seasonal buying intent",
+        "body": "Office gift guides can branch naturally into holiday pages, coworker gifts, gifts under $100, and gifts for remote workers, making them valuable evergreen-commercial assets."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What makes a home office product gift-worthy?",
+        "answer": "It should feel useful immediately, avoid complicated setup, and improve a part of the daily routine that the recipient already cares about."
+      },
+      {
+        "question": "Should home office gifts always be inexpensive?",
+        "answer": "No. Premium gifts can work well when the benefit is clear and the product feels meaningfully better than a generic alternative."
       }
     ]
   }

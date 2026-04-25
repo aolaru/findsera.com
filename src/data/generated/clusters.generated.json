@@ -15,12 +15,13 @@
     "description": "Coffee Gear cluster pages on Findsera.",
     "roundupSlugs": [
       "best-coffee-gear-for-home",
-      "best-gifts-for-coffee-lovers"
+      "best-gifts-for-coffee-lovers",
+      "best-coffee-gear-for-beginners"
     ],
     "categories": [
       "kitchen"
     ],
-    "roundupCount": 2
+    "roundupCount": 3
   },
   {
     "slug": "home-office",
@@ -28,12 +29,14 @@
     "description": "Home Office cluster pages on Findsera.",
     "roundupSlugs": [
       "best-home-office-upgrades",
-      "best-desk-setup-products"
+      "best-desk-setup-products",
+      "best-tech-for-small-desks",
+      "best-home-office-gifts"
     ],
     "categories": [
       "home"
     ],
-    "roundupCount": 2
+    "roundupCount": 4
   },
   {
     "slug": "precision-cooking",
@@ -53,11 +56,12 @@
     "description": "Travel Tech cluster pages on Findsera.",
     "roundupSlugs": [
       "best-amazon-gadgets-2026",
-      "best-travel-tech-essentials"
+      "best-travel-tech-essentials",
+      "best-travel-tech-for-remote-work"
     ],
     "categories": [
       "gadgets"
     ],
-    "roundupCount": 2
+    "roundupCount": 3
   }
 ]

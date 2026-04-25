@@ -24,6 +24,43 @@ export function getStaticPaths() {
 }
 
 const { roundup, products, relatedRoundups, relatedTopics } = Astro.props;
+const formattedUpdatedAt = new Date(`${roundup.updatedAt}T00:00:00Z`).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC"
+});
+
+const formatTag = (value: string) =>
+  value
+    .split("-")
+    .map((chunk) => chunk.charAt(0).toUpperCase() + chunk.slice(1))
+    .join(" ");
+
+const getBestForLabel = (product: (typeof products)[number]) => {
+  const priorityTags = ["travel", "office", "desk setup", "coffee", "brewing", "under-50", "gift"];
+  const matchingTag = priorityTags.find((tag) => product.tags.includes(tag)) ?? product.tags[0];
+  return matchingTag ? `Best for ${formatTag(matchingTag.replace(/\s+/g, "-"))}` : "Best overall pick";
+};
+
+const getTradeoff = (product: (typeof products)[number]) => {
+  if (product.affiliateMode === "search") {
+    return "Amazon destination still uses search fallback instead of an exact product URL.";
+  }
+
+  if (product.price >= 120) {
+    return "Higher price point than entry-level alternatives.";
+  }
+
+  if (product.price >= 80) {
+    return "Better as an upgrade buy than a low-cost first purchase.";
+  }
+
+  return "Best when the buyer wants a specific use-case fit, not the cheapest option.";
+};
+
+const topPick = products[0];
+const budgetPick = [...products].sort((a, b) => a.price - b.price)[0];
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -75,6 +112,14 @@ const structuredData = {
       <span class="eyebrow">{roundup.eyebrow}</span>
       <div class="mt-6 grid gap-8 lg:grid-cols-[minmax(0,1fr),20rem]">
         <div>
+          <div class="mb-5 flex flex-wrap gap-3">
+            <span class="rounded-full bg-sand-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-900">
+              Last updated {formattedUpdatedAt}
+            </span>
+            <span class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">
+              Methodology included
+            </span>
+          </div>
           <h1 class="max-w-4xl font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
             {roundup.title}
           </h1>
@@ -86,7 +131,7 @@ const structuredData = {
           <dl class="mt-5 space-y-4 text-sm text-ink-700">
             <div>
               <dt class="font-semibold text-ink-900">Updated</dt>
-              <dd>{roundup.updatedAt}</dd>
+              <dd>{formattedUpdatedAt}</dd>
             </div>
             <div>
               <dt class="font-semibold text-ink-900">Products</dt>
@@ -97,20 +142,140 @@ const structuredData = {
               <dd>Intent-driven SEO roundup with automated affiliate URLs.</dd>
             </div>
           </dl>
+          <div class="mt-6 rounded-[1.5rem] bg-sand-50 p-4">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Quick picks</p>
+            <p class="mt-3 text-sm font-semibold text-ink-900">Best overall: {topPick.title}</p>
+            <p class="mt-1 text-sm text-ink-700">Budget angle: {budgetPick.title}</p>
+          </div>
+          <a
+            href="#top-picks"
+            class="mt-6 inline-flex w-full items-center justify-center rounded-full bg-ink-900 px-4 py-3 text-sm font-semibold text-white hover:bg-accent-600"
+          >
+            Jump to top picks
+          </a>
         </aside>
       </div>
     </div>
   </section>
 
-  <section class="pb-10">
+  <section class="pb-10" id="top-picks">
     <div class="container-shell space-y-8">
       <AffiliateDisclosure />
       <SectionHeader
         title="Top Picks"
         description="Products selected for clearer buying intent, better internal-link potential, and stronger affiliate-link precision where exact Amazon URLs are available."
       />
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1.25fr),minmax(0,0.75fr)]">
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Why we picked these</p>
+          <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
+            Shortlists convert better when every product earns a role
+          </h2>
+          <p class="mt-4 text-sm leading-7 text-ink-700">
+            This page is built around products with a clear use case, visible differentiation, and a cleaner path
+            to purchase intent. Instead of padding the list, each pick is here because it covers a distinct
+            buyer scenario.
+          </p>
+          <ul class="mt-5 space-y-3 text-sm text-ink-700">
+            <li>- Stronger everyday-use framing instead of generic feature dumping</li>
+            <li>- Product spread across budget, upgrade, and use-case intent</li>
+            <li>- Priority given to exact Amazon URLs when available</li>
+          </ul>
+        </article>
+
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Fast comparison</p>
+          <div class="mt-4 overflow-x-auto">
+            <table class="min-w-full text-left text-sm text-ink-700">
+              <thead>
+                <tr class="border-b border-black/8 text-xs uppercase tracking-[0.16em] text-ink-700/70">
+                  <th class="pb-3 pr-4 font-semibold">Product</th>
+                  <th class="pb-3 pr-4 font-semibold">Best for</th>
+                  <th class="pb-3 pr-4 font-semibold">Price</th>
+                  <th class="pb-3 font-semibold">Link</th>
+                </tr>
+              </thead>
+              <tbody>
+                {products.map((product) => (
+                  <tr class="border-b border-black/6 align-top last:border-b-0">
+                    <td class="py-3 pr-4 font-semibold text-ink-900">{product.title}</td>
+                    <td class="py-3 pr-4">{getBestForLabel(product)}</td>
+                    <td class="py-3 pr-4">{product.priceLabel}</td>
+                    <td class="py-3">{product.affiliateMode === "exact" ? "Exact" : "Fallback"}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,0.85fr),minmax(0,1.15fr)]">
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Methodology</p>
+          <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
+            How products make the page
+          </h2>
+          <ul class="mt-5 space-y-3 text-sm leading-7 text-ink-700">
+            <li>- Products are chosen for a clear use case, not to inflate the list length.</li>
+            <li>- Preference goes to items with exact Amazon product URLs instead of search-result fallbacks.</li>
+            <li>- We keep pages tight so readers can compare options quickly and reach a buying decision faster.</li>
+          </ul>
+        </article>
+
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Trust signals</p>
+          <div class="mt-4 grid gap-4 sm:grid-cols-3">
+            <div class="rounded-[1.5rem] bg-sand-50 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Updated</p>
+              <p class="mt-2 text-sm font-semibold text-ink-900">{formattedUpdatedAt}</p>
+            </div>
+            <div class="rounded-[1.5rem] bg-sand-50 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Affiliate links</p>
+              <p class="mt-2 text-sm font-semibold text-ink-900">Exact product URLs in use</p>
+            </div>
+            <div class="rounded-[1.5rem] bg-sand-50 p-4">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Page focus</p>
+              <p class="mt-2 text-sm font-semibold text-ink-900">{products.length} tightly matched picks</p>
+            </div>
+          </div>
+        </article>
+      </div>
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-        {products.map((product) => <ProductCard product={product} />)}
+        {
+          products.map((product) => (
+            <div class="space-y-4">
+              <div class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card">
+                <div class="flex items-center justify-between gap-4">
+                  <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
+                    {getBestForLabel(product)}
+                  </p>
+                  <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">
+                    {product.affiliateMode === "exact" ? "Verified link" : "Search fallback"}
+                  </p>
+                </div>
+                <h3 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
+                  Why {product.title} made the list
+                </h3>
+                <p class="mt-3 text-sm leading-7 text-ink-700">{product.description}</p>
+                <div class="mt-5 grid gap-4 sm:grid-cols-2">
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Pros</p>
+                    <ul class="mt-2 space-y-2 text-sm text-ink-700">
+                      {product.highlights.slice(0, 2).map((item) => <li>+ {item}</li>)}
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">
+                      Consider before buying
+                    </p>
+                    <p class="mt-2 text-sm leading-7 text-ink-700">{getTradeoff(product)}</p>
+                  </div>
+                </div>
+              </div>
+              <ProductCard product={product} />
+            </div>
+          ))
+        }
       </div>
     </div>
   </section>
