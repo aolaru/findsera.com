@@ -23,11 +23,11 @@ export function getStaticPaths() {
 const { cluster, roundups, products, relatedTopics } = Astro.props;
 ---
 
-<Layout title={`${cluster.title} Cluster | Findsera`} description={cluster.description}>
+<Layout title={`${cluster.title} Guides | Findsera`} description={cluster.description}>
   <section class="section-spacing">
     <div class="container-shell">
       <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/clusters/${cluster.slug}`, label: cluster.title }]} />
-      <span class="eyebrow">SEO cluster</span>
+      <span class="eyebrow">Guide collection</span>
       <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900">{cluster.title}</h1>
       <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{cluster.description}</p>
     </div>
@@ -36,8 +36,8 @@ const { cluster, roundups, products, relatedTopics } = Astro.props;
   <section class="pb-16">
     <div class="container-shell">
       <SectionHeader
-        title="Roundups in This Cluster"
-        description="These pages target related search intent and are intended to support each other through internal linking."
+        title="Guides in This Collection"
+        description="These guides cover closely related buying intent and support each other through internal linking."
       />
       <div class="grid gap-6 lg:grid-cols-3">
         {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}
@@ -49,7 +49,7 @@ const { cluster, roundups, products, relatedTopics } = Astro.props;
     <div class="container-shell">
       <SectionHeader
         title="Core Products"
-        description="Frequently recurring products inside this cluster, useful for broader landing pages and hub content."
+        description="Frequently recurring products inside this guide collection, useful for broader landing pages and supporting content."
       />
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {products.map((product) => <ProductCard product={product} />)}
@@ -63,7 +63,7 @@ const { cluster, roundups, products, relatedTopics } = Astro.props;
         <div class="container-shell">
           <SectionHeader
             title="Related Topic Tags"
-            description="Topic tags add lighter-weight indexable pages around the same cluster."
+            description="Topic tags add lighter-weight supporting pages around the same guide collection."
           />
           <TopicBadgeList topics={relatedTopics.map((topic) => ({ slug: topic.slug, title: topic.title }))} />
         </div>

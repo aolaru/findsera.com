@@ -22,7 +22,7 @@ const homeAndKitchen = [...getProductsByCategory("home"), ...getProductsByCatego
 
 const title = "Findsera | Find better products faster";
 const description =
-  "Discover real products, exact affiliate-ready links, topic clusters, and scalable SEO content across gadgets, home, and kitchen on Findsera.";
+  "Discover real products, exact affiliate-ready links, buying guides, and scalable content across gadgets, home, and kitchen on Findsera.";
 ---
 
 <Layout title={title} description={description}>
@@ -35,7 +35,7 @@ const description =
             Find better products faster
           </h1>
           <p class="max-w-2xl text-lg leading-8 text-ink-700">
-            Real products, exact affiliate URLs when available, and static SEO clusters built to scale
+            Real products, exact affiliate URLs when available, and structured buying guides built to scale
             far beyond the first handful of roundup pages.
           </p>
         </div>
@@ -50,7 +50,7 @@ const description =
             href="/clusters/home-office"
             class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
           >
-            Explore clusters
+            Explore guides
           </a>
         </div>
       </div>
@@ -64,11 +64,11 @@ const description =
           </div>
           <div class="grid gap-4 sm:grid-cols-2">
             <div class="rounded-[1.5rem] bg-sky-100/60 p-5">
-              <p class="text-sm font-semibold text-ink-700">SEO roundup pages</p>
+              <p class="text-sm font-semibold text-ink-700">Guide pages</p>
               <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allRoundups.length}</p>
             </div>
             <div class="rounded-[1.5rem] bg-sand-100 p-5">
-              <p class="text-sm font-semibold text-ink-700">Topic clusters</p>
+              <p class="text-sm font-semibold text-ink-700">Guide collections</p>
               <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allClusters.length}</p>
             </div>
           </div>
@@ -132,8 +132,8 @@ const description =
   <section class="section-spacing">
     <div class="container-shell">
       <SectionHeader
-        title="Topic Clusters"
-        description="Cluster landing pages organize roundups into larger SEO systems instead of isolated keyword pages."
+        title="Guide Collections"
+        description="Guide collections organize related roundups into larger collections instead of isolated product pages."
       />
       <div class="grid gap-6 lg:grid-cols-3">
         {allClusters.map((cluster) => <ClusterCard cluster={cluster} />)}
@@ -154,8 +154,8 @@ const description =
   <section class="section-spacing">
     <div class="container-shell">
       <SectionHeader
-        title="SEO Roundups"
-        description="Intent-based roundup pages generated from source data with richer copy, FAQs, and reusable internal linking."
+        title="Buying Guides"
+        description="Intent-based buying guides generated from source data with richer copy, FAQs, and reusable internal linking."
       />
       <div class="grid gap-6 lg:grid-cols-3">
         {allRoundups.map((roundup) => <RoundupCard roundup={roundup} />)}
