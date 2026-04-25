@@ -443,5 +443,155 @@
       }
     ],
     "productCount": 3
+  },
+  {
+    "slug": "best-gadgets-for-hybrid-work",
+    "title": "Best Gadgets for Hybrid Work",
+    "seoTitle": "Best Gadgets for Hybrid Work | Findsera",
+    "description": "Hybrid-work gadgets that make switching between home, office, and travel setups feel less fragmented and more reliable.",
+    "eyebrow": "Hybrid work picks",
+    "category": "gadgets",
+    "cluster": "travel-tech",
+    "updatedAt": "2026-04-25",
+    "intro": "Hybrid-work pages convert well when the buyer can immediately picture the use case. These picks focus on keeping charging, typing, and cursor control consistent whether the workday starts at home or somewhere temporary.",
+    "productIds": [
+      "logitech-mx-keys-mini",
+      "logitech-mx-anywhere-3s",
+      "anker-maggo-power-bank-10k-slim"
+    ],
+    "sections": [
+      {
+        "title": "Hybrid work favors portable reliability",
+        "body": "The strongest hybrid-work products remove friction between locations. Lightweight peripherals and dependable charging matter more than feature-heavy desk accessories that only make sense in one setup."
+      },
+      {
+        "title": "This is commercial intent with obvious pain points",
+        "body": "Readers searching for hybrid-work gadgets usually already know what breaks first: battery life, awkward typing, or poor mouse control on the road. That makes recommendation copy easier to justify and easier to convert."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What are the first gadgets worth buying for hybrid work?",
+        "answer": "A compact keyboard, a travel-friendly mouse, and backup charging are usually the first three upgrades that feel valuable across multiple work environments."
+      },
+      {
+        "question": "How is hybrid-work tech different from a home office setup?",
+        "answer": "Hybrid-work tech has to travel well and stay useful in more than one location. Portability and consistency matter more than pure desk aesthetics."
+      }
+    ],
+    "productCount": 3
+  },
+  {
+    "slug": "best-home-office-upgrades-under-150",
+    "title": "Best Home Office Upgrades Under $150",
+    "seoTitle": "Best Home Office Upgrades Under $150 | Findsera",
+    "description": "Home office upgrades under $150 that improve comfort and productivity without pushing buyers into full desk-overhaul spending.",
+    "eyebrow": "Under $150 office picks",
+    "category": "home",
+    "cluster": "home-office",
+    "updatedAt": "2026-04-25",
+    "intro": "Budget-capped office pages work best when every product feels like a visible quality jump without requiring a full workspace rebuild. This list leans into small upgrades that improve the workday quickly.",
+    "productIds": [
+      "logitech-mx-anywhere-3s",
+      "logitech-mx-keys-mini",
+      "ember-mug-2",
+      "levoit-core-mini-air-purifier"
+    ],
+    "sections": [
+      {
+        "title": "Mid-range budgets create stronger buying intent",
+        "body": "Under-$150 searches usually signal a buyer who wants something meaningfully better than entry-level gear without crossing into premium-office-spend territory. That makes this an especially useful commercial page type."
+      },
+      {
+        "title": "The best upgrades feel obvious within a week",
+        "body": "Office products perform better when the payoff shows up fast: quieter air, smoother cursor control, better typing, or a coffee routine that feels less interrupted."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What office upgrade has the clearest daily payoff under $150?",
+        "answer": "Input devices and comfort-focused accessories usually win because their value shows up on every workday, not just occasionally."
+      },
+      {
+        "question": "Should an under-$150 office guide include both peripherals and comfort products?",
+        "answer": "Yes. Mixing utility-driven peripherals with comfort-oriented products makes the guide more commercially useful because it reflects how people actually improve their setups."
+      }
+    ],
+    "productCount": 4
+  },
+  {
+    "slug": "best-coffee-gear-for-small-kitchens",
+    "title": "Best Coffee Gear for Small Kitchens",
+    "seoTitle": "Best Coffee Gear for Small Kitchens | Findsera",
+    "description": "Coffee gear for small kitchens where counter space is limited but a better daily brew still matters.",
+    "eyebrow": "Small-kitchen coffee guide",
+    "category": "kitchen",
+    "cluster": "coffee-gear",
+    "updatedAt": "2026-04-25",
+    "intro": "Small-kitchen coffee pages work when every recommendation respects space constraints. The strongest products here either store easily, justify permanent counter space, or improve the ritual enough to earn it.",
+    "productIds": [
+      "aeropress-original-coffee-maker",
+      "fellow-stagg-ekg-electric-kettle",
+      "ember-mug-2"
+    ],
+    "sections": [
+      {
+        "title": "Small kitchens need compact wins",
+        "body": "Products that travel easily or take up little space usually outperform bulkier coffee gear in apartment-driven search intent. The buyer wants better coffee without turning the counter into a gear shelf."
+      },
+      {
+        "title": "Counter-space constraints sharpen the recommendation",
+        "body": "This intent is commercially strong because the tradeoff is easy to explain. A product either earns its footprint or it does not, which makes list decisions clearer for both readers and editors."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What is the best coffee setup for a small kitchen?",
+        "answer": "A compact brewer, one temperature-control product, and minimal permanent counter clutter usually create the best balance of quality and space efficiency."
+      },
+      {
+        "question": "Should small-kitchen coffee guides avoid premium products?",
+        "answer": "Not necessarily. Premium products still work if they justify the space they occupy and solve a clear part of the daily routine."
+      }
+    ],
+    "productCount": 3
+  },
+  {
+    "slug": "best-tech-gifts-under-100",
+    "title": "Best Tech Gifts Under $100",
+    "seoTitle": "Best Tech Gifts Under $100 | Findsera",
+    "description": "Useful tech gifts under $100 that feel better than generic accessories and still stay inside a realistic gifting budget.",
+    "eyebrow": "Tech gifts under $100",
+    "category": null,
+    "cluster": "budget-finds",
+    "updatedAt": "2026-04-25",
+    "intro": "Budget gift guides convert best when the products feel easy to understand and easy to imagine using. This page focuses on items that feel thoughtful without requiring a premium budget.",
+    "productIds": [
+      "anker-maggo-power-bank-10k-slim",
+      "logitech-mx-anywhere-3s",
+      "aeropress-original-coffee-maker",
+      "levoit-core-mini-air-purifier"
+    ],
+    "sections": [
+      {
+        "title": "A good tech gift should not feel like filler",
+        "body": "The best sub-$100 gifts solve a recognizable problem immediately: better charging, a smoother workday, cleaner air, or a more enjoyable daily coffee ritual."
+      },
+      {
+        "title": "Budget gift pages are strong repeat traffic assets",
+        "body": "This kind of page supports holidays, birthdays, remote-work gift searches, and general product discovery. That makes it a useful evergreen-commercial guide, not just a seasonal one."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "What makes a tech gift worth buying under $100?",
+        "answer": "It should be useful right away, easy to explain, and clearly better than a throwaway accessory that feels forgettable after a week."
+      },
+      {
+        "question": "Can under-$100 gift pages include products from different categories?",
+        "answer": "Yes. Mixed-category gift pages often perform well because gift intent is broader than category intent, as long as every product still feels giftable."
+      }
+    ],
+    "productCount": 4
   }
 ]

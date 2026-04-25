@@ -4,10 +4,11 @@
     "title": "Budget Finds",
     "description": "Budget Finds cluster pages on Findsera.",
     "roundupSlugs": [
-      "best-products-under-50"
+      "best-products-under-50",
+      "best-tech-gifts-under-100"
     ],
     "categories": [],
-    "roundupCount": 1
+    "roundupCount": 2
   },
   {
     "slug": "coffee-gear",
@@ -16,12 +17,13 @@
     "roundupSlugs": [
       "best-coffee-gear-for-home",
       "best-gifts-for-coffee-lovers",
-      "best-coffee-gear-for-beginners"
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-small-kitchens"
     ],
     "categories": [
       "kitchen"
     ],
-    "roundupCount": 3
+    "roundupCount": 4
   },
   {
     "slug": "home-office",
@@ -31,12 +33,13 @@
       "best-home-office-upgrades",
       "best-desk-setup-products",
       "best-tech-for-small-desks",
-      "best-home-office-gifts"
+      "best-home-office-gifts",
+      "best-home-office-upgrades-under-150"
     ],
     "categories": [
       "home"
     ],
-    "roundupCount": 4
+    "roundupCount": 5
   },
   {
     "slug": "precision-cooking",
@@ -57,11 +60,12 @@
     "roundupSlugs": [
       "best-amazon-gadgets-2026",
       "best-travel-tech-essentials",
-      "best-travel-tech-for-remote-work"
+      "best-travel-tech-for-remote-work",
+      "best-gadgets-for-hybrid-work"
     ],
     "categories": [
       "gadgets"
     ],
-    "roundupCount": 3
+    "roundupCount": 4
   }
 ]
