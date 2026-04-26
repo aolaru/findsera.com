@@ -6,11 +6,13 @@ const root = process.cwd();
 const productsPath = path.join(root, "src/data/source/products.source.json");
 const roundupsPath = path.join(root, "src/data/source/roundups.source.json");
 const productBacklogPath = path.join(root, "src/data/source/product-backlog.json");
+const productRefreshBacklogPath = path.join(root, "src/data/source/product-refresh-backlog.json");
 const guideBacklogPath = path.join(root, "src/data/source/guide-backlog.json");
 const reportDir = path.join(root, "reports");
 const reportPath = path.join(reportDir, "daily-maintenance.md");
 
 const MAX_NEW_PRODUCTS = Number(process.env.MAX_NEW_PRODUCTS ?? 2);
+const MAX_PRODUCT_REFRESHES = Number(process.env.MAX_PRODUCT_REFRESHES ?? 2);
 const MAX_NEW_GUIDES = Number(process.env.MAX_NEW_GUIDES ?? 1);
 const STALE_AFTER_DAYS = Number(process.env.STALE_AFTER_DAYS ?? 14);
 const MIN_GUIDE_PRODUCTS = Number(process.env.MIN_GUIDE_PRODUCTS ?? 2);
@@ -26,6 +28,7 @@ const today = now.toISOString().slice(0, 10);
 const products = await readJson(productsPath);
 const roundups = await readJson(roundupsPath);
 const productBacklog = await readJson(productBacklogPath);
+const productRefreshBacklog = await readJson(productRefreshBacklogPath);
 const guideBacklog = await readJson(guideBacklogPath);
 
 const existingProductIds = new Set(products.map((product) => product.id));
@@ -44,7 +47,55 @@ for (const entry of productBacklog) {
   existingProductIds.add(entry.id);
 }
 
-const mergedProducts = [...products, ...newProducts].sort((a, b) => a.id.localeCompare(b.id));
+const productsWithNewItems = [...products, ...newProducts];
+const productsById = new Map(productsWithNewItems.map((product) => [product.id, product]));
+const appliedRefreshes = [];
+const remainingProductRefreshBacklog = [];
+const refreshableFields = new Set([
+  "price",
+  "priceCheckedAt",
+  "amazonUrl",
+  "description",
+  "highlights",
+  "isTrending",
+  "image",
+  "amazonQuery"
+]);
+
+for (const entry of productRefreshBacklog) {
+  const target = productsById.get(entry.id);
+
+  if (!target || appliedRefreshes.length >= MAX_PRODUCT_REFRESHES) {
+    remainingProductRefreshBacklog.push(entry);
+    continue;
+  }
+
+  const updates = {};
+
+  for (const [key, value] of Object.entries(entry)) {
+    if (key === "id" || !refreshableFields.has(key)) {
+      continue;
+    }
+    updates[key] = value;
+  }
+
+  if (Object.keys(updates).length === 0) {
+    continue;
+  }
+
+  productsById.set(entry.id, {
+    ...target,
+    ...updates
+  });
+
+  appliedRefreshes.push({
+    id: entry.id,
+    title: target.title,
+    updatedFields: Object.keys(updates).sort()
+  });
+}
+
+const mergedProducts = [...productsById.values()].sort((a, b) => a.id.localeCompare(b.id));
 const mergedProductIdSet = new Set(mergedProducts.map((product) => product.id));
 
 const newGuides = [];
@@ -115,12 +166,16 @@ const validationFailures = [
   ...invalidProducts.map((product) => `Product ${product.id} is missing required fields.`)
 ];
 
-if (newProducts.length > 0) {
+if (newProducts.length > 0 || appliedRefreshes.length > 0) {
   await writeJson(productsPath, mergedProducts);
 }
 
 if (remainingProductBacklog.length !== productBacklog.length) {
   await writeJson(productBacklogPath, remainingProductBacklog);
+}
+
+if (remainingProductRefreshBacklog.length !== productRefreshBacklog.length) {
+  await writeJson(productRefreshBacklogPath, remainingProductRefreshBacklog);
 }
 
 if (newGuides.length > 0) {
@@ -151,8 +206,10 @@ const reportLines = [
   "",
   `- Run date: ${today}`,
   `- New products added: ${newProducts.length}`,
+  `- Existing products refreshed: ${appliedRefreshes.length}`,
   `- New guides added: ${newGuides.length}`,
   `- Remaining product backlog: ${remainingProductBacklog.length}`,
+  `- Remaining product refresh backlog: ${remainingProductRefreshBacklog.length}`,
   `- Remaining guide backlog: ${remainingGuideBacklog.length}`,
   `- Products with stale price checks: ${staleProducts.length}`,
   `- Validation failures: ${validationFailures.length}`,
@@ -163,6 +220,12 @@ addSection(
   reportLines,
   "Added products today",
   newProducts.map((product) => `${product.title} (\`${product.id}\`)`)
+);
+
+addSection(
+  reportLines,
+  "Refreshed products today",
+  appliedRefreshes.map((product) => `${product.title} (\`${product.id}\`) updated: ${product.updatedFields.join(", ")}`)
 );
 
 addSection(
@@ -211,5 +274,5 @@ if (validationFailures.length > 0) {
 }
 
 console.log(
-  `Daily maintenance complete: added ${newProducts.length} product(s), added ${newGuides.length} guide(s), ${staleProducts.length} stale price check(s), ${validationFailures.length} validation failure(s).`
+  `Daily maintenance complete: added ${newProducts.length} product(s), refreshed ${appliedRefreshes.length} product(s), added ${newGuides.length} guide(s), ${staleProducts.length} stale price check(s), ${validationFailures.length} validation failure(s).`
 );

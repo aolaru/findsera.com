@@ -1,14 +1,20 @@
 # Daily maintenance report
 
-- Run date: 2026-04-25
+- Run date: 2026-04-26
 - New products added: 0
+- Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 0
+- Remaining product backlog: 8
+- Remaining product refresh backlog: 4
 - Remaining guide backlog: 0
 - Products with stale price checks: 0
 - Validation failures: 0
 
 ## Added products today
+
+- None
+
+## Refreshed products today
 
 - None
 

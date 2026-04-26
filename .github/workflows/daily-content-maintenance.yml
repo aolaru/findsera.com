@@ -31,6 +31,7 @@ jobs:
       - name: Run daily maintenance
         env:
           MAX_NEW_PRODUCTS: "1"
+          MAX_PRODUCT_REFRESHES: "2"
           MAX_NEW_GUIDES: "0"
         run: npm run content:maintain
 
@@ -49,6 +50,6 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/source/products.source.json src/data/source/roundups.source.json src/data/source/product-backlog.json src/data/source/guide-backlog.json src/data/generated reports
+          git add src/data/source/products.source.json src/data/source/roundups.source.json src/data/source/product-backlog.json src/data/source/product-refresh-backlog.json src/data/source/guide-backlog.json src/data/generated reports
           git commit -m "Run daily content maintenance"
           git push origin HEAD:main

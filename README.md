@@ -67,7 +67,7 @@ npm run content:maintain
 - `content:import` upserts products into the source catalog from a JSON file
 - `content:refresh` applies price/image/Amazon URL overrides in bulk
 - `content:report` lists products still missing exact Amazon product URLs
-- `content:maintain` adds up to 2 products and 1 guide from backlog queues, then writes a richer maintenance report
+- `content:maintain` adds queued products, applies queued product refreshes, optionally adds queued guides, then writes a richer maintenance report
 
 ## Deployment notes
 
@@ -82,6 +82,7 @@ Source content lives in `src/data/source/`. Generated runtime data is written to
 ## Daily automation
 
 - Product queue: `src/data/source/product-backlog.json`
+- Product refresh queue: `src/data/source/product-refresh-backlog.json`
 - Guide queue: `src/data/source/guide-backlog.json`
 - Report output: `reports/daily-maintenance.md`
 - Workflow: `.github/workflows/daily-content-maintenance.yml`
@@ -91,6 +92,7 @@ Source content lives in `src/data/source/`. Generated runtime data is written to
 
 The workflow:
 - adds 1 product per daily run from the backlog queue
+- applies up to 2 existing-product refreshes per daily run from the refresh queue
 - daily workflow adds 0 guides by default
 - weekly workflow adds up to 1 guide per run from the guide backlog queue
 - regenerates the content catalog
@@ -99,5 +101,6 @@ The workflow:
 
 Important:
 - It does not scrape live prices yet
-- It flags stale `priceCheckedAt` values so you know which products need manual refreshes or a later provider/API integration
+- It can apply pre-queued refreshes to existing products, but it still does not discover live price changes on its own
+- It flags stale `priceCheckedAt` values so you know which products still need manual refreshes or a later provider/API integration
 - It also reports unused products, guides with short intros, guides with too few products, and validation failures before commit
