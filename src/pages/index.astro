@@ -1,12 +1,10 @@
 ---
-import ClusterCard from "../components/ClusterCard.astro";
 import ProductCard from "../components/ProductCard.astro";
 import RoundupCard from "../components/RoundupCard.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import TopicBadgeList from "../components/TopicBadgeList.astro";
 import {
   allProducts,
-  allClusters,
   allRoundups,
   allTopics,
   getProductsByCategory,
@@ -48,7 +46,7 @@ const description =
             Browse trending
           </a>
           <a
-            href="/clusters/home-office"
+            href="/guides"
             class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
           >
             Explore guides
@@ -66,19 +64,13 @@ const description =
             <p class="text-sm font-semibold text-ink-700">Live catalog products</p>
             <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{allProducts.length}</p>
           </a>
-          <div class="grid gap-4 sm:grid-cols-2">
-            <a
-              href="/guides"
-              class="block rounded-[1.5rem] bg-sky-100/60 p-5 hover:bg-sky-100"
-            >
-              <p class="text-sm font-semibold text-ink-700">Guide pages</p>
-              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allRoundups.length}</p>
-            </a>
-            <div class="rounded-[1.5rem] bg-sand-100 p-5">
-              <p class="text-sm font-semibold text-ink-700">Guide collections</p>
-              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allClusters.length}</p>
-            </div>
-          </div>
+          <a
+            href="/guides"
+            class="block rounded-[1.5rem] bg-sky-100/60 p-5 hover:bg-sky-100"
+          >
+            <p class="text-sm font-semibold text-ink-700">Guide pages</p>
+            <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allRoundups.length}</p>
+          </a>
         </div>
       </aside>
     </div>
@@ -132,18 +124,6 @@ const description =
       />
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {homeAndKitchen.map((product) => <ProductCard product={product} />)}
-      </div>
-    </div>
-  </section>
-
-  <section class="section-spacing">
-    <div class="container-shell">
-      <SectionHeader
-        title="Guide Collections"
-        description="Guide collections organize related roundups into larger collections instead of isolated product pages."
-      />
-      <div class="grid gap-6 lg:grid-cols-3">
-        {allClusters.map((cluster) => <ClusterCard cluster={cluster} />)}
       </div>
     </div>
   </section>
