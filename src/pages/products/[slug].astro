@@ -1,0 +1,303 @@
+---
+import AffiliateDisclosure from "../../components/AffiliateDisclosure.astro";
+import Breadcrumbs from "../../components/Breadcrumbs.astro";
+import FAQList from "../../components/FAQList.astro";
+import ProductCard from "../../components/ProductCard.astro";
+import RoundupCard from "../../components/RoundupCard.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import TopicBadgeList from "../../components/TopicBadgeList.astro";
+import {
+  allProducts,
+  categoryLabels,
+  getRelatedProducts,
+  getRoundupsForProduct,
+  getTopicsForProduct,
+  type Product
+} from "../../data/catalog";
+import Layout from "../../layouts/Layout.astro";
+
+export function getStaticPaths() {
+  return allProducts.map((product) => {
+    const relatedRoundups = getRoundupsForProduct(product).slice(0, 4);
+    const relatedProducts = getRelatedProducts(product, 3);
+    const relatedTopics = getTopicsForProduct(product).slice(0, 5);
+
+    return {
+      params: { slug: product.slug },
+      props: {
+        product,
+        relatedRoundups,
+        relatedProducts,
+        relatedTopics
+      }
+    };
+  });
+}
+
+const { product, relatedRoundups, relatedProducts, relatedTopics } = Astro.props as {
+  product: Product;
+  relatedRoundups: ReturnType<typeof getRoundupsForProduct>;
+  relatedProducts: Product[];
+  relatedTopics: { slug: string; title: string }[];
+};
+
+const categoryLabel = categoryLabels[product.category];
+const formattedUpdatedAt = new Date(`${product.priceCheckedAt}T00:00:00Z`).toLocaleDateString("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC"
+});
+
+const formatTag = (value: string) =>
+  value
+    .split("-")
+    .map((chunk) => chunk.charAt(0).toUpperCase() + chunk.slice(1))
+    .join(" ");
+
+const useCase = product.tags[0] ? formatTag(product.tags[0].replace(/\s+/g, "-")) : categoryLabel;
+const secondaryUseCase = product.tags[1] ? formatTag(product.tags[1].replace(/\s+/g, "-")) : "Everyday use";
+
+const faqItems = [
+  {
+    question: `Who should buy the ${product.title}?`,
+    answer: `${product.title} makes the most sense for shoppers focused on ${useCase.toLowerCase()} and ${secondaryUseCase.toLowerCase()}, especially when they want a clearer fit than a generic bestseller list.`
+  },
+  {
+    question: `When was the ${product.title} price last checked?`,
+    answer: `The catalog entry for ${product.title} was last checked on ${formattedUpdatedAt}. Findsera keeps the latest manual check date visible because Amazon prices can move quickly.`
+  },
+  {
+    question: `Does this page link directly to Amazon?`,
+    answer: product.affiliateMode === "exact"
+      ? `Yes. This product currently uses an exact Amazon product URL with the affiliate tag applied.`
+      : `Not yet. This product still uses an Amazon search fallback while the exact product URL is being verified.`
+  }
+];
+
+const pageTitle = `${product.title} Review, Price, and Buying Guides | Findsera`;
+const pageDescription = `${product.description} See price context, highlights, related buying guides, and the direct Amazon path for ${product.title}.`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: "https://findsera.com/" },
+        {
+          "@type": "ListItem",
+          position: 2,
+          name: categoryLabel,
+          item: `https://findsera.com/category/${product.category}`
+        },
+        {
+          "@type": "ListItem",
+          position: 3,
+          name: product.title,
+          item: `https://findsera.com/products/${product.slug}`
+        }
+      ]
+    },
+    {
+      "@type": "Product",
+      name: product.title,
+      brand: {
+        "@type": "Brand",
+        name: product.brand
+      },
+      description: product.description,
+      category: categoryLabel,
+      image: product.image,
+      sku: product.id,
+      url: `https://findsera.com/products/${product.slug}`,
+      offers: {
+        "@type": "Offer",
+        priceCurrency: "USD",
+        price: product.price,
+        url: product.affiliateUrl
+      }
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqItems.map((item) => ({
+        "@type": "Question",
+        name: item.question,
+        acceptedAnswer: { "@type": "Answer", text: item.answer }
+      }))
+    }
+  ]
+};
+---
+
+<Layout
+  title={pageTitle}
+  description={pageDescription}
+  canonicalPath={`/products/${product.slug}`}
+  structuredData={structuredData}
+>
+  <section class="section-spacing">
+    <div class="container-shell">
+      <Breadcrumbs
+        items={[
+          { href: "/", label: "Home" },
+          { href: `/category/${product.category}`, label: categoryLabel },
+          { href: `/products/${product.slug}`, label: product.title }
+        ]}
+      />
+      <div class="grid gap-8 lg:grid-cols-[minmax(0,1.1fr),minmax(0,0.9fr)]">
+        <div>
+          <div class="mb-5 flex flex-wrap gap-3">
+            <span class="rounded-full bg-sand-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-900">
+              {categoryLabel}
+            </span>
+            <span class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">
+              Price checked {formattedUpdatedAt}
+            </span>
+            {
+              product.isTrending && (
+                <span class="rounded-full bg-ink-900 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white">
+                  Trending
+                </span>
+              )
+            }
+          </div>
+          <span class="eyebrow">Product spotlight</span>
+          <h1 class="mt-6 max-w-4xl font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+            {product.title}
+          </h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{product.description}</p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <p class="rounded-full bg-white px-5 py-3 text-base font-semibold text-ink-900 shadow-card">
+              {product.priceLabel}
+            </p>
+            <p class="rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-700">
+              {product.affiliateMode === "exact" ? "Exact Amazon link" : "Amazon search fallback"}
+            </p>
+          </div>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a
+              href={product.affiliateUrl}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
+            >
+              View on Amazon
+            </a>
+            <a
+              href={product.sourceUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+            >
+              View brand source
+            </a>
+          </div>
+        </div>
+
+        <aside class="rounded-[2rem] border border-black/6 bg-white p-6 shadow-card">
+          <div class="overflow-hidden rounded-[1.5rem] border border-black/6 bg-[linear-gradient(180deg,#fff9ef,#fff)]">
+            <img
+              src={product.image}
+              alt={product.title}
+              width="640"
+              height="420"
+              class="h-72 w-full object-cover"
+            />
+          </div>
+          <div class="mt-6 rounded-[1.5rem] bg-sand-50 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Best for</p>
+            <p class="mt-3 text-lg font-semibold text-ink-900">{useCase}</p>
+            <p class="mt-2 text-sm leading-7 text-ink-700">
+              This pick is strongest when the buyer cares most about {useCase.toLowerCase()} rather than just finding the cheapest option.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-10">
+    <div class="container-shell space-y-8">
+      <AffiliateDisclosure />
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr),minmax(0,1fr)]">
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Why this stands out</p>
+          <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
+            A clearer fit for buyers who want fewer compromises
+          </h2>
+          <p class="mt-4 text-sm leading-7 text-ink-700">
+            The value of {product.title} is not just the feature list. It is a stronger fit for buyers who already know the job this product needs to do and want a more reliable option than a generic marketplace search.
+          </p>
+          <ul class="mt-5 space-y-3 text-sm text-ink-700">
+            {product.highlights.map((item) => <li>- {item}</li>)}
+          </ul>
+        </article>
+
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Shopping snapshot</p>
+          <dl class="mt-4 space-y-4 text-sm text-ink-700">
+            <div>
+              <dt class="font-semibold text-ink-900">Brand</dt>
+              <dd>{product.brand}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-ink-900">Category</dt>
+              <dd>{categoryLabel}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-ink-900">Primary use case</dt>
+              <dd>{useCase}</dd>
+            </div>
+            <div>
+              <dt class="font-semibold text-ink-900">Secondary use case</dt>
+              <dd>{secondaryUseCase}</dd>
+            </div>
+          </dl>
+          {relatedTopics.length > 0 && (
+            <div class="mt-6">
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Related topics</p>
+              <div class="mt-4">
+                <TopicBadgeList topics={relatedTopics} />
+              </div>
+            </div>
+          )}
+        </article>
+      </div>
+    </div>
+  </section>
+
+  {relatedRoundups.length > 0 && (
+    <section class="pb-10">
+      <div class="container-shell">
+        <SectionHeader
+          title="Guides that include this product"
+          description={`Use these buying guides to see where ${product.title} fits against nearby alternatives and stronger use-case-specific picks.`}
+        />
+        <div class="grid gap-6 md:grid-cols-2">
+          {relatedRoundups.map((roundup) => <RoundupCard roundup={roundup} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  {relatedProducts.length > 0 && (
+    <section class="pb-10">
+      <div class="container-shell">
+        <SectionHeader
+          title="Similar products"
+          description="Nearby alternatives from the same category or use-case neighborhood."
+        />
+        <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+          {relatedProducts.map((entry) => <ProductCard product={entry} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
+  <section class="pb-20">
+    <div class="container-shell">
+      <FAQList title={`Questions about ${product.title}`} items={faqItems} />
+    </div>
+  </section>
+</Layout>

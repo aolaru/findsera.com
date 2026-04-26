@@ -104,6 +104,7 @@ export const getProductsByCategory = (category: ProductCategory) =>
 export const getProductsByTag = (tagSlug: string) =>
   allProducts.filter((product) => product.tags.some((tag) => slugify(tag) === tagSlug));
 export const getProductById = (id: string) => allProducts.find((product) => product.id === id);
+export const getProductBySlug = (slug: string) => allProducts.find((product) => product.slug === slug);
 export const getRoundupBySlug = (slug: string) => allRoundups.find((roundup) => roundup.slug === slug);
 export const getTopicBySlug = (slug: string) => allTopics.find((topic) => topic.slug === slug);
 export const getClusterBySlug = (slug: string) =>
@@ -120,6 +121,9 @@ export const getRoundupsByCategory = (category: ProductCategory) =>
 export const getRoundupsByCluster = (cluster: string) =>
   allRoundups.filter((roundup) => roundup.cluster === cluster);
 
+export const getRoundupsForProduct = (product: Product) =>
+  allRoundups.filter((roundup) => roundup.productIds.includes(product.id));
+
 export const getRoundupsForTopic = (topic: Topic) =>
   topic.roundupSlugs
     .map((slug) => getRoundupBySlug(slug))
@@ -134,6 +138,20 @@ export const getRoundupsForCluster = (cluster: Cluster) =>
   cluster.roundupSlugs
     .map((slug) => getRoundupBySlug(slug))
     .filter((roundup): roundup is Roundup => Boolean(roundup));
+
+export const getTopicsForProduct = (product: Product) =>
+  allTopics.filter((topic) => topic.productIds.includes(product.id));
+
+export const getRelatedProducts = (product: Product, limit = 3) =>
+  allProducts
+    .filter(
+      (entry) =>
+        entry.id !== product.id &&
+        (entry.category === product.category ||
+          entry.tags.some((tag) => product.tags.includes(tag)))
+    )
+    .sort((a, b) => Number(b.isTrending) - Number(a.isTrending) || a.price - b.price)
+    .slice(0, limit);
 
 export const sortProductsByPrice = (collection: Product[]) =>
   [...collection].sort((a, b) => a.price - b.price);

@@ -10,14 +10,16 @@ const { product } = Astro.props;
 
 <article class="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/6 bg-white shadow-card">
   <div class="relative overflow-hidden border-b border-black/6 bg-[linear-gradient(180deg,#fff9ef,#fff)]">
-    <img
-      src={product.image}
-      alt={product.title}
-      loading="lazy"
-      width="640"
-      height="420"
-      class="h-52 w-full object-cover duration-300 group-hover:scale-[1.03]"
-    />
+    <a href={`/products/${product.slug}`} class="block">
+      <img
+        src={product.image}
+        alt={product.title}
+        loading="lazy"
+        width="640"
+        height="420"
+        class="h-52 w-full object-cover duration-300 group-hover:scale-[1.03]"
+      />
+    </a>
     {
       product.isTrending && (
         <span class="absolute left-4 top-4 rounded-full bg-ink-900 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white">
@@ -34,7 +36,9 @@ const { product } = Astro.props;
           {product.brand} · {product.category}
         </p>
         <h3 class="mt-2 font-serif text-2xl font-semibold tracking-tight text-ink-900">
-          {product.title}
+          <a href={`/products/${product.slug}`} class="hover:text-accent-600">
+            {product.title}
+          </a>
         </h3>
       </div>
       <p class="rounded-full bg-sand-100 px-3 py-2 text-sm font-semibold text-ink-900">
@@ -56,13 +60,21 @@ const { product } = Astro.props;
       {product.affiliateMode === "exact" ? "Exact Amazon link" : "Amazon search fallback"}
     </p>
 
-    <a
-      href={product.affiliateUrl}
-      target="_blank"
-      rel="noopener noreferrer sponsored"
-      class="mt-6 inline-flex items-center justify-center rounded-full bg-ink-900 px-4 py-3 text-sm font-semibold text-white hover:bg-accent-600"
-    >
-      View on Amazon
-    </a>
+    <div class="mt-6 flex flex-wrap gap-3">
+      <a
+        href={`/products/${product.slug}`}
+        class="inline-flex items-center justify-center rounded-full border border-black/10 bg-white px-4 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+      >
+        View details
+      </a>
+      <a
+        href={product.affiliateUrl}
+        target="_blank"
+        rel="noopener noreferrer sponsored"
+        class="inline-flex items-center justify-center rounded-full bg-ink-900 px-4 py-3 text-sm font-semibold text-white hover:bg-accent-600"
+      >
+        View on Amazon
+      </a>
+    </div>
   </div>
 </article>
