@@ -59,15 +59,21 @@ const description =
       <aside class="rounded-[2rem] border border-black/6 bg-white p-6 shadow-card">
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Today’s mix</p>
         <div class="mt-6 space-y-4">
-          <div class="rounded-[1.5rem] bg-sand-50 p-5">
+          <a
+            href="/products"
+            class="block rounded-[1.5rem] bg-sand-50 p-5 hover:bg-sand-100"
+          >
             <p class="text-sm font-semibold text-ink-700">Live catalog products</p>
             <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{allProducts.length}</p>
-          </div>
+          </a>
           <div class="grid gap-4 sm:grid-cols-2">
-            <div class="rounded-[1.5rem] bg-sky-100/60 p-5">
+            <a
+              href="/guides"
+              class="block rounded-[1.5rem] bg-sky-100/60 p-5 hover:bg-sky-100"
+            >
               <p class="text-sm font-semibold text-ink-700">Guide pages</p>
               <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allRoundups.length}</p>
-            </div>
+            </a>
             <div class="rounded-[1.5rem] bg-sand-100 p-5">
               <p class="text-sm font-semibold text-ink-700">Guide collections</p>
               <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allClusters.length}</p>

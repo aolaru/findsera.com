@@ -1,0 +1,38 @@
+---
+import RoundupCard from "../../components/RoundupCard.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import { allRoundups } from "../../data/catalog";
+import Layout from "../../layouts/Layout.astro";
+
+const guides = [...allRoundups].sort((a, b) => a.title.localeCompare(b.title));
+
+const title = "All Guides | Findsera";
+const description =
+  "Browse every Findsera buying guide, roundup, and commercial-intent page across gadgets, home, and kitchen.";
+---
+
+<Layout title={title} description={description} canonicalPath="/guides">
+  <section class="section-spacing">
+    <div class="container-shell">
+      <span class="eyebrow">Buying guides</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+        All Guides
+      </h1>
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
+        Browse every guide page on Findsera, from budget roundups to use-case-specific buying pages and comparison-driven collections.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="container-shell">
+      <SectionHeader
+        title={`${guides.length} guide pages`}
+        description="These pages organize the catalog around buyer intent, price brackets, and product use cases."
+      />
+      <div class="grid gap-6 lg:grid-cols-3">
+        {guides.map((roundup) => <RoundupCard roundup={roundup} />)}
+      </div>
+    </div>
+  </section>
+</Layout>

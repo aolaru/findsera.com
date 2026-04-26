@@ -1,0 +1,38 @@
+---
+import ProductCard from "../../components/ProductCard.astro";
+import SectionHeader from "../../components/SectionHeader.astro";
+import { allProducts, sortProductsByPrice } from "../../data/catalog";
+import Layout from "../../layouts/Layout.astro";
+
+const products = sortProductsByPrice(allProducts);
+
+const title = "All Products | Findsera";
+const description =
+  "Browse the full Findsera product catalog across gadgets, home, and kitchen, with internal product pages and affiliate-ready buying paths.";
+---
+
+<Layout title={title} description={description} canonicalPath="/products">
+  <section class="section-spacing">
+    <div class="container-shell">
+      <span class="eyebrow">Product catalog</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+        All Products
+      </h1>
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
+        Explore every live Findsera product page across gadgets, kitchen, and home, with current pricing context and direct Amazon paths.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="container-shell">
+      <SectionHeader
+        title={`${products.length} live products`}
+        description="Every product listed below has its own internal detail page and appears in at least one buying-guide context."
+      />
+      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+        {products.map((product) => <ProductCard product={product} />)}
+      </div>
+    </div>
+  </section>
+</Layout>
