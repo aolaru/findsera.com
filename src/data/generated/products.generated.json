@@ -62,11 +62,11 @@
     "title": "Ember Mug 2",
     "brand": "Ember",
     "category": "home",
-    "price": 129.95,
+    "price": 124.95,
     "image": "/images/products/ember-mug-2.jpg",
-    "description": "A temperature-control mug for slower coffee mornings, home offices, and people tired of reheating drinks.",
+    "description": "A temperature-control mug that keeps coffee or tea at a steady drinking temperature for longer desk sessions and slower mornings.",
     "sourceUrl": "https://ember.com/products/ember-mug-2",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-04-26",
     "amazonUrl": "https://www.amazon.com/dp/B08D3XPCZR",
     "amazonQuery": "Ember Mug 2",
     "tags": [
@@ -76,13 +76,13 @@
       "smart home"
     ],
     "highlights": [
-      "App-adjustable temperature",
-      "Strong giftability",
-      "Useful for home office routines"
+      "App-adjustable drink temperature",
+      "Strong home-office gift appeal",
+      "Cuts down on microwave reheats"
     ],
     "isTrending": true,
     "slug": "ember-mug-2",
-    "priceLabel": "$129.95",
+    "priceLabel": "$124.95",
     "affiliateUrl": "https://www.amazon.com/dp/B08D3XPCZR?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
@@ -120,11 +120,11 @@
     "title": "Levoit Core Mini Air Purifier",
     "brand": "Levoit",
     "category": "home",
-    "price": 39.99,
+    "price": 34.99,
     "image": "/images/products/levoit-core-mini-air-purifier.jpg",
-    "description": "A small-footprint air purifier for bedside tables, apartments, and compact workspaces that need quieter air cleanup.",
+    "description": "A compact air purifier for bedrooms, desks, and apartments that need quieter air cleanup without taking over the room.",
     "sourceUrl": "https://levoit.com/products/core-mini-air-purifier",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-04-26",
     "amazonUrl": "https://www.amazon.com/dp/B09GTRVJQM",
     "amazonQuery": "Levoit Core Mini Air Purifier",
     "tags": [
@@ -134,13 +134,13 @@
       "home"
     ],
     "highlights": [
-      "Compact footprint",
-      "Bedroom-friendly size",
-      "Accessible entry price"
+      "Compact footprint for small rooms",
+      "Easy bedroom or desk placement",
+      "Accessible sub-$50 air-quality upgrade"
     ],
     "isTrending": true,
     "slug": "levoit-core-mini-air-purifier",
-    "priceLabel": "$39.99",
+    "priceLabel": "$34.99",
     "affiliateUrl": "https://www.amazon.com/dp/B09GTRVJQM?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
@@ -258,5 +258,33 @@
     "priceLabel": "$115",
     "affiliateUrl": "https://www.amazon.com/dp/B0DC8MWQ8K?tag=kreativauto-20",
     "affiliateMode": "exact"
+  },
+  {
+    "id": "zulay-milk-frother-wand",
+    "title": "Zulay Kitchen Milk Frother Wand",
+    "brand": "Zulay Kitchen",
+    "category": "kitchen",
+    "price": 14.99,
+    "image": "/images/cordless-milk-frother.svg",
+    "description": "A simple handheld frother for faster lattes, matcha, and coffee upgrades that do not require a full espresso setup.",
+    "sourceUrl": "https://www.zulaykitchen.com/products/milk-frother",
+    "priceCheckedAt": "2026-04-25",
+    "amazonQuery": "Zulay Kitchen Milk Frother Wand",
+    "tags": [
+      "coffee",
+      "under-50",
+      "brewing",
+      "kitchen"
+    ],
+    "highlights": [
+      "Budget-friendly coffee upgrade",
+      "Compact to store",
+      "Quick to use and clean"
+    ],
+    "isTrending": true,
+    "slug": "zulay-milk-frother-wand",
+    "priceLabel": "$14.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=Zulay+Kitchen+Milk+Frother+Wand&tag=kreativauto-20",
+    "affiliateMode": "search"
   }
 ]

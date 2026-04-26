@@ -4,20 +4,20 @@
 - New products added: 1
 - Existing products refreshed: 2
 - New guides added: 0
-- Remaining product backlog: 7
-- Remaining product refresh backlog: 2
+- Remaining product backlog: 6
+- Remaining product refresh backlog: 0
 - Remaining guide backlog: 0
 - Products with stale price checks: 0
 - Validation failures: 0
 
 ## Added products today
 
-- MEATER Plus Wireless Meat Thermometer (`meater-plus-wireless-thermometer`)
+- Zulay Kitchen Milk Frother Wand (`zulay-milk-frother-wand`)
 
 ## Refreshed products today
 
-- Anker MagGo Power Bank (10K, Slim) (`anker-maggo-power-bank-10k-slim`) updated: description, highlights, isTrending, price, priceCheckedAt
-- Logitech MX Anywhere 3S (`logitech-mx-anywhere-3s`) updated: description, highlights, isTrending, price, priceCheckedAt
+- Ember Mug 2 (`ember-mug-2`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Levoit Core Mini Air Purifier (`levoit-core-mini-air-purifier`) updated: description, highlights, isTrending, price, priceCheckedAt
 
 ## Added guides today
 
@@ -30,10 +30,12 @@
 ## Products missing exact Amazon URLs
 
 - MEATER Plus Wireless Meat Thermometer (`meater-plus-wireless-thermometer`)
+- Zulay Kitchen Milk Frother Wand (`zulay-milk-frother-wand`)
 
 ## Unused products
 
 - MEATER Plus Wireless Meat Thermometer (`meater-plus-wireless-thermometer`)
+- Zulay Kitchen Milk Frother Wand (`zulay-milk-frother-wand`)
 
 ## Guides with short intros
 

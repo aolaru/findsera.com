@@ -32,13 +32,14 @@
     "title": "Brewing",
     "description": "Findsera content related to brewing.",
     "productIds": [
-      "aeropress-original-coffee-maker"
+      "aeropress-original-coffee-maker",
+      "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -75,14 +76,15 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "ember-mug-2",
-      "fellow-stagg-ekg-electric-kettle"
+      "fellow-stagg-ekg-electric-kettle",
+      "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2,
+      "kitchen": 3,
       "home": 1
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -250,13 +252,14 @@
     "description": "Findsera content related to kitchen.",
     "productIds": [
       "meater-plus-wireless-thermometer",
-      "thermoworks-thermapen-one"
+      "thermoworks-thermapen-one",
+      "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -423,14 +426,15 @@
     "description": "Findsera content related to under-50.",
     "productIds": [
       "aeropress-original-coffee-maker",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1,
+      "kitchen": 2,
       "home": 1
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {

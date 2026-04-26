@@ -1,29 +1,5 @@
 [
   {
-    "id": "zulay-milk-frother-wand",
-    "title": "Zulay Kitchen Milk Frother Wand",
-    "brand": "Zulay Kitchen",
-    "category": "kitchen",
-    "price": 14.99,
-    "image": "/images/cordless-milk-frother.svg",
-    "description": "A simple handheld frother for faster lattes, matcha, and coffee upgrades that do not require a full espresso setup.",
-    "sourceUrl": "https://www.zulaykitchen.com/products/milk-frother",
-    "priceCheckedAt": "2026-04-25",
-    "amazonQuery": "Zulay Kitchen Milk Frother Wand",
-    "tags": [
-      "coffee",
-      "under-50",
-      "brewing",
-      "kitchen"
-    ],
-    "highlights": [
-      "Budget-friendly coffee upgrade",
-      "Compact to store",
-      "Quick to use and clean"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "takeya-cold-brew-maker",
     "title": "Takeya Deluxe Cold Brew Coffee Maker",
     "brand": "Takeya",
