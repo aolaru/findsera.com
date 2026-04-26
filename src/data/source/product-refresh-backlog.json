@@ -1,29 +1,5 @@
 [
   {
-    "id": "anker-maggo-power-bank-10k-slim",
-    "price": 69.99,
-    "priceCheckedAt": "2026-04-26",
-    "description": "A slim Qi2 magnetic battery pack built for commute charging, travel days, and lighter everyday carry without the bulk of a full power brick.",
-    "highlights": [
-      "Qi2 magnetic charging support",
-      "Slim 10,000mAh travel profile",
-      "Better fit for everyday carry kits"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "logitech-mx-anywhere-3s",
-    "price": 76.49,
-    "priceCheckedAt": "2026-04-26",
-    "description": "A compact premium mouse for travel desks and hybrid work setups with quiet clicks, fast scrolling, and reliable multi-device switching.",
-    "highlights": [
-      "Quiet click switches",
-      "Travel-friendly compact body",
-      "Easy multi-device workflow"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "ember-mug-2",
     "price": 124.95,
     "priceCheckedAt": "2026-04-26",

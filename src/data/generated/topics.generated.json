@@ -73,9 +73,9 @@
     "title": "Coffee",
     "description": "Findsera content related to coffee.",
     "productIds": [
-      "fellow-stagg-ekg-electric-kettle",
       "aeropress-original-coffee-maker",
-      "ember-mug-2"
+      "ember-mug-2",
+      "fellow-stagg-ekg-electric-kettle"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
@@ -105,13 +105,14 @@
     "title": "Cooking",
     "description": "Findsera content related to cooking.",
     "productIds": [
+      "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -175,13 +176,14 @@
     "title": "Grilling",
     "description": "Findsera content related to grilling.",
     "productIds": [
+      "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -247,13 +249,14 @@
     "title": "Kitchen",
     "description": "Findsera content related to kitchen.",
     "productIds": [
+      "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -317,13 +320,14 @@
     "title": "Precision",
     "description": "Findsera content related to precision.",
     "productIds": [
+      "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -386,14 +390,14 @@
     "title": "Travel",
     "description": "Findsera content related to travel.",
     "productIds": [
+      "aeropress-original-coffee-maker",
       "anker-maggo-power-bank-10k-slim",
-      "logitech-mx-anywhere-3s",
-      "aeropress-original-coffee-maker"
+      "logitech-mx-anywhere-3s"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 2,
-      "kitchen": 1
+      "kitchen": 1,
+      "gadgets": 2
     },
     "productCount": 3,
     "roundupCount": 0

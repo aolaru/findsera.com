@@ -1,20 +1,5 @@
 [
   {
-    "id": "meater-plus-wireless-thermometer",
-    "title": "MEATER Plus Wireless Meat Thermometer",
-    "brand": "MEATER",
-    "category": "kitchen",
-    "price": 99.95,
-    "image": "/images/smart-meat-thermometer.svg",
-    "description": "A wireless probe thermometer that helps with grilling, roasting, and more predictable cook times without babysitting the oven.",
-    "sourceUrl": "https://store-us.meater.com/products/meater-plus",
-    "priceCheckedAt": "2026-04-25",
-    "amazonQuery": "MEATER Plus Wireless Meat Thermometer",
-    "tags": ["grilling", "precision", "cooking", "kitchen"],
-    "highlights": ["Wireless probe design", "Useful app guidance", "Great for grilling and roasting"],
-    "isTrending": true
-  },
-  {
     "id": "zulay-milk-frother-wand",
     "title": "Zulay Kitchen Milk Frother Wand",
     "brand": "Zulay Kitchen",
@@ -25,8 +10,17 @@
     "sourceUrl": "https://www.zulaykitchen.com/products/milk-frother",
     "priceCheckedAt": "2026-04-25",
     "amazonQuery": "Zulay Kitchen Milk Frother Wand",
-    "tags": ["coffee", "under-50", "brewing", "kitchen"],
-    "highlights": ["Budget-friendly coffee upgrade", "Compact to store", "Quick to use and clean"],
+    "tags": [
+      "coffee",
+      "under-50",
+      "brewing",
+      "kitchen"
+    ],
+    "highlights": [
+      "Budget-friendly coffee upgrade",
+      "Compact to store",
+      "Quick to use and clean"
+    ],
     "isTrending": true
   },
   {
@@ -40,8 +34,17 @@
     "sourceUrl": "https://takeyausa.com/products/deluxe-cold-brew-coffee-maker",
     "priceCheckedAt": "2026-04-25",
     "amazonQuery": "Takeya Deluxe Cold Brew Coffee Maker",
-    "tags": ["coffee", "brewing", "under-50", "countertop"],
-    "highlights": ["Fits easily in the fridge", "Makes multi-serving batches", "Great value for iced coffee drinkers"],
+    "tags": [
+      "coffee",
+      "brewing",
+      "under-50",
+      "countertop"
+    ],
+    "highlights": [
+      "Fits easily in the fridge",
+      "Makes multi-serving batches",
+      "Great value for iced coffee drinkers"
+    ],
     "isTrending": false
   },
   {
@@ -55,8 +58,17 @@
     "sourceUrl": "https://www.vtopmart.com/products/drawer-organizers",
     "priceCheckedAt": "2026-04-25",
     "amazonQuery": "Vtopmart Drawer Organizer Set",
-    "tags": ["home", "office", "organization", "under-50"],
-    "highlights": ["Multiple tray sizes", "Useful across rooms", "Easy small-space upgrade"],
+    "tags": [
+      "home",
+      "office",
+      "organization",
+      "under-50"
+    ],
+    "highlights": [
+      "Multiple tray sizes",
+      "Useful across rooms",
+      "Easy small-space upgrade"
+    ],
     "isTrending": true
   },
   {
@@ -70,8 +82,17 @@
     "sourceUrl": "https://www.eufy.com/products/t2291111",
     "priceCheckedAt": "2026-04-25",
     "amazonQuery": "eufy RoboVac 11S Max",
-    "tags": ["home", "smart home", "cleaning", "apartment"],
-    "highlights": ["Slim profile for low furniture", "Straightforward controls", "Good fit for first robot-vacuum buyers"],
+    "tags": [
+      "home",
+      "smart home",
+      "cleaning",
+      "apartment"
+    ],
+    "highlights": [
+      "Slim profile for low furniture",
+      "Straightforward controls",
+      "Good fit for first robot-vacuum buyers"
+    ],
     "isTrending": false
   },
   {
@@ -85,8 +106,17 @@
     "sourceUrl": "https://us.govee.com/products/govee-smart-desk-lamp-pro",
     "priceCheckedAt": "2026-04-25",
     "amazonQuery": "Govee Smart Desk Lamp Pro",
-    "tags": ["desk setup", "office", "smart home", "productivity"],
-    "highlights": ["Adjustable lighting scenes", "Good for work and ambient light", "Fits compact desks well"],
+    "tags": [
+      "desk setup",
+      "office",
+      "smart home",
+      "productivity"
+    ],
+    "highlights": [
+      "Adjustable lighting scenes",
+      "Good for work and ambient light",
+      "Fits compact desks well"
+    ],
     "isTrending": true
   },
   {
@@ -100,8 +130,17 @@
     "sourceUrl": "https://www.arzopa.com/products/arzopa-a1-gamut-slim-portable-monitor",
     "priceCheckedAt": "2026-04-25",
     "amazonQuery": "ARZOPA 15.6 Portable Monitor",
-    "tags": ["travel", "portable", "productivity", "office"],
-    "highlights": ["Easy second-screen setup", "Useful for travel work", "Simple USB-C connectivity"],
+    "tags": [
+      "travel",
+      "portable",
+      "productivity",
+      "office"
+    ],
+    "highlights": [
+      "Easy second-screen setup",
+      "Useful for travel work",
+      "Simple USB-C connectivity"
+    ],
     "isTrending": true
   },
   {
@@ -115,8 +154,17 @@
     "sourceUrl": "https://www.omoton.com/products/adjustable-laptop-stand",
     "priceCheckedAt": "2026-04-25",
     "amazonQuery": "OMOTON Adjustable Laptop Stand",
-    "tags": ["desk setup", "under-50", "productivity", "office"],
-    "highlights": ["Adjustable viewing angles", "Compact foldable design", "Useful for small desks"],
+    "tags": [
+      "desk setup",
+      "under-50",
+      "productivity",
+      "office"
+    ],
+    "highlights": [
+      "Adjustable viewing angles",
+      "Compact foldable design",
+      "Useful for small desks"
+    ],
     "isTrending": true
   }
 ]

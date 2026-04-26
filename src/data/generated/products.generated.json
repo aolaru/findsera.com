@@ -1,14 +1,43 @@
 [
   {
+    "id": "aeropress-original-coffee-maker",
+    "title": "AeroPress Original Coffee Maker",
+    "brand": "AeroPress",
+    "category": "kitchen",
+    "price": 39.95,
+    "image": "/images/products/aeropress-original-coffee-maker.png",
+    "description": "A compact press brewer that makes smooth coffee quickly and travels far better than a full drip setup.",
+    "sourceUrl": "https://www.aeropress.com/products/aeropress-coffee-maker",
+    "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B0047BIWSK",
+    "amazonQuery": "AeroPress Original Coffee Maker",
+    "tags": [
+      "coffee",
+      "travel",
+      "brewing",
+      "under-50"
+    ],
+    "highlights": [
+      "Fast manual brewing",
+      "Travel-ready footprint",
+      "Easy cleanup"
+    ],
+    "isTrending": true,
+    "slug": "aeropress-original-coffee-maker",
+    "priceLabel": "$39.95",
+    "affiliateUrl": "https://www.amazon.com/dp/B0047BIWSK?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "anker-maggo-power-bank-10k-slim",
     "title": "Anker MagGo Power Bank (10K, Slim)",
     "brand": "Anker",
     "category": "gadgets",
-    "price": 72.21,
+    "price": 69.99,
     "image": "/images/products/anker-maggo-power-bank-10k-slim.png",
-    "description": "A slim Qi2-compatible magnetic battery pack designed for travel days, commute charging, and lighter everyday carry.",
+    "description": "A slim Qi2 magnetic battery pack built for commute charging, travel days, and lighter everyday carry without the bulk of a full power brick.",
     "sourceUrl": "https://www.anker.com/products/a1664-maggo-10000mah-slim-power-bank",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-04-26",
     "amazonUrl": "https://www.amazon.com/dp/B0DZHPCP3K",
     "amazonQuery": "Anker MagGo Power Bank 10K Slim",
     "tags": [
@@ -18,14 +47,101 @@
       "portable"
     ],
     "highlights": [
-      "Qi2-ready magnetic charging",
-      "10,000mAh capacity",
-      "Slim travel-friendly profile"
+      "Qi2 magnetic charging support",
+      "Slim 10,000mAh travel profile",
+      "Better fit for everyday carry kits"
     ],
     "isTrending": true,
     "slug": "anker-maggo-power-bank-10k-slim",
-    "priceLabel": "$72.21",
+    "priceLabel": "$69.99",
     "affiliateUrl": "https://www.amazon.com/dp/B0DZHPCP3K?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
+    "id": "ember-mug-2",
+    "title": "Ember Mug 2",
+    "brand": "Ember",
+    "category": "home",
+    "price": 129.95,
+    "image": "/images/products/ember-mug-2.jpg",
+    "description": "A temperature-control mug for slower coffee mornings, home offices, and people tired of reheating drinks.",
+    "sourceUrl": "https://ember.com/products/ember-mug-2",
+    "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B08D3XPCZR",
+    "amazonQuery": "Ember Mug 2",
+    "tags": [
+      "coffee",
+      "desk",
+      "gift",
+      "smart home"
+    ],
+    "highlights": [
+      "App-adjustable temperature",
+      "Strong giftability",
+      "Useful for home office routines"
+    ],
+    "isTrending": true,
+    "slug": "ember-mug-2",
+    "priceLabel": "$129.95",
+    "affiliateUrl": "https://www.amazon.com/dp/B08D3XPCZR?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
+    "id": "fellow-stagg-ekg-electric-kettle",
+    "title": "Fellow Stagg EKG Electric Kettle",
+    "brand": "Fellow",
+    "category": "kitchen",
+    "price": 179.95,
+    "image": "/images/products/fellow-stagg-ekg-electric-kettle.png",
+    "description": "A precision gooseneck kettle for pour-over coffee and tea, with variable temperature control and standout countertop design.",
+    "sourceUrl": "https://fellowproducts.com/products/stagg-ekg-electric-pour-over-kettle",
+    "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B077JBQZPX",
+    "amazonQuery": "Fellow Stagg EKG Electric Kettle",
+    "tags": [
+      "coffee",
+      "tea",
+      "pour over",
+      "countertop"
+    ],
+    "highlights": [
+      "Variable temperature control",
+      "Balanced gooseneck pour",
+      "Strong design-led appeal"
+    ],
+    "isTrending": true,
+    "slug": "fellow-stagg-ekg-electric-kettle",
+    "priceLabel": "$179.95",
+    "affiliateUrl": "https://www.amazon.com/dp/B077JBQZPX?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
+    "id": "levoit-core-mini-air-purifier",
+    "title": "Levoit Core Mini Air Purifier",
+    "brand": "Levoit",
+    "category": "home",
+    "price": 39.99,
+    "image": "/images/products/levoit-core-mini-air-purifier.jpg",
+    "description": "A small-footprint air purifier for bedside tables, apartments, and compact workspaces that need quieter air cleanup.",
+    "sourceUrl": "https://levoit.com/products/core-mini-air-purifier",
+    "priceCheckedAt": "2026-04-17",
+    "amazonUrl": "https://www.amazon.com/dp/B09GTRVJQM",
+    "amazonQuery": "Levoit Core Mini Air Purifier",
+    "tags": [
+      "air quality",
+      "bedroom",
+      "under-50",
+      "home"
+    ],
+    "highlights": [
+      "Compact footprint",
+      "Bedroom-friendly size",
+      "Accessible entry price"
+    ],
+    "isTrending": true,
+    "slug": "levoit-core-mini-air-purifier",
+    "priceLabel": "$39.99",
+    "affiliateUrl": "https://www.amazon.com/dp/B09GTRVJQM?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
   {
@@ -33,11 +149,11 @@
     "title": "Logitech MX Anywhere 3S",
     "brand": "Logitech",
     "category": "gadgets",
-    "price": 79.99,
+    "price": 76.49,
     "image": "/images/products/logitech-mx-anywhere-3s.png",
-    "description": "A compact premium mouse built for remote work, travel desks, and multi-device setups with fast scrolling and quiet clicks.",
+    "description": "A compact premium mouse for travel desks and hybrid work setups with quiet clicks, fast scrolling, and reliable multi-device switching.",
     "sourceUrl": "https://www.logitech.com/en-us/shop/p/mx-anywhere-3s",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-04-26",
     "amazonUrl": "https://www.amazon.com/dp/B0C6FG3XRB",
     "amazonQuery": "Logitech MX Anywhere 3S",
     "tags": [
@@ -47,13 +163,13 @@
       "office"
     ],
     "highlights": [
-      "8K DPI sensor",
       "Quiet click switches",
-      "Works across multiple devices"
+      "Travel-friendly compact body",
+      "Easy multi-device workflow"
     ],
     "isTrending": true,
     "slug": "logitech-mx-anywhere-3s",
-    "priceLabel": "$79.99",
+    "priceLabel": "$76.49",
     "affiliateUrl": "https://www.amazon.com/dp/B0C6FG3XRB?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
@@ -87,62 +203,32 @@
     "affiliateMode": "exact"
   },
   {
-    "id": "fellow-stagg-ekg-electric-kettle",
-    "title": "Fellow Stagg EKG Electric Kettle",
-    "brand": "Fellow",
+    "id": "meater-plus-wireless-thermometer",
+    "title": "MEATER Plus Wireless Meat Thermometer",
+    "brand": "MEATER",
     "category": "kitchen",
-    "price": 179.95,
-    "image": "/images/products/fellow-stagg-ekg-electric-kettle.png",
-    "description": "A precision gooseneck kettle for pour-over coffee and tea, with variable temperature control and standout countertop design.",
-    "sourceUrl": "https://fellowproducts.com/products/stagg-ekg-electric-pour-over-kettle",
-    "priceCheckedAt": "2026-04-17",
-    "amazonUrl": "https://www.amazon.com/dp/B077JBQZPX",
-    "amazonQuery": "Fellow Stagg EKG Electric Kettle",
+    "price": 99.95,
+    "image": "/images/smart-meat-thermometer.svg",
+    "description": "A wireless probe thermometer that helps with grilling, roasting, and more predictable cook times without babysitting the oven.",
+    "sourceUrl": "https://store-us.meater.com/products/meater-plus",
+    "priceCheckedAt": "2026-04-25",
+    "amazonQuery": "MEATER Plus Wireless Meat Thermometer",
     "tags": [
-      "coffee",
-      "tea",
-      "pour over",
-      "countertop"
+      "grilling",
+      "precision",
+      "cooking",
+      "kitchen"
     ],
     "highlights": [
-      "Variable temperature control",
-      "Balanced gooseneck pour",
-      "Strong design-led appeal"
+      "Wireless probe design",
+      "Useful app guidance",
+      "Great for grilling and roasting"
     ],
     "isTrending": true,
-    "slug": "fellow-stagg-ekg-electric-kettle",
-    "priceLabel": "$179.95",
-    "affiliateUrl": "https://www.amazon.com/dp/B077JBQZPX?tag=kreativauto-20",
-    "affiliateMode": "exact"
-  },
-  {
-    "id": "aeropress-original-coffee-maker",
-    "title": "AeroPress Original Coffee Maker",
-    "brand": "AeroPress",
-    "category": "kitchen",
-    "price": 39.95,
-    "image": "/images/products/aeropress-original-coffee-maker.png",
-    "description": "A compact press brewer that makes smooth coffee quickly and travels far better than a full drip setup.",
-    "sourceUrl": "https://www.aeropress.com/products/aeropress-coffee-maker",
-    "priceCheckedAt": "2026-04-17",
-    "amazonUrl": "https://www.amazon.com/dp/B0047BIWSK",
-    "amazonQuery": "AeroPress Original Coffee Maker",
-    "tags": [
-      "coffee",
-      "travel",
-      "brewing",
-      "under-50"
-    ],
-    "highlights": [
-      "Fast manual brewing",
-      "Travel-ready footprint",
-      "Easy cleanup"
-    ],
-    "isTrending": true,
-    "slug": "aeropress-original-coffee-maker",
-    "priceLabel": "$39.95",
-    "affiliateUrl": "https://www.amazon.com/dp/B0047BIWSK?tag=kreativauto-20",
-    "affiliateMode": "exact"
+    "slug": "meater-plus-wireless-thermometer",
+    "priceLabel": "$99.95",
+    "affiliateUrl": "https://www.amazon.com/s?k=MEATER+Plus+Wireless+Meat+Thermometer&tag=kreativauto-20",
+    "affiliateMode": "search"
   },
   {
     "id": "thermoworks-thermapen-one",
@@ -171,64 +257,6 @@
     "slug": "thermoworks-thermapen-one",
     "priceLabel": "$115",
     "affiliateUrl": "https://www.amazon.com/dp/B0DC8MWQ8K?tag=kreativauto-20",
-    "affiliateMode": "exact"
-  },
-  {
-    "id": "ember-mug-2",
-    "title": "Ember Mug 2",
-    "brand": "Ember",
-    "category": "home",
-    "price": 129.95,
-    "image": "/images/products/ember-mug-2.jpg",
-    "description": "A temperature-control mug for slower coffee mornings, home offices, and people tired of reheating drinks.",
-    "sourceUrl": "https://ember.com/products/ember-mug-2",
-    "priceCheckedAt": "2026-04-17",
-    "amazonUrl": "https://www.amazon.com/dp/B08D3XPCZR",
-    "amazonQuery": "Ember Mug 2",
-    "tags": [
-      "coffee",
-      "desk",
-      "gift",
-      "smart home"
-    ],
-    "highlights": [
-      "App-adjustable temperature",
-      "Strong giftability",
-      "Useful for home office routines"
-    ],
-    "isTrending": true,
-    "slug": "ember-mug-2",
-    "priceLabel": "$129.95",
-    "affiliateUrl": "https://www.amazon.com/dp/B08D3XPCZR?tag=kreativauto-20",
-    "affiliateMode": "exact"
-  },
-  {
-    "id": "levoit-core-mini-air-purifier",
-    "title": "Levoit Core Mini Air Purifier",
-    "brand": "Levoit",
-    "category": "home",
-    "price": 39.99,
-    "image": "/images/products/levoit-core-mini-air-purifier.jpg",
-    "description": "A small-footprint air purifier for bedside tables, apartments, and compact workspaces that need quieter air cleanup.",
-    "sourceUrl": "https://levoit.com/products/core-mini-air-purifier",
-    "priceCheckedAt": "2026-04-17",
-    "amazonUrl": "https://www.amazon.com/dp/B09GTRVJQM",
-    "amazonQuery": "Levoit Core Mini Air Purifier",
-    "tags": [
-      "air quality",
-      "bedroom",
-      "under-50",
-      "home"
-    ],
-    "highlights": [
-      "Compact footprint",
-      "Bedroom-friendly size",
-      "Accessible entry price"
-    ],
-    "isTrending": true,
-    "slug": "levoit-core-mini-air-purifier",
-    "priceLabel": "$39.99",
-    "affiliateUrl": "https://www.amazon.com/dp/B09GTRVJQM?tag=kreativauto-20",
     "affiliateMode": "exact"
   }
 ]
