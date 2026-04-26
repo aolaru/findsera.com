@@ -1,0 +1,208 @@
+---
+type SearchItem = {
+  title: string;
+  href: string;
+  type: string;
+  meta?: string;
+  keywords?: string[];
+};
+
+interface Props {
+  items: SearchItem[];
+}
+
+const { items } = Astro.props;
+const searchId = `site-search-${Math.random().toString(36).slice(2, 10)}`;
+---
+
+<div id={searchId} data-search-root class="relative w-full max-w-md">
+  <label for={`${searchId}-input`} class="sr-only">Search products and guides</label>
+  <div class="relative">
+    <input
+      id={`${searchId}-input`}
+      type="search"
+      placeholder="Search products and guides"
+      autocomplete="off"
+      spellcheck="false"
+      data-search-input
+      class="w-full rounded-full border border-black/10 bg-white px-5 py-3 pr-11 text-sm text-ink-900 shadow-sm outline-none placeholder:text-ink-700/55 focus:border-accent-500"
+    />
+    <span
+      aria-hidden="true"
+      class="pointer-events-none absolute right-4 top-1/2 -translate-y-1/2 text-ink-700/60"
+    >
+      ⌕
+    </span>
+  </div>
+
+  <div
+    data-search-results
+    class="absolute left-0 right-0 top-[calc(100%+0.6rem)] hidden overflow-hidden rounded-[1.5rem] border border-black/8 bg-white shadow-card"
+  >
+    <div data-search-panel class="max-h-96 overflow-y-auto p-2"></div>
+  </div>
+
+  <script type="application/json" data-search-items set:html={JSON.stringify(items)} />
+
+  <script is:inline define:vars={{ searchId }}>
+    (() => {
+      const root = document.getElementById(searchId);
+      if (!root) return;
+
+      const input = root.querySelector("[data-search-input]");
+      const results = root.querySelector("[data-search-results]");
+      const panel = root.querySelector("[data-search-panel]");
+      const itemsElement = root.querySelector("[data-search-items]");
+
+      if (!input || !results || !panel || !itemsElement) return;
+
+      const items = JSON.parse(itemsElement.textContent || "[]").map((item) => ({
+        ...item,
+        haystack: [item.title, item.type, item.meta || "", ...(item.keywords || [])]
+          .join(" ")
+          .toLowerCase()
+      }));
+
+      let activeIndex = -1;
+      let visibleResults = [];
+
+      const escapeHtml = (value) =>
+        value
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+
+      const closeResults = () => {
+        results.classList.add("hidden");
+        panel.innerHTML = "";
+        activeIndex = -1;
+        visibleResults = [];
+      };
+
+      const openResults = () => {
+        if (visibleResults.length === 0) {
+          closeResults();
+          return;
+        }
+        results.classList.remove("hidden");
+      };
+
+      const render = (matches) => {
+        visibleResults = matches.slice(0, 6);
+
+        if (visibleResults.length === 0) {
+          panel.innerHTML =
+            '<p class="px-4 py-4 text-sm text-ink-700">No matching products or guides.</p>';
+          results.classList.remove("hidden");
+          activeIndex = -1;
+          return;
+        }
+
+        panel.innerHTML = visibleResults
+          .map(
+            (item, index) => `
+              <a
+                href="${item.href}"
+                data-search-option
+                data-index="${index}"
+                class="block rounded-[1.1rem] px-4 py-3 ${index === activeIndex ? "bg-sand-100" : "hover:bg-sand-50"}"
+              >
+                <div class="flex items-start justify-between gap-4">
+                  <div>
+                    <p class="text-sm font-semibold text-ink-900">${escapeHtml(item.title)}</p>
+                    <p class="mt-1 text-xs uppercase tracking-[0.14em] text-accent-600">${escapeHtml(item.type)}</p>
+                  </div>
+                  ${
+                    item.meta
+                      ? `<p class="text-xs text-ink-700/70">${escapeHtml(item.meta)}</p>`
+                      : ""
+                  }
+                </div>
+              </a>
+            `
+          )
+          .join("");
+
+        results.classList.remove("hidden");
+      };
+
+      const getMatches = (query) => {
+        const normalized = query.trim().toLowerCase();
+
+        if (!normalized) {
+          return items.slice(0, 6);
+        }
+
+        return items
+          .filter((item) => item.haystack.includes(normalized))
+          .sort((a, b) => {
+            const aStarts = a.title.toLowerCase().startsWith(normalized);
+            const bStarts = b.title.toLowerCase().startsWith(normalized);
+            if (aStarts !== bStarts) return aStarts ? -1 : 1;
+            return a.title.localeCompare(b.title);
+          });
+      };
+
+      const updateResults = () => {
+        activeIndex = -1;
+        render(getMatches(input.value));
+      };
+
+      input.addEventListener("focus", updateResults);
+      input.addEventListener("input", updateResults);
+
+      input.addEventListener("keydown", (event) => {
+        if (results.classList.contains("hidden") && (event.key === "ArrowDown" || event.key === "ArrowUp")) {
+          updateResults();
+          return;
+        }
+
+        if (visibleResults.length === 0) return;
+
+        if (event.key === "ArrowDown") {
+          event.preventDefault();
+          activeIndex = (activeIndex + 1) % visibleResults.length;
+          render(visibleResults);
+          return;
+        }
+
+        if (event.key === "ArrowUp") {
+          event.preventDefault();
+          activeIndex = activeIndex <= 0 ? visibleResults.length - 1 : activeIndex - 1;
+          render(visibleResults);
+          return;
+        }
+
+        if (event.key === "Enter") {
+          const target = visibleResults[activeIndex] || visibleResults[0];
+          if (target) {
+            event.preventDefault();
+            window.location.href = target.href;
+          }
+        }
+
+        if (event.key === "Escape") {
+          closeResults();
+        }
+      });
+
+      panel.addEventListener("mousemove", (event) => {
+        const option = event.target.closest("[data-search-option]");
+        if (!option) return;
+        activeIndex = Number(option.getAttribute("data-index"));
+        render(visibleResults);
+      });
+
+      document.addEventListener("click", (event) => {
+        if (!root.contains(event.target)) {
+          closeResults();
+        }
+      });
+
+      root.addEventListener("submit", (event) => event.preventDefault());
+      openResults();
+    })();
+  </script>
+</div>
