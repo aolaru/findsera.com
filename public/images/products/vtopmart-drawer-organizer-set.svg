@@ -1,0 +1,11 @@
+<svg width="640" height="420" viewBox="0 0 640 420" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="640" height="420" rx="32" fill="#FFFDF7"/>
+  <circle cx="494" cy="98" r="54" fill="#F7E5B6"/>
+  <rect x="170" y="126" width="300" height="176" rx="26" fill="#B45309"/>
+  <rect x="196" y="154" width="84" height="58" rx="12" fill="#FDE7C0"/>
+  <rect x="294" y="154" width="64" height="58" rx="12" fill="#FDE7C0"/>
+  <rect x="372" y="154" width="70" height="58" rx="12" fill="#FDE7C0"/>
+  <rect x="196" y="226" width="118" height="48" rx="12" fill="#FDE7C0"/>
+  <rect x="328" y="226" width="114" height="48" rx="12" fill="#FDE7C0"/>
+  <text x="56" y="362" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="700">Drawer Organizer Set</text>
+</svg>
