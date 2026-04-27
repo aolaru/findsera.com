@@ -1,7 +1,7 @@
 # Daily maintenance report
 
 - Run date: 2026-04-27
-- New products added: 1
+- New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
 - Remaining product backlog: 5
@@ -12,7 +12,7 @@
 
 ## Added products today
 
-- Takeya Deluxe Cold Brew Coffee Maker (`takeya-cold-brew-maker`)
+- None
 
 ## Refreshed products today
 
