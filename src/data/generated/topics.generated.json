@@ -33,13 +33,14 @@
     "description": "Findsera content related to brewing.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "takeya-cold-brew-maker",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -77,14 +78,15 @@
       "aeropress-original-coffee-maker",
       "ember-mug-2",
       "fellow-stagg-ekg-electric-kettle",
+      "takeya-cold-brew-maker",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 3,
+      "kitchen": 4,
       "home": 1
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -122,13 +124,14 @@
     "title": "Countertop",
     "description": "Findsera content related to countertop.",
     "productIds": [
-      "fellow-stagg-ekg-electric-kettle"
+      "fellow-stagg-ekg-electric-kettle",
+      "takeya-cold-brew-maker"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -427,14 +430,15 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "levoit-core-mini-air-purifier",
+      "takeya-cold-brew-maker",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2,
+      "kitchen": 3,
       "home": 1
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {

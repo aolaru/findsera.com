@@ -199,6 +199,30 @@
     "isTrending": true
   },
   {
+    "id": "takeya-cold-brew-maker",
+    "title": "Takeya Deluxe Cold Brew Coffee Maker",
+    "brand": "Takeya",
+    "category": "kitchen",
+    "price": 24.99,
+    "image": "/images/cold-brew-maker.svg",
+    "description": "A fridge-friendly cold brew maker for smoother coffee batches and lower-cost iced coffee at home.",
+    "sourceUrl": "https://takeyausa.com/products/deluxe-cold-brew-coffee-maker",
+    "priceCheckedAt": "2026-04-25",
+    "amazonQuery": "Takeya Deluxe Cold Brew Coffee Maker",
+    "tags": [
+      "coffee",
+      "brewing",
+      "under-50",
+      "countertop"
+    ],
+    "highlights": [
+      "Fits easily in the fridge",
+      "Makes multi-serving batches",
+      "Great value for iced coffee drinkers"
+    ],
+    "isTrending": false
+  },
+  {
     "id": "thermoworks-thermapen-one",
     "title": "ThermoWorks Thermapen ONE",
     "brand": "ThermoWorks",
