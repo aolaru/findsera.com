@@ -5,10 +5,13 @@
     "description": "Budget Finds cluster pages on Findsera.",
     "roundupSlugs": [
       "best-products-under-50",
-      "best-tech-gifts-under-100"
+      "best-tech-gifts-under-100",
+      "best-everyday-carry-tech-under-50"
     ],
-    "categories": [],
-    "roundupCount": 2
+    "categories": [
+      "gadgets"
+    ],
+    "roundupCount": 3
   },
   {
     "slug": "coffee-gear",
@@ -34,12 +37,13 @@
       "best-desk-setup-products",
       "best-tech-for-small-desks",
       "best-home-office-gifts",
-      "best-home-office-upgrades-under-150"
+      "best-home-office-upgrades-under-150",
+      "best-smart-home-upgrades-for-beginners"
     ],
     "categories": [
       "home"
     ],
-    "roundupCount": 5
+    "roundupCount": 6
   },
   {
     "slug": "precision-cooking",
@@ -61,11 +65,12 @@
       "best-amazon-gadgets-2026",
       "best-travel-tech-essentials",
       "best-travel-tech-for-remote-work",
-      "best-gadgets-for-hybrid-work"
+      "best-gadgets-for-hybrid-work",
+      "best-travel-accessories-for-apple-users"
     ],
     "categories": [
       "gadgets"
     ],
-    "roundupCount": 4
+    "roundupCount": 5
   }
 ]

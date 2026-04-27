@@ -236,7 +236,7 @@
     "brand": "Takeya",
     "category": "kitchen",
     "price": 24.99,
-    "image": "/images/cold-brew-maker.svg",
+    "image": "/images/products/takeya-cold-brew-maker.png",
     "description": "A fridge-friendly cold brew maker for smoother coffee batches and lower-cost iced coffee at home.",
     "sourceUrl": "https://takeyausa.com/products/deluxe-cold-brew-coffee-maker",
     "priceCheckedAt": "2026-04-25",
@@ -313,6 +313,90 @@
     "slug": "zulay-milk-frother-wand",
     "priceLabel": "$14.99",
     "affiliateUrl": "https://www.amazon.com/s?k=Zulay+Kitchen+Milk+Frother+Wand&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
+    "id": "apple-airtag-1-pack",
+    "title": "Apple AirTag (1-Pack)",
+    "brand": "Apple",
+    "category": "gadgets",
+    "price": 29,
+    "image": "/images/products/apple-airtag-1-pack.png",
+    "description": "A simple Bluetooth tracker for keys, bags, and travel gear that fits neatly into Apple-heavy everyday carry setups.",
+    "sourceUrl": "https://www.apple.com/airtag/",
+    "priceCheckedAt": "2026-04-27",
+    "amazonQuery": "Apple AirTag 1 Pack",
+    "tags": [
+      "travel",
+      "iphone",
+      "portable",
+      "gift"
+    ],
+    "highlights": [
+      "Easy Find My integration",
+      "Strong everyday carry use case",
+      "Popular travel and luggage tracker"
+    ],
+    "isTrending": true,
+    "slug": "apple-airtag-1-pack",
+    "priceLabel": "$29",
+    "affiliateUrl": "https://www.amazon.com/s?k=Apple+AirTag+1+Pack&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
+    "id": "kasa-smart-plug-mini-4-pack",
+    "title": "Kasa Smart Plug Mini 4-Pack",
+    "brand": "Kasa",
+    "category": "home",
+    "price": 23.98,
+    "image": "/images/products/kasa-smart-plug-mini-4-pack.jpg",
+    "description": "A value-focused 4-pack of smart plugs for lamps, coffee corners, and simple home automations without a hub.",
+    "sourceUrl": "https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-plug-mini-ep10",
+    "priceCheckedAt": "2026-04-27",
+    "amazonQuery": "Kasa Smart Plug Mini 4-Pack EP10P4",
+    "tags": [
+      "smart home",
+      "home",
+      "under-50",
+      "office"
+    ],
+    "highlights": [
+      "Four-plug starter value",
+      "Easy Alexa and Google Home setup",
+      "Useful for lamps and schedules"
+    ],
+    "isTrending": true,
+    "slug": "kasa-smart-plug-mini-4-pack",
+    "priceLabel": "$23.98",
+    "affiliateUrl": "https://www.amazon.com/s?k=Kasa+Smart+Plug+Mini+4-Pack+EP10P4&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
+    "id": "soundcore-q20i-headphones",
+    "title": "soundcore Q20i Headphones",
+    "brand": "soundcore",
+    "category": "gadgets",
+    "price": 39.99,
+    "image": "/images/products/soundcore-q20i-headphones.png",
+    "description": "A budget-friendly pair of wireless ANC headphones that works well for travel, focused work, and everyday listening.",
+    "sourceUrl": "https://www.soundcore.com/products/q20i-a3004z31",
+    "priceCheckedAt": "2026-04-27",
+    "amazonQuery": "soundcore Q20i Hybrid ANC Headphones",
+    "tags": [
+      "travel",
+      "wireless",
+      "productivity",
+      "under-50"
+    ],
+    "highlights": [
+      "Affordable active noise cancellation",
+      "Good pick for commute listening",
+      "Strong value for casual travel audio"
+    ],
+    "isTrending": true,
+    "slug": "soundcore-q20i-headphones",
+    "priceLabel": "$39.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=soundcore+Q20i+Hybrid+ANC+Headphones&tag=kreativauto-20",
     "affiliateMode": "search"
   }
 ]

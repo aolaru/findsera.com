@@ -50,11 +50,12 @@
     "productIds": [],
     "roundupSlugs": [
       "best-products-under-50",
-      "best-tech-gifts-under-100"
+      "best-tech-gifts-under-100",
+      "best-everyday-carry-tech-under-50"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 2
+    "roundupCount": 3
   },
   {
     "slug": "charging",
@@ -167,13 +168,15 @@
     "title": "Gift",
     "description": "Findsera content related to gift.",
     "productIds": [
-      "ember-mug-2"
+      "ember-mug-2",
+      "apple-airtag-1-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 1
+      "home": 1,
+      "gadgets": 1
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -196,13 +199,14 @@
     "title": "Home",
     "description": "Findsera content related to home.",
     "productIds": [
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "kasa-smart-plug-mini-4-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 1
+      "home": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -215,24 +219,26 @@
       "best-desk-setup-products",
       "best-tech-for-small-desks",
       "best-home-office-gifts",
-      "best-home-office-upgrades-under-150"
+      "best-home-office-upgrades-under-150",
+      "best-smart-home-upgrades-for-beginners"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 5
+    "roundupCount": 6
   },
   {
     "slug": "iphone",
     "title": "Iphone",
     "description": "Findsera content related to iphone.",
     "productIds": [
-      "anker-maggo-power-bank-10k-slim"
+      "anker-maggo-power-bank-10k-slim",
+      "apple-airtag-1-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1
+      "gadgets": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -284,13 +290,15 @@
     "title": "Office",
     "description": "Findsera content related to office.",
     "productIds": [
-      "logitech-mx-anywhere-3s"
+      "logitech-mx-anywhere-3s",
+      "kasa-smart-plug-mini-4-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1
+      "gadgets": 1,
+      "home": 1
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -298,13 +306,14 @@
     "title": "Portable",
     "description": "Findsera content related to portable.",
     "productIds": [
-      "anker-maggo-power-bank-10k-slim"
+      "anker-maggo-power-bank-10k-slim",
+      "apple-airtag-1-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1
+      "gadgets": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -354,13 +363,14 @@
     "description": "Findsera content related to productivity.",
     "productIds": [
       "logitech-mx-anywhere-3s",
-      "logitech-mx-keys-mini"
+      "logitech-mx-keys-mini",
+      "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 2
+      "gadgets": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -368,13 +378,14 @@
     "title": "Smart Home",
     "description": "Findsera content related to smart home.",
     "productIds": [
-      "ember-mug-2"
+      "ember-mug-2",
+      "kasa-smart-plug-mini-4-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 1
+      "home": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -398,14 +409,16 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "anker-maggo-power-bank-10k-slim",
-      "logitech-mx-anywhere-3s"
+      "logitech-mx-anywhere-3s",
+      "apple-airtag-1-pack",
+      "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 1,
-      "gadgets": 2
+      "gadgets": 4
     },
-    "productCount": 3,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -417,11 +430,12 @@
       "best-amazon-gadgets-2026",
       "best-travel-tech-essentials",
       "best-travel-tech-for-remote-work",
-      "best-gadgets-for-hybrid-work"
+      "best-gadgets-for-hybrid-work",
+      "best-travel-accessories-for-apple-users"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 4
+    "roundupCount": 5
   },
   {
     "slug": "under-50",
@@ -431,14 +445,17 @@
       "aeropress-original-coffee-maker",
       "levoit-core-mini-air-purifier",
       "takeya-cold-brew-maker",
-      "zulay-milk-frother-wand"
+      "zulay-milk-frother-wand",
+      "kasa-smart-plug-mini-4-pack",
+      "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 3,
-      "home": 1
+      "home": 2,
+      "gadgets": 1
     },
-    "productCount": 4,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -446,13 +463,14 @@
     "title": "Wireless",
     "description": "Findsera content related to wireless.",
     "productIds": [
-      "logitech-mx-keys-mini"
+      "logitech-mx-keys-mini",
+      "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1
+      "gadgets": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   }
 ]
