@@ -57,6 +57,23 @@ const formatTag = (value: string) =>
 
 const useCase = product.tags[0] ? formatTag(product.tags[0].replace(/\s+/g, "-")) : categoryLabel;
 const secondaryUseCase = product.tags[1] ? formatTag(product.tags[1].replace(/\s+/g, "-")) : "Everyday use";
+const priceTier = product.price >= 120 ? "Upgrade" : product.price >= 70 ? "Mid-range" : "Accessible";
+const pros = product.highlights.slice(0, 3);
+const cons = [
+  product.price >= 100
+    ? `Costs more than most entry-level ${categoryLabel.toLowerCase()} alternatives.`
+    : `Best when you want a clear ${useCase.toLowerCase()} fit, not the absolute cheapest option.`,
+  product.tags.includes("travel")
+    ? "Compact design can trade away some at-home-only comfort or capacity."
+    : `Most useful for ${useCase.toLowerCase()} buyers rather than general-purpose shoppers.`
+];
+const trustReasons = [
+  "Price-check date is visible on the page instead of hidden in the CMS.",
+  "The product sits inside related buying guides, not just a standalone affiliate card.",
+  product.affiliateMode === "exact"
+    ? "This page links to a verified Amazon product URL, not a generic search results page."
+    : "This page currently uses an Amazon search fallback while the exact product URL is being verified."
+];
 
 const faqItems = [
   {
@@ -171,6 +188,9 @@ const structuredData = {
             <p class="rounded-full bg-white px-5 py-3 text-base font-semibold text-ink-900 shadow-card">
               {product.priceLabel}
             </p>
+            <p class="rounded-full border border-black/8 bg-white px-5 py-3 text-base font-semibold text-ink-700">
+              {priceTier}
+            </p>
           </div>
           <div class="mt-8 flex flex-wrap gap-3">
             <a
@@ -189,6 +209,12 @@ const structuredData = {
             >
               View brand source
             </a>
+          </div>
+          <div class="mt-8 rounded-[1.5rem] border border-black/6 bg-sand-50 p-5">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Quick verdict</p>
+            <p class="mt-3 text-sm leading-7 text-ink-700">
+              {product.title} is the stronger pick when you care most about {useCase.toLowerCase()} and want something more intentional than a broad marketplace browse.
+            </p>
           </div>
         </div>
 
@@ -261,6 +287,35 @@ const structuredData = {
           )}
         </article>
       </div>
+      <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr),minmax(0,1fr)]">
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Pros and cons</p>
+          <div class="mt-5 grid gap-5 sm:grid-cols-2">
+            <div>
+              <p class="text-sm font-semibold text-ink-900">Pros</p>
+              <ul class="mt-3 space-y-2 text-sm leading-7 text-ink-700">
+                {pros.map((item) => <li>+ {item}</li>)}
+              </ul>
+            </div>
+            <div>
+              <p class="text-sm font-semibold text-ink-900">Consider before buying</p>
+              <ul class="mt-3 space-y-2 text-sm leading-7 text-ink-700">
+                {cons.map((item) => <li>- {item}</li>)}
+              </ul>
+            </div>
+          </div>
+        </article>
+
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Why trust this pick</p>
+          <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
+            Clearer buying context than a generic product listing
+          </h2>
+          <ul class="mt-5 space-y-3 text-sm leading-7 text-ink-700">
+            {trustReasons.map((item) => <li>- {item}</li>)}
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
@@ -285,6 +340,19 @@ const structuredData = {
           title="Similar products"
           description="Nearby alternatives from the same category or use-case neighborhood."
         />
+        <div class="mb-6 grid gap-4 lg:grid-cols-3">
+          {relatedProducts.map((entry) => (
+            <article class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">
+                Better if you need {entry.tags[0] ? formatTag(entry.tags[0].replace(/\s+/g, "-")) : categoryLabel}
+              </p>
+              <h3 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
+                <a href={`/products/${entry.slug}`} class="hover:text-accent-600">{entry.title}</a>
+              </h3>
+              <p class="mt-3 text-sm leading-7 text-ink-700">{entry.highlights[0]}</p>
+            </article>
+          ))}
+        </div>
         <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {relatedProducts.map((entry) => <ProductCard product={entry} />)}
         </div>
@@ -293,7 +361,28 @@ const structuredData = {
   )}
 
   <section class="pb-20">
-    <div class="container-shell">
+    <div class="container-shell space-y-6">
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <div class="flex flex-wrap items-center justify-between gap-4">
+          <div>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Ready to shop</p>
+            <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
+              View the current Amazon listing
+            </h2>
+            <p class="mt-3 text-sm leading-7 text-ink-700">
+              If the product still matches what you need, use the direct Amazon link below to check the current price, variants, and availability.
+            </p>
+          </div>
+          <a
+            href={product.affiliateUrl}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
+          >
+            View on Amazon
+          </a>
+        </div>
+      </article>
       <FAQList title={`Questions about ${product.title}`} items={faqItems} />
     </div>
   </section>

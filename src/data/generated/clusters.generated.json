@@ -21,12 +21,14 @@
       "best-coffee-gear-for-home",
       "best-gifts-for-coffee-lovers",
       "best-coffee-gear-for-beginners",
-      "best-coffee-gear-for-small-kitchens"
+      "best-coffee-gear-for-small-kitchens",
+      "best-coffee-upgrades-under-50",
+      "best-beginner-coffee-setup"
     ],
     "categories": [
       "kitchen"
     ],
-    "roundupCount": 4
+    "roundupCount": 6
   },
   {
     "slug": "home-office",
@@ -50,12 +52,13 @@
     "title": "Precision Cooking",
     "description": "Precision Cooking cluster pages on Findsera.",
     "roundupSlugs": [
-      "best-kitchen-tools-for-precision-cooking"
+      "best-kitchen-tools-for-precision-cooking",
+      "meater-plus-vs-thermapen-one"
     ],
     "categories": [
       "kitchen"
     ],
-    "roundupCount": 1
+    "roundupCount": 2
   },
   {
     "slug": "travel-tech",
@@ -66,11 +69,12 @@
       "best-travel-tech-essentials",
       "best-travel-tech-for-remote-work",
       "best-gadgets-for-hybrid-work",
-      "best-travel-accessories-for-apple-users"
+      "best-travel-accessories-for-apple-users",
+      "best-travel-tech-under-100"
     ],
     "categories": [
       "gadgets"
     ],
-    "roundupCount": 5
+    "roundupCount": 6
   }
 ]

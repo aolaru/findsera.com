@@ -75,6 +75,21 @@ npm run content:maintain
 - Output directory: `dist`
 - Target platform: Cloudflare Pages
 
+## Search Console
+
+To enable Google Search Console verification through the site markup, set:
+
+```bash
+PUBLIC_GOOGLE_SITE_VERIFICATION=your-verification-token
+```
+
+The layout will emit the corresponding `google-site-verification` meta tag automatically. After deployment:
+
+- add `https://findsera.com` as a property in Google Search Console
+- confirm the meta-tag verification method
+- submit `https://findsera.com/sitemap-index.xml`
+- use the query and performance reports to improve titles, meta descriptions, and underperforming pages
+
 ## Content model
 
 Source content lives in `src/data/source/`. Generated runtime data is written to `src/data/generated/`, which powers the homepage, roundup routes, category pages, topic pages, and SEO cluster landing pages.
