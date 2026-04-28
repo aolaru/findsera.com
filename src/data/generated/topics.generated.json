@@ -170,13 +170,13 @@
     "title": "Gift",
     "description": "Findsera content related to gift.",
     "productIds": [
-      "ember-mug-2",
-      "apple-airtag-1-pack"
+      "apple-airtag-1-pack",
+      "ember-mug-2"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 1,
-      "gadgets": 1
+      "gadgets": 1,
+      "home": 1
     },
     "productCount": 2,
     "roundupCount": 0
@@ -201,14 +201,15 @@
     "title": "Home",
     "description": "Findsera content related to home.",
     "productIds": [
+      "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
-      "kasa-smart-plug-mini-4-pack"
+      "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 2
+      "home": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -292,15 +293,30 @@
     "title": "Office",
     "description": "Findsera content related to office.",
     "productIds": [
+      "kasa-smart-plug-mini-4-pack",
       "logitech-mx-anywhere-3s",
-      "kasa-smart-plug-mini-4-pack"
+      "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1,
+      "home": 2,
+      "gadgets": 1
+    },
+    "productCount": 3,
+    "roundupCount": 0
+  },
+  {
+    "slug": "organization",
+    "title": "Organization",
+    "description": "Findsera content related to organization.",
+    "productIds": [
+      "vtopmart-drawer-organizer-set"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
       "home": 1
     },
-    "productCount": 2,
+    "productCount": 1,
     "roundupCount": 0
   },
   {
@@ -412,8 +428,8 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "anker-maggo-power-bank-10k-slim",
-      "logitech-mx-anywhere-3s",
       "apple-airtag-1-pack",
+      "logitech-mx-anywhere-3s",
       "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
@@ -447,19 +463,20 @@
     "description": "Findsera content related to under-50.",
     "productIds": [
       "aeropress-original-coffee-maker",
-      "levoit-core-mini-air-purifier",
-      "takeya-cold-brew-maker",
-      "zulay-milk-frother-wand",
       "kasa-smart-plug-mini-4-pack",
-      "soundcore-q20i-headphones"
+      "levoit-core-mini-air-purifier",
+      "soundcore-q20i-headphones",
+      "takeya-cold-brew-maker",
+      "vtopmart-drawer-organizer-set",
+      "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 3,
-      "home": 2,
+      "home": 3,
       "gadgets": 1
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {

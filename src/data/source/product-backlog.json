@@ -1,29 +1,5 @@
 [
   {
-    "id": "vtopmart-drawer-organizer-set",
-    "title": "Vtopmart Drawer Organizer Set",
-    "brand": "Vtopmart",
-    "category": "home",
-    "price": 26.99,
-    "image": "/images/products/vtopmart-drawer-organizer-set.svg",
-    "description": "A modular organizer set for kitchen, bath, and desk drawers that makes small-space storage easier to keep tidy.",
-    "sourceUrl": "https://www.vtopmart.com/products/drawer-organizers",
-    "priceCheckedAt": "2026-04-25",
-    "amazonQuery": "Vtopmart Drawer Organizer Set",
-    "tags": [
-      "home",
-      "office",
-      "organization",
-      "under-50"
-    ],
-    "highlights": [
-      "Multiple tray sizes",
-      "Useful across rooms",
-      "Easy small-space upgrade"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "eufy-11s-max-robot-vacuum",
     "title": "eufy RoboVac 11S Max",
     "brand": "eufy",

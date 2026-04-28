@@ -50,6 +50,31 @@
     "isTrending": true
   },
   {
+    "id": "apple-airtag-1-pack",
+    "title": "Apple AirTag (1-Pack)",
+    "brand": "Apple",
+    "category": "gadgets",
+    "price": 29,
+    "image": "/images/products/apple-airtag-1-pack.png",
+    "description": "A simple Bluetooth tracker for keys, bags, and travel gear that fits neatly into Apple-heavy everyday carry setups.",
+    "sourceUrl": "https://www.apple.com/airtag/",
+    "priceCheckedAt": "2026-04-27",
+    "amazonUrl": "https://www.amazon.com/dp/B0933BVK6T",
+    "amazonQuery": "Apple AirTag 1 Pack",
+    "tags": [
+      "travel",
+      "iphone",
+      "portable",
+      "gift"
+    ],
+    "highlights": [
+      "Easy Find My integration",
+      "Strong everyday carry use case",
+      "Popular travel and luggage tracker"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "ember-mug-2",
     "title": "Ember Mug 2",
     "brand": "Ember",
@@ -96,6 +121,31 @@
       "Variable temperature control",
       "Balanced gooseneck pour",
       "Strong design-led appeal"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "kasa-smart-plug-mini-4-pack",
+    "title": "Kasa Smart Plug Mini 4-Pack",
+    "brand": "Kasa",
+    "category": "home",
+    "price": 23.98,
+    "image": "/images/products/kasa-smart-plug-mini-4-pack.jpg",
+    "description": "A value-focused 4-pack of smart plugs for lamps, coffee corners, and simple home automations without a hub.",
+    "sourceUrl": "https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-plug-mini-ep10",
+    "priceCheckedAt": "2026-04-27",
+    "amazonUrl": "https://www.amazon.com/dp/B091FXLMS8",
+    "amazonQuery": "Kasa Smart Plug Mini 4-Pack EP10P4",
+    "tags": [
+      "smart home",
+      "home",
+      "under-50",
+      "office"
+    ],
+    "highlights": [
+      "Four-plug starter value",
+      "Easy Alexa and Google Home setup",
+      "Useful for lamps and schedules"
     ],
     "isTrending": true
   },
@@ -200,6 +250,31 @@
     "isTrending": true
   },
   {
+    "id": "soundcore-q20i-headphones",
+    "title": "soundcore Q20i Headphones",
+    "brand": "soundcore",
+    "category": "gadgets",
+    "price": 39.99,
+    "image": "/images/products/soundcore-q20i-headphones.png",
+    "description": "A budget-friendly pair of wireless ANC headphones that works well for travel, focused work, and everyday listening.",
+    "sourceUrl": "https://www.soundcore.com/products/q20i-a3004z31",
+    "priceCheckedAt": "2026-04-27",
+    "amazonUrl": "https://www.amazon.com/dp/B0F4884LN3",
+    "amazonQuery": "soundcore Q20i Hybrid ANC Headphones",
+    "tags": [
+      "travel",
+      "wireless",
+      "productivity",
+      "under-50"
+    ],
+    "highlights": [
+      "Affordable active noise cancellation",
+      "Good pick for commute listening",
+      "Strong value for casual travel audio"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "takeya-cold-brew-maker",
     "title": "Takeya Deluxe Cold Brew Coffee Maker",
     "brand": "Takeya",
@@ -250,6 +325,30 @@
     "isTrending": false
   },
   {
+    "id": "vtopmart-drawer-organizer-set",
+    "title": "Vtopmart Drawer Organizer Set",
+    "brand": "Vtopmart",
+    "category": "home",
+    "price": 26.99,
+    "image": "/images/products/vtopmart-drawer-organizer-set.svg",
+    "description": "A modular organizer set for kitchen, bath, and desk drawers that makes small-space storage easier to keep tidy.",
+    "sourceUrl": "https://www.vtopmart.com/products/drawer-organizers",
+    "priceCheckedAt": "2026-04-25",
+    "amazonQuery": "Vtopmart Drawer Organizer Set",
+    "tags": [
+      "home",
+      "office",
+      "organization",
+      "under-50"
+    ],
+    "highlights": [
+      "Multiple tray sizes",
+      "Useful across rooms",
+      "Easy small-space upgrade"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "zulay-milk-frother-wand",
     "title": "Zulay Kitchen Milk Frother Wand",
     "brand": "Zulay Kitchen",
@@ -271,81 +370,6 @@
       "Budget-friendly coffee upgrade",
       "Compact to store",
       "Quick to use and clean"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "apple-airtag-1-pack",
-    "title": "Apple AirTag (1-Pack)",
-    "brand": "Apple",
-    "category": "gadgets",
-    "price": 29,
-    "image": "/images/products/apple-airtag-1-pack.png",
-    "description": "A simple Bluetooth tracker for keys, bags, and travel gear that fits neatly into Apple-heavy everyday carry setups.",
-    "sourceUrl": "https://www.apple.com/airtag/",
-    "priceCheckedAt": "2026-04-27",
-    "amazonUrl": "https://www.amazon.com/dp/B0933BVK6T",
-    "amazonQuery": "Apple AirTag 1 Pack",
-    "tags": [
-      "travel",
-      "iphone",
-      "portable",
-      "gift"
-    ],
-    "highlights": [
-      "Easy Find My integration",
-      "Strong everyday carry use case",
-      "Popular travel and luggage tracker"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "kasa-smart-plug-mini-4-pack",
-    "title": "Kasa Smart Plug Mini 4-Pack",
-    "brand": "Kasa",
-    "category": "home",
-    "price": 23.98,
-    "image": "/images/products/kasa-smart-plug-mini-4-pack.jpg",
-    "description": "A value-focused 4-pack of smart plugs for lamps, coffee corners, and simple home automations without a hub.",
-    "sourceUrl": "https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-plug-mini-ep10",
-    "priceCheckedAt": "2026-04-27",
-    "amazonUrl": "https://www.amazon.com/dp/B091FXLMS8",
-    "amazonQuery": "Kasa Smart Plug Mini 4-Pack EP10P4",
-    "tags": [
-      "smart home",
-      "home",
-      "under-50",
-      "office"
-    ],
-    "highlights": [
-      "Four-plug starter value",
-      "Easy Alexa and Google Home setup",
-      "Useful for lamps and schedules"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "soundcore-q20i-headphones",
-    "title": "soundcore Q20i Headphones",
-    "brand": "soundcore",
-    "category": "gadgets",
-    "price": 39.99,
-    "image": "/images/products/soundcore-q20i-headphones.png",
-    "description": "A budget-friendly pair of wireless ANC headphones that works well for travel, focused work, and everyday listening.",
-    "sourceUrl": "https://www.soundcore.com/products/q20i-a3004z31",
-    "priceCheckedAt": "2026-04-27",
-    "amazonUrl": "https://www.amazon.com/dp/B0F4884LN3",
-    "amazonQuery": "soundcore Q20i Hybrid ANC Headphones",
-    "tags": [
-      "travel",
-      "wireless",
-      "productivity",
-      "under-50"
-    ],
-    "highlights": [
-      "Affordable active noise cancellation",
-      "Good pick for commute listening",
-      "Strong value for casual travel audio"
     ],
     "isTrending": true
   }
