@@ -212,6 +212,7 @@
     "description": "A wireless probe thermometer that helps with grilling, roasting, and more predictable cook times without babysitting the oven.",
     "sourceUrl": "https://store-us.meater.com/products/meater-plus",
     "priceCheckedAt": "2026-04-25",
+    "amazonUrl": "https://www.amazon.com/dp/B07H8WTFHW",
     "amazonQuery": "MEATER Plus Wireless Meat Thermometer",
     "tags": [
       "grilling",
@@ -227,8 +228,8 @@
     "isTrending": true,
     "slug": "meater-plus-wireless-thermometer",
     "priceLabel": "$99.95",
-    "affiliateUrl": "https://www.amazon.com/s?k=MEATER+Plus+Wireless+Meat+Thermometer&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B07H8WTFHW?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "takeya-cold-brew-maker",
@@ -240,6 +241,7 @@
     "description": "A fridge-friendly cold brew maker for smoother coffee batches and lower-cost iced coffee at home.",
     "sourceUrl": "https://takeyausa.com/products/deluxe-cold-brew-coffee-maker",
     "priceCheckedAt": "2026-04-25",
+    "amazonUrl": "https://www.amazon.com/dp/B00FFLY64U",
     "amazonQuery": "Takeya Deluxe Cold Brew Coffee Maker",
     "tags": [
       "coffee",
@@ -255,8 +257,8 @@
     "isTrending": false,
     "slug": "takeya-cold-brew-maker",
     "priceLabel": "$24.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Takeya+Deluxe+Cold+Brew+Coffee+Maker&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B00FFLY64U?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "thermoworks-thermapen-one",
@@ -297,6 +299,7 @@
     "description": "A simple handheld frother for faster lattes, matcha, and coffee upgrades that do not require a full espresso setup.",
     "sourceUrl": "https://www.zulaykitchen.com/products/milk-frother",
     "priceCheckedAt": "2026-04-25",
+    "amazonUrl": "https://www.amazon.com/dp/B09D8T11YS",
     "amazonQuery": "Zulay Kitchen Milk Frother Wand",
     "tags": [
       "coffee",
@@ -312,8 +315,8 @@
     "isTrending": true,
     "slug": "zulay-milk-frother-wand",
     "priceLabel": "$14.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Zulay+Kitchen+Milk+Frother+Wand&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B09D8T11YS?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "apple-airtag-1-pack",
@@ -325,6 +328,7 @@
     "description": "A simple Bluetooth tracker for keys, bags, and travel gear that fits neatly into Apple-heavy everyday carry setups.",
     "sourceUrl": "https://www.apple.com/airtag/",
     "priceCheckedAt": "2026-04-27",
+    "amazonUrl": "https://www.amazon.com/dp/B0933BVK6T",
     "amazonQuery": "Apple AirTag 1 Pack",
     "tags": [
       "travel",
@@ -340,8 +344,8 @@
     "isTrending": true,
     "slug": "apple-airtag-1-pack",
     "priceLabel": "$29",
-    "affiliateUrl": "https://www.amazon.com/s?k=Apple+AirTag+1+Pack&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B0933BVK6T?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "kasa-smart-plug-mini-4-pack",
@@ -353,6 +357,7 @@
     "description": "A value-focused 4-pack of smart plugs for lamps, coffee corners, and simple home automations without a hub.",
     "sourceUrl": "https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-plug-mini-ep10",
     "priceCheckedAt": "2026-04-27",
+    "amazonUrl": "https://www.amazon.com/dp/B091FXLMS8",
     "amazonQuery": "Kasa Smart Plug Mini 4-Pack EP10P4",
     "tags": [
       "smart home",
@@ -368,8 +373,8 @@
     "isTrending": true,
     "slug": "kasa-smart-plug-mini-4-pack",
     "priceLabel": "$23.98",
-    "affiliateUrl": "https://www.amazon.com/s?k=Kasa+Smart+Plug+Mini+4-Pack+EP10P4&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B091FXLMS8?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "soundcore-q20i-headphones",
@@ -381,6 +386,7 @@
     "description": "A budget-friendly pair of wireless ANC headphones that works well for travel, focused work, and everyday listening.",
     "sourceUrl": "https://www.soundcore.com/products/q20i-a3004z31",
     "priceCheckedAt": "2026-04-27",
+    "amazonUrl": "https://www.amazon.com/dp/B0F4884LN3",
     "amazonQuery": "soundcore Q20i Hybrid ANC Headphones",
     "tags": [
       "travel",
@@ -396,7 +402,7 @@
     "isTrending": true,
     "slug": "soundcore-q20i-headphones",
     "priceLabel": "$39.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=soundcore+Q20i+Hybrid+ANC+Headphones&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B0F4884LN3?tag=kreativauto-20",
+    "affiliateMode": "exact"
   }
 ]

@@ -128,6 +128,8 @@ const searchId = `site-search-${Math.random().toString(36).slice(2, 10)}`;
         results.classList.remove("hidden");
       };
 
+      const searchHref = (query) => `/search?q=${encodeURIComponent(query.trim())}`;
+
       const getMatches = (query) => {
         const normalized = query.trim().toLowerCase();
 
@@ -176,10 +178,16 @@ const searchId = `site-search-${Math.random().toString(36).slice(2, 10)}`;
         }
 
         if (event.key === "Enter") {
-          const target = visibleResults[activeIndex] || visibleResults[0];
-          if (target) {
+          const target = activeIndex >= 0 ? visibleResults[activeIndex] : null;
+          if (target && input.value.trim()) {
             event.preventDefault();
             window.location.href = target.href;
+            return;
+          }
+
+          if (input.value.trim()) {
+            event.preventDefault();
+            window.location.href = searchHref(input.value);
           }
         }
 

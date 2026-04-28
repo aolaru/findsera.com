@@ -1,6 +1,6 @@
 ---
 import HeaderSearch from "./HeaderSearch.astro";
-import { allProducts, allRoundups, categories } from "../data/catalog";
+import { getSearchItems } from "../data/catalog";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -11,29 +11,7 @@ const navItems = [
 ];
 
 const currentPath = Astro.url.pathname;
-const searchItems = [
-  ...allProducts.map((product) => ({
-    title: product.title,
-    href: `/products/${product.slug}`,
-    type: "Product",
-    meta: product.priceLabel,
-    keywords: [product.brand, product.category, ...product.tags]
-  })),
-  ...allRoundups.map((roundup) => ({
-    title: roundup.title,
-    href: `/${roundup.slug}`,
-    type: "Guide",
-    meta: roundup.category ?? "All categories",
-    keywords: [roundup.cluster, roundup.eyebrow, roundup.description]
-  })),
-  ...categories.map((category) => ({
-    title: category.label,
-    href: `/category/${category.slug}`,
-    type: "Category",
-    meta: "Browse category",
-    keywords: [category.slug, category.description]
-  }))
-];
+const searchItems = getSearchItems();
 ---
 
 <header class="sticky top-0 z-40 border-b border-black/5 bg-white/88 backdrop-blur-lg">

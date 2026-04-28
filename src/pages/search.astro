@@ -1,0 +1,132 @@
+---
+import { getSearchItems } from "../data/catalog";
+import Layout from "../layouts/Layout.astro";
+
+const items = getSearchItems();
+
+const title = "Search Findsera | Findsera";
+const description =
+  "Search products, buying guides, categories, and editorial pages across the full Findsera catalog.";
+---
+
+<Layout title={title} description={description} canonicalPath="/search">
+  <section class="section-spacing">
+    <div class="container-shell">
+      <span class="eyebrow">Search</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+        Search Findsera
+      </h1>
+      <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
+        Search products, buying guides, categories, and editorial pages from one place.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="container-shell">
+      <div class="rounded-[1.75rem] border border-black/6 bg-white p-5 shadow-card">
+        <label class="block">
+          <span class="sr-only">Search Findsera</span>
+          <input
+            type="search"
+            data-search-page-input
+            placeholder="Search products, guides, categories, and pages"
+            class="w-full rounded-[1.5rem] border border-black/10 bg-sand-50 px-5 py-4 text-base text-ink-900 outline-none placeholder:text-ink-700/55 focus:border-accent-500"
+          />
+        </label>
+        <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm text-ink-700">
+          <p>
+            <span data-search-page-count class="font-semibold text-ink-900">{items.length}</span> matching pages
+          </p>
+          <a href="/products" class="font-semibold text-accent-600 hover:text-accent-500">
+            Browse all products
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-4 md:grid-cols-2 xl:grid-cols-3" data-search-page-results></div>
+
+      <div
+        data-search-page-empty
+        class="mt-8 hidden rounded-[1.75rem] border border-dashed border-black/10 bg-white px-6 py-10 text-center text-sm leading-7 text-ink-700 shadow-card"
+      >
+        No matching results yet. Try a broader product name, use case, brand, or guide theme.
+      </div>
+    </div>
+  </section>
+
+  <script type="application/json" data-search-page-items set:html={JSON.stringify(items)} />
+
+  <script is:inline>
+    (() => {
+      const input = document.querySelector("[data-search-page-input]");
+      const count = document.querySelector("[data-search-page-count]");
+      const results = document.querySelector("[data-search-page-results]");
+      const empty = document.querySelector("[data-search-page-empty]");
+      const itemsElement = document.querySelector("[data-search-page-items]");
+
+      if (!input || !count || !results || !empty || !itemsElement) return;
+
+      const items = JSON.parse(itemsElement.textContent || "[]").map((item) => ({
+        ...item,
+        haystack: [item.title, item.type, item.meta || "", ...(item.keywords || [])]
+          .join(" ")
+          .toLowerCase()
+      }));
+
+      const escapeHtml = (value) =>
+        value
+          .replaceAll("&", "&amp;")
+          .replaceAll("<", "&lt;")
+          .replaceAll(">", "&gt;")
+          .replaceAll('"', "&quot;")
+          .replaceAll("'", "&#39;");
+
+      const readQuery = () => new URLSearchParams(window.location.search).get("q") || "";
+
+      const writeQuery = (query) => {
+        const params = new URLSearchParams(window.location.search);
+        if (query.trim()) params.set("q", query.trim());
+        else params.delete("q");
+        const next = params.toString() ? `${window.location.pathname}?${params.toString()}` : window.location.pathname;
+        window.history.replaceState({}, "", next);
+      };
+
+      const getMatches = (query) => {
+        const normalized = query.trim().toLowerCase();
+        if (!normalized) return items;
+        return items
+          .filter((item) => item.haystack.includes(normalized))
+          .sort((a, b) => {
+            const aStarts = a.title.toLowerCase().startsWith(normalized);
+            const bStarts = b.title.toLowerCase().startsWith(normalized);
+            if (aStarts !== bStarts) return aStarts ? -1 : 1;
+            return a.title.localeCompare(b.title);
+          });
+      };
+
+      const render = () => {
+        const matches = getMatches(input.value);
+        count.textContent = String(matches.length);
+        empty.classList.toggle("hidden", matches.length !== 0);
+        results.innerHTML = matches
+          .map(
+            (item) => `
+              <a href="${item.href}" class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500">
+                <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">${escapeHtml(item.type)}</p>
+                <h2 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">${escapeHtml(item.title)}</h2>
+                ${item.meta ? `<p class="mt-3 text-sm leading-7 text-ink-700">${escapeHtml(item.meta)}</p>` : ""}
+              </a>
+            `
+          )
+          .join("");
+        writeQuery(input.value);
+      };
+
+      input.value = readQuery();
+      render();
+
+      input.addEventListener("input", render);
+    })();
+  </script>
+</Layout>

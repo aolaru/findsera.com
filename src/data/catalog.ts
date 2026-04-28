@@ -73,6 +73,14 @@ export type Cluster = {
   roundupCount: number;
 };
 
+export type SearchItem = {
+  title: string;
+  href: string;
+  type: "Product" | "Guide" | "Category" | "Page";
+  meta?: string;
+  keywords?: string[];
+};
+
 export const allProducts = [...products] as Product[];
 export const allRoundups = [...roundups] as Roundup[];
 export const allTopics = [...topics] as Topic[];
@@ -95,6 +103,37 @@ export const categories = Object.keys(categoryLabels).map((slug) => ({
   label: categoryLabels[slug as ProductCategory],
   description: categoryDescriptions[slug as ProductCategory]
 }));
+
+const staticSearchPages: SearchItem[] = [
+  {
+    title: "About Findsera",
+    href: "/about",
+    type: "Page",
+    meta: "About",
+    keywords: ["about", "findsera", "mission", "editorial"]
+  },
+  {
+    title: "How We Pick Products",
+    href: "/how-we-pick-products",
+    type: "Page",
+    meta: "Methodology",
+    keywords: ["how we pick products", "methodology", "reviews", "editorial process"]
+  },
+  {
+    title: "Affiliate Disclosure",
+    href: "/affiliate-disclosure",
+    type: "Page",
+    meta: "Disclosure",
+    keywords: ["affiliate disclosure", "commission", "links", "amazon associates"]
+  },
+  {
+    title: "Contact Findsera",
+    href: "/contact",
+    type: "Page",
+    meta: "Contact",
+    keywords: ["contact", "support", "editorial questions", "brand requests"]
+  }
+];
 
 export const getTrendingProducts = () => allProducts.filter((product) => product.isTrending);
 export const getProductsUnderPrice = (price: number) =>
@@ -155,6 +194,36 @@ export const getRelatedProducts = (product: Product, limit = 3) =>
 
 export const sortProductsByPrice = (collection: Product[]) =>
   [...collection].sort((a, b) => a.price - b.price);
+
+export const getSearchItems = (): SearchItem[] => [
+  ...allProducts.map((product) => ({
+    title: product.title,
+    href: `/products/${product.slug}`,
+    type: "Product" as const,
+    meta: product.priceLabel,
+    keywords: [product.brand, product.category, ...product.tags]
+  })),
+  ...allRoundups.map((roundup) => ({
+    title: roundup.title,
+    href: `/${roundup.slug}`,
+    type: "Guide" as const,
+    meta: roundup.category ?? "All categories",
+    keywords: [roundup.cluster, roundup.eyebrow, roundup.description]
+  })),
+  ...categories.map((category) => ({
+    title: category.label,
+    href: `/category/${category.slug}`,
+    type: "Category" as const,
+    meta: "Browse category",
+    keywords: [category.slug, category.description]
+  })),
+  ...staticSearchPages
+];
+
+export const getAllProductTags = () =>
+  Array.from(new Set(allProducts.flatMap((product) => product.tags))).sort((a, b) =>
+    a.localeCompare(b)
+  );
 
 export const slugify = (value: string) =>
   value

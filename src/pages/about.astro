@@ -1,0 +1,53 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "About Findsera | Findsera";
+const description =
+  "Learn what Findsera publishes, how the catalog is curated, and why the site focuses on practical products instead of generic marketplace filler.";
+---
+
+<Layout title={title} description={description} canonicalPath="/about">
+  <section class="section-spacing">
+    <div class="container-shell max-w-4xl">
+      <span class="eyebrow">About</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+        About Findsera
+      </h1>
+      <p class="mt-5 text-lg leading-8 text-ink-700">
+        Findsera is a product-discovery site built around practical buying guides, high-intent product pages, and a catalog that stays focused on real use cases instead of filler list content.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="container-shell grid gap-6 lg:grid-cols-2">
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">What the site covers</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Findsera focuses on gadgets, kitchen gear, and home products that solve clear daily problems. The strongest picks usually improve charging, coffee routines, air quality, desk setups, or practical travel workflows.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">How the site is structured</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          The site is organized into product pages, category pages, and buying guides. That structure makes it easier to compare products, browse by need, and discover related recommendations without leaving the site immediately.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">What Findsera avoids</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          The goal is not to publish generic “top 50” pages padded with weak recommendations. Pages are better when each product has a specific role, a believable reason to buy, and a clearer fit than a broad marketplace search.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">Why trust matters here</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Prices change quickly, affiliate destinations can drift, and search traffic often lands on one page with no context. That is why Findsera keeps visible price-check dates, publishes methodology, and prefers exact Amazon product URLs when possible.
+        </p>
+      </article>
+    </div>
+  </section>
+</Layout>

@@ -1,14 +1,20 @@
 ---
 import ProductCard from "../../components/ProductCard.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
-import { allProducts, sortProductsByPrice } from "../../data/catalog";
+import {
+  allProducts,
+  categories,
+  getAllProductTags,
+  sortProductsByPrice
+} from "../../data/catalog";
 import Layout from "../../layouts/Layout.astro";
 
 const products = sortProductsByPrice(allProducts);
+const tags = getAllProductTags();
 
 const title = "All Products | Findsera";
 const description =
-  "Browse the full Findsera product catalog across gadgets, home, and kitchen, with internal product pages and affiliate-ready buying paths.";
+  "Browse the full Findsera product catalog across gadgets, home, and kitchen, with filters for category, price range, trend status, and use case.";
 ---
 
 <Layout title={title} description={description} canonicalPath="/products">
@@ -19,7 +25,7 @@ const description =
         All Products
       </h1>
       <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
-        Explore every live Findsera product page across gadgets, kitchen, and home, with current pricing context and direct Amazon paths.
+        Explore every live Findsera product page across gadgets, kitchen, and home, then narrow the catalog by price, trend status, or use case.
       </p>
     </div>
   </section>
@@ -30,9 +36,199 @@ const description =
         title={`${products.length} live products`}
         description="Every product listed below has its own internal detail page and appears in at least one buying-guide context."
       />
-      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-        {products.map((product) => <ProductCard product={product} />)}
+
+      <div class="rounded-[1.75rem] border border-black/6 bg-white p-5 shadow-card">
+        <div class="grid gap-4 md:grid-cols-2 xl:grid-cols-[1.3fr,0.9fr,0.9fr,0.9fr,auto]">
+          <label class="space-y-2">
+            <span class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">Search</span>
+            <input
+              type="search"
+              data-filter-search
+              placeholder="Search products, brands, and tags"
+              class="w-full rounded-2xl border border-black/10 bg-sand-50 px-4 py-3 text-sm text-ink-900 outline-none focus:border-accent-500"
+            />
+          </label>
+
+          <label class="space-y-2">
+            <span class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">Category</span>
+            <select
+              data-filter-category
+              class="w-full rounded-2xl border border-black/10 bg-sand-50 px-4 py-3 text-sm text-ink-900 outline-none focus:border-accent-500"
+            >
+              <option value="">All categories</option>
+              {categories.map((category) => <option value={category.slug}>{category.label}</option>)}
+            </select>
+          </label>
+
+          <label class="space-y-2">
+            <span class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">Price</span>
+            <select
+              data-filter-price
+              class="w-full rounded-2xl border border-black/10 bg-sand-50 px-4 py-3 text-sm text-ink-900 outline-none focus:border-accent-500"
+            >
+              <option value="">Any price</option>
+              <option value="under-25">Under $25</option>
+              <option value="under-50">Under $50</option>
+              <option value="under-100">Under $100</option>
+              <option value="over-100">$100 and up</option>
+            </select>
+          </label>
+
+          <label class="space-y-2">
+            <span class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">Use case</span>
+            <select
+              data-filter-tag
+              class="w-full rounded-2xl border border-black/10 bg-sand-50 px-4 py-3 text-sm text-ink-900 outline-none focus:border-accent-500"
+            >
+              <option value="">All use cases</option>
+              {tags.map((tag) => <option value={tag}>{tag}</option>)}
+            </select>
+          </label>
+
+          <div class="flex items-end gap-3">
+            <label class="flex min-h-[3rem] items-center gap-3 rounded-2xl border border-black/10 bg-sand-50 px-4 py-3 text-sm text-ink-900">
+              <input type="checkbox" data-filter-trending class="h-4 w-4 accent-[var(--color-accent-600)]" />
+              Trending only
+            </label>
+            <button
+              type="button"
+              data-filter-reset
+              class="inline-flex min-h-[3rem] items-center justify-center rounded-2xl border border-black/10 bg-white px-4 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+            >
+              Reset
+            </button>
+          </div>
+        </div>
+
+        <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm text-ink-700">
+          <p>
+            Showing <span data-products-count class="font-semibold text-ink-900">{products.length}</span> products
+          </p>
+          <a href="/search" class="font-semibold text-accent-600 hover:text-accent-500">
+            Open full search
+          </a>
+        </div>
+      </div>
+
+      <div class="mt-8 grid gap-6 sm:grid-cols-2 xl:grid-cols-3" data-products-grid>
+        {
+          products.map((product) => (
+            <div
+              data-product-card
+              data-title={product.title.toLowerCase()}
+              data-brand={product.brand.toLowerCase()}
+              data-category={product.category}
+              data-price={product.price}
+              data-trending={product.isTrending ? "true" : "false"}
+              data-tags={product.tags.join("|").toLowerCase()}
+            >
+              <ProductCard product={product} />
+            </div>
+          ))
+        }
+      </div>
+
+      <div
+        data-products-empty
+        class="mt-8 hidden rounded-[1.75rem] border border-dashed border-black/10 bg-white px-6 py-10 text-center text-sm leading-7 text-ink-700 shadow-card"
+      >
+        No products match the current filters. Reset the filters or try a broader search.
       </div>
     </div>
   </section>
+
+  <script is:inline>
+    (() => {
+      const searchInput = document.querySelector("[data-filter-search]");
+      const categorySelect = document.querySelector("[data-filter-category]");
+      const priceSelect = document.querySelector("[data-filter-price]");
+      const tagSelect = document.querySelector("[data-filter-tag]");
+      const trendingInput = document.querySelector("[data-filter-trending]");
+      const resetButton = document.querySelector("[data-filter-reset]");
+      const cards = [...document.querySelectorAll("[data-product-card]")];
+      const count = document.querySelector("[data-products-count]");
+      const emptyState = document.querySelector("[data-products-empty]");
+
+      if (!searchInput || !categorySelect || !priceSelect || !tagSelect || !trendingInput || !resetButton || !count || !emptyState) {
+        return;
+      }
+
+      const readParams = () => new URLSearchParams(window.location.search);
+
+      const writeParams = () => {
+        const params = new URLSearchParams();
+        if (searchInput.value.trim()) params.set("q", searchInput.value.trim());
+        if (categorySelect.value) params.set("category", categorySelect.value);
+        if (priceSelect.value) params.set("price", priceSelect.value);
+        if (tagSelect.value) params.set("tag", tagSelect.value);
+        if (trendingInput.checked) params.set("trending", "1");
+        const query = params.toString();
+        const nextUrl = query ? `${window.location.pathname}?${query}` : window.location.pathname;
+        window.history.replaceState({}, "", nextUrl);
+      };
+
+      const matchesPrice = (price, filter) => {
+        if (!filter) return true;
+        if (filter === "under-25") return price < 25;
+        if (filter === "under-50") return price < 50;
+        if (filter === "under-100") return price < 100;
+        if (filter === "over-100") return price >= 100;
+        return true;
+      };
+
+      const applyFilters = () => {
+        const query = searchInput.value.trim().toLowerCase();
+        const category = categorySelect.value;
+        const price = priceSelect.value;
+        const tag = tagSelect.value.toLowerCase();
+        const trendingOnly = trendingInput.checked;
+
+        let visibleCount = 0;
+
+        for (const card of cards) {
+          const haystack = [card.dataset.title, card.dataset.brand, card.dataset.tags].join(" ");
+          const priceValue = Number(card.dataset.price || "0");
+          const matches =
+            (!query || haystack.includes(query)) &&
+            (!category || card.dataset.category === category) &&
+            matchesPrice(priceValue, price) &&
+            (!tag || (card.dataset.tags || "").includes(tag)) &&
+            (!trendingOnly || card.dataset.trending === "true");
+
+          card.classList.toggle("hidden", !matches);
+          if (matches) visibleCount += 1;
+        }
+
+        count.textContent = String(visibleCount);
+        emptyState.classList.toggle("hidden", visibleCount !== 0);
+        writeParams();
+      };
+
+      const initializeFromParams = () => {
+        const params = readParams();
+        searchInput.value = params.get("q") || "";
+        categorySelect.value = params.get("category") || "";
+        priceSelect.value = params.get("price") || "";
+        tagSelect.value = params.get("tag") || "";
+        trendingInput.checked = params.get("trending") === "1";
+      };
+
+      initializeFromParams();
+      applyFilters();
+
+      for (const control of [searchInput, categorySelect, priceSelect, tagSelect, trendingInput]) {
+        control.addEventListener("input", applyFilters);
+        control.addEventListener("change", applyFilters);
+      }
+
+      resetButton.addEventListener("click", () => {
+        searchInput.value = "";
+        categorySelect.value = "";
+        priceSelect.value = "";
+        tagSelect.value = "";
+        trendingInput.checked = false;
+        applyFilters();
+      });
+    })();
+  </script>
 </Layout>

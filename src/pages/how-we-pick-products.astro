@@ -1,0 +1,67 @@
+---
+import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "How We Pick Products | Findsera";
+const description =
+  "See how Findsera chooses products, checks prices, prioritizes exact Amazon links, and turns the catalog into buying-guide pages.";
+---
+
+<Layout title={title} description={description} canonicalPath="/how-we-pick-products">
+  <section class="section-spacing">
+    <div class="container-shell max-w-4xl">
+      <span class="eyebrow">Methodology</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+        How We Pick Products
+      </h1>
+      <p class="mt-5 text-lg leading-8 text-ink-700">
+        Findsera pages are built around buyer intent. Products make the catalog when they solve a clear problem, have a believable use case, and fit naturally inside guides that help readers compare options.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-10">
+    <div class="container-shell max-w-4xl">
+      <AffiliateDisclosure />
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="container-shell grid gap-6 lg:grid-cols-2">
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">1. Clear product-job fit</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          A product needs a clear role before it belongs on the site. Stronger picks usually improve charging, coffee rituals, precision cooking, compact work setups, or home-comfort routines in a way that is easy to explain.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">2. Practical over novelty</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Findsera favors products that feel useful within the first week, not ones that only look good in a list. Pages get stronger when the recommendations solve repeated daily friction instead of chasing novelty.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">3. Price-check visibility</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Each product keeps a visible price-check date because marketplace pricing changes often. That date is there to give readers context, not to imply that prices stay fixed after the page is published.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">4. Exact Amazon links first</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Exact Amazon product URLs are preferred because they reduce ambiguity and improve click quality. Search-result links are treated as a fallback, not the target standard for a fully verified product page.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card lg:col-span-2">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">5. Guide-first editorial structure</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Products are not added in isolation. The site is designed so product pages, categories, and buying guides support each other. That means a product should make sense both on its own page and inside at least one stronger commercial or use-case-driven guide.
+        </p>
+      </article>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,60 @@
+---
+import AffiliateDisclosure from "../components/AffiliateDisclosure.astro";
+import Layout from "../layouts/Layout.astro";
+
+const title = "Affiliate Disclosure | Findsera";
+const description =
+  "Read how affiliate links work on Findsera, what commissions mean for the site, and how that relates to product selection and price updates.";
+---
+
+<Layout title={title} description={description} canonicalPath="/affiliate-disclosure">
+  <section class="section-spacing">
+    <div class="container-shell max-w-4xl">
+      <span class="eyebrow">Disclosure</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+        Affiliate Disclosure
+      </h1>
+      <p class="mt-5 text-lg leading-8 text-ink-700">
+        Findsera uses affiliate links, including Amazon links. If you buy through qualifying links on the site, Findsera may earn a commission at no additional cost to you.
+      </p>
+    </div>
+  </section>
+
+  <section class="pb-10">
+    <div class="container-shell max-w-4xl">
+      <AffiliateDisclosure />
+    </div>
+  </section>
+
+  <section class="pb-20">
+    <div class="container-shell grid gap-6 lg:grid-cols-2">
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">What this means</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Affiliate commissions help support the cost of running and improving the site. They do not change the price you pay on Amazon or on a brand’s own store.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">What it does not mean</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          An affiliate relationship does not guarantee that a product will be included. The site still filters for usefulness, clear buying intent, and stronger fit inside the catalog and guide structure.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">Why exact links matter</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Findsera prefers exact Amazon product URLs where possible because they reduce ambiguity and make the recommendation more trustworthy than a generic marketplace search page.
+        </p>
+      </article>
+
+      <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+        <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">Price changes</h2>
+        <p class="mt-4 text-sm leading-7 text-ink-700">
+          Prices can change quickly. That is why product pages show the latest manual price-check date, and why readers should treat the displayed price as context rather than a permanent promise.
+        </p>
+      </article>
+    </div>
+  </section>
+</Layout>
