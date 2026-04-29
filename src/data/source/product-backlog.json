@@ -1,29 +1,5 @@
 [
   {
-    "id": "eufy-11s-max-robot-vacuum",
-    "title": "eufy RoboVac 11S Max",
-    "brand": "eufy",
-    "category": "home",
-    "price": 199.99,
-    "image": "/images/products/eufy-11s-max-robot-vacuum.png",
-    "description": "A slim robot vacuum for apartments and busy homes that need simple scheduled cleaning without a bulky dock setup.",
-    "sourceUrl": "https://www.eufy.com/products/t2291111",
-    "priceCheckedAt": "2026-04-25",
-    "amazonQuery": "eufy RoboVac 11S Max",
-    "tags": [
-      "home",
-      "smart home",
-      "cleaning",
-      "apartment"
-    ],
-    "highlights": [
-      "Slim profile for low furniture",
-      "Straightforward controls",
-      "Good fit for first robot-vacuum buyers"
-    ],
-    "isTrending": false
-  },
-  {
     "id": "govee-smart-desk-lamp-pro",
     "title": "Govee Smart Desk Lamp Pro",
     "brand": "Govee",

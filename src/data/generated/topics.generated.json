@@ -14,6 +14,20 @@
     "roundupCount": 0
   },
   {
+    "slug": "apartment",
+    "title": "Apartment",
+    "description": "Findsera content related to apartment.",
+    "productIds": [
+      "eufy-11s-max-robot-vacuum"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
     "slug": "bedroom",
     "title": "Bedroom",
     "description": "Findsera content related to bedroom.",
@@ -67,6 +81,20 @@
     "roundupSlugs": [],
     "categoryCounts": {
       "gadgets": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
+    "slug": "cleaning",
+    "title": "Cleaning",
+    "description": "Findsera content related to cleaning.",
+    "productIds": [
+      "eufy-11s-max-robot-vacuum"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
     },
     "productCount": 1,
     "roundupCount": 0
@@ -201,15 +229,16 @@
     "title": "Home",
     "description": "Findsera content related to home.",
     "productIds": [
+      "eufy-11s-max-robot-vacuum",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 3
+      "home": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -398,13 +427,14 @@
     "description": "Findsera content related to smart home.",
     "productIds": [
       "ember-mug-2",
+      "eufy-11s-max-robot-vacuum",
       "kasa-smart-plug-mini-4-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 2
+      "home": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
