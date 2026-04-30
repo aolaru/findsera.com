@@ -1,18 +1,18 @@
 # Daily maintenance report
 
 - Run date: 2026-04-30
-- New products added: 1
+- New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
 - Remaining product backlog: 2
 - Remaining product refresh backlog: 0
-- Remaining guide backlog: 0
+- Remaining guide backlog: 10
 - Products with stale price checks: 0
 - Validation failures: 0
 
 ## Added products today
 
-- Govee Smart Desk Lamp Pro (`govee-smart-desk-lamp-pro`)
+- None
 
 ## Refreshed products today
 
