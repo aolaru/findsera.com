@@ -22,5 +22,237 @@
       "Useful for small desks"
     ],
     "isTrending": true
+  },
+  {
+    "id": "ugreen-nexode-100w-usb-c-charger",
+    "title": "UGREEN Nexode 100W USB-C Charger",
+    "brand": "UGREEN",
+    "category": "gadgets",
+    "price": 49.99,
+    "image": "/images/products/ugreen-nexode-100w-usb-c-charger.png",
+    "description": "A compact multi-port GaN charger for laptops, tablets, and travel kits that need high-wattage charging without a bulky brick.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonUrl": "https://www.amazon.com/UGREEN-100W-USB-Multiport-Charger/dp/B091Z6JNX4",
+    "amazonQuery": "UGREEN Nexode 100W USB C Charger",
+    "tags": [
+      "charging",
+      "travel",
+      "office",
+      "portable"
+    ],
+    "highlights": [
+      "100W laptop-friendly output",
+      "Multi-port travel charger",
+      "GaN design saves bag space"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "logitech-pebble-2-m350s",
+    "title": "Logitech Pebble 2 M350s",
+    "brand": "Logitech",
+    "category": "gadgets",
+    "price": 29.99,
+    "image": "/images/products/logitech-pebble-2-m350s.png",
+    "description": "A slim travel mouse for light carry setups, coffee-shop work sessions, and compact desks that need a quieter portable pointer.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonUrl": "https://www.amazon.com/Logitech-Bluetooth-Lightweight-Customizable-Easy-Switch/dp/B0BT4DXWQD",
+    "amazonQuery": "Logitech Pebble 2 M350s",
+    "tags": [
+      "travel",
+      "mouse",
+      "portable",
+      "productivity"
+    ],
+    "highlights": [
+      "Slim bag-friendly shape",
+      "Quiet clicks for shared spaces",
+      "Easy fit for lightweight desk kits"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "sandisk-extreme-portable-ssd-1tb",
+    "title": "SanDisk Extreme Portable SSD 1TB",
+    "brand": "SanDisk",
+    "category": "gadgets",
+    "price": 99.99,
+    "image": "/images/products/sandisk-extreme-portable-ssd-1tb.png",
+    "description": "A compact external SSD for travel editors, remote workers, and anyone who wants fast extra storage that disappears into a small bag.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "SanDisk Extreme Portable SSD 1TB",
+    "tags": [
+      "travel",
+      "portable",
+      "office",
+      "productivity"
+    ],
+    "highlights": [
+      "Fast external storage",
+      "Small enough for daily carry",
+      "Useful for backup-heavy workflows"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "echo-pop-smart-speaker",
+    "title": "Amazon Echo Pop Smart Speaker",
+    "brand": "Amazon",
+    "category": "home",
+    "price": 39.99,
+    "image": "/images/products/echo-pop-smart-speaker.png",
+    "description": "A compact Alexa speaker that adds voice control, casual music playback, and simple smart-home access without taking over a room.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Amazon Echo Pop smart speaker",
+    "tags": [
+      "smart home",
+      "gift",
+      "under-50",
+      "home"
+    ],
+    "highlights": [
+      "Compact Alexa entry point",
+      "Simple smart-home control",
+      "Easy giftable price point"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "blink-mini-2-security-camera",
+    "title": "Blink Mini 2 Security Camera",
+    "brand": "Blink",
+    "category": "home",
+    "price": 39.99,
+    "image": "/images/products/blink-mini-2-security-camera.png",
+    "description": "A compact indoor camera for quick room checks, apartment monitoring, and low-cost smart-home coverage that is easy to place.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Blink Mini 2 security camera",
+    "tags": [
+      "smart home",
+      "home",
+      "under-50",
+      "bedroom"
+    ],
+    "highlights": [
+      "Small room-friendly footprint",
+      "Low-cost monitoring upgrade",
+      "Easy fit for starter smart homes"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "oxo-brew-conical-burr-coffee-grinder",
+    "title": "OXO Brew Conical Burr Coffee Grinder",
+    "brand": "OXO",
+    "category": "kitchen",
+    "price": 99.95,
+    "image": "/images/products/oxo-brew-conical-burr-coffee-grinder.png",
+    "description": "A burr grinder for home brewers who want more consistent grounds and a clearer coffee upgrade path than blade grinders provide.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "OXO Brew Conical Burr Coffee Grinder",
+    "tags": [
+      "coffee",
+      "brewing",
+      "countertop",
+      "kitchen"
+    ],
+    "highlights": [
+      "More consistent grinding",
+      "Useful for beginner coffee upgrades",
+      "Fits home brew routines"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "cosori-electric-gooseneck-kettle",
+    "title": "COSORI Electric Gooseneck Kettle",
+    "brand": "COSORI",
+    "category": "kitchen",
+    "price": 69.99,
+    "image": "/images/products/cosori-electric-gooseneck-kettle.png",
+    "description": "A controlled-pour electric kettle for pour-over coffee, tea routines, and compact kitchens that benefit from faster hot-water prep.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "COSORI Electric Gooseneck Kettle",
+    "tags": [
+      "coffee",
+      "tea",
+      "pour over",
+      "countertop"
+    ],
+    "highlights": [
+      "Controlled pour for manual brews",
+      "Useful for tea and coffee routines",
+      "Fast hot-water upgrade"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "instant-pot-duo-7-in-1-6-quart",
+    "title": "Instant Pot Duo 7-in-1 6-Quart",
+    "brand": "Instant Pot",
+    "category": "kitchen",
+    "price": 89.99,
+    "image": "/images/products/instant-pot-duo-7-in-1-6-quart.png",
+    "description": "A multi-cooker for busy kitchens that want one countertop tool to handle weeknight meals, batch cooking, and low-friction prep.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Instant Pot Duo 7 in 1 6 Quart",
+    "tags": [
+      "kitchen",
+      "countertop",
+      "cooking",
+      "home"
+    ],
+    "highlights": [
+      "Versatile weeknight cooker",
+      "Good fit for batch meal prep",
+      "Reduces appliance sprawl"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "nespresso-aeroccino-4-milk-frother",
+    "title": "Nespresso Aeroccino 4 Milk Frother",
+    "brand": "Nespresso",
+    "category": "kitchen",
+    "price": 119.95,
+    "image": "/images/products/nespresso-aeroccino-4-milk-frother.png",
+    "description": "A countertop milk frother for lattes, cappuccinos, and richer home coffee rituals when a simple wand no longer feels like enough.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Nespresso Aeroccino 4",
+    "tags": [
+      "coffee",
+      "brewing",
+      "countertop",
+      "gift"
+    ],
+    "highlights": [
+      "Cleaner milk-texture upgrade",
+      "Useful for latte-style drinks",
+      "Good step up from manual frothers"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "joseph-joseph-drawerstore-cutlery-organizer",
+    "title": "Joseph Joseph DrawerStore Cutlery Organizer",
+    "brand": "Joseph Joseph",
+    "category": "home",
+    "price": 11.99,
+    "image": "/images/products/joseph-joseph-drawerstore-cutlery-organizer.png",
+    "description": "A compact tiered drawer organizer that makes narrow kitchen drawers more functional without needing a full set of storage bins.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Joseph Joseph DrawerStore Cutlery Organizer",
+    "tags": [
+      "organization",
+      "home",
+      "under-50",
+      "kitchen"
+    ],
+    "highlights": [
+      "Space-saving drawer layout",
+      "Strong fit for small kitchens",
+      "Quick organization upgrade"
+    ],
+    "isTrending": true
   }
 ]

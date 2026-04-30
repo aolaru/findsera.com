@@ -153,6 +153,7 @@
     "description": "A slim robot vacuum for apartments and busy homes that need simple scheduled cleaning without a bulky dock setup.",
     "sourceUrl": "https://www.eufy.com/products/t2291111",
     "priceCheckedAt": "2026-04-25",
+    "amazonUrl": "https://www.amazon.com/eufy-Super-Thin-Super-Strong-Self-Charging-Medium-Pile/dp/B07R295MLS",
     "amazonQuery": "eufy RoboVac 11S Max",
     "tags": [
       "home",
@@ -168,8 +169,8 @@
     "isTrending": false,
     "slug": "eufy-11s-max-robot-vacuum",
     "priceLabel": "$199.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=eufy+RoboVac+11S+Max&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/eufy-Super-Thin-Super-Strong-Self-Charging-Medium-Pile/dp/B07R295MLS?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "fellow-stagg-ekg-electric-kettle",
@@ -210,6 +211,7 @@
     "description": "A modern task lamp for home offices and desk setups with adjustable scenes, brighter work lighting, and a cleaner footprint.",
     "sourceUrl": "https://us.govee.com/products/govee-smart-desk-lamp-pro",
     "priceCheckedAt": "2026-04-25",
+    "amazonUrl": "https://www.amazon.com/Govee-Cordless-Music-Light-Customized-Rechargeable/dp/B0F3D8RB4H",
     "amazonQuery": "Govee Smart Desk Lamp Pro",
     "tags": [
       "desk setup",
@@ -225,8 +227,8 @@
     "isTrending": true,
     "slug": "govee-smart-desk-lamp-pro",
     "priceLabel": "$89.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Govee+Smart+Desk+Lamp+Pro&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/Govee-Cordless-Music-Light-Customized-Rechargeable/dp/B0F3D8RB4H?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "kasa-smart-plug-mini-4-pack",
@@ -470,6 +472,7 @@
     "description": "A modular organizer set for kitchen, bath, and desk drawers that makes small-space storage easier to keep tidy.",
     "sourceUrl": "https://www.vtopmart.com/products/drawer-organizers",
     "priceCheckedAt": "2026-04-25",
+    "amazonUrl": "https://www.amazon.com/dp/B08KXKVT4K",
     "amazonQuery": "Vtopmart Drawer Organizer Set",
     "tags": [
       "home",
@@ -485,8 +488,8 @@
     "isTrending": true,
     "slug": "vtopmart-drawer-organizer-set",
     "priceLabel": "$26.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Vtopmart+Drawer+Organizer+Set&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B08KXKVT4K?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "zulay-milk-frother-wand",

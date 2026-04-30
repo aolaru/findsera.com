@@ -1,10 +1,10 @@
 # Daily maintenance report
 
 - Run date: 2026-04-30
-- New products added: 1
+- New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 1
+- Remaining product backlog: 11
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 10
 - Products with stale price checks: 0
@@ -12,7 +12,7 @@
 
 ## Added products today
 
-- ARZOPA 15.6-Inch Portable Monitor (`arzopa-portable-monitor-15-6`)
+- None
 
 ## Refreshed products today
 
@@ -29,9 +29,6 @@
 ## Products missing exact Amazon URLs
 
 - ARZOPA 15.6-Inch Portable Monitor (`arzopa-portable-monitor-15-6`)
-- eufy RoboVac 11S Max (`eufy-11s-max-robot-vacuum`)
-- Govee Smart Desk Lamp Pro (`govee-smart-desk-lamp-pro`)
-- Vtopmart Drawer Organizer Set (`vtopmart-drawer-organizer-set`)
 
 ## Unused products
 
