@@ -4,9 +4,20 @@ on:
   schedule:
     - cron: "30 5 * * 1"
   workflow_dispatch:
+    inputs:
+      review_mode:
+        description: "Create a pull request instead of pushing directly to main"
+        required: false
+        default: false
+        type: boolean
+
+concurrency:
+  group: content-maintenance-main
+  cancel-in-progress: false
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   publish-guide:
@@ -42,6 +53,7 @@ jobs:
         run: npm run build
 
       - name: Commit and push changes
+        if: ${{ !inputs.review_mode }}
         run: |
           if git diff --quiet; then
             echo "No changes to commit."
@@ -52,4 +64,27 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add src/data/source/products.source.json src/data/source/roundups.source.json src/data/source/product-backlog.json src/data/source/product-refresh-backlog.json src/data/source/guide-backlog.json src/data/generated reports
           git commit -m "Publish weekly guide"
+          git fetch origin main
+          git rebase origin/main
           git push origin HEAD:main
+
+      - name: Create review pull request
+        if: ${{ inputs.review_mode }}
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Publish weekly guide"
+          branch: "automation/weekly-guide-review"
+          delete-branch: true
+          title: "Review weekly guide publish"
+          body: |
+            Automated weekly guide publish changes for review.
+
+            This PR was created from the weekly guide workflow in review mode.
+          add-paths: |
+            src/data/source/products.source.json
+            src/data/source/roundups.source.json
+            src/data/source/product-backlog.json
+            src/data/source/product-refresh-backlog.json
+            src/data/source/guide-backlog.json
+            src/data/generated
+            reports

@@ -17,9 +17,13 @@ const MAX_NEW_GUIDES = Number(process.env.MAX_NEW_GUIDES ?? 1);
 const STALE_AFTER_DAYS = Number(process.env.STALE_AFTER_DAYS ?? 14);
 const MIN_GUIDE_PRODUCTS = Number(process.env.MIN_GUIDE_PRODUCTS ?? 2);
 const MIN_INTRO_LENGTH = Number(process.env.MIN_INTRO_LENGTH ?? 120);
+const REQUIRE_EXACT_AMAZON_URLS = process.env.REQUIRE_EXACT_AMAZON_URLS === "true";
 
 const readJson = async (filePath) => JSON.parse(await readFile(filePath, "utf8"));
 const writeJson = async (filePath, value) => writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`);
+const allowedCategories = new Set(["gadgets", "kitchen", "home"]);
+const isoDatePattern = /^\d{4}-\d{2}-\d{2}$/;
+const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
 
 const dateOverride = process.env.DAILY_MAINTENANCE_DATE;
 const now = dateOverride ? new Date(`${dateOverride}T00:00:00Z`) : new Date();
@@ -30,6 +34,238 @@ const roundups = await readJson(roundupsPath);
 const productBacklog = await readJson(productBacklogPath);
 const productRefreshBacklog = await readJson(productRefreshBacklogPath);
 const guideBacklog = await readJson(guideBacklogPath);
+
+const validationFailures = [];
+
+const ensureArrayOfStrings = (value) => Array.isArray(value) && value.every((item) => typeof item === "string" && item.trim().length > 0);
+
+const validateAmazonUrl = (amazonUrl, label) => {
+  try {
+    const hostname = new URL(amazonUrl).hostname;
+    if (!["amazon.com", "www.amazon.com"].includes(hostname)) {
+      validationFailures.push(`${label} has invalid Amazon hostname: ${amazonUrl}`);
+    }
+  } catch {
+    validationFailures.push(`${label} has invalid Amazon URL: ${amazonUrl}`);
+  }
+};
+
+const validateProductRecord = (product, label, { requireAmazonUrl = false } = {}) => {
+  if (!product.id || typeof product.id !== "string" || !slugPattern.test(product.id)) {
+    validationFailures.push(`${label} must have a valid slug-style id.`);
+  }
+
+  if (!product.title || typeof product.title !== "string") {
+    validationFailures.push(`${label} is missing title.`);
+  }
+
+  if (!product.brand || typeof product.brand !== "string") {
+    validationFailures.push(`${label} is missing brand.`);
+  }
+
+  if (!allowedCategories.has(product.category)) {
+    validationFailures.push(`${label} has invalid category: ${product.category}.`);
+  }
+
+  if (typeof product.price !== "number" || Number.isNaN(product.price) || product.price <= 0) {
+    validationFailures.push(`${label} has invalid price.`);
+  }
+
+  if (!product.image || typeof product.image !== "string" || !product.image.startsWith("/images/")) {
+    validationFailures.push(`${label} must use a local /images/ path.`);
+  }
+
+  if (!product.description || typeof product.description !== "string" || product.description.trim().length < 40) {
+    validationFailures.push(`${label} needs a longer description.`);
+  }
+
+  if (!product.priceCheckedAt || !isoDatePattern.test(product.priceCheckedAt)) {
+    validationFailures.push(`${label} must have a valid YYYY-MM-DD priceCheckedAt value.`);
+  }
+
+  if (!ensureArrayOfStrings(product.tags) || product.tags.length < 2) {
+    validationFailures.push(`${label} must have at least 2 tags.`);
+  }
+
+  if (!ensureArrayOfStrings(product.highlights) || product.highlights.length < 2) {
+    validationFailures.push(`${label} must have at least 2 highlights.`);
+  }
+
+  if (typeof product.isTrending !== "boolean") {
+    validationFailures.push(`${label} must set isTrending to true or false.`);
+  }
+
+  if (product.amazonUrl) {
+    validateAmazonUrl(product.amazonUrl, label);
+  }
+
+  if (!product.amazonUrl && (!product.amazonQuery || typeof product.amazonQuery !== "string")) {
+    validationFailures.push(`${label} must include amazonQuery when amazonUrl is missing.`);
+  }
+
+  if (requireAmazonUrl && !product.amazonUrl) {
+    validationFailures.push(`${label} requires an exact amazonUrl before promotion.`);
+  }
+};
+
+const validateGuideRecord = (guide, label, knownProductIds = new Set(), { requireExistingProducts = false } = {}) => {
+  if (!guide.slug || typeof guide.slug !== "string" || !slugPattern.test(guide.slug)) {
+    validationFailures.push(`${label} must have a valid slug.`);
+  }
+
+  if (!guide.title || typeof guide.title !== "string") {
+    validationFailures.push(`${label} is missing title.`);
+  }
+
+  if (!guide.seoTitle || typeof guide.seoTitle !== "string") {
+    validationFailures.push(`${label} is missing seoTitle.`);
+  }
+
+  if (!guide.description || typeof guide.description !== "string" || guide.description.trim().length < 40) {
+    validationFailures.push(`${label} needs a longer description.`);
+  }
+
+  if (guide.category !== null && !allowedCategories.has(guide.category)) {
+    validationFailures.push(`${label} has invalid category: ${guide.category}.`);
+  }
+
+  if (!guide.cluster || typeof guide.cluster !== "string" || !slugPattern.test(guide.cluster)) {
+    validationFailures.push(`${label} must have a valid cluster slug.`);
+  }
+
+  if (!guide.updatedAt || !isoDatePattern.test(guide.updatedAt)) {
+    validationFailures.push(`${label} must have a valid YYYY-MM-DD updatedAt value.`);
+  }
+
+  if (!guide.intro || typeof guide.intro !== "string" || guide.intro.trim().length < MIN_INTRO_LENGTH) {
+    validationFailures.push(`${label} intro is too short.`);
+  }
+
+  if (!Array.isArray(guide.productIds) || guide.productIds.length < MIN_GUIDE_PRODUCTS) {
+    validationFailures.push(`${label} must include at least ${MIN_GUIDE_PRODUCTS} products.`);
+  } else if (new Set(guide.productIds).size !== guide.productIds.length) {
+    validationFailures.push(`${label} contains duplicate productIds.`);
+  } else if (requireExistingProducts && guide.productIds.some((id) => !knownProductIds.has(id))) {
+    validationFailures.push(`${label} references products not in the current catalog or queue.`);
+  }
+
+  if (
+    !Array.isArray(guide.sections) ||
+    guide.sections.length === 0 ||
+    guide.sections.some(
+      (section) =>
+        !section ||
+        typeof section.title !== "string" ||
+        !section.title.trim() ||
+        typeof section.body !== "string" ||
+        section.body.trim().length < 40
+    )
+  ) {
+    validationFailures.push(`${label} must include fully populated sections.`);
+  }
+
+  if (
+    !Array.isArray(guide.faqs) ||
+    guide.faqs.length === 0 ||
+    guide.faqs.some(
+      (faq) =>
+        !faq ||
+        typeof faq.question !== "string" ||
+        !faq.question.trim() ||
+        typeof faq.answer !== "string" ||
+        faq.answer.trim().length < 20
+    )
+  ) {
+    validationFailures.push(`${label} must include valid FAQs.`);
+  }
+};
+
+const sourceProductIds = new Set(products.map((product) => product.id));
+const sourceGuideSlugs = new Set(roundups.map((roundup) => roundup.slug));
+const queuedProductIds = new Set();
+const queuedGuideSlugs = new Set();
+
+for (const product of products) {
+  validateProductRecord(product, `Source product ${product.id}`);
+}
+
+for (const entry of productBacklog) {
+  validateProductRecord(entry, `Queued product ${entry.id}`, { requireAmazonUrl: REQUIRE_EXACT_AMAZON_URLS });
+  if (sourceProductIds.has(entry.id)) {
+    validationFailures.push(`Queued product ${entry.id} already exists in the live product catalog.`);
+  }
+  if (queuedProductIds.has(entry.id)) {
+    validationFailures.push(`Queued product ${entry.id} appears more than once in product-backlog.json.`);
+  }
+  queuedProductIds.add(entry.id);
+}
+
+const refreshableFields = new Set([
+  "price",
+  "priceCheckedAt",
+  "amazonUrl",
+  "description",
+  "highlights",
+  "isTrending",
+  "image",
+  "amazonQuery"
+]);
+
+for (const entry of productRefreshBacklog) {
+  if (!entry.id || typeof entry.id !== "string") {
+    validationFailures.push("Product refresh entries must include an id.");
+    continue;
+  }
+
+  if (!sourceProductIds.has(entry.id) && !queuedProductIds.has(entry.id)) {
+    validationFailures.push(`Product refresh entry ${entry.id} does not target a known live or queued product.`);
+  }
+
+  const keys = Object.keys(entry).filter((key) => key !== "id");
+  if (keys.length === 0) {
+    validationFailures.push(`Product refresh entry ${entry.id} does not update any fields.`);
+  }
+
+  for (const key of keys) {
+    if (!refreshableFields.has(key)) {
+      validationFailures.push(`Product refresh entry ${entry.id} updates unsupported field ${key}.`);
+    }
+  }
+
+  if (entry.amazonUrl) {
+    validateAmazonUrl(entry.amazonUrl, `Product refresh entry ${entry.id}`);
+  }
+
+  if (entry.priceCheckedAt && !isoDatePattern.test(entry.priceCheckedAt)) {
+    validationFailures.push(`Product refresh entry ${entry.id} has invalid priceCheckedAt.`);
+  }
+}
+
+const knownProductIdsForGuides = new Set([...sourceProductIds, ...queuedProductIds]);
+
+for (const roundup of roundups) {
+  validateGuideRecord(roundup, `Source guide ${roundup.slug}`, knownProductIdsForGuides, {
+    requireExistingProducts: true
+  });
+}
+
+for (const entry of guideBacklog) {
+  validateGuideRecord(entry, `Queued guide ${entry.slug}`, knownProductIdsForGuides, {
+    requireExistingProducts: true
+  });
+  if (sourceGuideSlugs.has(entry.slug)) {
+    validationFailures.push(`Queued guide ${entry.slug} already exists in the live guide catalog.`);
+  }
+  if (queuedGuideSlugs.has(entry.slug)) {
+    validationFailures.push(`Queued guide ${entry.slug} appears more than once in guide-backlog.json.`);
+  }
+  queuedGuideSlugs.add(entry.slug);
+}
+
+if (validationFailures.length > 0) {
+  console.error(validationFailures.join("\n"));
+  process.exit(1);
+}
 
 const existingProductIds = new Set(products.map((product) => product.id));
 const existingGuideSlugs = new Set(roundups.map((roundup) => roundup.slug));
@@ -51,16 +287,6 @@ const productsWithNewItems = [...products, ...newProducts];
 const productsById = new Map(productsWithNewItems.map((product) => [product.id, product]));
 const appliedRefreshes = [];
 const remainingProductRefreshBacklog = [];
-const refreshableFields = new Set([
-  "price",
-  "priceCheckedAt",
-  "amazonUrl",
-  "description",
-  "highlights",
-  "isTrending",
-  "image",
-  "amazonQuery"
-]);
 
 for (const entry of productRefreshBacklog) {
   const target = productsById.get(entry.id);
@@ -161,7 +387,7 @@ const invalidProducts = mergedProducts.filter(
       !["amazon.com", "www.amazon.com"].includes(new URL(product.amazonUrl).hostname))
 );
 
-const validationFailures = [
+const postMergeValidationFailures = [
   ...brokenGuideRefs.map(({ roundupSlug, missingProductId }) => `Guide ${roundupSlug} references missing product ${missingProductId}.`),
   ...invalidProducts.map((product) => `Product ${product.id} is missing required fields.`)
 ];
@@ -212,7 +438,7 @@ const reportLines = [
   `- Remaining product refresh backlog: ${remainingProductRefreshBacklog.length}`,
   `- Remaining guide backlog: ${remainingGuideBacklog.length}`,
   `- Products with stale price checks: ${staleProducts.length}`,
-  `- Validation failures: ${validationFailures.length}`,
+  `- Validation failures: ${postMergeValidationFailures.length}`,
   ""
 ];
 
@@ -264,15 +490,15 @@ addSection(
   underfilledGuides.map((guide) => `${guide.title} (\`${guide.slug}\`) product count: ${guide.productCount}`)
 );
 
-addSection(reportLines, "Validation failures", validationFailures);
+addSection(reportLines, "Validation failures", postMergeValidationFailures);
 
 await writeFile(reportPath, `${reportLines.join("\n")}\n`);
 
-if (validationFailures.length > 0) {
-  console.error(validationFailures.join("\n"));
+if (postMergeValidationFailures.length > 0) {
+  console.error(postMergeValidationFailures.join("\n"));
   process.exit(1);
 }
 
 console.log(
-  `Daily maintenance complete: added ${newProducts.length} product(s), refreshed ${appliedRefreshes.length} product(s), added ${newGuides.length} guide(s), ${staleProducts.length} stale price check(s), ${validationFailures.length} validation failure(s).`
+  `Daily maintenance complete: added ${newProducts.length} product(s), refreshed ${appliedRefreshes.length} product(s), added ${newGuides.length} guide(s), ${staleProducts.length} stale price check(s), ${postMergeValidationFailures.length} validation failure(s).`
 );

@@ -119,3 +119,15 @@ Important:
 - It can apply pre-queued refreshes to existing products, but it still does not discover live price changes on its own
 - It flags stale `priceCheckedAt` values so you know which products still need manual refreshes or a later provider/API integration
 - It also reports unused products, guides with short intros, guides with too few products, and validation failures before commit
+
+## Automation hardening
+
+- Daily and weekly content workflows now share a single concurrency group so they do not mutate the same files at the same time.
+- Both workflows rebase on the latest `origin/main` before pushing, which reduces fast-forward push failures.
+- The weekly workflow supports manual review mode through `workflow_dispatch` input `review_mode=true`, which opens a pull request instead of pushing directly to `main`.
+- The maintenance script now validates queued products, queued refreshes, and queued guides before writing any files.
+- If you want to require exact Amazon URLs before queued products can be promoted, run maintenance with:
+
+```bash
+REQUIRE_EXACT_AMAZON_URLS=true npm run content:maintain
+```
