@@ -87,6 +87,34 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "arzopa-portable-monitor-15-6",
+    "title": "ARZOPA 15.6-Inch Portable Monitor",
+    "brand": "ARZOPA",
+    "category": "gadgets",
+    "price": 129.99,
+    "image": "/images/products/arzopa-portable-monitor-15-6.jpg",
+    "description": "A portable second screen for travel work, hybrid setups, and anyone who needs more screen space without a permanent monitor.",
+    "sourceUrl": "https://www.arzopa.com/products/arzopa-a1-gamut-slim-portable-monitor",
+    "priceCheckedAt": "2026-04-25",
+    "amazonQuery": "ARZOPA 15.6 Portable Monitor",
+    "tags": [
+      "travel",
+      "portable",
+      "productivity",
+      "office"
+    ],
+    "highlights": [
+      "Easy second-screen setup",
+      "Useful for travel work",
+      "Simple USB-C connectivity"
+    ],
+    "isTrending": true,
+    "slug": "arzopa-portable-monitor-15-6",
+    "priceLabel": "$129.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=ARZOPA+15.6+Portable+Monitor&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "ember-mug-2",
     "title": "Ember Mug 2",
     "brand": "Ember",

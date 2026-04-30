@@ -323,6 +323,7 @@
     "title": "Office",
     "description": "Findsera content related to office.",
     "productIds": [
+      "arzopa-portable-monitor-15-6",
       "govee-smart-desk-lamp-pro",
       "kasa-smart-plug-mini-4-pack",
       "logitech-mx-anywhere-3s",
@@ -330,10 +331,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 2,
+      "gadgets": 3,
       "home": 2
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -356,13 +357,14 @@
     "description": "Findsera content related to portable.",
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
-      "apple-airtag-1-pack"
+      "apple-airtag-1-pack",
+      "arzopa-portable-monitor-15-6"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 2
+      "gadgets": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -412,6 +414,7 @@
     "title": "Productivity",
     "description": "Findsera content related to productivity.",
     "productIds": [
+      "arzopa-portable-monitor-15-6",
       "govee-smart-desk-lamp-pro",
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
@@ -419,9 +422,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 4
+      "gadgets": 5
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -464,15 +467,16 @@
       "aeropress-original-coffee-maker",
       "anker-maggo-power-bank-10k-slim",
       "apple-airtag-1-pack",
+      "arzopa-portable-monitor-15-6",
       "logitech-mx-anywhere-3s",
       "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 1,
-      "gadgets": 4
+      "gadgets": 5
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
