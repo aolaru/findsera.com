@@ -19,6 +19,50 @@ const underFifty = sortProductsByPrice(getProductsUnderPrice(50)).slice(0, 6);
 const gadgetPicks = getProductsByCategory("gadgets").slice(0, 4);
 const homeAndKitchen = [...getProductsByCategory("home"), ...getProductsByCategory("kitchen")].slice(0, 6);
 
+const latestProducts = [...allProducts]
+  .sort(
+    (a, b) =>
+      b.priceCheckedAt.localeCompare(a.priceCheckedAt) ||
+      Number(b.isTrending) - Number(a.isTrending) ||
+      a.title.localeCompare(b.title)
+  )
+  .slice(0, 3);
+
+const latestGuides = [...allRoundups]
+  .sort((a, b) => b.updatedAt.localeCompare(a.updatedAt) || a.title.localeCompare(b.title))
+  .slice(0, 4);
+
+const featuredGuide =
+  allRoundups.find((roundup) => roundup.slug === "meater-plus-vs-thermapen-one") ?? latestGuides[0];
+
+const newestProduct = latestProducts[0];
+const featuredBudgetGuide =
+  allRoundups.find((roundup) => roundup.slug === "best-products-under-50") ?? allRoundups[0];
+
+const useCaseBlocks = [
+  {
+    href: "/best-travel-tech-under-100",
+    eyebrow: "Travel setup",
+    title: "Pack lighter, charge smarter, and work from anywhere",
+    description:
+      "Start with portable power, compact audio, and carry-on-friendly gear that earns space in a real travel bag."
+  },
+  {
+    href: "/best-desk-setup-products",
+    eyebrow: "Desk upgrades",
+    title: "Build a better workday with compact desk improvements",
+    description:
+      "Browse the strongest keyboard, mouse, lamp, and organization upgrades for hybrid work and smaller desks."
+  },
+  {
+    href: "/best-coffee-gear-for-beginners",
+    eyebrow: "Coffee routine",
+    title: "Upgrade your morning ritual without overbuilding the kitchen",
+    description:
+      "Find brewers, kettles, and coffee add-ons that improve daily drinks without turning the counter into a hobby project."
+  }
+];
+
 const title = "Findsera | Find better products faster";
 const description =
   "Discover real products, exact affiliate-ready links, buying guides, and scalable content across gadgets, home, and kitchen on Findsera.";
@@ -40,39 +84,140 @@ const description =
         </div>
         <div class="flex flex-wrap gap-3">
           <a
-            href="#trending-now"
+            href={`/${featuredGuide.slug}`}
             class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
           >
-            Browse trending
+            Read featured guide
           </a>
           <a
-            href="/guides"
+            href="/products"
             class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
           >
-            Explore guides
+            Browse all products
+          </a>
+        </div>
+
+        <div class="grid gap-4 pt-2 sm:grid-cols-3">
+          <a href="/products" class="rounded-[1.4rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500/30">
+            <p class="text-sm font-semibold text-ink-700">Live catalog products</p>
+            <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{allProducts.length}</p>
+          </a>
+          <a href="/guides" class="rounded-[1.4rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500/30">
+            <p class="text-sm font-semibold text-ink-700">Guide pages</p>
+            <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{allRoundups.length}</p>
+          </a>
+          <a
+            href={`/products/${newestProduct.slug}`}
+            class="rounded-[1.4rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500/30"
+          >
+            <p class="text-sm font-semibold text-ink-700">Newest live product</p>
+            <p class="mt-2 font-serif text-xl font-semibold tracking-tight text-ink-900">{newestProduct.title}</p>
           </a>
         </div>
       </div>
 
       <aside class="rounded-[2rem] border border-black/6 bg-white p-6 shadow-card">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Today’s mix</p>
-        <div class="mt-6 space-y-4">
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Featured this week</p>
+        <div class="mt-5 rounded-[1.6rem] bg-[linear-gradient(180deg,#fff8f1,#fff)] p-5">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-ink-700/70">{featuredGuide.eyebrow}</p>
+          <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
+            <a href={`/${featuredGuide.slug}`} class="hover:text-accent-600">{featuredGuide.title}</a>
+          </h2>
+          <p class="mt-3 text-sm leading-7 text-ink-700">{featuredGuide.description}</p>
+          <div class="mt-5 flex items-center justify-between gap-4 text-sm text-ink-700">
+            <span>{featuredGuide.productCount} products</span>
+            <span>Updated {featuredGuide.updatedAt}</span>
+          </div>
           <a
-            href="/products"
-            class="block rounded-[1.5rem] bg-sand-50 p-5 hover:bg-sand-100"
+            href={`/${featuredGuide.slug}`}
+            class="mt-5 inline-flex items-center rounded-full bg-ink-900 px-4 py-3 text-sm font-semibold text-white hover:bg-accent-600"
           >
-            <p class="text-sm font-semibold text-ink-700">Live catalog products</p>
-            <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{allProducts.length}</p>
+            Read the guide
           </a>
-          <a
-            href="/guides"
-            class="block rounded-[1.5rem] bg-sky-100/60 p-5 hover:bg-sky-100"
-          >
-            <p class="text-sm font-semibold text-ink-700">Guide pages</p>
-            <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{allRoundups.length}</p>
+        </div>
+
+        <div class="mt-5 grid gap-3 sm:grid-cols-2 lg:grid-cols-1">
+          <a href={`/${featuredBudgetGuide.slug}`} class="rounded-[1.4rem] bg-sand-50 p-4 hover:bg-sand-100">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Budget winner</p>
+            <p class="mt-2 font-serif text-xl font-semibold tracking-tight text-ink-900">{featuredBudgetGuide.title}</p>
+          </a>
+          <a href="/guides" class="rounded-[1.4rem] bg-sky-100/55 p-4 hover:bg-sky-100">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Guide index</p>
+            <p class="mt-2 font-serif text-xl font-semibold tracking-tight text-ink-900">Browse all buying guides</p>
           </a>
         </div>
       </aside>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell">
+      <SectionHeader
+        title="Shop by Use Case"
+        description="Start with the strongest entry points for travel, desk setups, and kitchen routines instead of browsing the whole catalog at once."
+      />
+      <div class="grid gap-6 lg:grid-cols-3">
+        {
+          useCaseBlocks.map((block) => (
+            <a
+              href={block.href}
+              class="group rounded-[1.8rem] border border-black/6 bg-white p-6 shadow-card hover:border-accent-500/30"
+            >
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">{block.eyebrow}</p>
+              <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900 group-hover:text-accent-600">
+                {block.title}
+              </h2>
+              <p class="mt-4 text-sm leading-7 text-ink-700">{block.description}</p>
+              <span class="mt-6 inline-flex text-sm font-semibold text-ink-900 group-hover:text-accent-600">
+                Explore picks
+              </span>
+            </a>
+          ))
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section-spacing">
+    <div class="container-shell grid gap-10 xl:grid-cols-[1.1fr,0.9fr]">
+      <div>
+        <SectionHeader
+          title="Newest Products"
+          description="The latest live additions in the catalog, surfaced here first so daily automation updates are visible on the homepage."
+          href="/products"
+          linkLabel="See all products"
+        />
+        <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-1">
+          {latestProducts.map((product) => <ProductCard product={product} />)}
+        </div>
+      </div>
+
+      <div>
+        <SectionHeader
+          title="Fresh Guides"
+          description="Newer commercial pages and comparisons that deserve more visibility than a generic guide grid."
+          href="/guides"
+          linkLabel="Browse guides"
+        />
+        <div class="grid gap-4">
+          {
+            latestGuides.map((roundup) => (
+              <a
+                href={`/${roundup.slug}`}
+                class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500/30"
+              >
+                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">{roundup.eyebrow}</p>
+                <h3 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">{roundup.title}</h3>
+                <p class="mt-3 text-sm leading-7 text-ink-700">{roundup.description}</p>
+                <div class="mt-4 flex items-center justify-between gap-4 text-sm text-ink-700">
+                  <span>{roundup.productCount} products</span>
+                  <span>Updated {roundup.updatedAt}</span>
+                </div>
+              </a>
+            ))
+          }
+        </div>
+      </div>
     </div>
   </section>
 
@@ -143,9 +288,11 @@ const description =
       <SectionHeader
         title="Buying Guides"
         description="Intent-based buying guides generated from source data with richer copy, FAQs, and reusable internal linking."
+        href="/guides"
+        linkLabel="See every guide"
       />
       <div class="grid gap-6 lg:grid-cols-3">
-        {allRoundups.map((roundup) => <RoundupCard roundup={roundup} />)}
+        {allRoundups.slice(0, 6).map((roundup) => <RoundupCard roundup={roundup} />)}
       </div>
     </div>
   </section>
