@@ -149,6 +149,30 @@
     "isTrending": true
   },
   {
+    "id": "govee-smart-desk-lamp-pro",
+    "title": "Govee Smart Desk Lamp Pro",
+    "brand": "Govee",
+    "category": "gadgets",
+    "price": 89.99,
+    "image": "/images/products/govee-smart-desk-lamp-pro.png",
+    "description": "A modern task lamp for home offices and desk setups with adjustable scenes, brighter work lighting, and a cleaner footprint.",
+    "sourceUrl": "https://us.govee.com/products/govee-smart-desk-lamp-pro",
+    "priceCheckedAt": "2026-04-25",
+    "amazonQuery": "Govee Smart Desk Lamp Pro",
+    "tags": [
+      "desk setup",
+      "office",
+      "smart home",
+      "productivity"
+    ],
+    "highlights": [
+      "Adjustable lighting scenes",
+      "Good for work and ambient light",
+      "Fits compact desks well"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "kasa-smart-plug-mini-4-pack",
     "title": "Kasa Smart Plug Mini 4-Pack",
     "brand": "Kasa",

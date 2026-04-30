@@ -184,13 +184,14 @@
     "title": "Desk Setup",
     "description": "Findsera content related to desk setup.",
     "productIds": [
+      "govee-smart-desk-lamp-pro",
       "logitech-mx-keys-mini"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1
+      "gadgets": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -322,16 +323,17 @@
     "title": "Office",
     "description": "Findsera content related to office.",
     "productIds": [
+      "govee-smart-desk-lamp-pro",
       "kasa-smart-plug-mini-4-pack",
       "logitech-mx-anywhere-3s",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 2,
-      "gadgets": 1
+      "gadgets": 2,
+      "home": 2
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -410,15 +412,16 @@
     "title": "Productivity",
     "description": "Findsera content related to productivity.",
     "productIds": [
+      "govee-smart-desk-lamp-pro",
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
       "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 3
+      "gadgets": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -428,13 +431,15 @@
     "productIds": [
       "ember-mug-2",
       "eufy-11s-max-robot-vacuum",
+      "govee-smart-desk-lamp-pro",
       "kasa-smart-plug-mini-4-pack"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 3
+      "home": 3,
+      "gadgets": 1
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
