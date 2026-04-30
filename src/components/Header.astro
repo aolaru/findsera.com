@@ -1,4 +1,5 @@
 ---
+import BrandLogo from "./BrandLogo.astro";
 import HeaderSearch from "./HeaderSearch.astro";
 import { getSearchItems } from "../data/catalog";
 
@@ -18,15 +19,7 @@ const searchItems = getSearchItems();
   <div class="container-shell flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
     <div class="flex items-center justify-between gap-6">
       <a href="/" class="inline-flex items-center gap-3 text-ink-900">
-        <span class="grid h-10 w-10 place-items-center rounded-2xl bg-[linear-gradient(135deg,#f8d7aa,#e77d2f)] font-serif text-lg font-bold text-white shadow-lg shadow-orange-200/70">
-          F
-        </span>
-        <span>
-          <span class="block font-serif text-xl font-semibold tracking-tight">Findsera</span>
-          <span class="block text-xs font-medium uppercase tracking-[0.2em] text-ink-700/80">
-            Curated product picks
-          </span>
-        </span>
+        <BrandLogo showTagline={true} iconClass="h-10 w-10" />
       </a>
     </div>
 
