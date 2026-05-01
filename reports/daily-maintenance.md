@@ -8,6 +8,7 @@
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 10
 - Products with stale price checks: 0
+- Products missing content-map coverage: 0
 - Validation failures: 0
 
 ## Added products today
@@ -33,6 +34,10 @@
 ## Unused products
 
 - OMOTON Adjustable Laptop Stand (`omoton-adjustable-laptop-stand`)
+
+## Products missing content-map coverage
+
+- None
 
 ## Guides with short intros
 

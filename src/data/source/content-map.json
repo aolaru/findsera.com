@@ -1,0 +1,372 @@
+{
+  "aeropress-original-coffee-maker": {
+    "primaryGuide": "aeropress-vs-takeya-cold-brew-maker",
+    "supportingGuides": [
+      "best-beginner-coffee-setup",
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-home",
+      "best-coffee-gear-for-renters",
+      "best-coffee-gear-for-small-kitchens",
+      "best-coffee-upgrades-under-50",
+      "best-gifts-for-coffee-lovers",
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [
+      "aeropress-vs-takeya-cold-brew-maker"
+    ],
+    "buyerIntents": [
+      "coffee routine",
+      "travel carry",
+      "beginner brewing",
+      "budget buy"
+    ],
+    "nextContentIdeas": [
+      "AeroPress Original Coffee Maker alternatives",
+      "Is AeroPress Original Coffee Maker worth it for coffee routine?"
+    ]
+  },
+  "anker-maggo-power-bank-10k-slim": {
+    "primaryGuide": "best-travel-tech-for-long-flights",
+    "supportingGuides": [
+      "best-amazon-gadgets-2026",
+      "best-gadgets-for-hybrid-work",
+      "best-tech-gifts-under-100",
+      "best-travel-accessories-for-apple-users",
+      "best-travel-tech-essentials",
+      "best-travel-tech-for-remote-work",
+      "best-travel-tech-under-100"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "mobile power",
+      "travel carry",
+      "Apple accessory",
+      "portable setup"
+    ],
+    "nextContentIdeas": [
+      "Anker MagGo Power Bank (10K, Slim) alternatives",
+      "Is Anker MagGo Power Bank (10K, Slim) worth it for mobile power?"
+    ]
+  },
+  "apple-airtag-1-pack": {
+    "primaryGuide": "best-travel-tech-for-long-flights",
+    "supportingGuides": [
+      "best-everyday-carry-tech-under-50",
+      "best-travel-accessories-for-apple-users",
+      "best-travel-tech-under-100"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "travel carry",
+      "Apple accessory",
+      "portable setup",
+      "gift research"
+    ],
+    "nextContentIdeas": [
+      "Apple AirTag (1-Pack) alternatives",
+      "Is Apple AirTag (1-Pack) worth it for travel carry?"
+    ]
+  },
+  "arzopa-portable-monitor-15-6": {
+    "primaryGuide": "best-travel-tech-for-remote-work",
+    "supportingGuides": [],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "travel carry",
+      "portable setup",
+      "work productivity",
+      "home office"
+    ],
+    "nextContentIdeas": [
+      "ARZOPA 15.6-Inch Portable Monitor alternatives",
+      "Is ARZOPA 15.6-Inch Portable Monitor worth it for travel carry?"
+    ]
+  },
+  "ember-mug-2": {
+    "primaryGuide": "best-home-office-gifts",
+    "supportingGuides": [
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-home",
+      "best-coffee-gear-for-small-kitchens",
+      "best-desk-setup-products",
+      "best-gifts-for-coffee-lovers",
+      "best-home-office-upgrades",
+      "best-home-office-upgrades-under-150",
+      "best-smart-home-upgrades-for-beginners"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "coffee routine",
+      "desk comfort",
+      "gift research",
+      "smart home upgrade"
+    ],
+    "nextContentIdeas": [
+      "Ember Mug 2 alternatives",
+      "Is Ember Mug 2 worth it for coffee routine?"
+    ]
+  },
+  "eufy-11s-max-robot-vacuum": {
+    "primaryGuide": "best-products-for-small-apartments",
+    "supportingGuides": [
+      "best-smart-home-upgrades-for-beginners"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "home routine",
+      "smart home upgrade",
+      "small-space cleaning",
+      "small apartment"
+    ],
+    "nextContentIdeas": [
+      "eufy RoboVac 11S Max alternatives",
+      "Is eufy RoboVac 11S Max worth it for home routine?"
+    ]
+  },
+  "fellow-stagg-ekg-electric-kettle": {
+    "primaryGuide": "best-coffee-gear-for-renters",
+    "supportingGuides": [
+      "best-beginner-coffee-setup",
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-home",
+      "best-coffee-gear-for-small-kitchens",
+      "best-gifts-for-coffee-lovers",
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "coffee routine",
+      "hot drink routine",
+      "pour-over coffee",
+      "small kitchen"
+    ],
+    "nextContentIdeas": [
+      "Fellow Stagg EKG Electric Kettle alternatives",
+      "Is Fellow Stagg EKG Electric Kettle worth it for coffee routine?"
+    ]
+  },
+  "govee-smart-desk-lamp-pro": {
+    "primaryGuide": "best-desk-upgrades-for-students",
+    "supportingGuides": [
+      "best-desk-setup-products",
+      "best-home-office-upgrades"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "desk setup",
+      "home office",
+      "smart home upgrade",
+      "work productivity"
+    ],
+    "nextContentIdeas": [
+      "Govee Smart Desk Lamp Pro alternatives",
+      "Is Govee Smart Desk Lamp Pro worth it for desk setup?"
+    ]
+  },
+  "kasa-smart-plug-mini-4-pack": {
+    "primaryGuide": "best-products-for-small-apartments",
+    "supportingGuides": [
+      "best-smart-home-upgrades-for-beginners"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "smart home upgrade",
+      "home routine",
+      "budget buy",
+      "home office"
+    ],
+    "nextContentIdeas": [
+      "Kasa Smart Plug Mini 4-Pack alternatives",
+      "Is Kasa Smart Plug Mini 4-Pack worth it for smart home upgrade?"
+    ]
+  },
+  "levoit-core-mini-air-purifier": {
+    "primaryGuide": "best-products-for-small-apartments",
+    "supportingGuides": [
+      "best-desk-setup-products",
+      "best-home-office-gifts",
+      "best-home-office-upgrades",
+      "best-home-office-upgrades-under-150",
+      "best-products-under-50",
+      "best-smart-home-upgrades-for-beginners",
+      "best-tech-for-small-desks",
+      "best-tech-gifts-under-100"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "air quality",
+      "bedroom comfort",
+      "budget buy",
+      "home routine"
+    ],
+    "nextContentIdeas": [
+      "Levoit Core Mini Air Purifier alternatives",
+      "Is Levoit Core Mini Air Purifier worth it for air quality?"
+    ]
+  },
+  "logitech-mx-anywhere-3s": {
+    "primaryGuide": "logitech-mx-keys-mini-vs-mx-anywhere-3s",
+    "supportingGuides": [
+      "best-amazon-gadgets-2026",
+      "best-desk-setup-products",
+      "best-desk-upgrades-for-students",
+      "best-gadgets-for-hybrid-work",
+      "best-home-office-gifts",
+      "best-home-office-upgrades",
+      "best-home-office-upgrades-under-150",
+      "best-tech-for-small-desks"
+    ],
+    "comparisonGuides": [
+      "logitech-mx-keys-mini-vs-mx-anywhere-3s"
+    ],
+    "buyerIntents": [
+      "work productivity",
+      "portable mouse",
+      "travel carry",
+      "home office"
+    ],
+    "nextContentIdeas": [
+      "Logitech MX Anywhere 3S alternatives",
+      "Is Logitech MX Anywhere 3S worth it for work productivity?"
+    ]
+  },
+  "logitech-mx-keys-mini": {
+    "primaryGuide": "logitech-mx-keys-mini-vs-mx-anywhere-3s",
+    "supportingGuides": [
+      "best-amazon-gadgets-2026",
+      "best-desk-setup-products",
+      "best-desk-upgrades-for-students",
+      "best-gadgets-for-hybrid-work",
+      "best-home-office-upgrades",
+      "best-home-office-upgrades-under-150",
+      "best-tech-for-small-desks",
+      "best-travel-tech-for-remote-work"
+    ],
+    "comparisonGuides": [
+      "logitech-mx-keys-mini-vs-mx-anywhere-3s"
+    ],
+    "buyerIntents": [
+      "typing upgrade",
+      "desk setup",
+      "work productivity",
+      "wireless setup"
+    ],
+    "nextContentIdeas": [
+      "Logitech MX Keys Mini alternatives",
+      "Is Logitech MX Keys Mini worth it for typing upgrade?"
+    ]
+  },
+  "meater-plus-wireless-thermometer": {
+    "primaryGuide": "meater-plus-vs-thermapen-one",
+    "supportingGuides": [],
+    "comparisonGuides": [
+      "meater-plus-vs-thermapen-one"
+    ],
+    "buyerIntents": [
+      "precision cooking",
+      "temperature accuracy",
+      "kitchen confidence",
+      "kitchen upgrade"
+    ],
+    "nextContentIdeas": [
+      "MEATER Plus Wireless Meat Thermometer alternatives",
+      "Is MEATER Plus Wireless Meat Thermometer worth it for precision cooking?"
+    ]
+  },
+  "soundcore-q20i-headphones": {
+    "primaryGuide": "best-travel-tech-for-long-flights",
+    "supportingGuides": [
+      "best-travel-tech-under-100"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "travel carry",
+      "wireless setup",
+      "work productivity",
+      "budget buy"
+    ],
+    "nextContentIdeas": [
+      "soundcore Q20i Headphones alternatives",
+      "Is soundcore Q20i Headphones worth it for travel carry?"
+    ]
+  },
+  "takeya-cold-brew-maker": {
+    "primaryGuide": "aeropress-vs-takeya-cold-brew-maker",
+    "supportingGuides": [
+      "best-beginner-coffee-setup",
+      "best-coffee-gear-for-renters",
+      "best-coffee-upgrades-under-50",
+      "best-everyday-carry-tech-under-50"
+    ],
+    "comparisonGuides": [
+      "aeropress-vs-takeya-cold-brew-maker"
+    ],
+    "buyerIntents": [
+      "coffee routine",
+      "beginner brewing",
+      "budget buy",
+      "small kitchen"
+    ],
+    "nextContentIdeas": [
+      "Takeya Deluxe Cold Brew Coffee Maker alternatives",
+      "Is Takeya Deluxe Cold Brew Coffee Maker worth it for coffee routine?"
+    ]
+  },
+  "thermoworks-thermapen-one": {
+    "primaryGuide": "meater-plus-vs-thermapen-one",
+    "supportingGuides": [
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [
+      "meater-plus-vs-thermapen-one"
+    ],
+    "buyerIntents": [
+      "precision cooking",
+      "kitchen confidence",
+      "temperature accuracy",
+      "kitchen upgrade"
+    ],
+    "nextContentIdeas": [
+      "ThermoWorks Thermapen ONE alternatives",
+      "Is ThermoWorks Thermapen ONE worth it for precision cooking?"
+    ]
+  },
+  "vtopmart-drawer-organizer-set": {
+    "primaryGuide": "best-products-for-small-apartments",
+    "supportingGuides": [
+      "best-desk-upgrades-for-students",
+      "best-home-office-upgrades-under-150",
+      "best-products-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "home routine",
+      "home office",
+      "decluttering",
+      "budget buy"
+    ],
+    "nextContentIdeas": [
+      "Vtopmart Drawer Organizer Set alternatives",
+      "Is Vtopmart Drawer Organizer Set worth it for home routine?"
+    ]
+  },
+  "zulay-milk-frother-wand": {
+    "primaryGuide": "best-coffee-gear-for-renters",
+    "supportingGuides": [
+      "best-beginner-coffee-setup",
+      "best-coffee-upgrades-under-50",
+      "best-everyday-carry-tech-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "coffee routine",
+      "budget buy",
+      "beginner brewing",
+      "kitchen upgrade"
+    ],
+    "nextContentIdeas": [
+      "Zulay Kitchen Milk Frother Wand alternatives",
+      "Is Zulay Kitchen Milk Frother Wand worth it for coffee routine?"
+    ]
+  }
+}

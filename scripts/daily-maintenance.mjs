@@ -5,6 +5,7 @@ import process from "node:process";
 const root = process.cwd();
 const productsPath = path.join(root, "src/data/source/products.source.json");
 const roundupsPath = path.join(root, "src/data/source/roundups.source.json");
+const contentMapPath = path.join(root, "src/data/source/content-map.json");
 const productBacklogPath = path.join(root, "src/data/source/product-backlog.json");
 const productRefreshBacklogPath = path.join(root, "src/data/source/product-refresh-backlog.json");
 const guideBacklogPath = path.join(root, "src/data/source/guide-backlog.json");
@@ -31,6 +32,7 @@ const today = now.toISOString().slice(0, 10);
 
 const products = await readJson(productsPath);
 const roundups = await readJson(roundupsPath);
+const contentMap = await readJson(contentMapPath);
 const productBacklog = await readJson(productBacklogPath);
 const productRefreshBacklog = await readJson(productRefreshBacklogPath);
 const guideBacklog = await readJson(guideBacklogPath);
@@ -262,6 +264,44 @@ for (const entry of guideBacklog) {
   queuedGuideSlugs.add(entry.slug);
 }
 
+const knownGuideSlugsForContentMap = new Set([...sourceGuideSlugs, ...queuedGuideSlugs]);
+
+if (!contentMap || Array.isArray(contentMap) || typeof contentMap !== "object") {
+  validationFailures.push("content-map.json must be an object keyed by product id.");
+} else {
+  for (const [productId, entry] of Object.entries(contentMap)) {
+    if (!sourceProductIds.has(productId) && !queuedProductIds.has(productId)) {
+      validationFailures.push(`Content map entry ${productId} does not match a live or queued product.`);
+      continue;
+    }
+
+    if (!entry || typeof entry !== "object" || Array.isArray(entry)) {
+      validationFailures.push(`Content map entry ${productId} must be an object.`);
+      continue;
+    }
+
+    if (!entry.primaryGuide || typeof entry.primaryGuide !== "string") {
+      validationFailures.push(`Content map entry ${productId} must include a primaryGuide.`);
+    } else if (!knownGuideSlugsForContentMap.has(entry.primaryGuide)) {
+      validationFailures.push(`Content map entry ${productId} references unknown primaryGuide ${entry.primaryGuide}.`);
+    }
+
+    for (const field of ["supportingGuides", "comparisonGuides", "buyerIntents", "nextContentIdeas"]) {
+      if (!ensureArrayOfStrings(entry[field])) {
+        validationFailures.push(`Content map entry ${productId} must include ${field} as an array of strings.`);
+      }
+    }
+
+    for (const field of ["supportingGuides", "comparisonGuides"]) {
+      for (const guideSlug of entry[field] ?? []) {
+        if (!knownGuideSlugsForContentMap.has(guideSlug)) {
+          validationFailures.push(`Content map entry ${productId} references unknown ${field} guide ${guideSlug}.`);
+        }
+      }
+    }
+  }
+}
+
 if (validationFailures.length > 0) {
   console.error(validationFailures.join("\n"));
   process.exit(1);
@@ -376,6 +416,10 @@ const brokenGuideRefs = mergedRoundups
       .map((id) => ({ roundupSlug: roundup.slug, missingProductId: id }))
   );
 
+const contentMapGaps = mergedProducts
+  .filter((product) => !contentMap[product.id])
+  .map((product) => ({ id: product.id, title: product.title }));
+
 const invalidProducts = mergedProducts.filter(
   (product) =>
     !product.title ||
@@ -438,6 +482,7 @@ const reportLines = [
   `- Remaining product refresh backlog: ${remainingProductRefreshBacklog.length}`,
   `- Remaining guide backlog: ${remainingGuideBacklog.length}`,
   `- Products with stale price checks: ${staleProducts.length}`,
+  `- Products missing content-map coverage: ${contentMapGaps.length}`,
   `- Validation failures: ${postMergeValidationFailures.length}`,
   ""
 ];
@@ -476,6 +521,12 @@ addSection(
   reportLines,
   "Unused products",
   unusedProducts.map((product) => `${product.title} (\`${product.id}\`)`)
+);
+
+addSection(
+  reportLines,
+  "Products missing content-map coverage",
+  contentMapGaps.map((product) => `${product.title} (\`${product.id}\`)`)
 );
 
 addSection(

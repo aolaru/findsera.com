@@ -4,48 +4,55 @@
     "title": "Budget Finds",
     "description": "Budget Finds cluster pages on Findsera.",
     "roundupSlugs": [
+      "best-everyday-carry-tech-under-50",
+      "best-products-for-small-apartments",
       "best-products-under-50",
-      "best-tech-gifts-under-100",
-      "best-everyday-carry-tech-under-50"
+      "best-tech-gifts-under-100"
     ],
     "categories": [
-      "gadgets"
+      "gadgets",
+      "home"
     ],
-    "roundupCount": 3
+    "roundupCount": 4
   },
   {
     "slug": "coffee-gear",
     "title": "Coffee Gear",
     "description": "Coffee Gear cluster pages on Findsera.",
     "roundupSlugs": [
-      "best-coffee-gear-for-home",
-      "best-gifts-for-coffee-lovers",
+      "aeropress-vs-takeya-cold-brew-maker",
+      "best-beginner-coffee-setup",
       "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-home",
+      "best-coffee-gear-for-renters",
       "best-coffee-gear-for-small-kitchens",
       "best-coffee-upgrades-under-50",
-      "best-beginner-coffee-setup"
+      "best-gifts-for-coffee-lovers"
     ],
     "categories": [
       "kitchen"
     ],
-    "roundupCount": 6
+    "roundupCount": 8
   },
   {
     "slug": "home-office",
     "title": "Home Office",
     "description": "Home Office cluster pages on Findsera.",
     "roundupSlugs": [
-      "best-home-office-upgrades",
       "best-desk-setup-products",
-      "best-tech-for-small-desks",
+      "best-desk-upgrades-for-students",
       "best-home-office-gifts",
+      "best-home-office-upgrades",
       "best-home-office-upgrades-under-150",
-      "best-smart-home-upgrades-for-beginners"
+      "best-smart-home-upgrades-for-beginners",
+      "best-tech-for-small-desks",
+      "logitech-mx-keys-mini-vs-mx-anywhere-3s"
     ],
     "categories": [
-      "home"
+      "home",
+      "gadgets"
     ],
-    "roundupCount": 6
+    "roundupCount": 8
   },
   {
     "slug": "precision-cooking",
@@ -66,15 +73,16 @@
     "description": "Travel Tech cluster pages on Findsera.",
     "roundupSlugs": [
       "best-amazon-gadgets-2026",
-      "best-travel-tech-essentials",
-      "best-travel-tech-for-remote-work",
       "best-gadgets-for-hybrid-work",
       "best-travel-accessories-for-apple-users",
+      "best-travel-tech-essentials",
+      "best-travel-tech-for-long-flights",
+      "best-travel-tech-for-remote-work",
       "best-travel-tech-under-100"
     ],
     "categories": [
       "gadgets"
     ],
-    "roundupCount": 6
+    "roundupCount": 7
   }
 ]
