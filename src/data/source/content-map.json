@@ -368,5 +368,23 @@
       "Zulay Kitchen Milk Frother Wand alternatives",
       "Is Zulay Kitchen Milk Frother Wand worth it for coffee routine?"
     ]
+  },
+  "omoton-adjustable-laptop-stand": {
+    "primaryGuide": "best-tech-for-small-desks",
+    "supportingGuides": [
+      "best-home-office-upgrades-under-150",
+      "best-desk-upgrades-for-students"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "small desk ergonomics",
+      "budget buy",
+      "work productivity",
+      "home office"
+    ],
+    "nextContentIdeas": [
+      "Best laptop stands for small desks",
+      "Is OMOTON Adjustable Laptop Stand worth it for a compact desk?"
+    ]
   }
 }

@@ -385,7 +385,7 @@
     "image": "/images/products/omoton-adjustable-laptop-stand.jpg",
     "description": "A foldable aluminum stand that improves viewing height for laptops and helps compact desks feel more ergonomic.",
     "sourceUrl": "https://www.omoton.com/products/adjustable-laptop-stand",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-01",
     "amazonQuery": "OMOTON Adjustable Laptop Stand",
     "tags": [
       "desk setup",
@@ -399,10 +399,11 @@
       "Useful for small desks"
     ],
     "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B08R8GWBSM",
     "slug": "omoton-adjustable-laptop-stand",
     "priceLabel": "$31.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=OMOTON+Adjustable+Laptop+Stand&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B08R8GWBSM?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "soundcore-q20i-headphones",

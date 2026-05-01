@@ -340,7 +340,8 @@
       "logitech-mx-keys-mini",
       "logitech-mx-anywhere-3s",
       "govee-smart-desk-lamp-pro",
-      "vtopmart-drawer-organizer-set"
+      "vtopmart-drawer-organizer-set",
+      "omoton-adjustable-laptop-stand"
     ],
     "sections": [
       {
@@ -553,14 +554,15 @@
     "eyebrow": "Under $150 office picks",
     "category": "home",
     "cluster": "home-office",
-    "updatedAt": "2026-04-25",
+    "updatedAt": "2026-05-01",
     "intro": "Budget-capped office pages work best when every product feels like a visible quality jump without requiring a full workspace rebuild. This list leans into small upgrades that improve the workday quickly.",
     "productIds": [
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
       "ember-mug-2",
       "levoit-core-mini-air-purifier",
-      "vtopmart-drawer-organizer-set"
+      "vtopmart-drawer-organizer-set",
+      "omoton-adjustable-laptop-stand"
     ],
     "sections": [
       {
@@ -737,12 +739,13 @@
     "eyebrow": "Small-space desk guide",
     "category": "home",
     "cluster": "home-office",
-    "updatedAt": "2026-04-25",
+    "updatedAt": "2026-05-01",
     "intro": "Small-desk buyers are rarely looking for more gear. They are looking for less friction. This page focuses on products that keep a workspace useful without swallowing the whole surface area.",
     "productIds": [
       "logitech-mx-keys-mini",
       "logitech-mx-anywhere-3s",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "omoton-adjustable-laptop-stand"
     ],
     "sections": [
       {

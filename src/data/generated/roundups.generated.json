@@ -349,7 +349,8 @@
       "logitech-mx-keys-mini",
       "logitech-mx-anywhere-3s",
       "govee-smart-desk-lamp-pro",
-      "vtopmart-drawer-organizer-set"
+      "vtopmart-drawer-organizer-set",
+      "omoton-adjustable-laptop-stand"
     ],
     "sections": [
       {
@@ -371,7 +372,7 @@
         "answer": "Smart lighting is not required, but a better desk lamp can improve focus and comfort during evening study sessions."
       }
     ],
-    "productCount": 4
+    "productCount": 5
   },
   {
     "slug": "best-everyday-carry-tech-under-50",
@@ -568,14 +569,15 @@
     "eyebrow": "Under $150 office picks",
     "category": "home",
     "cluster": "home-office",
-    "updatedAt": "2026-04-25",
+    "updatedAt": "2026-05-01",
     "intro": "Budget-capped office pages work best when every product feels like a visible quality jump without requiring a full workspace rebuild. This list leans into small upgrades that improve the workday quickly.",
     "productIds": [
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
       "ember-mug-2",
       "levoit-core-mini-air-purifier",
-      "vtopmart-drawer-organizer-set"
+      "vtopmart-drawer-organizer-set",
+      "omoton-adjustable-laptop-stand"
     ],
     "sections": [
       {
@@ -597,7 +599,7 @@
         "answer": "Yes. Mixing utility-driven peripherals with comfort-oriented products makes the guide more commercially useful because it reflects how people actually improve their setups."
       }
     ],
-    "productCount": 5
+    "productCount": 6
   },
   {
     "slug": "best-kitchen-tools-for-precision-cooking",
@@ -757,12 +759,13 @@
     "eyebrow": "Small-space desk guide",
     "category": "home",
     "cluster": "home-office",
-    "updatedAt": "2026-04-25",
+    "updatedAt": "2026-05-01",
     "intro": "Small-desk buyers are rarely looking for more gear. They are looking for less friction. This page focuses on products that keep a workspace useful without swallowing the whole surface area.",
     "productIds": [
       "logitech-mx-keys-mini",
       "logitech-mx-anywhere-3s",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "omoton-adjustable-laptop-stand"
     ],
     "sections": [
       {
@@ -784,7 +787,7 @@
         "answer": "Usually no. Functional picks with immediate practical value tend to serve the search intent better than aesthetic filler."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-tech-gifts-under-100",
