@@ -48,7 +48,8 @@
     "intro": "Products under $50 work best when they solve a very specific problem without introducing setup friction. This page leans into low-consideration buys that still have strong word-of-mouth appeal and gifting potential.",
     "productIds": [
       "aeropress-original-coffee-maker",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "vtopmart-drawer-organizer-set"
     ],
     "sections": [
       {
@@ -70,7 +71,7 @@
         "answer": "Ideally yes. In practice, prices move often, which is why the content pipeline should re-check and refresh price fields regularly."
       }
     ],
-    "productCount": 2
+    "productCount": 3
   },
   {
     "slug": "best-home-office-upgrades",
@@ -86,7 +87,8 @@
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
       "ember-mug-2",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "govee-smart-desk-lamp-pro"
     ],
     "sections": [
       {
@@ -108,7 +110,7 @@
         "answer": "Not necessarily. Products that improve comfort around the desk, like a purifier or temperature-control mug, often support the intent better than another purely decorative accessory."
       }
     ],
-    "productCount": 4
+    "productCount": 5
   },
   {
     "slug": "best-coffee-gear-for-home",
@@ -235,7 +237,8 @@
       "logitech-mx-keys-mini",
       "logitech-mx-anywhere-3s",
       "ember-mug-2",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "govee-smart-desk-lamp-pro"
     ],
     "sections": [
       {
@@ -257,7 +260,7 @@
         "answer": "The search intent overlaps heavily, and cross-linking the two creates better topical depth than treating them as isolated silos."
       }
     ],
-    "productCount": 4
+    "productCount": 5
   },
   {
     "slug": "best-tech-for-small-desks",
@@ -383,7 +386,8 @@
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
       "logitech-mx-anywhere-3s",
-      "logitech-mx-keys-mini"
+      "logitech-mx-keys-mini",
+      "arzopa-portable-monitor-15-6"
     ],
     "sections": [
       {
@@ -405,7 +409,7 @@
         "answer": "Yes. Travel-intent pages need smaller, more durable products that still feel useful after the trip is over."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-home-office-gifts",
@@ -495,7 +499,8 @@
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
       "ember-mug-2",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "vtopmart-drawer-organizer-set"
     ],
     "sections": [
       {
@@ -517,7 +522,7 @@
         "answer": "Yes. Mixing utility-driven peripherals with comfort-oriented products makes the guide more commercially useful because it reflects how people actually improve their setups."
       }
     ],
-    "productCount": 4
+    "productCount": 5
   },
   {
     "slug": "best-coffee-gear-for-small-kitchens",
@@ -644,7 +649,8 @@
     "productIds": [
       "kasa-smart-plug-mini-4-pack",
       "ember-mug-2",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "eufy-11s-max-robot-vacuum"
     ],
     "sections": [
       {
@@ -666,7 +672,7 @@
         "answer": "Usually no. It is better to start with one or two clear-use-case products, then expand once the buyer knows what routines they actually want to automate."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-travel-accessories-for-apple-users",

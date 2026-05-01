@@ -109,10 +109,11 @@
       "Simple USB-C connectivity"
     ],
     "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B093GCL18V",
     "slug": "arzopa-portable-monitor-15-6",
     "priceLabel": "$129.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=ARZOPA+15.6+Portable+Monitor&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B093GCL18V?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "ember-mug-2",

@@ -1,6 +1,6 @@
 # Daily maintenance report
 
-- Run date: 2026-04-30
+- Run date: 2026-05-01
 - New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
@@ -28,14 +28,11 @@
 
 ## Products missing exact Amazon URLs
 
-- ARZOPA 15.6-Inch Portable Monitor (`arzopa-portable-monitor-15-6`)
+- None
 
 ## Unused products
 
-- ARZOPA 15.6-Inch Portable Monitor (`arzopa-portable-monitor-15-6`)
-- eufy RoboVac 11S Max (`eufy-11s-max-robot-vacuum`)
-- Govee Smart Desk Lamp Pro (`govee-smart-desk-lamp-pro`)
-- Vtopmart Drawer Organizer Set (`vtopmart-drawer-organizer-set`)
+- None
 
 ## Guides with short intros
 
