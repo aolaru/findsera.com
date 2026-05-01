@@ -185,13 +185,14 @@
     "description": "Findsera content related to desk setup.",
     "productIds": [
       "govee-smart-desk-lamp-pro",
-      "logitech-mx-keys-mini"
+      "logitech-mx-keys-mini",
+      "omoton-adjustable-laptop-stand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 2
+      "gadgets": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -327,14 +328,15 @@
       "govee-smart-desk-lamp-pro",
       "kasa-smart-plug-mini-4-pack",
       "logitech-mx-anywhere-3s",
+      "omoton-adjustable-laptop-stand",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 3,
+      "gadgets": 4,
       "home": 2
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -418,13 +420,14 @@
       "govee-smart-desk-lamp-pro",
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
+      "omoton-adjustable-laptop-stand",
       "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 5
+      "gadgets": 6
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -504,6 +507,7 @@
       "aeropress-original-coffee-maker",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
+      "omoton-adjustable-laptop-stand",
       "soundcore-q20i-headphones",
       "takeya-cold-brew-maker",
       "vtopmart-drawer-organizer-set",
@@ -513,9 +517,9 @@
     "categoryCounts": {
       "kitchen": 3,
       "home": 3,
-      "gadgets": 1
+      "gadgets": 2
     },
-    "productCount": 7,
+    "productCount": 8,
     "roundupCount": 0
   },
   {

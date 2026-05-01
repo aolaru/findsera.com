@@ -1,10 +1,10 @@
 # Daily maintenance report
 
 - Run date: 2026-05-01
-- New products added: 0
+- New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 11
+- Remaining product backlog: 10
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 10
 - Products with stale price checks: 0
@@ -12,7 +12,7 @@
 
 ## Added products today
 
-- None
+- OMOTON Adjustable Laptop Stand (`omoton-adjustable-laptop-stand`)
 
 ## Refreshed products today
 
@@ -28,11 +28,11 @@
 
 ## Products missing exact Amazon URLs
 
-- None
+- OMOTON Adjustable Laptop Stand (`omoton-adjustable-laptop-stand`)
 
 ## Unused products
 
-- None
+- OMOTON Adjustable Laptop Stand (`omoton-adjustable-laptop-stand`)
 
 ## Guides with short intros
 

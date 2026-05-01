@@ -325,6 +325,30 @@
     "isTrending": true
   },
   {
+    "id": "omoton-adjustable-laptop-stand",
+    "title": "OMOTON Adjustable Laptop Stand",
+    "brand": "OMOTON",
+    "category": "gadgets",
+    "price": 31.99,
+    "image": "/images/products/omoton-adjustable-laptop-stand.jpg",
+    "description": "A foldable aluminum stand that improves viewing height for laptops and helps compact desks feel more ergonomic.",
+    "sourceUrl": "https://www.omoton.com/products/adjustable-laptop-stand",
+    "priceCheckedAt": "2026-04-25",
+    "amazonQuery": "OMOTON Adjustable Laptop Stand",
+    "tags": [
+      "desk setup",
+      "under-50",
+      "productivity",
+      "office"
+    ],
+    "highlights": [
+      "Adjustable viewing angles",
+      "Compact foldable design",
+      "Useful for small desks"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "soundcore-q20i-headphones",
     "title": "soundcore Q20i Headphones",
     "brand": "soundcore",
