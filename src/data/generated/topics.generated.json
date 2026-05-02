@@ -77,13 +77,14 @@
     "title": "Charging",
     "description": "Findsera content related to charging.",
     "productIds": [
-      "anker-maggo-power-bank-10k-slim"
+      "anker-maggo-power-bank-10k-slim",
+      "ugreen-nexode-100w-usb-c-charger"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1
+      "gadgets": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -334,14 +335,15 @@
       "kasa-smart-plug-mini-4-pack",
       "logitech-mx-anywhere-3s",
       "omoton-adjustable-laptop-stand",
+      "ugreen-nexode-100w-usb-c-charger",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 4,
+      "gadgets": 5,
       "home": 2
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -365,13 +367,14 @@
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
       "apple-airtag-1-pack",
-      "arzopa-portable-monitor-15-6"
+      "arzopa-portable-monitor-15-6",
+      "ugreen-nexode-100w-usb-c-charger"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 3
+      "gadgets": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -477,14 +480,15 @@
       "apple-airtag-1-pack",
       "arzopa-portable-monitor-15-6",
       "logitech-mx-anywhere-3s",
-      "soundcore-q20i-headphones"
+      "soundcore-q20i-headphones",
+      "ugreen-nexode-100w-usb-c-charger"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 1,
-      "gadgets": 5
+      "gadgets": 6
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {

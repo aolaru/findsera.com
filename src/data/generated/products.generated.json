@@ -493,6 +493,34 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "ugreen-nexode-100w-usb-c-charger",
+    "title": "UGREEN Nexode 100W USB-C Charger",
+    "brand": "UGREEN",
+    "category": "gadgets",
+    "price": 49.99,
+    "image": "/images/products/ugreen-nexode-100w-usb-c-charger.png",
+    "description": "A compact multi-port GaN charger for laptops, tablets, and travel kits that need high-wattage charging without a bulky brick.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonUrl": "https://www.amazon.com/UGREEN-100W-USB-Multiport-Charger/dp/B091Z6JNX4",
+    "amazonQuery": "UGREEN Nexode 100W USB C Charger",
+    "tags": [
+      "charging",
+      "travel",
+      "office",
+      "portable"
+    ],
+    "highlights": [
+      "100W laptop-friendly output",
+      "Multi-port travel charger",
+      "GaN design saves bag space"
+    ],
+    "isTrending": true,
+    "slug": "ugreen-nexode-100w-usb-c-charger",
+    "priceLabel": "$49.99",
+    "affiliateUrl": "https://www.amazon.com/UGREEN-100W-USB-Multiport-Charger/dp/B091Z6JNX4?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "vtopmart-drawer-organizer-set",
     "title": "Vtopmart Drawer Organizer Set",
     "brand": "Vtopmart",
