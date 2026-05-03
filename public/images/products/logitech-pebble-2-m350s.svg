@@ -1,0 +1,15 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Logitech Pebble 2 M350s wireless mouse</title>
+  <desc id="desc">A slim graphite wireless mouse illustrated on a warm Findsera product background.</desc>
+  <rect width="900" height="900" rx="72" fill="#FFF9EF"/>
+  <circle cx="690" cy="170" r="96" fill="#DDF3F1"/>
+  <ellipse cx="448" cy="769" rx="190" ry="38" fill="#111827" opacity="0.12"/>
+  <path d="M318 270C318 184 372 124 450 124C528 124 582 184 582 270V538C582 660 532 732 450 732C368 732 318 660 318 538V270Z" fill="#22262B"/>
+  <path d="M338 268C338 198 381 150 450 150C519 150 562 198 562 268V536C562 642 518 704 450 704C382 704 338 642 338 536V268Z" fill="#343A40"/>
+  <path d="M450 152V318" stroke="#111827" stroke-width="8" stroke-linecap="round" opacity="0.45"/>
+  <rect x="431" y="238" width="38" height="78" rx="19" fill="#D9E1E7"/>
+  <rect x="441" y="250" width="18" height="54" rx="9" fill="#111827" opacity="0.65"/>
+  <path d="M354 384C382 404 414 414 450 414C486 414 518 404 546 384" stroke="#111827" stroke-width="10" stroke-linecap="round" opacity="0.35"/>
+  <circle cx="512" cy="542" r="10" fill="#0F8B8D"/>
+  <text x="450" y="832" text-anchor="middle" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="800">Logitech Pebble 2 M350s</text>
+</svg>

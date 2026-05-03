@@ -1,0 +1,16 @@
+<svg width="900" height="900" viewBox="0 0 900 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Vtopmart drawer organizer set</title>
+  <desc id="desc">Clear drawer organizer trays shown in multiple sizes on a warm product background.</desc>
+  <rect width="900" height="900" rx="72" fill="#FFF9EF"/>
+  <circle cx="706" cy="178" r="94" fill="#DDF3F1"/>
+  <ellipse cx="450" cy="748" rx="264" ry="42" fill="#111827" opacity="0.11"/>
+  <rect x="180" y="178" width="540" height="488" rx="42" fill="#E7D8C4"/>
+  <rect x="212" y="210" width="476" height="424" rx="30" fill="#FFFFFF" stroke="#CBBCA7" stroke-width="8"/>
+  <rect x="244" y="246" width="132" height="144" rx="18" fill="#F8FCFC" stroke="#AFC6C6" stroke-width="8"/>
+  <rect x="398" y="246" width="104" height="144" rx="18" fill="#F8FCFC" stroke="#AFC6C6" stroke-width="8"/>
+  <rect x="524" y="246" width="132" height="144" rx="18" fill="#F8FCFC" stroke="#AFC6C6" stroke-width="8"/>
+  <rect x="244" y="416" width="200" height="172" rx="18" fill="#F8FCFC" stroke="#AFC6C6" stroke-width="8"/>
+  <rect x="466" y="416" width="190" height="172" rx="18" fill="#F8FCFC" stroke="#AFC6C6" stroke-width="8"/>
+  <path d="M272 286H348M272 326H334M426 286H474M552 286H628M552 326H606M282 466H406M282 508H372M500 466H622M500 508H584" stroke="#D7E6E6" stroke-width="10" stroke-linecap="round"/>
+  <text x="450" y="832" text-anchor="middle" fill="#111827" font-family="Avenir, Arial, sans-serif" font-size="34" font-weight="800">Vtopmart Organizer Set</text>
+</svg>
