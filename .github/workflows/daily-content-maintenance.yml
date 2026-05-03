@@ -45,6 +45,9 @@ jobs:
       - name: Regenerate content
         run: npm run content:build
 
+      - name: Check product images
+        run: npm run content:images
+
       - name: Build site
         run: npm run build
 

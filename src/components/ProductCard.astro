@@ -17,7 +17,8 @@ const { product } = Astro.props;
         loading="lazy"
         width="640"
         height="420"
-        class="h-52 w-full object-cover duration-300 group-hover:scale-[1.03]"
+        onerror="this.onerror=null;this.src='/images/product-placeholder.svg';"
+        class="h-52 w-full object-contain p-5 duration-300 group-hover:scale-[1.03]"
       />
     </a>
     {
