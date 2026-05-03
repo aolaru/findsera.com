@@ -348,6 +348,34 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "logitech-pebble-2-m350s",
+    "title": "Logitech Pebble 2 M350s",
+    "brand": "Logitech",
+    "category": "gadgets",
+    "price": 29.99,
+    "image": "/images/products/logitech-pebble-2-m350s.png",
+    "description": "A slim travel mouse for light carry setups, coffee-shop work sessions, and compact desks that need a quieter portable pointer.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonUrl": "https://www.amazon.com/Logitech-Bluetooth-Lightweight-Customizable-Easy-Switch/dp/B0BT4DXWQD",
+    "amazonQuery": "Logitech Pebble 2 M350s",
+    "tags": [
+      "travel",
+      "mouse",
+      "portable",
+      "productivity"
+    ],
+    "highlights": [
+      "Slim bag-friendly shape",
+      "Quiet clicks for shared spaces",
+      "Easy fit for lightweight desk kits"
+    ],
+    "isTrending": true,
+    "slug": "logitech-pebble-2-m350s",
+    "priceLabel": "$29.99",
+    "affiliateUrl": "https://www.amazon.com/Logitech-Bluetooth-Lightweight-Customizable-Easy-Switch/dp/B0BT4DXWQD?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "meater-plus-wireless-thermometer",
     "title": "MEATER Plus Wireless Meat Thermometer",
     "brand": "MEATER",

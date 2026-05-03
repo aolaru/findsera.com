@@ -1,29 +1,5 @@
 [
   {
-    "id": "logitech-pebble-2-m350s",
-    "title": "Logitech Pebble 2 M350s",
-    "brand": "Logitech",
-    "category": "gadgets",
-    "price": 29.99,
-    "image": "/images/products/logitech-pebble-2-m350s.png",
-    "description": "A slim travel mouse for light carry setups, coffee-shop work sessions, and compact desks that need a quieter portable pointer.",
-    "priceCheckedAt": "2026-04-30",
-    "amazonUrl": "https://www.amazon.com/Logitech-Bluetooth-Lightweight-Customizable-Easy-Switch/dp/B0BT4DXWQD",
-    "amazonQuery": "Logitech Pebble 2 M350s",
-    "tags": [
-      "travel",
-      "mouse",
-      "portable",
-      "productivity"
-    ],
-    "highlights": [
-      "Slim bag-friendly shape",
-      "Quiet clicks for shared spaces",
-      "Easy fit for lightweight desk kits"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "sandisk-extreme-portable-ssd-1tb",
     "title": "SanDisk Extreme Portable SSD 1TB",
     "brand": "SanDisk",

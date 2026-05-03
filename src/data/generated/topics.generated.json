@@ -316,13 +316,14 @@
     "title": "Mouse",
     "description": "Findsera content related to mouse.",
     "productIds": [
-      "logitech-mx-anywhere-3s"
+      "logitech-mx-anywhere-3s",
+      "logitech-pebble-2-m350s"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 1
+      "gadgets": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -368,13 +369,14 @@
       "anker-maggo-power-bank-10k-slim",
       "apple-airtag-1-pack",
       "arzopa-portable-monitor-15-6",
+      "logitech-pebble-2-m350s",
       "ugreen-nexode-100w-usb-c-charger"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 4
+      "gadgets": 5
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -428,14 +430,15 @@
       "govee-smart-desk-lamp-pro",
       "logitech-mx-anywhere-3s",
       "logitech-mx-keys-mini",
+      "logitech-pebble-2-m350s",
       "omoton-adjustable-laptop-stand",
       "soundcore-q20i-headphones"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 6
+      "gadgets": 7
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -480,15 +483,16 @@
       "apple-airtag-1-pack",
       "arzopa-portable-monitor-15-6",
       "logitech-mx-anywhere-3s",
+      "logitech-pebble-2-m350s",
       "soundcore-q20i-headphones",
       "ugreen-nexode-100w-usb-c-charger"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 1,
-      "gadgets": 6
+      "gadgets": 7
     },
-    "productCount": 7,
+    "productCount": 8,
     "roundupCount": 0
   },
   {
