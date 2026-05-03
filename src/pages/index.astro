@@ -2,12 +2,11 @@
 import ProductCard from "../components/ProductCard.astro";
 import RoundupCard from "../components/RoundupCard.astro";
 import SectionHeader from "../components/SectionHeader.astro";
-import TopicBadgeList from "../components/TopicBadgeList.astro";
+import HeaderSearch from "../components/HeaderSearch.astro";
 import {
   allProducts,
   allRoundups,
-  allTopics,
-  getProductsByCategory,
+  getSearchItems,
   getProductsUnderPrice,
   getTrendingProducts,
   sortProductsByPrice
@@ -16,8 +15,6 @@ import Layout from "../layouts/Layout.astro";
 
 const trendingProducts = getTrendingProducts().slice(0, 6);
 const underFifty = sortProductsByPrice(getProductsUnderPrice(50)).slice(0, 6);
-const gadgetPicks = getProductsByCategory("gadgets").slice(0, 4);
-const homeAndKitchen = [...getProductsByCategory("home"), ...getProductsByCategory("kitchen")].slice(0, 6);
 
 const latestProducts = [...allProducts]
   .sort(
@@ -38,6 +35,7 @@ const featuredGuide =
 const newestProduct = latestProducts[0];
 const featuredBudgetGuide =
   allRoundups.find((roundup) => roundup.slug === "best-products-under-50") ?? allRoundups[0];
+const searchItems = getSearchItems();
 
 const useCaseBlocks = [
   {
@@ -65,23 +63,24 @@ const useCaseBlocks = [
 
 const title = "Findsera | Find better products faster";
 const description =
-  "Discover real products, exact affiliate-ready links, buying guides, and scalable content across gadgets, home, and kitchen on Findsera.";
+  "Discover curated products, simple buying guides, and practical picks across gadgets, home, and kitchen on Findsera.";
 ---
 
 <Layout title={title} description={description}>
   <section class="section-spacing">
     <div class="container-shell hero-grid">
       <div class="space-y-6">
-        <span class="eyebrow">Affiliate discovery, simplified</span>
+        <span class="eyebrow">Curated product discovery</span>
         <div class="max-w-3xl space-y-5">
           <h1 class="font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
             Find better products faster
           </h1>
           <p class="max-w-2xl text-lg leading-8 text-ink-700">
-            Real products, exact affiliate URLs when available, and structured buying guides built to scale
-            far beyond the first handful of roundup pages.
+            Practical products and buying guides for travel, desk setups, coffee routines, and useful home upgrades.
+            Start with search or browse the strongest picks below.
           </p>
         </div>
+        <HeaderSearch items={searchItems} />
         <div class="flex flex-wrap gap-3">
           <a
             href={`/${featuredGuide.slug}`}
@@ -103,7 +102,7 @@ const description =
             <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{allProducts.length}</p>
           </a>
           <a href="/guides" class="rounded-[1.4rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500/30">
-            <p class="text-sm font-semibold text-ink-700">Guide pages</p>
+            <p class="text-sm font-semibold text-ink-700">Buying guides</p>
             <p class="mt-2 font-serif text-4xl font-semibold text-ink-900">{allRoundups.length}</p>
           </a>
           <a
@@ -117,7 +116,7 @@ const description =
       </div>
 
       <aside class="rounded-[2rem] border border-black/6 bg-white p-6 shadow-card">
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Featured this week</p>
+        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Featured guide</p>
         <div class="mt-5 rounded-[1.6rem] bg-[linear-gradient(180deg,#fff8f1,#fff)] p-5">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-ink-700/70">{featuredGuide.eyebrow}</p>
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
@@ -142,7 +141,7 @@ const description =
             <p class="mt-2 font-serif text-xl font-semibold tracking-tight text-ink-900">{featuredBudgetGuide.title}</p>
           </a>
           <a href="/guides" class="rounded-[1.4rem] bg-sky-100/55 p-4 hover:bg-sky-100">
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Guide index</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">More picks</p>
             <p class="mt-2 font-serif text-xl font-semibold tracking-tight text-ink-900">Browse all buying guides</p>
           </a>
         </div>
@@ -154,7 +153,7 @@ const description =
     <div class="container-shell">
       <SectionHeader
         title="Shop by Use Case"
-        description="Start with the strongest entry points for travel, desk setups, and kitchen routines instead of browsing the whole catalog at once."
+        description="Start with the clearest shopping paths instead of browsing the whole catalog at once."
       />
       <div class="grid gap-6 lg:grid-cols-3">
         {
@@ -178,54 +177,13 @@ const description =
     </div>
   </section>
 
-  <section class="section-spacing">
-    <div class="container-shell grid gap-10 xl:grid-cols-[1.1fr,0.9fr]">
-      <div>
-        <SectionHeader
-          title="Newest Products"
-          description="The latest live additions in the catalog, surfaced here first so daily automation updates are visible on the homepage."
-          href="/products"
-          linkLabel="See all products"
-        />
-        <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-1">
-          {latestProducts.map((product) => <ProductCard product={product} />)}
-        </div>
-      </div>
-
-      <div>
-        <SectionHeader
-          title="Fresh Guides"
-          description="Newer commercial pages and comparisons that deserve more visibility than a generic guide grid."
-          href="/guides"
-          linkLabel="Browse guides"
-        />
-        <div class="grid gap-4">
-          {
-            latestGuides.map((roundup) => (
-              <a
-                href={`/${roundup.slug}`}
-                class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500/30"
-              >
-                <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">{roundup.eyebrow}</p>
-                <h3 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">{roundup.title}</h3>
-                <p class="mt-3 text-sm leading-7 text-ink-700">{roundup.description}</p>
-                <div class="mt-4 flex items-center justify-between gap-4 text-sm text-ink-700">
-                  <span>{roundup.productCount} products</span>
-                  <span>Updated {roundup.updatedAt}</span>
-                </div>
-              </a>
-            ))
-          }
-        </div>
-      </div>
-    </div>
-  </section>
-
   <section id="trending-now" class="section-spacing">
     <div class="container-shell">
       <SectionHeader
         title="Trending Now"
-        description="Real product picks with current-source pricing and affiliate links that prefer exact Amazon destinations over search fallback."
+        description="Current product picks with practical use cases and quick paths to compare or buy."
+        href="/products"
+        linkLabel="See all products"
       />
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {trendingProducts.map((product) => <ProductCard product={product} />)}
@@ -237,7 +195,7 @@ const description =
     <div class="container-shell">
       <SectionHeader
         title="Under $50"
-        description="Low-risk purchases with clearer utility and stronger potential for budget-intent SEO pages."
+        description="Lower-risk picks that are easy to gift, test, or add to a routine."
         href="/best-products-under-50"
         linkLabel="See the full list"
       />
@@ -250,44 +208,8 @@ const description =
   <section class="section-spacing">
     <div class="container-shell">
       <SectionHeader
-        title="Gadget Picks"
-        description="Charging gear and compact peripherals built around travel, hybrid work, and practical everyday use."
-        href="/category/gadgets"
-      />
-      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-4">
-        {gadgetPicks.map((product) => <ProductCard product={product} />)}
-      </div>
-    </div>
-  </section>
-
-  <section class="section-spacing">
-    <div class="container-shell">
-      <SectionHeader
-        title="Home & Kitchen"
-        description="Coffee gear, air quality, and comfort-focused products that support slower daily routines."
-        href="/category/kitchen"
-      />
-      <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-        {homeAndKitchen.map((product) => <ProductCard product={product} />)}
-      </div>
-    </div>
-  </section>
-
-  <section class="section-spacing">
-    <div class="container-shell">
-      <SectionHeader
-        title="Topic Tags"
-        description="Tag pages create additional indexable paths for recurring search themes across the catalog."
-      />
-      <TopicBadgeList topics={allTopics.slice(0, 8)} />
-    </div>
-  </section>
-
-  <section class="section-spacing">
-    <div class="container-shell">
-      <SectionHeader
-        title="Buying Guides"
-        description="Intent-based buying guides generated from source data with richer copy, FAQs, and reusable internal linking."
+        title="Best Guides"
+        description="Start with the most useful buying guides and comparisons."
         href="/guides"
         linkLabel="See every guide"
       />

@@ -1,6 +1,6 @@
 ---
 import BrandLogo from "./BrandLogo.astro";
-import { allRoundups, categories } from "../data/catalog";
+import { categories } from "../data/catalog";
 ---
 
 <footer class="border-t border-black/5 bg-white/90">
@@ -13,8 +13,8 @@ import { allRoundups, categories } from "../data/catalog";
         />
       </div>
       <p class="max-w-xl text-sm leading-7 text-ink-700">
-        Findsera surfaces trending and practical product discoveries with clean pages, strong SEO
-        structure, and room to scale into a larger affiliate publishing system.
+        Findsera helps you compare practical products faster with curated picks, simple buying guides,
+        and direct paths to the products worth checking first.
       </p>
     </div>
 
@@ -22,17 +22,10 @@ import { allRoundups, categories } from "../data/catalog";
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Browse</p>
         <ul class="mt-4 space-y-3 text-sm text-ink-700">
-          <li><a href="/" class="hover:text-accent-600">Homepage</a></li>
-          {
-            allRoundups.slice(0, 3).map((roundup) => (
-              <li>
-                <a href={`/${roundup.slug}`} class="hover:text-accent-600">
-                  {roundup.title}
-                </a>
-              </li>
-            ))
-          }
+          <li><a href="/" class="hover:text-accent-600">Home</a></li>
+          <li><a href="/products" class="hover:text-accent-600">Products</a></li>
           <li><a href="/guides" class="hover:text-accent-600">Buying Guides</a></li>
+          <li><a href="/search" class="hover:text-accent-600">Search</a></li>
         </ul>
       </div>
 

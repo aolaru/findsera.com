@@ -4,51 +4,32 @@ import HeaderSearch from "./HeaderSearch.astro";
 import { getSearchItems } from "../data/catalog";
 
 const navItems = [
-  { href: "/", label: "Home" },
-  { href: "/category/gadgets", label: "Gadgets" },
-  { href: "/category/kitchen", label: "Kitchen" },
-  { href: "/best-products-under-50", label: "Under $50" },
-  { href: "/guides", label: "Guides" }
+  { href: "/products", label: "Products" },
+  { href: "/guides", label: "Guides" },
+  { href: "/about", label: "About" },
+  { href: "/search", label: "Search" }
 ];
 
-const currentPath = Astro.url.pathname;
 const searchItems = getSearchItems();
 ---
 
-<header class="sticky top-0 z-40 border-b border-black/5 bg-white/88 backdrop-blur-lg">
+<header class="sticky top-0 z-40 border-b border-black/5 bg-white/90 backdrop-blur">
   <div class="container-shell flex flex-col gap-4 py-4 lg:flex-row lg:items-center lg:justify-between">
-    <div class="flex items-center justify-between gap-6">
-      <a href="/" class="inline-flex items-center gap-3 text-ink-900">
-        <BrandLogo showTagline={true} iconClass="h-10 w-10" />
+    <div class="flex items-center justify-between gap-4">
+      <a href="/" aria-label="Findsera home" class="inline-flex items-center">
+        <BrandLogo showTagline={true} />
       </a>
+      <nav class="flex items-center gap-4 text-sm font-semibold text-ink-700 lg:hidden" aria-label="Mobile navigation">
+        <a href="/products" class="hover:text-accent-600">Products</a>
+        <a href="/guides" class="hover:text-accent-600">Guides</a>
+      </nav>
     </div>
 
-    <div class="flex flex-col gap-3 lg:flex-1 lg:flex-row lg:items-center lg:justify-end">
-      <div class="w-full lg:max-w-md">
-        <HeaderSearch items={searchItems} />
-      </div>
-
-      <nav aria-label="Primary" class="hidden items-center gap-2 md:flex">
-        {
-          navItems.map((item) => {
-            const active = currentPath === item.href;
-
-            return (
-              <a
-                href={item.href}
-                class:list={[
-                  "rounded-full px-4 py-2 text-sm font-semibold",
-                  active
-                    ? "bg-ink-900 text-white shadow-md"
-                    : "text-ink-700 hover:bg-sand-100 hover:text-ink-900"
-                ]}
-              >
-                {item.label}
-              </a>
-            );
-          })
-        }
+    <div class="flex flex-col gap-4 lg:flex-row lg:items-center">
+      <nav class="hidden items-center gap-6 text-sm font-semibold text-ink-700 lg:flex" aria-label="Main navigation">
+        {navItems.map((item) => <a href={item.href} class="hover:text-accent-600">{item.label}</a>)}
       </nav>
+      <HeaderSearch items={searchItems} />
     </div>
   </div>
 </header>
