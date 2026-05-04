@@ -374,6 +374,29 @@
     "amazonUrl": "https://www.amazon.com/dp/B08R8GWBSM"
   },
   {
+    "id": "sandisk-extreme-portable-ssd-1tb",
+    "title": "SanDisk Extreme Portable SSD 1TB",
+    "brand": "SanDisk",
+    "category": "gadgets",
+    "price": 99.99,
+    "image": "/images/products/sandisk-extreme-portable-ssd-1tb.png",
+    "description": "A compact external SSD for travel editors, remote workers, and anyone who wants fast extra storage that disappears into a small bag.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "SanDisk Extreme Portable SSD 1TB",
+    "tags": [
+      "travel",
+      "portable",
+      "office",
+      "productivity"
+    ],
+    "highlights": [
+      "Fast external storage",
+      "Small enough for daily carry",
+      "Useful for backup-heavy workflows"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "soundcore-q20i-headphones",
     "title": "soundcore Q20i Headphones",
     "brand": "soundcore",

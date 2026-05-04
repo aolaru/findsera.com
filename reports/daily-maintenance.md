@@ -1,19 +1,19 @@
 # Daily maintenance report
 
-- Run date: 2026-05-03
+- Run date: 2026-05-04
 - New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 8
+- Remaining product backlog: 7
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 10
 - Products with stale price checks: 4
-- Products missing content-map coverage: 2
+- Products missing content-map coverage: 3
 - Validation failures: 0
 
 ## Added products today
 
-- Logitech Pebble 2 M350s (`logitech-pebble-2-m350s`)
+- SanDisk Extreme Portable SSD 1TB (`sandisk-extreme-portable-ssd-1tb`)
 
 ## Refreshed products today
 
@@ -32,16 +32,18 @@
 
 ## Products missing exact Amazon URLs
 
-- None
+- SanDisk Extreme Portable SSD 1TB (`sandisk-extreme-portable-ssd-1tb`)
 
 ## Unused products
 
 - Logitech Pebble 2 M350s (`logitech-pebble-2-m350s`)
+- SanDisk Extreme Portable SSD 1TB (`sandisk-extreme-portable-ssd-1tb`)
 - UGREEN Nexode 100W USB-C Charger (`ugreen-nexode-100w-usb-c-charger`)
 
 ## Products missing content-map coverage
 
 - Logitech Pebble 2 M350s (`logitech-pebble-2-m350s`)
+- SanDisk Extreme Portable SSD 1TB (`sandisk-extreme-portable-ssd-1tb`)
 - UGREEN Nexode 100W USB-C Charger (`ugreen-nexode-100w-usb-c-charger`)
 
 ## Guides with short intros

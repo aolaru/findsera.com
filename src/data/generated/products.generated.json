@@ -434,6 +434,33 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "sandisk-extreme-portable-ssd-1tb",
+    "title": "SanDisk Extreme Portable SSD 1TB",
+    "brand": "SanDisk",
+    "category": "gadgets",
+    "price": 99.99,
+    "image": "/images/products/sandisk-extreme-portable-ssd-1tb.png",
+    "description": "A compact external SSD for travel editors, remote workers, and anyone who wants fast extra storage that disappears into a small bag.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "SanDisk Extreme Portable SSD 1TB",
+    "tags": [
+      "travel",
+      "portable",
+      "office",
+      "productivity"
+    ],
+    "highlights": [
+      "Fast external storage",
+      "Small enough for daily carry",
+      "Useful for backup-heavy workflows"
+    ],
+    "isTrending": true,
+    "slug": "sandisk-extreme-portable-ssd-1tb",
+    "priceLabel": "$99.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=SanDisk+Extreme+Portable+SSD+1TB&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "soundcore-q20i-headphones",
     "title": "soundcore Q20i Headphones",
     "brand": "soundcore",
