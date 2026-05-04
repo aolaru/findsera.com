@@ -81,6 +81,12 @@ export type SearchItem = {
   keywords?: string[];
 };
 
+export type ProductFreshness = {
+  status: "new" | "updated";
+  label: "NEW" | "UPDATED";
+  description: string;
+};
+
 export const allProducts = [...products] as Product[];
 export const allRoundups = [...roundups] as Roundup[];
 export const allTopics = [...topics] as Topic[];
@@ -136,6 +142,36 @@ const staticSearchPages: SearchItem[] = [
 ];
 
 export const getTrendingProducts = () => allProducts.filter((product) => product.isTrending);
+export const getProductFreshness = (product: Product, referenceDate = new Date()): ProductFreshness | null => {
+  const checkedAt = new Date(`${product.priceCheckedAt}T00:00:00Z`);
+  const reference = new Date(
+    Date.UTC(referenceDate.getUTCFullYear(), referenceDate.getUTCMonth(), referenceDate.getUTCDate())
+  );
+  const ageInDays = Math.floor((reference.getTime() - checkedAt.getTime()) / 86_400_000);
+
+  if (ageInDays < 0) {
+    return null;
+  }
+
+  if (ageInDays <= 7) {
+    return {
+      status: "new",
+      label: "NEW",
+      description: "Recently added or refreshed in the Findsera catalog."
+    };
+  }
+
+  if (ageInDays <= 14) {
+    return {
+      status: "updated",
+      label: "UPDATED",
+      description: "Recently checked for price and catalog details."
+    };
+  }
+
+  return null;
+};
+
 export const getProductsUnderPrice = (price: number) =>
   allProducts.filter((product) => product.price <= price);
 export const getProductsByCategory = (category: ProductCategory) =>

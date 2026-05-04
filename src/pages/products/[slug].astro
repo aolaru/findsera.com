@@ -9,6 +9,7 @@ import TopicBadgeList from "../../components/TopicBadgeList.astro";
 import {
   allProducts,
   categoryLabels,
+  getProductFreshness,
   getRelatedProducts,
   getRoundupsForProduct,
   getTopicsForProduct,
@@ -58,6 +59,7 @@ const formatTag = (value: string) =>
 const useCase = product.tags[0] ? formatTag(product.tags[0].replace(/\s+/g, "-")) : categoryLabel;
 const secondaryUseCase = product.tags[1] ? formatTag(product.tags[1].replace(/\s+/g, "-")) : "Everyday use";
 const priceTier = product.price >= 120 ? "Upgrade" : product.price >= 70 ? "Mid-range" : "Accessible";
+const freshness = getProductFreshness(product);
 const pros = product.highlights.slice(0, 3);
 const cons = [
   product.price >= 100
@@ -172,6 +174,19 @@ const structuredData = {
               Price checked {formattedUpdatedAt}
             </span>
             {
+              freshness && (
+                <span
+                  title={freshness.description}
+                  class:list={[
+                    "rounded-full px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em]",
+                    freshness.status === "new" ? "bg-accent-600 text-white" : "border border-black/8 bg-white text-ink-700"
+                  ]}
+                >
+                  {freshness.label}
+                </span>
+              )
+            }
+            {
               product.isTrending && (
                 <span class="rounded-full bg-ink-900 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-white">
                   Trending
@@ -191,6 +206,13 @@ const structuredData = {
             <p class="rounded-full border border-black/8 bg-white px-5 py-3 text-base font-semibold text-ink-700">
               {priceTier}
             </p>
+            {
+              freshness && (
+                <p class="rounded-full border border-black/8 bg-white px-5 py-3 text-base font-semibold text-accent-600">
+                  {freshness.description}
+                </p>
+              )
+            }
           </div>
           <div class="mt-8 flex flex-wrap gap-3">
             <a

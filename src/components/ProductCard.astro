@@ -1,4 +1,5 @@
 ---
+import { getProductFreshness } from "../data/catalog";
 import type { Product } from "../data/catalog";
 
 interface Props {
@@ -6,6 +7,7 @@ interface Props {
 }
 
 const { product } = Astro.props;
+const freshness = getProductFreshness(product);
 ---
 
 <article class="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/6 bg-white shadow-card">
@@ -23,8 +25,21 @@ const { product } = Astro.props;
     </a>
     {
       product.isTrending && (
-        <span class="absolute left-4 top-4 rounded-full bg-ink-900 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white">
+        <span class="absolute left-4 top-4 rounded-full bg-ink-900 px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] text-white shadow-sm">
           Trending
+        </span>
+      )
+    }
+    {
+      freshness && (
+        <span
+          title={freshness.description}
+          class:list={[
+            "absolute right-4 top-4 rounded-full px-3 py-1 text-xs font-bold uppercase tracking-[0.16em] shadow-sm",
+            freshness.status === "new" ? "bg-accent-600 text-white" : "border border-black/8 bg-white text-ink-900"
+          ]}
+        >
+          {freshness.label}
         </span>
       )
     }
@@ -53,9 +68,10 @@ const { product } = Astro.props;
       {product.highlights.slice(0, 2).map((item) => <li>- {item}</li>)}
     </ul>
 
-    <p class="mt-4 text-xs font-medium uppercase tracking-[0.14em] text-ink-700/70">
-      Price checked {product.priceCheckedAt}
-    </p>
+    <div class="mt-4 flex flex-wrap items-center gap-2 text-xs font-medium uppercase tracking-[0.14em] text-ink-700/70">
+      <span>Price checked {product.priceCheckedAt}</span>
+      {freshness && <span class="text-accent-600">· {freshness.description}</span>}
+    </div>
 
     <div class="mt-6 flex flex-wrap gap-3">
       <a
