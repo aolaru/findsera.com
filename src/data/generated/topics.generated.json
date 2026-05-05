@@ -206,14 +206,15 @@
     "description": "Findsera content related to gift.",
     "productIds": [
       "apple-airtag-1-pack",
+      "echo-pop-smart-speaker",
       "ember-mug-2"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "gadgets": 1,
-      "home": 1
+      "home": 2
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -236,6 +237,7 @@
     "title": "Home",
     "description": "Findsera content related to home.",
     "productIds": [
+      "echo-pop-smart-speaker",
       "eufy-11s-max-robot-vacuum",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
@@ -243,9 +245,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 4
+      "home": 5
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -450,6 +452,7 @@
     "title": "Smart Home",
     "description": "Findsera content related to smart home.",
     "productIds": [
+      "echo-pop-smart-speaker",
       "ember-mug-2",
       "eufy-11s-max-robot-vacuum",
       "govee-smart-desk-lamp-pro",
@@ -457,10 +460,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 3,
+      "home": 4,
       "gadgets": 1
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -524,6 +527,7 @@
     "description": "Findsera content related to under-50.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "echo-pop-smart-speaker",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "omoton-adjustable-laptop-stand",
@@ -535,10 +539,10 @@
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 3,
-      "home": 3,
+      "home": 4,
       "gadgets": 2
     },
-    "productCount": 8,
+    "productCount": 9,
     "roundupCount": 0
   },
   {

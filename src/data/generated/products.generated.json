@@ -116,6 +116,33 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "echo-pop-smart-speaker",
+    "title": "Amazon Echo Pop Smart Speaker",
+    "brand": "Amazon",
+    "category": "home",
+    "price": 39.99,
+    "image": "/images/products/echo-pop-smart-speaker.png",
+    "description": "A compact Alexa speaker that adds voice control, casual music playback, and simple smart-home access without taking over a room.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Amazon Echo Pop smart speaker",
+    "tags": [
+      "smart home",
+      "gift",
+      "under-50",
+      "home"
+    ],
+    "highlights": [
+      "Compact Alexa entry point",
+      "Simple smart-home control",
+      "Easy giftable price point"
+    ],
+    "isTrending": true,
+    "slug": "echo-pop-smart-speaker",
+    "priceLabel": "$39.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=Amazon+Echo+Pop+smart+speaker&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "ember-mug-2",
     "title": "Ember Mug 2",
     "brand": "Ember",
