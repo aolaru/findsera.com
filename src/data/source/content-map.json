@@ -386,5 +386,89 @@
       "Best laptop stands for small desks",
       "Is OMOTON Adjustable Laptop Stand worth it for a compact desk?"
     ]
+  },
+  "echo-pop-smart-speaker": {
+    "primaryGuide": "best-smart-home-starter-kit-under-100",
+    "supportingGuides": [
+      "best-tech-for-dorm-rooms",
+      "echo-pop-vs-kasa-smart-plug"
+    ],
+    "comparisonGuides": [
+      "echo-pop-vs-kasa-smart-plug"
+    ],
+    "buyerIntents": [
+      "smart-home starter",
+      "budget gift",
+      "voice control",
+      "dorm room audio"
+    ],
+    "nextContentIdeas": [
+      "Best Alexa devices for small rooms",
+      "Echo Pop alternatives for beginners"
+    ]
+  },
+  "logitech-pebble-2-m350s": {
+    "primaryGuide": "logitech-pebble-2-vs-mx-anywhere-3s",
+    "supportingGuides": [
+      "best-budget-home-office-tech",
+      "best-portable-work-setup",
+      "best-remote-work-starter-kit",
+      "best-student-desk-setup-under-150",
+      "best-tech-for-dorm-rooms"
+    ],
+    "comparisonGuides": [
+      "logitech-pebble-2-vs-mx-anywhere-3s"
+    ],
+    "buyerIntents": [
+      "budget mouse",
+      "student desk",
+      "portable work",
+      "travel carry"
+    ],
+    "nextContentIdeas": [
+      "Best budget wireless mice for students",
+      "Logitech Pebble 2 alternatives"
+    ]
+  },
+  "sandisk-extreme-portable-ssd-1tb": {
+    "primaryGuide": "best-portable-work-setup",
+    "supportingGuides": [
+      "best-remote-work-starter-kit",
+      "best-tech-for-dorm-rooms"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "portable storage",
+      "remote work",
+      "travel backup",
+      "student files"
+    ],
+    "nextContentIdeas": [
+      "Best portable SSDs for remote work",
+      "External storage starter kit for students"
+    ]
+  },
+  "ugreen-nexode-100w-usb-c-charger": {
+    "primaryGuide": "ugreen-nexode-100w-vs-anker-maggo-power-bank",
+    "supportingGuides": [
+      "best-budget-home-office-tech",
+      "best-portable-work-setup",
+      "best-remote-work-starter-kit",
+      "best-student-desk-setup-under-150",
+      "best-tech-for-dorm-rooms"
+    ],
+    "comparisonGuides": [
+      "ugreen-nexode-100w-vs-anker-maggo-power-bank"
+    ],
+    "buyerIntents": [
+      "laptop charging",
+      "portable work",
+      "travel charging",
+      "budget office"
+    ],
+    "nextContentIdeas": [
+      "Best USB-C chargers for remote work",
+      "UGREEN Nexode alternatives for travel"
+    ]
   }
 }

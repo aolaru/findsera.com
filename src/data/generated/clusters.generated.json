@@ -8,13 +8,14 @@
       "best-products-for-small-apartments",
       "best-products-under-50",
       "best-smart-home-starter-kit-under-100",
-      "best-tech-gifts-under-100"
+      "best-tech-gifts-under-100",
+      "echo-pop-vs-kasa-smart-plug"
     ],
     "categories": [
       "gadgets",
       "home"
     ],
-    "roundupCount": 5
+    "roundupCount": 6
   },
   {
     "slug": "coffee-gear",
@@ -40,20 +41,24 @@
     "title": "Home Office",
     "description": "Home Office cluster pages on Findsera.",
     "roundupSlugs": [
+      "best-budget-home-office-tech",
       "best-desk-setup-products",
       "best-desk-upgrades-for-students",
       "best-home-office-gifts",
       "best-home-office-upgrades",
       "best-home-office-upgrades-under-150",
       "best-smart-home-upgrades-for-beginners",
+      "best-student-desk-setup-under-150",
+      "best-tech-for-dorm-rooms",
       "best-tech-for-small-desks",
-      "logitech-mx-keys-mini-vs-mx-anywhere-3s"
+      "logitech-mx-keys-mini-vs-mx-anywhere-3s",
+      "logitech-pebble-2-vs-mx-anywhere-3s"
     ],
     "categories": [
-      "home",
-      "gadgets"
+      "gadgets",
+      "home"
     ],
-    "roundupCount": 8
+    "roundupCount": 12
   },
   {
     "slug": "precision-cooking",
@@ -75,15 +80,18 @@
     "roundupSlugs": [
       "best-amazon-gadgets-2026",
       "best-gadgets-for-hybrid-work",
+      "best-portable-work-setup",
+      "best-remote-work-starter-kit",
       "best-travel-accessories-for-apple-users",
       "best-travel-tech-essentials",
       "best-travel-tech-for-long-flights",
       "best-travel-tech-for-remote-work",
-      "best-travel-tech-under-100"
+      "best-travel-tech-under-100",
+      "ugreen-nexode-100w-vs-anker-maggo-power-bank"
     ],
     "categories": [
       "gadgets"
     ],
-    "roundupCount": 7
+    "roundupCount": 10
   }
 ]

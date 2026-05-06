@@ -8,7 +8,7 @@
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 9
 - Products with stale price checks: 4
-- Products missing content-map coverage: 4
+- Products missing content-map coverage: 0
 - Validation failures: 0
 
 ## Added products today
@@ -37,17 +37,11 @@
 
 ## Unused products
 
-- Amazon Echo Pop Smart Speaker (`echo-pop-smart-speaker`)
-- Logitech Pebble 2 M350s (`logitech-pebble-2-m350s`)
-- SanDisk Extreme Portable SSD 1TB (`sandisk-extreme-portable-ssd-1tb`)
-- UGREEN Nexode 100W USB-C Charger (`ugreen-nexode-100w-usb-c-charger`)
+- None
 
 ## Products missing content-map coverage
 
-- Amazon Echo Pop Smart Speaker (`echo-pop-smart-speaker`)
-- Logitech Pebble 2 M350s (`logitech-pebble-2-m350s`)
-- SanDisk Extreme Portable SSD 1TB (`sandisk-extreme-portable-ssd-1tb`)
-- UGREEN Nexode 100W USB-C Charger (`ugreen-nexode-100w-usb-c-charger`)
+- None
 
 ## Guides with short intros
 
