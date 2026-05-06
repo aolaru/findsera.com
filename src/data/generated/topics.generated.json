@@ -32,13 +32,14 @@
     "title": "Bedroom",
     "description": "Findsera content related to bedroom.",
     "productIds": [
+      "blink-mini-2-security-camera",
       "levoit-core-mini-air-purifier"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 1
+      "home": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -241,6 +242,7 @@
     "title": "Home",
     "description": "Findsera content related to home.",
     "productIds": [
+      "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "eufy-11s-max-robot-vacuum",
       "kasa-smart-plug-mini-4-pack",
@@ -249,9 +251,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 5
+      "home": 6
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -462,6 +464,7 @@
     "title": "Smart Home",
     "description": "Findsera content related to smart home.",
     "productIds": [
+      "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "ember-mug-2",
       "eufy-11s-max-robot-vacuum",
@@ -470,10 +473,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 4,
+      "home": 5,
       "gadgets": 1
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -541,6 +544,7 @@
     "description": "Findsera content related to under-50.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
@@ -553,10 +557,10 @@
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 3,
-      "home": 4,
+      "home": 5,
       "gadgets": 2
     },
-    "productCount": 9,
+    "productCount": 10,
     "roundupCount": 0
   },
   {

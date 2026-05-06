@@ -1,28 +1,5 @@
 [
   {
-    "id": "blink-mini-2-security-camera",
-    "title": "Blink Mini 2 Security Camera",
-    "brand": "Blink",
-    "category": "home",
-    "price": 39.99,
-    "image": "/images/products/blink-mini-2-security-camera.png",
-    "description": "A compact indoor camera for quick room checks, apartment monitoring, and low-cost smart-home coverage that is easy to place.",
-    "priceCheckedAt": "2026-04-30",
-    "amazonQuery": "Blink Mini 2 security camera",
-    "tags": [
-      "smart home",
-      "home",
-      "under-50",
-      "bedroom"
-    ],
-    "highlights": [
-      "Small room-friendly footprint",
-      "Low-cost monitoring upgrade",
-      "Easy fit for starter smart homes"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "oxo-brew-conical-burr-coffee-grinder",
     "title": "OXO Brew Conical Burr Coffee Grinder",
     "brand": "OXO",

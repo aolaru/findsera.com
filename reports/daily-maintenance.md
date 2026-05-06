@@ -1,19 +1,19 @@
 # Daily maintenance report
 
 - Run date: 2026-05-06
-- New products added: 0
+- New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 6
+- Remaining product backlog: 5
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 9
 - Products with stale price checks: 4
-- Products missing content-map coverage: 0
+- Products missing content-map coverage: 1
 - Validation failures: 0
 
 ## Added products today
 
-- None
+- Blink Mini 2 Security Camera (`blink-mini-2-security-camera`)
 
 ## Refreshed products today
 
@@ -32,15 +32,15 @@
 
 ## Products missing exact Amazon URLs
 
-- None
+- Blink Mini 2 Security Camera (`blink-mini-2-security-camera`)
 
 ## Unused products
 
-- None
+- Blink Mini 2 Security Camera (`blink-mini-2-security-camera`)
 
 ## Products missing content-map coverage
 
-- None
+- Blink Mini 2 Security Camera (`blink-mini-2-security-camera`)
 
 ## Guides with short intros
 
