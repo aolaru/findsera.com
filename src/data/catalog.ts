@@ -87,6 +87,11 @@ export type ProductFreshness = {
   description: string;
 };
 
+export type ProductBestFor = {
+  label: string;
+  description: string;
+};
+
 export const allProducts = [...products] as Product[];
 export const allRoundups = [...roundups] as Roundup[];
 export const allTopics = [...topics] as Topic[];
@@ -170,6 +175,50 @@ export const getProductFreshness = (product: Product, referenceDate = new Date()
   }
 
   return null;
+};
+
+export const getProductBestFor = (product: Product): ProductBestFor => {
+  const tags = new Set(product.tags.map((tag) => slugify(tag)));
+
+  if (product.price <= 50 || tags.has("under-50")) {
+    return {
+      label: "Best under $50",
+      description: "A lower-risk pick for gifting, testing, or everyday utility."
+    };
+  }
+
+  if (tags.has("travel") || tags.has("portable")) {
+    return {
+      label: "Best for travel",
+      description: "A compact pick for bags, trips, and temporary work setups."
+    };
+  }
+
+  if (tags.has("desk-setup") || tags.has("office") || tags.has("productivity")) {
+    return {
+      label: "Best for small desks",
+      description: "A practical upgrade for compact workspaces and hybrid work."
+    };
+  }
+
+  if (tags.has("coffee") || tags.has("brewing") || tags.has("pour-over")) {
+    return {
+      label: "Best for coffee beginners",
+      description: "A useful coffee upgrade without overbuilding the routine."
+    };
+  }
+
+  if (tags.has("smart-home")) {
+    return {
+      label: "Best smart-home starter",
+      description: "An approachable pick for making a home setup more useful."
+    };
+  }
+
+  return {
+    label: `Best for ${categoryLabels[product.category].toLowerCase()}`,
+    description: "A focused pick for this category and use case."
+  };
 };
 
 export const getProductsUnderPrice = (price: number) =>

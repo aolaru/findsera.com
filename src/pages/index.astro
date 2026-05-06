@@ -6,6 +6,7 @@ import HeaderSearch from "../components/HeaderSearch.astro";
 import {
   allProducts,
   allRoundups,
+  getProductFreshness,
   getSearchItems,
   getProductsUnderPrice,
   getTrendingProducts,
@@ -15,6 +16,14 @@ import Layout from "../layouts/Layout.astro";
 
 const trendingProducts = getTrendingProducts().slice(0, 6);
 const underFifty = sortProductsByPrice(getProductsUnderPrice(50)).slice(0, 6);
+const freshProducts = [...allProducts]
+  .filter((product) => getProductFreshness(product)?.status === "new")
+  .sort((a, b) => b.priceCheckedAt.localeCompare(a.priceCheckedAt) || a.title.localeCompare(b.title))
+  .slice(0, 6);
+const recentlyUpdatedProducts = [...allProducts]
+  .filter((product) => getProductFreshness(product)?.status === "updated")
+  .sort((a, b) => b.priceCheckedAt.localeCompare(a.priceCheckedAt) || a.title.localeCompare(b.title))
+  .slice(0, 6);
 
 const latestProducts = [...allProducts]
   .sort(
@@ -176,6 +185,42 @@ const description =
       </div>
     </div>
   </section>
+
+  {
+    freshProducts.length > 0 && (
+      <section class="section-spacing">
+        <div class="container-shell">
+          <SectionHeader
+            title="New This Week"
+            description="Fresh catalog additions and recently added finds from the latest product updates."
+            href="/products?status=new"
+            linkLabel="See new products"
+          />
+          <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+            {freshProducts.map((product) => <ProductCard product={product} />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    recentlyUpdatedProducts.length > 0 && (
+      <section class="section-spacing">
+        <div class="container-shell">
+          <SectionHeader
+            title="Recently Updated"
+            description="Products with refreshed price checks and catalog details."
+            href="/products?status=updated"
+            linkLabel="See updated products"
+          />
+          <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+            {recentlyUpdatedProducts.map((product) => <ProductCard product={product} />)}
+          </div>
+        </div>
+      </section>
+    )
+  }
 
   <section id="trending-now" class="section-spacing">
     <div class="container-shell">

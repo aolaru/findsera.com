@@ -1,5 +1,5 @@
 ---
-import { getProductFreshness } from "../data/catalog";
+import { getProductBestFor, getProductFreshness } from "../data/catalog";
 import type { Product } from "../data/catalog";
 
 interface Props {
@@ -8,6 +8,7 @@ interface Props {
 
 const { product } = Astro.props;
 const freshness = getProductFreshness(product);
+const bestFor = getProductBestFor(product);
 ---
 
 <article class="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/6 bg-white shadow-card">
@@ -50,6 +51,12 @@ const freshness = getProductFreshness(product);
       <div>
         <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
           {product.brand} · {product.category}
+        </p>
+        <p
+          title={bestFor.description}
+          class="mt-2 inline-flex rounded-full bg-sky-100/70 px-3 py-1 text-xs font-bold uppercase tracking-[0.14em] text-ink-900"
+        >
+          {bestFor.label}
         </p>
         <h3 class="mt-2 font-serif text-2xl font-semibold tracking-tight text-ink-900">
           <a href={`/products/${product.slug}`} class="hover:text-accent-600">
