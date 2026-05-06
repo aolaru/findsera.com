@@ -68,11 +68,14 @@
       "best-products-under-50",
       "best-smart-home-starter-kit-under-100",
       "best-tech-gifts-under-100",
-      "echo-pop-vs-kasa-smart-plug"
+      "echo-pop-vs-kasa-smart-plug",
+      "is-echo-pop-worth-it",
+      "best-tech-gifts-under-50",
+      "best-smart-home-gifts-under-50"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 6
+    "roundupCount": 9
   },
   {
     "slug": "charging",
@@ -268,11 +271,13 @@
       "best-tech-for-dorm-rooms",
       "best-tech-for-small-desks",
       "logitech-mx-keys-mini-vs-mx-anywhere-3s",
-      "logitech-pebble-2-vs-mx-anywhere-3s"
+      "logitech-pebble-2-vs-mx-anywhere-3s",
+      "is-logitech-pebble-2-worth-it",
+      "best-student-tech-under-100"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 12
+    "roundupCount": 14
   },
   {
     "slug": "iphone",
@@ -523,11 +528,12 @@
       "best-travel-tech-for-long-flights",
       "best-travel-tech-for-remote-work",
       "best-travel-tech-under-100",
-      "ugreen-nexode-100w-vs-anker-maggo-power-bank"
+      "ugreen-nexode-100w-vs-anker-maggo-power-bank",
+      "is-sandisk-extreme-ssd-worth-it"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 10
+    "roundupCount": 11
   },
   {
     "slug": "under-50",

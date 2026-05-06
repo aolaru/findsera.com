@@ -32,8 +32,7 @@
 
 ## Products missing exact Amazon URLs
 
-- Amazon Echo Pop Smart Speaker (`echo-pop-smart-speaker`)
-- SanDisk Extreme Portable SSD 1TB (`sandisk-extreme-portable-ssd-1tb`)
+- None
 
 ## Unused products
 

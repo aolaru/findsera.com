@@ -137,10 +137,11 @@
       "Easy giftable price point"
     ],
     "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B09ZXJDSL5",
     "slug": "echo-pop-smart-speaker",
     "priceLabel": "$39.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Amazon+Echo+Pop+smart+speaker&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B09ZXJDSL5?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "ember-mug-2",
@@ -467,7 +468,7 @@
     "category": "gadgets",
     "price": 99.99,
     "image": "/images/products/sandisk-extreme-portable-ssd-1tb.png",
-    "description": "A compact external SSD for travel editors, remote workers, and anyone who wants fast extra storage that disappears into a small bag.",
+    "description": "A compact external SSD for travel editors, remote workers, and students who want fast backup storage that disappears into a small bag.",
     "priceCheckedAt": "2026-04-30",
     "amazonQuery": "SanDisk Extreme Portable SSD 1TB",
     "tags": [
@@ -482,10 +483,11 @@
       "Useful for backup-heavy workflows"
     ],
     "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B08GTYFC37",
     "slug": "sandisk-extreme-portable-ssd-1tb",
     "priceLabel": "$99.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=SanDisk+Extreme+Portable+SSD+1TB&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B08GTYFC37?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "soundcore-q20i-headphones",

@@ -53,7 +53,9 @@
     "supportingGuides": [
       "best-everyday-carry-tech-under-50",
       "best-travel-accessories-for-apple-users",
-      "best-travel-tech-under-100"
+      "best-travel-tech-under-100",
+      "best-tech-gifts-under-50",
+      "best-student-tech-under-100"
     ],
     "comparisonGuides": [],
     "buyerIntents": [
@@ -149,7 +151,8 @@
     "primaryGuide": "best-desk-upgrades-for-students",
     "supportingGuides": [
       "best-desk-setup-products",
-      "best-home-office-upgrades"
+      "best-home-office-upgrades",
+      "best-smart-home-gifts-under-50"
     ],
     "comparisonGuides": [],
     "buyerIntents": [
@@ -166,7 +169,10 @@
   "kasa-smart-plug-mini-4-pack": {
     "primaryGuide": "best-products-for-small-apartments",
     "supportingGuides": [
-      "best-smart-home-upgrades-for-beginners"
+      "best-smart-home-upgrades-for-beginners",
+      "is-echo-pop-worth-it",
+      "best-tech-gifts-under-50",
+      "best-smart-home-gifts-under-50"
     ],
     "comparisonGuides": [],
     "buyerIntents": [
@@ -190,7 +196,9 @@
       "best-products-under-50",
       "best-smart-home-upgrades-for-beginners",
       "best-tech-for-small-desks",
-      "best-tech-gifts-under-100"
+      "best-tech-gifts-under-100",
+      "is-echo-pop-worth-it",
+      "best-smart-home-gifts-under-50"
     ],
     "comparisonGuides": [],
     "buyerIntents": [
@@ -276,7 +284,9 @@
   "soundcore-q20i-headphones": {
     "primaryGuide": "best-travel-tech-for-long-flights",
     "supportingGuides": [
-      "best-travel-tech-under-100"
+      "best-travel-tech-under-100",
+      "best-tech-gifts-under-50",
+      "best-student-tech-under-100"
     ],
     "comparisonGuides": [],
     "buyerIntents": [
@@ -373,7 +383,9 @@
     "primaryGuide": "best-tech-for-small-desks",
     "supportingGuides": [
       "best-home-office-upgrades-under-150",
-      "best-desk-upgrades-for-students"
+      "best-desk-upgrades-for-students",
+      "is-logitech-pebble-2-worth-it",
+      "best-student-tech-under-100"
     ],
     "comparisonGuides": [],
     "buyerIntents": [
@@ -391,7 +403,10 @@
     "primaryGuide": "best-smart-home-starter-kit-under-100",
     "supportingGuides": [
       "best-tech-for-dorm-rooms",
-      "echo-pop-vs-kasa-smart-plug"
+      "echo-pop-vs-kasa-smart-plug",
+      "is-echo-pop-worth-it",
+      "best-tech-gifts-under-50",
+      "best-smart-home-gifts-under-50"
     ],
     "comparisonGuides": [
       "echo-pop-vs-kasa-smart-plug"
@@ -414,7 +429,10 @@
       "best-portable-work-setup",
       "best-remote-work-starter-kit",
       "best-student-desk-setup-under-150",
-      "best-tech-for-dorm-rooms"
+      "best-tech-for-dorm-rooms",
+      "is-logitech-pebble-2-worth-it",
+      "best-tech-gifts-under-50",
+      "best-student-tech-under-100"
     ],
     "comparisonGuides": [
       "logitech-pebble-2-vs-mx-anywhere-3s"
@@ -434,7 +452,9 @@
     "primaryGuide": "best-portable-work-setup",
     "supportingGuides": [
       "best-remote-work-starter-kit",
-      "best-tech-for-dorm-rooms"
+      "best-tech-for-dorm-rooms",
+      "is-sandisk-extreme-ssd-worth-it",
+      "best-student-tech-under-100"
     ],
     "comparisonGuides": [],
     "buyerIntents": [
@@ -455,7 +475,9 @@
       "best-portable-work-setup",
       "best-remote-work-starter-kit",
       "best-student-desk-setup-under-150",
-      "best-tech-for-dorm-rooms"
+      "best-tech-for-dorm-rooms",
+      "best-tech-gifts-under-50",
+      "best-student-tech-under-100"
     ],
     "comparisonGuides": [
       "ugreen-nexode-100w-vs-anker-maggo-power-bank"

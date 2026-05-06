@@ -120,7 +120,8 @@
       "Simple smart-home control",
       "Easy giftable price point"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B09ZXJDSL5"
   },
   {
     "id": "ember-mug-2",
@@ -403,7 +404,7 @@
     "category": "gadgets",
     "price": 99.99,
     "image": "/images/products/sandisk-extreme-portable-ssd-1tb.png",
-    "description": "A compact external SSD for travel editors, remote workers, and anyone who wants fast extra storage that disappears into a small bag.",
+    "description": "A compact external SSD for travel editors, remote workers, and students who want fast backup storage that disappears into a small bag.",
     "priceCheckedAt": "2026-04-30",
     "amazonQuery": "SanDisk Extreme Portable SSD 1TB",
     "tags": [
@@ -417,7 +418,8 @@
       "Small enough for daily carry",
       "Useful for backup-heavy workflows"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B08GTYFC37"
   },
   {
     "id": "soundcore-q20i-headphones",
