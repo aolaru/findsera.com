@@ -489,6 +489,33 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "oxo-brew-conical-burr-coffee-grinder",
+    "title": "OXO Brew Conical Burr Coffee Grinder",
+    "brand": "OXO",
+    "category": "kitchen",
+    "price": 99.95,
+    "image": "/images/products/oxo-brew-conical-burr-coffee-grinder.png",
+    "description": "A burr grinder for home brewers who want more consistent grounds and a clearer coffee upgrade path than blade grinders provide.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "OXO Brew Conical Burr Coffee Grinder",
+    "tags": [
+      "coffee",
+      "brewing",
+      "countertop",
+      "kitchen"
+    ],
+    "highlights": [
+      "More consistent grinding",
+      "Useful for beginner coffee upgrades",
+      "Fits home brew routines"
+    ],
+    "isTrending": true,
+    "slug": "oxo-brew-conical-burr-coffee-grinder",
+    "priceLabel": "$99.95",
+    "affiliateUrl": "https://www.amazon.com/s?k=OXO+Brew+Conical+Burr+Coffee+Grinder&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "sandisk-extreme-portable-ssd-1tb",
     "title": "SanDisk Extreme Portable SSD 1TB",
     "brand": "SanDisk",

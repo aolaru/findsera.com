@@ -48,14 +48,15 @@
     "description": "Findsera content related to brewing.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 3
+      "kitchen": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -115,15 +116,16 @@
       "aeropress-original-coffee-maker",
       "ember-mug-2",
       "fellow-stagg-ekg-electric-kettle",
+      "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 4,
+      "kitchen": 5,
       "home": 1
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -166,13 +168,14 @@
     "description": "Findsera content related to countertop.",
     "productIds": [
       "fellow-stagg-ekg-electric-kettle",
+      "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -316,14 +319,15 @@
     "description": "Findsera content related to kitchen.",
     "productIds": [
       "meater-plus-wireless-thermometer",
+      "oxo-brew-conical-burr-coffee-grinder",
       "thermoworks-thermapen-one",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 3
+      "kitchen": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
