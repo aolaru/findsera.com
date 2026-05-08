@@ -114,6 +114,7 @@
     "description": "Findsera content related to coffee.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "cosori-electric-gooseneck-kettle",
       "ember-mug-2",
       "fellow-stagg-ekg-electric-kettle",
       "oxo-brew-conical-burr-coffee-grinder",
@@ -122,10 +123,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 5,
+      "kitchen": 6,
       "home": 1
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -167,15 +168,16 @@
     "title": "Countertop",
     "description": "Findsera content related to countertop.",
     "productIds": [
+      "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle",
       "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 3
+      "kitchen": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -405,13 +407,14 @@
     "title": "Pour Over",
     "description": "Findsera content related to pour over.",
     "productIds": [
+      "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -488,13 +491,14 @@
     "title": "Tea",
     "description": "Findsera content related to tea.",
     "productIds": [
+      "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {

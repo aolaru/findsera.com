@@ -143,6 +143,33 @@
     "affiliateMode": "search"
   },
   {
+    "id": "cosori-electric-gooseneck-kettle",
+    "title": "COSORI Electric Gooseneck Kettle",
+    "brand": "COSORI",
+    "category": "kitchen",
+    "price": 69.99,
+    "image": "/images/products/cosori-electric-gooseneck-kettle.png",
+    "description": "A controlled-pour electric kettle for pour-over coffee, tea routines, and compact kitchens that benefit from faster hot-water prep.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "COSORI Electric Gooseneck Kettle",
+    "tags": [
+      "coffee",
+      "tea",
+      "pour over",
+      "countertop"
+    ],
+    "highlights": [
+      "Controlled pour for manual brews",
+      "Useful for tea and coffee routines",
+      "Fast hot-water upgrade"
+    ],
+    "isTrending": true,
+    "slug": "cosori-electric-gooseneck-kettle",
+    "priceLabel": "$69.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=COSORI+Electric+Gooseneck+Kettle&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "echo-pop-smart-speaker",
     "title": "Amazon Echo Pop Smart Speaker",
     "brand": "Amazon",

@@ -1,28 +1,5 @@
 [
   {
-    "id": "cosori-electric-gooseneck-kettle",
-    "title": "COSORI Electric Gooseneck Kettle",
-    "brand": "COSORI",
-    "category": "kitchen",
-    "price": 69.99,
-    "image": "/images/products/cosori-electric-gooseneck-kettle.png",
-    "description": "A controlled-pour electric kettle for pour-over coffee, tea routines, and compact kitchens that benefit from faster hot-water prep.",
-    "priceCheckedAt": "2026-04-30",
-    "amazonQuery": "COSORI Electric Gooseneck Kettle",
-    "tags": [
-      "coffee",
-      "tea",
-      "pour over",
-      "countertop"
-    ],
-    "highlights": [
-      "Controlled pour for manual brews",
-      "Useful for tea and coffee routines",
-      "Fast hot-water upgrade"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "instant-pot-duo-7-in-1-6-quart",
     "title": "Instant Pot Duo 7-in-1 6-Quart",
     "brand": "Instant Pot",
