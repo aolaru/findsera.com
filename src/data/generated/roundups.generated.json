@@ -311,7 +311,8 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "takeya-cold-brew-maker",
-      "zulay-milk-frother-wand"
+      "zulay-milk-frother-wand",
+      "etekcity-food-kitchen-scale"
     ],
     "sections": [
       {
@@ -333,7 +334,7 @@
         "answer": "No. They usually perform better when the products are easy to understand, affordable to try, and genuinely useful in a daily routine."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-desk-setup-products",
@@ -426,7 +427,8 @@
     "productIds": [
       "apple-airtag-1-pack",
       "zulay-milk-frother-wand",
-      "takeya-cold-brew-maker"
+      "takeya-cold-brew-maker",
+      "anker-nano-power-bank-30w"
     ],
     "sections": [
       {
@@ -448,7 +450,7 @@
         "answer": "Lower price points fit discovery traffic well and make it easier for readers to try something practical without feeling overcommitted."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-gadgets-for-hybrid-work",
@@ -653,7 +655,8 @@
     "productIds": [
       "thermoworks-thermapen-one",
       "fellow-stagg-ekg-electric-kettle",
-      "aeropress-original-coffee-maker"
+      "aeropress-original-coffee-maker",
+      "etekcity-food-kitchen-scale"
     ],
     "sections": [
       {
@@ -675,7 +678,7 @@
         "answer": "Yes. The search intent behind these pages stays stable, and the category supports frequent refreshes without rewriting the whole page."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-portable-work-setup",
@@ -767,7 +770,8 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "levoit-core-mini-air-purifier",
-      "vtopmart-drawer-organizer-set"
+      "vtopmart-drawer-organizer-set",
+      "etekcity-food-kitchen-scale"
     ],
     "sections": [
       {
@@ -789,7 +793,7 @@
         "answer": "Ideally yes. In practice, prices move often, which is why the content pipeline should re-check and refresh price fields regularly."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-remote-work-starter-kit",
@@ -843,7 +847,8 @@
     "productIds": [
       "echo-pop-smart-speaker",
       "kasa-smart-plug-mini-4-pack",
-      "levoit-core-mini-air-purifier"
+      "levoit-core-mini-air-purifier",
+      "tapo-c500-security-camera"
     ],
     "sections": [
       {
@@ -865,7 +870,7 @@
         "answer": "A smart speaker is not required, but it makes voice control, timers, routines, and future device expansion easier for beginners."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-smart-home-upgrades-for-beginners",
@@ -881,7 +886,8 @@
       "kasa-smart-plug-mini-4-pack",
       "ember-mug-2",
       "levoit-core-mini-air-purifier",
-      "eufy-11s-max-robot-vacuum"
+      "eufy-11s-max-robot-vacuum",
+      "tapo-c500-security-camera"
     ],
     "sections": [
       {
@@ -903,7 +909,7 @@
         "answer": "Usually no. It is better to start with one or two clear-use-case products, then expand once the buyer knows what routines they actually want to automate."
       }
     ],
-    "productCount": 4
+    "productCount": 5
   },
   {
     "slug": "best-student-desk-setup-under-150",
@@ -1108,7 +1114,8 @@
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
       "logitech-mx-anywhere-3s",
-      "aeropress-original-coffee-maker"
+      "aeropress-original-coffee-maker",
+      "anker-nano-power-bank-30w"
     ],
     "sections": [
       {
@@ -1130,7 +1137,7 @@
         "answer": "A good pick is small, durable, and immediately useful. Readers should understand why it belongs in a bag within seconds."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-travel-tech-for-long-flights",
@@ -1222,7 +1229,8 @@
       "anker-maggo-power-bank-10k-slim",
       "apple-airtag-1-pack",
       "soundcore-q20i-headphones",
-      "logitech-mx-anywhere-3s"
+      "logitech-mx-anywhere-3s",
+      "anker-nano-power-bank-30w"
     ],
     "sections": [
       {
@@ -1244,7 +1252,7 @@
         "answer": "Yes. Mixed pages perform well when every product still serves the same traveler mindset and solves a road-specific problem."
       }
     ],
-    "productCount": 4
+    "productCount": 5
   },
   {
     "slug": "echo-pop-vs-kasa-smart-plug",
@@ -1553,7 +1561,8 @@
       "echo-pop-smart-speaker",
       "logitech-pebble-2-m350s",
       "ugreen-nexode-100w-usb-c-charger",
-      "kasa-smart-plug-mini-4-pack"
+      "kasa-smart-plug-mini-4-pack",
+      "anker-nano-power-bank-30w"
     ],
     "sections": [
       {
@@ -1575,7 +1584,7 @@
         "answer": "Yes, if they are practical. The best budget tech gifts improve travel, charging, audio, or daily organization without requiring a big setup."
       }
     ],
-    "productCount": 6
+    "productCount": 7
   },
   {
     "slug": "best-smart-home-gifts-under-50",
@@ -1591,7 +1600,8 @@
       "echo-pop-smart-speaker",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
-      "govee-smart-desk-lamp-pro"
+      "govee-smart-desk-lamp-pro",
+      "tapo-c500-security-camera"
     ],
     "sections": [
       {
@@ -1613,7 +1623,7 @@
         "answer": "Yes. Smart plugs are useful for lamps, fans, coffee corners, and schedules, especially when paired with a voice assistant."
       }
     ],
-    "productCount": 4
+    "productCount": 5
   },
   {
     "slug": "best-student-tech-under-100",

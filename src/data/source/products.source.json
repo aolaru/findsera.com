@@ -50,6 +50,31 @@
     "isTrending": true
   },
   {
+    "id": "anker-nano-power-bank-30w",
+    "title": "Anker Nano Power Bank 30W",
+    "brand": "Anker",
+    "category": "gadgets",
+    "price": 29.99,
+    "image": "/images/products/anker-nano-power-bank-30w.png",
+    "description": "A compact 10,000mAh travel power bank with a built-in USB-C cable for phone top-ups, commute bags, and lightweight remote-work kits.",
+    "sourceUrl": "https://www.anker.com/products/a1259",
+    "priceCheckedAt": "2026-05-10",
+    "amazonUrl": "https://www.amazon.com/dp/B0C9CJKCH3",
+    "amazonQuery": "Anker Nano Power Bank 30W built in USB-C cable",
+    "tags": [
+      "charging",
+      "travel",
+      "portable",
+      "under-50"
+    ],
+    "highlights": [
+      "Built-in USB-C cable",
+      "10,000mAh daily carry capacity",
+      "30W phone and tablet charging"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "apple-airtag-1-pack",
     "title": "Apple AirTag (1-Pack)",
     "brand": "Apple",
@@ -191,6 +216,31 @@
       "App-adjustable drink temperature",
       "Strong home-office gift appeal",
       "Cuts down on microwave reheats"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "etekcity-food-kitchen-scale",
+    "title": "Etekcity Food Kitchen Scale",
+    "brand": "Etekcity",
+    "category": "kitchen",
+    "price": 13.99,
+    "image": "/images/products/etekcity-food-kitchen-scale.png",
+    "description": "A compact stainless-steel digital kitchen scale for coffee dosing, baking, meal prep, and more repeatable everyday cooking.",
+    "sourceUrl": "https://www.etekcity.com/products/food-kitchen-scale",
+    "priceCheckedAt": "2026-05-10",
+    "amazonUrl": "https://www.amazon.com/dp/B0113UZJE2",
+    "amazonQuery": "Etekcity Food Kitchen Scale stainless steel",
+    "tags": [
+      "kitchen",
+      "precision",
+      "under-50",
+      "cooking"
+    ],
+    "highlights": [
+      "Useful for coffee and baking",
+      "Compact stainless-steel platform",
+      "Budget precision cooking upgrade"
     ],
     "isTrending": true
   },
@@ -562,6 +612,31 @@
       "Great value for iced coffee drinkers"
     ],
     "isTrending": false
+  },
+  {
+    "id": "tapo-c500-security-camera",
+    "title": "TP-Link Tapo C500 Security Camera",
+    "brand": "TP-Link Tapo",
+    "category": "home",
+    "price": 27.99,
+    "image": "/images/products/tapo-c500-security-camera.png",
+    "description": "An affordable outdoor pan-and-tilt security camera with person detection, night vision, and Alexa or Google Assistant support.",
+    "sourceUrl": "https://us.store.tp-link.com/products/tp-link-tapo-1080p-outdoor-wired-pan-tilt-security-wi-fi-camera-360-view-motion-tracking-tapo-c500",
+    "priceCheckedAt": "2026-05-10",
+    "amazonUrl": "https://www.amazon.com/dp/B0BW2CYQZJ",
+    "amazonQuery": "TP-Link Tapo C500 security camera",
+    "tags": [
+      "smart home",
+      "home",
+      "security",
+      "under-50"
+    ],
+    "highlights": [
+      "Outdoor pan-and-tilt coverage",
+      "Person detection and motion tracking",
+      "Strong budget security-camera pick"
+    ],
+    "isTrending": true
   },
   {
     "id": "thermoworks-thermapen-one",

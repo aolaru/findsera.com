@@ -492,5 +492,60 @@
       "Best USB-C chargers for remote work",
       "UGREEN Nexode alternatives for travel"
     ]
+  },
+  "anker-nano-power-bank-30w": {
+    "primaryGuide": "best-travel-tech-under-100",
+    "supportingGuides": [
+      "best-travel-tech-essentials",
+      "best-tech-gifts-under-50",
+      "best-everyday-carry-tech-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "portable charging",
+      "travel carry",
+      "budget tech gift",
+      "remote work backup"
+    ],
+    "nextContentIdeas": [
+      "Anker Nano Power Bank alternatives",
+      "Best compact power banks with built-in cables"
+    ]
+  },
+  "etekcity-food-kitchen-scale": {
+    "primaryGuide": "best-kitchen-tools-for-precision-cooking",
+    "supportingGuides": [
+      "best-products-under-50",
+      "best-coffee-upgrades-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "coffee dosing",
+      "baking accuracy",
+      "meal prep",
+      "budget kitchen tool"
+    ],
+    "nextContentIdeas": [
+      "Best kitchen scales for coffee",
+      "Etekcity kitchen scale alternatives"
+    ]
+  },
+  "tapo-c500-security-camera": {
+    "primaryGuide": "best-smart-home-upgrades-for-beginners",
+    "supportingGuides": [
+      "best-smart-home-starter-kit-under-100",
+      "best-smart-home-gifts-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "budget security camera",
+      "smart home starter",
+      "outdoor monitoring",
+      "home safety"
+    ],
+    "nextContentIdeas": [
+      "Best budget outdoor security cameras",
+      "Tapo C500 alternatives for smart homes"
+    ]
   }
 }

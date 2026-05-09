@@ -85,13 +85,14 @@
     "description": "Findsera content related to charging.",
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
+      "anker-nano-power-bank-30w",
       "ugreen-nexode-100w-usb-c-charger"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 2
+      "gadgets": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -153,15 +154,16 @@
     "title": "Cooking",
     "description": "Findsera content related to cooking.",
     "productIds": [
+      "etekcity-food-kitchen-scale",
       "instant-pot-duo-7-in-1-6-quart",
       "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 3
+      "kitchen": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -255,14 +257,15 @@
       "instant-pot-duo-7-in-1-6-quart",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
+      "tapo-c500-security-camera",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 6,
+      "home": 7,
       "kitchen": 1
     },
-    "productCount": 7,
+    "productCount": 8,
     "roundupCount": 0
   },
   {
@@ -324,6 +327,7 @@
     "title": "Kitchen",
     "description": "Findsera content related to kitchen.",
     "productIds": [
+      "etekcity-food-kitchen-scale",
       "instant-pot-duo-7-in-1-6-quart",
       "meater-plus-wireless-thermometer",
       "oxo-brew-conical-burr-coffee-grinder",
@@ -332,9 +336,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 5
+      "kitchen": 6
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -394,6 +398,7 @@
     "description": "Findsera content related to portable.",
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
+      "anker-nano-power-bank-30w",
       "apple-airtag-1-pack",
       "arzopa-portable-monitor-15-6",
       "logitech-pebble-2-m350s",
@@ -402,9 +407,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 6
+      "gadgets": 7
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -427,14 +432,15 @@
     "title": "Precision",
     "description": "Findsera content related to precision.",
     "productIds": [
+      "etekcity-food-kitchen-scale",
       "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -472,6 +478,20 @@
     "roundupCount": 0
   },
   {
+    "slug": "security",
+    "title": "Security",
+    "description": "Findsera content related to security.",
+    "productIds": [
+      "tapo-c500-security-camera"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
     "slug": "smart-home",
     "title": "Smart Home",
     "description": "Findsera content related to smart home.",
@@ -481,14 +501,15 @@
       "ember-mug-2",
       "eufy-11s-max-robot-vacuum",
       "govee-smart-desk-lamp-pro",
-      "kasa-smart-plug-mini-4-pack"
+      "kasa-smart-plug-mini-4-pack",
+      "tapo-c500-security-camera"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 5,
+      "home": 6,
       "gadgets": 1
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -513,6 +534,7 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "anker-maggo-power-bank-10k-slim",
+      "anker-nano-power-bank-30w",
       "apple-airtag-1-pack",
       "arzopa-portable-monitor-15-6",
       "logitech-mx-anywhere-3s",
@@ -524,9 +546,9 @@
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 1,
-      "gadgets": 8
+      "gadgets": 9
     },
-    "productCount": 9,
+    "productCount": 10,
     "roundupCount": 0
   },
   {
@@ -557,23 +579,26 @@
     "description": "Findsera content related to under-50.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "anker-nano-power-bank-30w",
       "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
+      "etekcity-food-kitchen-scale",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "omoton-adjustable-laptop-stand",
       "soundcore-q20i-headphones",
       "takeya-cold-brew-maker",
+      "tapo-c500-security-camera",
       "vtopmart-drawer-organizer-set",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 3,
-      "home": 5,
-      "gadgets": 2
+      "kitchen": 4,
+      "gadgets": 3,
+      "home": 6
     },
-    "productCount": 10,
+    "productCount": 13,
     "roundupCount": 0
   },
   {
