@@ -314,6 +314,33 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "instant-pot-duo-7-in-1-6-quart",
+    "title": "Instant Pot Duo 7-in-1 6-Quart",
+    "brand": "Instant Pot",
+    "category": "kitchen",
+    "price": 89.99,
+    "image": "/images/products/instant-pot-duo-7-in-1-6-quart.png",
+    "description": "A multi-cooker for busy kitchens that want one countertop tool to handle weeknight meals, batch cooking, and low-friction prep.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Instant Pot Duo 7 in 1 6 Quart",
+    "tags": [
+      "kitchen",
+      "countertop",
+      "cooking",
+      "home"
+    ],
+    "highlights": [
+      "Versatile weeknight cooker",
+      "Good fit for batch meal prep",
+      "Reduces appliance sprawl"
+    ],
+    "isTrending": true,
+    "slug": "instant-pot-duo-7-in-1-6-quart",
+    "priceLabel": "$89.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=Instant+Pot+Duo+7+in+1+6+Quart&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "kasa-smart-plug-mini-4-pack",
     "title": "Kasa Smart Plug Mini 4-Pack",
     "brand": "Kasa",

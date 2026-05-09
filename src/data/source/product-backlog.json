@@ -1,28 +1,5 @@
 [
   {
-    "id": "instant-pot-duo-7-in-1-6-quart",
-    "title": "Instant Pot Duo 7-in-1 6-Quart",
-    "brand": "Instant Pot",
-    "category": "kitchen",
-    "price": 89.99,
-    "image": "/images/products/instant-pot-duo-7-in-1-6-quart.png",
-    "description": "A multi-cooker for busy kitchens that want one countertop tool to handle weeknight meals, batch cooking, and low-friction prep.",
-    "priceCheckedAt": "2026-04-30",
-    "amazonQuery": "Instant Pot Duo 7 in 1 6 Quart",
-    "tags": [
-      "kitchen",
-      "countertop",
-      "cooking",
-      "home"
-    ],
-    "highlights": [
-      "Versatile weeknight cooker",
-      "Good fit for batch meal prep",
-      "Reduces appliance sprawl"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "nespresso-aeroccino-4-milk-frother",
     "title": "Nespresso Aeroccino 4 Milk Frother",
     "brand": "Nespresso",

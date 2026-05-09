@@ -153,14 +153,15 @@
     "title": "Cooking",
     "description": "Findsera content related to cooking.",
     "productIds": [
+      "instant-pot-duo-7-in-1-6-quart",
       "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -170,14 +171,15 @@
     "productIds": [
       "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle",
+      "instant-pot-duo-7-in-1-6-quart",
       "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 4
+      "kitchen": 5
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -250,15 +252,17 @@
       "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "eufy-11s-max-robot-vacuum",
+      "instant-pot-duo-7-in-1-6-quart",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 6
+      "home": 6,
+      "kitchen": 1
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -320,6 +324,7 @@
     "title": "Kitchen",
     "description": "Findsera content related to kitchen.",
     "productIds": [
+      "instant-pot-duo-7-in-1-6-quart",
       "meater-plus-wireless-thermometer",
       "oxo-brew-conical-burr-coffee-grinder",
       "thermoworks-thermapen-one",
@@ -327,9 +332,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 4
+      "kitchen": 5
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {

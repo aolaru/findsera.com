@@ -1,19 +1,19 @@
 # Daily maintenance report
 
-- Run date: 2026-05-08
+- Run date: 2026-05-09
 - New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 3
+- Remaining product backlog: 2
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 9
 - Products with stale price checks: 4
-- Products missing content-map coverage: 3
+- Products missing content-map coverage: 4
 - Validation failures: 0
 
 ## Added products today
 
-- COSORI Electric Gooseneck Kettle (`cosori-electric-gooseneck-kettle`)
+- Instant Pot Duo 7-in-1 6-Quart (`instant-pot-duo-7-in-1-6-quart`)
 
 ## Refreshed products today
 
@@ -34,18 +34,21 @@
 
 - Blink Mini 2 Security Camera (`blink-mini-2-security-camera`)
 - COSORI Electric Gooseneck Kettle (`cosori-electric-gooseneck-kettle`)
+- Instant Pot Duo 7-in-1 6-Quart (`instant-pot-duo-7-in-1-6-quart`)
 - OXO Brew Conical Burr Coffee Grinder (`oxo-brew-conical-burr-coffee-grinder`)
 
 ## Unused products
 
 - Blink Mini 2 Security Camera (`blink-mini-2-security-camera`)
 - COSORI Electric Gooseneck Kettle (`cosori-electric-gooseneck-kettle`)
+- Instant Pot Duo 7-in-1 6-Quart (`instant-pot-duo-7-in-1-6-quart`)
 - OXO Brew Conical Burr Coffee Grinder (`oxo-brew-conical-burr-coffee-grinder`)
 
 ## Products missing content-map coverage
 
 - Blink Mini 2 Security Camera (`blink-mini-2-security-camera`)
 - COSORI Electric Gooseneck Kettle (`cosori-electric-gooseneck-kettle`)
+- Instant Pot Duo 7-in-1 6-Quart (`instant-pot-duo-7-in-1-6-quart`)
 - OXO Brew Conical Burr Coffee Grinder (`oxo-brew-conical-burr-coffee-grinder`)
 
 ## Guides with short intros
