@@ -6,7 +6,7 @@
     "category": "kitchen",
     "price": 39.95,
     "image": "/images/products/aeropress-original-coffee-maker.png",
-    "description": "A compact press brewer that makes smooth coffee quickly and travels far better than a full drip setup.",
+    "description": "A compact press brewer for smooth, fast coffee at home, work, or travel when buyers want better manual brewing without a fragile glass setup.",
     "sourceUrl": "https://www.aeropress.com/products/aeropress-coffee-maker",
     "priceCheckedAt": "2026-04-17",
     "amazonUrl": "https://www.amazon.com/dp/B0047BIWSK",
@@ -18,9 +18,9 @@
       "under-50"
     ],
     "highlights": [
-      "Fast manual brewing",
-      "Travel-ready footprint",
-      "Easy cleanup"
+      "Fast manual brewing with easy cleanup",
+      "Travel-ready compact footprint",
+      "Strong starter pick for better coffee"
     ],
     "isTrending": true
   },
@@ -131,7 +131,7 @@
     "category": "home",
     "price": 39.99,
     "image": "/images/products/blink-mini-2-security-camera.png",
-    "description": "A compact indoor camera for quick room checks, apartment monitoring, and low-cost smart-home coverage that is easy to place.",
+    "description": "A compact plug-in security camera for apartment rooms, entryways, pets, and starter smart-home monitoring without committing to a larger camera system.",
     "priceCheckedAt": "2026-04-30",
     "amazonQuery": "Blink Mini 2 security camera",
     "tags": [
@@ -141,11 +141,12 @@
       "bedroom"
     ],
     "highlights": [
-      "Small room-friendly footprint",
-      "Low-cost monitoring upgrade",
-      "Easy fit for starter smart homes"
+      "Compact plug-in indoor camera",
+      "Color night view and two-way audio",
+      "Low-cost starter security upgrade"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B0BWWZXWPL"
   },
   {
     "id": "cosori-electric-gooseneck-kettle",
@@ -154,7 +155,7 @@
     "category": "kitchen",
     "price": 69.99,
     "image": "/images/products/cosori-electric-gooseneck-kettle.png",
-    "description": "A controlled-pour electric kettle for pour-over coffee, tea routines, and compact kitchens that benefit from faster hot-water prep.",
+    "description": "A temperature-control gooseneck kettle for pour-over coffee, tea, and small kitchens that need faster hot-water prep with better pouring control.",
     "priceCheckedAt": "2026-04-30",
     "amazonQuery": "COSORI Electric Gooseneck Kettle",
     "tags": [
@@ -164,11 +165,12 @@
       "countertop"
     ],
     "highlights": [
-      "Controlled pour for manual brews",
-      "Useful for tea and coffee routines",
-      "Fast hot-water upgrade"
+      "Five temperature presets",
+      "Controlled pour for manual coffee",
+      "Compact tea and coffee upgrade"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B07T1CH2HH"
   },
   {
     "id": "echo-pop-smart-speaker",
@@ -326,7 +328,7 @@
     "category": "kitchen",
     "price": 89.99,
     "image": "/images/products/instant-pot-duo-7-in-1-6-quart.png",
-    "description": "A multi-cooker for busy kitchens that want one countertop tool to handle weeknight meals, batch cooking, and low-friction prep.",
+    "description": "A 6-quart multi-cooker for weeknight dinners, batch prep, rice, soups, and one-pot meals when a kitchen needs more flexibility from one appliance.",
     "priceCheckedAt": "2026-04-30",
     "amazonQuery": "Instant Pot Duo 7 in 1 6 Quart",
     "tags": [
@@ -336,11 +338,12 @@
       "home"
     ],
     "highlights": [
-      "Versatile weeknight cooker",
-      "Good fit for batch meal prep",
-      "Reduces appliance sprawl"
+      "Seven cooking modes in one appliance",
+      "Practical 6-quart family size",
+      "Strong fit for batch meal prep"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B00FLYWNYQ"
   },
   {
     "id": "kasa-smart-plug-mini-4-pack",
@@ -349,7 +352,7 @@
     "category": "home",
     "price": 23.98,
     "image": "/images/products/kasa-smart-plug-mini-4-pack.jpg",
-    "description": "A value-focused 4-pack of smart plugs for lamps, coffee corners, and simple home automations without a hub.",
+    "description": "A value-focused four-pack of smart plugs for lamps, coffee corners, fans, and simple schedules without requiring a hub or complex automation setup.",
     "sourceUrl": "https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-plug-mini-ep10",
     "priceCheckedAt": "2026-04-27",
     "amazonUrl": "https://www.amazon.com/dp/B091FXLMS8",
@@ -362,8 +365,8 @@
     ],
     "highlights": [
       "Four-plug starter value",
-      "Easy Alexa and Google Home setup",
-      "Useful for lamps and schedules"
+      "Works well for lamps and routines",
+      "Easy Alexa and Google Home setup"
     ],
     "isTrending": true
   },
@@ -523,7 +526,7 @@
     "category": "kitchen",
     "price": 99.95,
     "image": "/images/products/oxo-brew-conical-burr-coffee-grinder.png",
-    "description": "A burr grinder for home brewers who want more consistent grounds and a clearer coffee upgrade path than blade grinders provide.",
+    "description": "A conical burr grinder for home coffee drinkers who want more consistent grounds, better pour-over results, and a clear upgrade from blade grinding.",
     "priceCheckedAt": "2026-04-30",
     "amazonQuery": "OXO Brew Conical Burr Coffee Grinder",
     "tags": [
@@ -533,11 +536,12 @@
       "kitchen"
     ],
     "highlights": [
-      "More consistent grinding",
-      "Useful for beginner coffee upgrades",
-      "Fits home brew routines"
+      "Consistent stainless-steel burr grinding",
+      "Useful for pour-over and drip coffee",
+      "Clear upgrade from blade grinders"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B07CSKGLMM"
   },
   {
     "id": "sandisk-extreme-portable-ssd-1tb",
@@ -595,7 +599,7 @@
     "category": "kitchen",
     "price": 24.99,
     "image": "/images/products/takeya-cold-brew-maker.png",
-    "description": "A fridge-friendly cold brew maker for smoother coffee batches and lower-cost iced coffee at home.",
+    "description": "A fridge-friendly cold brew maker for smoother multi-serving coffee batches, lower-cost iced coffee, and simple prep without countertop equipment.",
     "sourceUrl": "https://takeyausa.com/products/deluxe-cold-brew-coffee-maker",
     "priceCheckedAt": "2026-04-25",
     "amazonUrl": "https://www.amazon.com/dp/B00FFLY64U",
@@ -607,9 +611,9 @@
       "countertop"
     ],
     "highlights": [
-      "Fits easily in the fridge",
-      "Makes multi-serving batches",
-      "Great value for iced coffee drinkers"
+      "Fridge-friendly pitcher format",
+      "Makes multi-serving iced coffee batches",
+      "Strong value for daily cold brew"
     ],
     "isTrending": false
   },
@@ -645,7 +649,7 @@
     "category": "kitchen",
     "price": 115,
     "image": "/images/products/thermoworks-thermapen-one.jpg",
-    "description": "A fast, premium instant-read thermometer for grilling, roasting, and repeatable kitchen accuracy.",
+    "description": "A premium instant-read thermometer for grilling, roasting, baking, and repeatable kitchen accuracy when guessing doneness is no longer good enough.",
     "sourceUrl": "https://www.thermoworks.com/thermapen-one/",
     "priceCheckedAt": "2026-04-17",
     "amazonUrl": "https://www.amazon.com/dp/B0DC8MWQ8K",
@@ -657,9 +661,9 @@
       "kitchen"
     ],
     "highlights": [
-      "One-second readings",
-      "Pro-level kitchen accuracy",
-      "Built for serious cooks"
+      "One-second temperature readings",
+      "Pro-level accuracy for serious cooks",
+      "Useful across grilling and roasting"
     ],
     "isTrending": false
   },
@@ -719,7 +723,7 @@
     "category": "kitchen",
     "price": 14.99,
     "image": "/images/products/zulay-milk-frother-wand.jpg",
-    "description": "A simple handheld frother for faster lattes, matcha, and coffee upgrades that do not require a full espresso setup.",
+    "description": "A simple handheld frother for faster lattes, matcha, protein drinks, and everyday coffee upgrades without buying a full espresso setup.",
     "sourceUrl": "https://www.zulaykitchen.com/products/milk-frother",
     "priceCheckedAt": "2026-04-25",
     "amazonUrl": "https://www.amazon.com/dp/B09D8T11YS",
@@ -731,9 +735,9 @@
       "kitchen"
     ],
     "highlights": [
-      "Budget-friendly coffee upgrade",
-      "Compact to store",
-      "Quick to use and clean"
+      "Budget-friendly latte upgrade",
+      "Compact drawer-friendly storage",
+      "Quick cleanup for daily drinks"
     ],
     "isTrending": true
   }

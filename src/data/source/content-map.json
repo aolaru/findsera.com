@@ -547,5 +547,80 @@
       "Best budget outdoor security cameras",
       "Tapo C500 alternatives for smart homes"
     ]
+  },
+  "blink-mini-2-security-camera": {
+    "primaryGuide": "best-smart-home-upgrades-for-beginners",
+    "supportingGuides": [
+      "best-smart-home-starter-kit-under-100",
+      "best-smart-home-gifts-under-50",
+      "best-products-under-50",
+      "best-products-for-small-apartments"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "budget security camera",
+      "apartment monitoring",
+      "pet camera",
+      "smart-home starter"
+    ],
+    "nextContentIdeas": [
+      "Blink Mini 2 alternatives",
+      "Best indoor cameras for apartments"
+    ]
+  },
+  "cosori-electric-gooseneck-kettle": {
+    "primaryGuide": "best-coffee-gear-for-home",
+    "supportingGuides": [
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-small-kitchens",
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "pour-over coffee",
+      "tea routine",
+      "temperature control",
+      "countertop coffee upgrade"
+    ],
+    "nextContentIdeas": [
+      "Best gooseneck kettles for beginners",
+      "COSORI gooseneck kettle alternatives"
+    ]
+  },
+  "instant-pot-duo-7-in-1-6-quart": {
+    "primaryGuide": "best-products-for-small-apartments",
+    "supportingGuides": [
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "weeknight cooking",
+      "batch meal prep",
+      "small kitchen appliance",
+      "one-pot meals"
+    ],
+    "nextContentIdeas": [
+      "Best multi-cookers for small kitchens",
+      "Instant Pot Duo alternatives"
+    ]
+  },
+  "oxo-brew-conical-burr-coffee-grinder": {
+    "primaryGuide": "best-coffee-gear-for-home",
+    "supportingGuides": [
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-small-kitchens",
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "coffee grinder upgrade",
+      "pour-over coffee",
+      "home brewing consistency",
+      "countertop coffee gear"
+    ],
+    "nextContentIdeas": [
+      "Best burr grinders for beginners",
+      "OXO Brew grinder alternatives"
+    ]
   }
 }
