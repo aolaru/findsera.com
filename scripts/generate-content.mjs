@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
-const AMAZON_TAG = "kreativauto-20";
+const AMAZON_TAG = process.env.AMAZON_ASSOCIATE_TAG || "kreativauto-20";
 const root = process.cwd();
 
 const sourceProductsPath = path.join(root, "src/data/source/products.source.json");

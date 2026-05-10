@@ -1,0 +1,107 @@
+---
+import { categoryLabels } from "../data/catalog";
+import type { Product } from "../data/catalog";
+
+interface Props {
+  products: Product[];
+  title?: string;
+  description?: string;
+}
+
+const {
+  products,
+  title = "Compare the shortlist",
+  description = "Use this table to compare price, category fit, standout strengths, and the main tradeoff before opening Amazon."
+} = Astro.props;
+
+const getBestFor = (product: Product) => {
+  if (product.price <= 50 || product.tags.includes("under-50")) {
+    return "Best under $50";
+  }
+
+  if (product.tags.includes("travel") || product.tags.includes("portable")) {
+    return "Best for travel";
+  }
+
+  if (product.tags.includes("desk-setup") || product.tags.includes("office") || product.tags.includes("productivity")) {
+    return "Best for small desks";
+  }
+
+  if (product.tags.includes("coffee") || product.tags.includes("brewing")) {
+    return "Best for coffee routines";
+  }
+
+  if (product.tags.includes("smart-home")) {
+    return "Best smart-home starter";
+  }
+
+  return `Best for ${categoryLabels[product.category].toLowerCase()}`;
+};
+
+const getTradeoff = (product: Product) => {
+  if (product.affiliateMode === "search") {
+    return "Check the listing carefully because this uses an Amazon search fallback.";
+  }
+
+  if (product.price >= 120) {
+    return "Higher price than entry-level alternatives.";
+  }
+
+  if (product.price >= 80) {
+    return "Better as an upgrade buy than a casual first purchase.";
+  }
+
+  return "Best when this exact use case matters more than finding the lowest price.";
+};
+
+const formatDate = (value: string) =>
+  new Date(`${value}T00:00:00Z`).toLocaleDateString("en-US", {
+    month: "short",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC"
+  });
+---
+
+<article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card" id="comparison">
+  <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Buying comparison</p>
+  <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">{title}</h2>
+  <p class="mt-3 text-sm leading-7 text-ink-700">{description}</p>
+  <div class="mt-5 overflow-x-auto">
+    <table class="min-w-[760px] text-left text-sm text-ink-700">
+      <thead>
+        <tr class="border-b border-black/8 text-xs uppercase tracking-[0.16em] text-ink-700/70">
+          <th class="pb-3 pr-4 font-semibold">Product</th>
+          <th class="pb-3 pr-4 font-semibold">Best for</th>
+          <th class="pb-3 pr-4 font-semibold">Category</th>
+          <th class="pb-3 pr-4 font-semibold">Standout spec</th>
+          <th class="pb-3 pr-4 font-semibold">Tradeoff</th>
+          <th class="pb-3 pr-4 font-semibold">Price</th>
+          <th class="pb-3 font-semibold">Checked</th>
+        </tr>
+      </thead>
+      <tbody>
+        {
+          products.map((product) => (
+            <tr class="border-b border-black/6 align-top last:border-b-0">
+              <td class="py-3 pr-4">
+                <a href={`/products/${product.slug}`} class="font-semibold text-ink-900 hover:text-accent-600">
+                  {product.title}
+                </a>
+                {product.retailerTitle && product.retailerTitle !== product.title && (
+                  <p class="mt-1 text-xs leading-5 text-ink-700/70">Retailer title: {product.retailerTitle}</p>
+                )}
+              </td>
+              <td class="py-3 pr-4">{getBestFor(product)}</td>
+              <td class="py-3 pr-4">{categoryLabels[product.category]}</td>
+              <td class="py-3 pr-4">{product.highlights[0]}</td>
+              <td class="py-3 pr-4">{getTradeoff(product)}</td>
+              <td class="py-3 pr-4 font-semibold text-ink-900">{product.priceLabel}</td>
+              <td class="py-3">{formatDate(product.priceCheckedAt)}</td>
+            </tr>
+          ))
+        }
+      </tbody>
+    </table>
+  </div>
+</article>

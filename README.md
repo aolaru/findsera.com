@@ -60,12 +60,14 @@ Edit `src/data/source/products.source.json` and `src/data/source/roundups.source
 ```bash
 npm run content:import -- src/data/source/import-products.sample.json
 npm run content:refresh -- src/data/source/refresh-overrides.sample.json
+npm run content:paapi
 npm run content:report
 npm run content:maintain
 ```
 
 - `content:import` upserts products into the source catalog from a JSON file
 - `content:refresh` applies price/image/Amazon URL overrides in bulk
+- `content:paapi` refreshes Amazon title, price, image URL, and optional local images from Product Advertising API when credentials are configured
 - `content:report` lists products still missing exact Amazon product URLs
 - `content:maintain` adds queued products, applies queued product refreshes, optionally adds queued guides, then writes a richer maintenance report
 
@@ -92,7 +94,7 @@ The layout will emit the corresponding `google-site-verification` meta tag autom
 
 ## Content model
 
-Source content lives in `src/data/source/`. Generated runtime data is written to `src/data/generated/`, which powers the homepage, roundup routes, category pages, topic pages, and SEO cluster landing pages.
+Source content lives in `src/data/source/`. Generated runtime data is written to `src/data/generated/`, which powers the homepage, guide routes, category pages, topic pages, and theme landing pages.
 
 ## Daily automation
 
@@ -106,6 +108,7 @@ Source content lives in `src/data/source/`. Generated runtime data is written to
 - Weekly guide schedule: Mondays at `05:30 UTC`
 
 The workflow:
+- refreshes up to 8 Amazon products through Product Advertising API when credentials are available
 - adds 1 product per daily run from the backlog queue
 - applies up to 2 existing-product refreshes per daily run from the refresh queue
 - daily workflow adds 0 guides by default
@@ -115,7 +118,10 @@ The workflow:
 - commits the changes automatically when there is a diff
 
 Important:
-- It does not scrape live prices yet
+- Product Advertising API refreshes require GitHub Actions secrets: `AMAZON_PAAPI_ACCESS_KEY`, `AMAZON_PAAPI_SECRET_KEY`, and optionally `AMAZON_PAAPI_PARTNER_TAG`
+- Without those secrets, the PA-API step writes a skipped report and the workflow continues safely
+- PA-API refreshes use GetItems with `ItemInfo.Title`, `Images.Primary.Large`, and `OffersV2.Listings.Price`; they update `price`, `priceCheckedAt`, `retailerTitle`, `retailerImageUrl`, canonical `amazonUrl`, and local product images when enabled
+- Amazon's PA-API docs now point developers toward Creators API, so keep this integration isolated behind `content:paapi` for an easier future migration
 - It can apply pre-queued refreshes to existing products, but it still does not discover live price changes on its own
 - It flags stale `priceCheckedAt` values so you know which products still need manual refreshes or a later provider/API integration
 - It also reports unused products, guides with short intros, guides with too few products, and validation failures before commit

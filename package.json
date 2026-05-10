@@ -13,6 +13,7 @@
     "content:report": "node scripts/report-affiliate-gaps.mjs",
     "content:maintain": "node scripts/daily-maintenance.mjs",
     "content:images": "node scripts/check-product-images.mjs",
+    "content:paapi": "node scripts/paapi-refresh-products.mjs",
     "predev": "npm run content:build",
     "prebuild": "npm run content:build",
     "dev": "astro dev",

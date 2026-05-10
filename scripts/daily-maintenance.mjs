@@ -210,7 +210,9 @@ const refreshableFields = new Set([
   "highlights",
   "isTrending",
   "image",
-  "amazonQuery"
+  "amazonQuery",
+  "retailerTitle",
+  "retailerImageUrl"
 ]);
 
 for (const entry of productRefreshBacklog) {

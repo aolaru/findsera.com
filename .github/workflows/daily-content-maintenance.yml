@@ -35,6 +35,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Refresh Amazon product data
+        env:
+          AMAZON_PAAPI_ACCESS_KEY: ${{ secrets.AMAZON_PAAPI_ACCESS_KEY }}
+          AMAZON_PAAPI_SECRET_KEY: ${{ secrets.AMAZON_PAAPI_SECRET_KEY }}
+          AMAZON_PAAPI_PARTNER_TAG: ${{ secrets.AMAZON_PAAPI_PARTNER_TAG }}
+          PAAPI_REFRESH_LIMIT: "8"
+          PAAPI_UPDATE_LOCAL_IMAGES: "true"
+        run: npm run content:paapi
+
       - name: Run daily maintenance
         env:
           MAX_NEW_PRODUCTS: "1"
@@ -60,7 +69,7 @@ jobs:
 
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add src/data/source/products.source.json src/data/source/roundups.source.json src/data/source/content-map.json src/data/source/product-backlog.json src/data/source/product-refresh-backlog.json src/data/source/guide-backlog.json src/data/generated reports
+          git add src/data/source/products.source.json src/data/source/roundups.source.json src/data/source/content-map.json src/data/source/product-backlog.json src/data/source/product-refresh-backlog.json src/data/source/guide-backlog.json src/data/generated public/images/products reports
           git commit -m "Run daily content maintenance"
           git fetch origin main
           git rebase origin/main

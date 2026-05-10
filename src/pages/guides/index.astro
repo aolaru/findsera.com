@@ -8,7 +8,7 @@ const guides = [...allRoundups].sort((a, b) => a.title.localeCompare(b.title));
 
 const title = "All Guides | Findsera";
 const description =
-  "Browse every Findsera buying guide, roundup, and commercial-intent page across gadgets, home, and kitchen.";
+  "Browse every Findsera buying guide and product roundup across gadgets, home, and kitchen.";
 ---
 
 <Layout title={title} description={description} canonicalPath="/guides">
@@ -28,7 +28,7 @@ const description =
     <div class="container-shell">
       <SectionHeader
         title={`${guides.length} guide pages`}
-        description="These pages organize the catalog around buyer intent, price brackets, and product use cases."
+        description="These pages organize the catalog around real buying situations, price brackets, and product use cases."
       />
       <div class="grid gap-6 lg:grid-cols-3">
         {guides.map((roundup) => <RoundupCard roundup={roundup} />)}

@@ -18,6 +18,8 @@ export type Product = {
   description: string;
   sourceUrl: string;
   priceCheckedAt: string;
+  retailerTitle?: string;
+  retailerImageUrl?: string;
   affiliateUrl: string;
   affiliateMode: AffiliateMode;
   amazonUrl?: string;

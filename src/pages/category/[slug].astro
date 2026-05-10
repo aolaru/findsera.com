@@ -92,7 +92,7 @@ const structuredData = {
         <div class="container-shell">
           <SectionHeader
             title={`Related ${label} Roundups`}
-            description="Internal roundup links help the site behave like a topic cluster instead of a set of disconnected pages."
+            description="Related guide links help this category feel connected instead of becoming a disconnected product grid."
           />
           <div class="grid gap-6 lg:grid-cols-3">
             {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}
@@ -108,7 +108,7 @@ const structuredData = {
         <div class="container-shell">
           <SectionHeader
             title={`${label} Topics`}
-            description="These tag pages add another layer of internal linking and help broader category pages branch into narrower search intents."
+            description="These topic pages help broader category pages branch into narrower buying situations."
           />
           <TopicBadgeList topics={topics.map((topic) => ({ slug: topic.slug, title: topic.title }))} />
         </div>
@@ -124,7 +124,7 @@ const structuredData = {
           {
             question: `How should ${label.toLowerCase()} pages scale over time?`,
             answer:
-              "Category pages should stay broad while related roundups target more specific intent. That keeps the site architecture clean and supports internal linking as the page count grows."
+              "Category pages should stay broad while related guides target more specific buying situations. That keeps browsing cleaner as the catalog grows."
           },
           {
             question: "Why keep the catalog in generated JSON for now?",
