@@ -575,6 +575,33 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "nespresso-aeroccino-4-milk-frother",
+    "title": "Nespresso Aeroccino 4 Milk Frother",
+    "brand": "Nespresso",
+    "category": "kitchen",
+    "price": 119.95,
+    "image": "/images/products/nespresso-aeroccino-4-milk-frother.png",
+    "description": "A countertop milk frother for lattes, cappuccinos, and richer home coffee rituals when a simple wand no longer feels like enough.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Nespresso Aeroccino 4",
+    "tags": [
+      "coffee",
+      "brewing",
+      "countertop",
+      "gift"
+    ],
+    "highlights": [
+      "Cleaner milk-texture upgrade",
+      "Useful for latte-style drinks",
+      "Good step up from manual frothers"
+    ],
+    "isTrending": true,
+    "slug": "nespresso-aeroccino-4-milk-frother",
+    "priceLabel": "$119.95",
+    "affiliateUrl": "https://www.amazon.com/s?k=Nespresso+Aeroccino+4&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "omoton-adjustable-laptop-stand",
     "title": "OMOTON Adjustable Laptop Stand",
     "brand": "OMOTON",

@@ -48,15 +48,16 @@
     "description": "Findsera content related to brewing.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "nespresso-aeroccino-4-milk-frother",
       "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 4
+      "kitchen": 5
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -118,16 +119,17 @@
       "cosori-electric-gooseneck-kettle",
       "ember-mug-2",
       "fellow-stagg-ekg-electric-kettle",
+      "nespresso-aeroccino-4-milk-frother",
       "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 6,
+      "kitchen": 7,
       "home": 1
     },
-    "productCount": 7,
+    "productCount": 8,
     "roundupCount": 0
   },
   {
@@ -174,14 +176,15 @@
       "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle",
       "instant-pot-duo-7-in-1-6-quart",
+      "nespresso-aeroccino-4-milk-frother",
       "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 5
+      "kitchen": 6
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -221,14 +224,16 @@
     "productIds": [
       "apple-airtag-1-pack",
       "echo-pop-smart-speaker",
-      "ember-mug-2"
+      "ember-mug-2",
+      "nespresso-aeroccino-4-milk-frother"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "gadgets": 1,
-      "home": 2
+      "home": 2,
+      "kitchen": 1
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
