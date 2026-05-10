@@ -596,10 +596,11 @@
       "Good step up from manual frothers"
     ],
     "isTrending": true,
+    "amazonUrl": "https://www.amazon.com/dp/B0BBH5B7MD",
     "slug": "nespresso-aeroccino-4-milk-frother",
     "priceLabel": "$119.95",
-    "affiliateUrl": "https://www.amazon.com/s?k=Nespresso+Aeroccino+4&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B0BBH5B7MD?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "omoton-adjustable-laptop-stand",

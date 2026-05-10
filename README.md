@@ -119,6 +119,8 @@ The workflow:
 
 Important:
 - Product Advertising API refreshes require GitHub Actions secrets: `AMAZON_PAAPI_ACCESS_KEY`, `AMAZON_PAAPI_SECRET_KEY`, and optionally `AMAZON_PAAPI_PARTNER_TAG`
+- Add them in GitHub under `Settings` -> `Secrets and variables` -> `Actions` -> `New repository secret`
+- CLI alternative: `gh secret set AMAZON_PAAPI_ACCESS_KEY`, `gh secret set AMAZON_PAAPI_SECRET_KEY`, and `gh secret set AMAZON_PAAPI_PARTNER_TAG --body kreativauto-20`
 - Without those secrets, the PA-API step writes a skipped report and the workflow continues safely
 - PA-API refreshes use GetItems with `ItemInfo.Title`, `Images.Primary.Large`, and `OffersV2.Listings.Price`; they update `price`, `priceCheckedAt`, `retailerTitle`, `retailerImageUrl`, canonical `amazonUrl`, and local product images when enabled
 - Amazon's PA-API docs now point developers toward Creators API, so keep this integration isolated behind `content:paapi` for an easier future migration

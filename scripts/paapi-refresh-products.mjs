@@ -152,6 +152,12 @@ const reportAndExit = async (lines, exitCode = 0) => {
 };
 
 if (!accessKey || !secretKey) {
+  if (process.env.GITHUB_ACTIONS === "true") {
+    console.log(
+      "::notice title=Amazon PA-API not configured::Add AMAZON_PAAPI_ACCESS_KEY, AMAZON_PAAPI_SECRET_KEY, and optionally AMAZON_PAAPI_PARTNER_TAG in GitHub repository secrets to enable daily Amazon price/title/image refreshes."
+    );
+  }
+
   await reportAndExit([
     "# Amazon PA-API refresh report",
     "",
