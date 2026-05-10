@@ -177,10 +177,10 @@
     "title": "COSORI Electric Gooseneck Kettle",
     "brand": "COSORI",
     "category": "kitchen",
-    "price": 69.99,
+    "price": 67.99,
     "image": "/images/products/cosori-electric-gooseneck-kettle.png",
     "description": "A temperature-control gooseneck kettle for pour-over coffee, tea, and small kitchens that need faster hot-water prep with better pouring control.",
-    "priceCheckedAt": "2026-04-30",
+    "priceCheckedAt": "2026-05-10",
     "amazonQuery": "COSORI Electric Gooseneck Kettle",
     "tags": [
       "coffee",
@@ -196,7 +196,7 @@
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B07T1CH2HH",
     "slug": "cosori-electric-gooseneck-kettle",
-    "priceLabel": "$69.99",
+    "priceLabel": "$67.99",
     "affiliateUrl": "https://www.amazon.com/dp/B07T1CH2HH?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
@@ -468,8 +468,8 @@
     "image": "/images/products/logitech-mx-anywhere-3s.png",
     "description": "A compact premium mouse for travel desks and hybrid work setups with quiet clicks, fast scrolling, and reliable multi-device switching.",
     "sourceUrl": "https://www.logitech.com/en-us/shop/p/mx-anywhere-3s",
-    "priceCheckedAt": "2026-04-26",
-    "amazonUrl": "https://www.amazon.com/dp/B0C6FG3XRB",
+    "priceCheckedAt": "2026-05-10",
+    "amazonUrl": "https://www.amazon.com/dp/B0BPY4ZQXG",
     "amazonQuery": "Logitech MX Anywhere 3S",
     "tags": [
       "productivity",
@@ -485,7 +485,7 @@
     "isTrending": true,
     "slug": "logitech-mx-anywhere-3s",
     "priceLabel": "$76.49",
-    "affiliateUrl": "https://www.amazon.com/dp/B0C6FG3XRB?tag=kreativauto-20",
+    "affiliateUrl": "https://www.amazon.com/dp/B0BPY4ZQXG?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
   {
@@ -780,10 +780,10 @@
     "title": "UGREEN Nexode 100W USB-C Charger",
     "brand": "UGREEN",
     "category": "gadgets",
-    "price": 49.99,
+    "price": 79.9,
     "image": "/images/products/ugreen-nexode-100w-usb-c-charger-v2.png",
     "description": "A compact multi-port GaN charger for laptops, tablets, and travel kits that need high-wattage charging without a bulky brick.",
-    "priceCheckedAt": "2026-04-30",
+    "priceCheckedAt": "2026-05-10",
     "amazonUrl": "https://www.amazon.com/UGREEN-100W-USB-Multiport-Charger/dp/B091Z6JNX4",
     "amazonQuery": "UGREEN Nexode 100W USB C Charger",
     "tags": [
@@ -799,7 +799,7 @@
     ],
     "isTrending": true,
     "slug": "ugreen-nexode-100w-usb-c-charger",
-    "priceLabel": "$49.99",
+    "priceLabel": "$79.90",
     "affiliateUrl": "https://www.amazon.com/UGREEN-100W-USB-Multiport-Charger/dp/B091Z6JNX4?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
