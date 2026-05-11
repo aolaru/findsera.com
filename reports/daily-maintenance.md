@@ -1,19 +1,19 @@
 # Daily maintenance report
 
 - Run date: 2026-05-11
-- New products added: 1
+- New products added: 0
 - Existing products refreshed: 0
-- New guides added: 0
+- New guides added: 1
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
-- Remaining guide backlog: 9
+- Remaining guide backlog: 8
 - Products with stale price checks: 14
 - Products missing content-map coverage: 2
 - Validation failures: 0
 
 ## Added products today
 
-- Joseph Joseph DrawerStore Cutlery Organizer (`joseph-joseph-drawerstore-cutlery-organizer`)
+- None
 
 ## Refreshed products today
 
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- None
+- Best Small Apartment Upgrades Under $200 (`best-small-apartment-upgrades-under-200`)
 
 ## Price checks to refresh
 
