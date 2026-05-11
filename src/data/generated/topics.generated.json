@@ -260,6 +260,7 @@
       "echo-pop-smart-speaker",
       "eufy-11s-max-robot-vacuum",
       "instant-pot-duo-7-in-1-6-quart",
+      "joseph-joseph-drawerstore-cutlery-organizer",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "tapo-c500-security-camera",
@@ -267,10 +268,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 7,
+      "home": 8,
       "kitchen": 1
     },
-    "productCount": 8,
+    "productCount": 9,
     "roundupCount": 0
   },
   {
@@ -334,6 +335,7 @@
     "productIds": [
       "etekcity-food-kitchen-scale",
       "instant-pot-duo-7-in-1-6-quart",
+      "joseph-joseph-drawerstore-cutlery-organizer",
       "meater-plus-wireless-thermometer",
       "oxo-brew-conical-burr-coffee-grinder",
       "thermoworks-thermapen-one",
@@ -341,9 +343,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 6
+      "kitchen": 6,
+      "home": 1
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -388,13 +391,14 @@
     "title": "Organization",
     "description": "Findsera content related to organization.",
     "productIds": [
+      "joseph-joseph-drawerstore-cutlery-organizer",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 1
+      "home": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -588,6 +592,7 @@
       "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "etekcity-food-kitchen-scale",
+      "joseph-joseph-drawerstore-cutlery-organizer",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "omoton-adjustable-laptop-stand",
@@ -601,9 +606,9 @@
     "categoryCounts": {
       "kitchen": 4,
       "gadgets": 3,
-      "home": 6
+      "home": 7
     },
-    "productCount": 13,
+    "productCount": 14,
     "roundupCount": 0
   },
   {

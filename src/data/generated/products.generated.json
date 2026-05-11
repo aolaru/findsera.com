@@ -402,6 +402,33 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "joseph-joseph-drawerstore-cutlery-organizer",
+    "title": "Joseph Joseph DrawerStore Cutlery Organizer",
+    "brand": "Joseph Joseph",
+    "category": "home",
+    "price": 11.99,
+    "image": "/images/products/joseph-joseph-drawerstore-cutlery-organizer.png",
+    "description": "A compact tiered drawer organizer that makes narrow kitchen drawers more functional without needing a full set of storage bins.",
+    "priceCheckedAt": "2026-04-30",
+    "amazonQuery": "Joseph Joseph DrawerStore Cutlery Organizer",
+    "tags": [
+      "organization",
+      "home",
+      "under-50",
+      "kitchen"
+    ],
+    "highlights": [
+      "Space-saving drawer layout",
+      "Strong fit for small kitchens",
+      "Quick organization upgrade"
+    ],
+    "isTrending": true,
+    "slug": "joseph-joseph-drawerstore-cutlery-organizer",
+    "priceLabel": "$11.99",
+    "affiliateUrl": "https://www.amazon.com/s?k=Joseph+Joseph+DrawerStore+Cutlery+Organizer&tag=kreativauto-20",
+    "affiliateMode": "search"
+  },
+  {
     "id": "kasa-smart-plug-mini-4-pack",
     "title": "Kasa Smart Plug Mini 4-Pack",
     "brand": "Kasa",
