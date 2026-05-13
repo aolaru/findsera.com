@@ -1,1 +1,302 @@
-[]
+[
+  {
+    "id": "amazon-basics-velvet-hangers-50-pack",
+    "title": "Amazon Basics Velvet Hangers 50-Pack",
+    "brand": "Amazon Basics",
+    "category": "home",
+    "price": 20.99,
+    "image": "/images/products/amazon-basics-velvet-hangers-50-pack.png",
+    "description": "A slim non-slip hanger set for closet resets, apartment move-ins, dorm rooms, and simple home organization projects under $25.",
+    "sourceUrl": "https://www.amazon.com/amazon-basics",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B00FXNAAW2",
+    "amazonQuery": "Amazon Basics Velvet Hangers 50 Pack",
+    "tags": [
+      "organization",
+      "home",
+      "under-50",
+      "closet"
+    ],
+    "highlights": [
+      "Slim closet-saving profile",
+      "Non-slip velvet surface",
+      "Low-cost full closet reset"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "anker-525-charging-station",
+    "title": "Anker 525 Charging Station",
+    "brand": "Anker",
+    "category": "gadgets",
+    "price": 39.99,
+    "image": "/images/products/anker-525-charging-station.png",
+    "description": "A compact 7-in-1 desk charging station with AC outlets, USB-C, and USB-A ports for cleaning up workspaces without losing charging flexibility.",
+    "sourceUrl": "https://www.anker.com/products/bundle-a91c0111-1-a91c0121-1",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0B3HSJ5NL",
+    "amazonQuery": "Anker 525 Charging Station",
+    "tags": [
+      "charging",
+      "desk setup",
+      "office",
+      "productivity"
+    ],
+    "highlights": [
+      "7-in-1 desktop power layout",
+      "Front-facing USB-C charging",
+      "Helps reduce desk cable clutter"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "aqara-door-window-sensor-p2",
+    "title": "Aqara Door and Window Sensor P2",
+    "brand": "Aqara",
+    "category": "home",
+    "price": 29.99,
+    "image": "/images/products/aqara-door-window-sensor-p2.png",
+    "description": "A Matter-over-Thread contact sensor for doors, windows, cabinets, and simple home automations where open-close status matters.",
+    "sourceUrl": "https://www.aqara.com/en/product/door-and-window-sensor-p2/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0BTL8B72D",
+    "amazonQuery": "Aqara Door and Window Sensor P2",
+    "tags": [
+      "smart-home",
+      "home",
+      "security",
+      "matter"
+    ],
+    "highlights": [
+      "Matter-over-Thread support",
+      "Useful for doors and cabinets",
+      "Strong smart-home expansion pick"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "bodum-bistro-burr-coffee-grinder",
+    "title": "Bodum Bistro Burr Coffee Grinder",
+    "brand": "Bodum",
+    "category": "kitchen",
+    "price": 69.99,
+    "image": "/images/products/bodum-bistro-burr-coffee-grinder.png",
+    "description": "An approachable electric burr grinder for coffee beginners who want more consistent grounds without jumping straight to premium grinder prices.",
+    "sourceUrl": "https://www.bodum.com/us/en/10903-01us-3-bistro",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B00430AXLO",
+    "amazonQuery": "Bodum Bistro Burr Coffee Grinder",
+    "tags": [
+      "coffee",
+      "brewing",
+      "countertop",
+      "gift"
+    ],
+    "highlights": [
+      "Burr grinding at a beginner price",
+      "Preset timer controls",
+      "Good first grinder upgrade"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "bonavita-variable-temperature-kettle",
+    "title": "Bonavita Variable Temperature Gooseneck Kettle",
+    "brand": "Bonavita",
+    "category": "kitchen",
+    "price": 64.99,
+    "image": "/images/products/bonavita-variable-temperature-kettle.png",
+    "description": "A variable-temperature gooseneck kettle for pour-over coffee and tea buyers who want temperature control without paying premium design prices.",
+    "sourceUrl": "https://bonavita.co/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B005YR0F40",
+    "amazonQuery": "Bonavita Variable Temperature Gooseneck Kettle",
+    "tags": [
+      "coffee",
+      "tea",
+      "pour over",
+      "countertop"
+    ],
+    "highlights": [
+      "Variable temperature control",
+      "Controlled gooseneck pour",
+      "Value alternative to premium kettles"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "govee-rgbic-led-strip-lights-65ft",
+    "title": "Govee RGBIC LED Strip Lights 65.6ft",
+    "brand": "Govee",
+    "category": "home",
+    "price": 29.99,
+    "image": "/images/products/govee-rgbic-led-strip-lights-65ft.png",
+    "description": "A long RGBIC light strip for bedrooms, desks, shelves, and living spaces where app-controlled color scenes can change the room quickly.",
+    "sourceUrl": "https://us.govee.com/collections/rgbic-strip-lights",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B09BBHCQ3L",
+    "amazonQuery": "Govee RGBIC LED Strip Lights 65.6ft",
+    "tags": [
+      "smart-home",
+      "home",
+      "bedroom",
+      "gift"
+    ],
+    "highlights": [
+      "Segmented RGBIC effects",
+      "App and voice control",
+      "Easy atmosphere upgrade for rooms"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "govee-tv-led-backlight-strip",
+    "title": "Govee TV LED Backlight Strip",
+    "brand": "Govee",
+    "category": "home",
+    "price": 19.99,
+    "image": "/images/products/govee-tv-led-backlight-strip.png",
+    "description": "A TV backlight strip for adding simple bias lighting and color scenes to small entertainment setups without installing permanent fixtures.",
+    "sourceUrl": "https://us.govee.com/collections/tv-lights",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0CFVM1QTR",
+    "amazonQuery": "Govee TV LED Backlight Strip RGBIC",
+    "tags": [
+      "smart-home",
+      "home",
+      "under-50",
+      "gift"
+    ],
+    "highlights": [
+      "Budget TV lighting upgrade",
+      "App-controlled color scenes",
+      "Good gift for media rooms"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "lodge-12-inch-cast-iron-skillet",
+    "title": "Lodge 12-Inch Cast Iron Skillet",
+    "brand": "Lodge",
+    "category": "kitchen",
+    "price": 39.9,
+    "image": "/images/products/lodge-12-inch-cast-iron-skillet.png",
+    "description": "A pre-seasoned 12-inch cast iron skillet for searing, baking, roasting, and stovetop-to-oven cooking with long-term kitchen value.",
+    "sourceUrl": "https://www.lodgecastiron.com/product/round-cast-iron-classic-skillet",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B00G2XGC88",
+    "amazonQuery": "Lodge 12 Inch Cast Iron Skillet",
+    "tags": [
+      "cooking",
+      "kitchen",
+      "grilling",
+      "gift"
+    ],
+    "highlights": [
+      "Durable cast iron build",
+      "Useful on stove, oven, or grill",
+      "Strong evergreen kitchen gift"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "oxo-good-grips-pop-container-4-4qt",
+    "title": "OXO Good Grips POP Container 4.4 Qt",
+    "brand": "OXO",
+    "category": "kitchen",
+    "price": 21.99,
+    "image": "/images/products/oxo-good-grips-pop-container-4-4qt.png",
+    "description": "A large airtight pantry container for flour, sugar, pasta, or snacks when buyers want cleaner shelves and food storage that stacks neatly.",
+    "sourceUrl": "https://www.oxo.com/categories/cooking-and-baking/food-containers/pop-containers.html",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B07856RRDW",
+    "amazonQuery": "OXO Good Grips POP Container 4.4 Qt",
+    "tags": [
+      "organization",
+      "kitchen",
+      "under-50",
+      "home"
+    ],
+    "highlights": [
+      "Airtight push-button seal",
+      "Stackable pantry shape",
+      "Good small-kitchen organization pick"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "tp-link-tapo-p125m-matter-smart-plug",
+    "title": "TP-Link Tapo P125M Matter Smart Plug",
+    "brand": "TP-Link Tapo",
+    "category": "home",
+    "price": 21.99,
+    "image": "/images/products/tp-link-tapo-p125m-matter-smart-plug.png",
+    "description": "A compact Matter-compatible smart plug for adding app and voice control to lamps, fans, and small appliances without blocking the second outlet.",
+    "sourceUrl": "https://www.tp-link.com/us/home-networking/smart-plug/tapo-p125m/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0BXMNJDW3",
+    "amazonQuery": "TP-Link Tapo P125M Matter Smart Plug",
+    "tags": [
+      "smart-home",
+      "home",
+      "under-50",
+      "matter"
+    ],
+    "highlights": [
+      "Matter-compatible smart-home setup",
+      "Compact outlet-friendly body",
+      "Good starter automation product"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "tp-link-tapo-p400m-outdoor-smart-plug",
+    "title": "TP-Link Tapo P400M Outdoor Smart Plug",
+    "brand": "TP-Link Tapo",
+    "category": "home",
+    "price": 24.99,
+    "image": "/images/products/tp-link-tapo-p400m-outdoor-smart-plug.png",
+    "description": "A Matter-compatible outdoor smart plug with two individually controlled outlets for patio lights, holiday lights, and weather-exposed routines.",
+    "sourceUrl": "https://www.tp-link.com/us/home-networking/smart-plug/tapo-p400m/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0CVN3CNCD",
+    "amazonQuery": "TP-Link Tapo P400M Outdoor Smart Plug",
+    "tags": [
+      "smart-home",
+      "outdoor",
+      "home",
+      "matter"
+    ],
+    "highlights": [
+      "Two individually controlled outlets",
+      "Outdoor-rated smart-home control",
+      "Useful for seasonal lighting"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "zulay-electric-milk-frother-heater",
+    "title": "Zulay Electric Milk Frother and Heater",
+    "brand": "Zulay Kitchen",
+    "category": "kitchen",
+    "price": 49.99,
+    "image": "/images/products/zulay-electric-milk-frother-heater.png",
+    "description": "An automatic milk frother and warmer for latte-style drinks at home when a handheld wand feels too manual or inconsistent.",
+    "sourceUrl": "https://www.zulaykitchen.com/collections/milk-frothers",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B087JZFV6Z",
+    "amazonQuery": "Zulay Electric Milk Frother and Heater",
+    "tags": [
+      "coffee",
+      "brewing",
+      "under-50",
+      "gift"
+    ],
+    "highlights": [
+      "Automatic hot and cold froth modes",
+      "Good latte-style drink upgrade",
+      "More hands-off than wand frothers"
+    ],
+    "isTrending": true
+  }
+]

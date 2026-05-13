@@ -48,6 +48,25 @@
       "Is Anker MagGo Power Bank (10K, Slim) worth it for mobile power?"
     ]
   },
+  "anker-nano-power-bank-30w": {
+    "primaryGuide": "best-travel-tech-under-100",
+    "supportingGuides": [
+      "best-travel-tech-essentials",
+      "best-tech-gifts-under-50",
+      "best-everyday-carry-tech-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "portable charging",
+      "travel carry",
+      "budget tech gift",
+      "remote work backup"
+    ],
+    "nextContentIdeas": [
+      "Anker Nano Power Bank alternatives",
+      "Best compact power banks with built-in cables"
+    ]
+  },
   "apple-airtag-1-pack": {
     "primaryGuide": "best-travel-tech-for-long-flights",
     "supportingGuides": [
@@ -84,6 +103,68 @@
       "Is ARZOPA 15.6-Inch Portable Monitor worth it for travel carry?"
     ]
   },
+  "blink-mini-2-security-camera": {
+    "primaryGuide": "best-smart-home-upgrades-for-beginners",
+    "supportingGuides": [
+      "best-smart-home-starter-kit-under-100",
+      "best-smart-home-gifts-under-50",
+      "best-products-under-50",
+      "best-products-for-small-apartments"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "budget security camera",
+      "apartment monitoring",
+      "pet camera",
+      "smart-home starter"
+    ],
+    "nextContentIdeas": [
+      "Blink Mini 2 alternatives",
+      "Best indoor cameras for apartments"
+    ]
+  },
+  "cosori-electric-gooseneck-kettle": {
+    "primaryGuide": "best-coffee-gear-for-home",
+    "supportingGuides": [
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-small-kitchens",
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "pour-over coffee",
+      "tea routine",
+      "temperature control",
+      "countertop coffee upgrade"
+    ],
+    "nextContentIdeas": [
+      "Best gooseneck kettles for beginners",
+      "COSORI gooseneck kettle alternatives"
+    ]
+  },
+  "echo-pop-smart-speaker": {
+    "primaryGuide": "best-smart-home-starter-kit-under-100",
+    "supportingGuides": [
+      "best-tech-for-dorm-rooms",
+      "echo-pop-vs-kasa-smart-plug",
+      "is-echo-pop-worth-it",
+      "best-tech-gifts-under-50",
+      "best-smart-home-gifts-under-50"
+    ],
+    "comparisonGuides": [
+      "echo-pop-vs-kasa-smart-plug"
+    ],
+    "buyerIntents": [
+      "smart-home starter",
+      "budget gift",
+      "voice control",
+      "dorm room audio"
+    ],
+    "nextContentIdeas": [
+      "Best Alexa devices for small rooms",
+      "Echo Pop alternatives for beginners"
+    ]
+  },
   "ember-mug-2": {
     "primaryGuide": "best-home-office-gifts",
     "supportingGuides": [
@@ -106,6 +187,24 @@
     "nextContentIdeas": [
       "Ember Mug 2 alternatives",
       "Is Ember Mug 2 worth it for coffee routine?"
+    ]
+  },
+  "etekcity-food-kitchen-scale": {
+    "primaryGuide": "best-kitchen-tools-for-precision-cooking",
+    "supportingGuides": [
+      "best-products-under-50",
+      "best-coffee-upgrades-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "coffee dosing",
+      "baking accuracy",
+      "meal prep",
+      "budget kitchen tool"
+    ],
+    "nextContentIdeas": [
+      "Best kitchen scales for coffee",
+      "Etekcity kitchen scale alternatives"
     ]
   },
   "eufy-11s-max-robot-vacuum": {
@@ -164,6 +263,41 @@
     "nextContentIdeas": [
       "Govee Smart Desk Lamp Pro alternatives",
       "Is Govee Smart Desk Lamp Pro worth it for desk setup?"
+    ]
+  },
+  "instant-pot-duo-7-in-1-6-quart": {
+    "primaryGuide": "best-products-for-small-apartments",
+    "supportingGuides": [
+      "best-kitchen-tools-for-precision-cooking",
+      "best-small-apartment-upgrades-under-200"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "weeknight cooking",
+      "batch meal prep",
+      "small kitchen appliance",
+      "one-pot meals"
+    ],
+    "nextContentIdeas": [
+      "Best multi-cookers for small kitchens",
+      "Instant Pot Duo alternatives"
+    ]
+  },
+  "joseph-joseph-drawerstore-cutlery-organizer": {
+    "primaryGuide": "best-products-for-small-apartments",
+    "supportingGuides": [
+      "best-small-apartment-upgrades-under-200"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "small kitchen organization",
+      "drawer storage",
+      "apartment organization",
+      "under-$20 home upgrade"
+    ],
+    "nextContentIdeas": [
+      "Best kitchen drawer organizers for small spaces",
+      "Joseph Joseph DrawerStore alternatives"
     ]
   },
   "kasa-smart-plug-mini-4-pack": {
@@ -264,9 +398,37 @@
       "Is Logitech MX Keys Mini worth it for typing upgrade?"
     ]
   },
+  "logitech-pebble-2-m350s": {
+    "primaryGuide": "logitech-pebble-2-vs-mx-anywhere-3s",
+    "supportingGuides": [
+      "best-budget-home-office-tech",
+      "best-portable-work-setup",
+      "best-remote-work-starter-kit",
+      "best-student-desk-setup-under-150",
+      "best-tech-for-dorm-rooms",
+      "is-logitech-pebble-2-worth-it",
+      "best-tech-gifts-under-50",
+      "best-student-tech-under-100"
+    ],
+    "comparisonGuides": [
+      "logitech-pebble-2-vs-mx-anywhere-3s"
+    ],
+    "buyerIntents": [
+      "budget mouse",
+      "student desk",
+      "portable work",
+      "travel carry"
+    ],
+    "nextContentIdeas": [
+      "Best budget wireless mice for students",
+      "Logitech Pebble 2 alternatives"
+    ]
+  },
   "meater-plus-wireless-thermometer": {
     "primaryGuide": "meater-plus-vs-thermapen-one",
-    "supportingGuides": [],
+    "supportingGuides": [
+      "best-kitchen-tools-for-precision-cooking"
+    ],
     "comparisonGuides": [
       "meater-plus-vs-thermapen-one"
     ],
@@ -279,6 +441,82 @@
     "nextContentIdeas": [
       "MEATER Plus Wireless Meat Thermometer alternatives",
       "Is MEATER Plus Wireless Meat Thermometer worth it for precision cooking?"
+    ]
+  },
+  "nespresso-aeroccino-4-milk-frother": {
+    "primaryGuide": "best-coffee-gear-for-beginners",
+    "supportingGuides": [
+      "best-gifts-for-coffee-lovers"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "latte at home",
+      "coffee gift",
+      "milk frother upgrade",
+      "beginner coffee setup"
+    ],
+    "nextContentIdeas": [
+      "Best milk frothers for latte beginners",
+      "Nespresso Aeroccino alternatives"
+    ]
+  },
+  "omoton-adjustable-laptop-stand": {
+    "primaryGuide": "best-tech-for-small-desks",
+    "supportingGuides": [
+      "best-home-office-upgrades-under-150",
+      "best-desk-upgrades-for-students",
+      "is-logitech-pebble-2-worth-it",
+      "best-student-tech-under-100"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "small desk ergonomics",
+      "budget buy",
+      "work productivity",
+      "home office"
+    ],
+    "nextContentIdeas": [
+      "Best laptop stands for small desks",
+      "Is OMOTON Adjustable Laptop Stand worth it for a compact desk?"
+    ]
+  },
+  "oxo-brew-conical-burr-coffee-grinder": {
+    "primaryGuide": "best-coffee-gear-for-home",
+    "supportingGuides": [
+      "best-coffee-gear-for-beginners",
+      "best-coffee-gear-for-small-kitchens",
+      "best-kitchen-tools-for-precision-cooking"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "coffee grinder upgrade",
+      "pour-over coffee",
+      "home brewing consistency",
+      "countertop coffee gear"
+    ],
+    "nextContentIdeas": [
+      "Best burr grinders for beginners",
+      "OXO Brew grinder alternatives"
+    ]
+  },
+  "sandisk-extreme-portable-ssd-1tb": {
+    "primaryGuide": "best-portable-work-setup",
+    "supportingGuides": [
+      "best-remote-work-starter-kit",
+      "best-tech-for-dorm-rooms",
+      "is-sandisk-extreme-ssd-worth-it",
+      "best-student-tech-under-100"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "portable storage",
+      "remote work",
+      "travel backup",
+      "student files"
+    ],
+    "nextContentIdeas": [
+      "Best portable SSDs for remote work",
+      "External storage starter kit for students"
     ]
   },
   "soundcore-q20i-headphones": {
@@ -322,6 +560,24 @@
       "Is Takeya Deluxe Cold Brew Coffee Maker worth it for coffee routine?"
     ]
   },
+  "tapo-c500-security-camera": {
+    "primaryGuide": "best-smart-home-upgrades-for-beginners",
+    "supportingGuides": [
+      "best-smart-home-starter-kit-under-100",
+      "best-smart-home-gifts-under-50"
+    ],
+    "comparisonGuides": [],
+    "buyerIntents": [
+      "budget security camera",
+      "smart home starter",
+      "outdoor monitoring",
+      "home safety"
+    ],
+    "nextContentIdeas": [
+      "Best budget outdoor security cameras",
+      "Tapo C500 alternatives for smart homes"
+    ]
+  },
   "thermoworks-thermapen-one": {
     "primaryGuide": "meater-plus-vs-thermapen-one",
     "supportingGuides": [
@@ -339,6 +595,31 @@
     "nextContentIdeas": [
       "ThermoWorks Thermapen ONE alternatives",
       "Is ThermoWorks Thermapen ONE worth it for precision cooking?"
+    ]
+  },
+  "ugreen-nexode-100w-usb-c-charger": {
+    "primaryGuide": "ugreen-nexode-100w-vs-anker-maggo-power-bank",
+    "supportingGuides": [
+      "best-budget-home-office-tech",
+      "best-portable-work-setup",
+      "best-remote-work-starter-kit",
+      "best-student-desk-setup-under-150",
+      "best-tech-for-dorm-rooms",
+      "best-tech-gifts-under-50",
+      "best-student-tech-under-100"
+    ],
+    "comparisonGuides": [
+      "ugreen-nexode-100w-vs-anker-maggo-power-bank"
+    ],
+    "buyerIntents": [
+      "laptop charging",
+      "portable work",
+      "travel charging",
+      "budget office"
+    ],
+    "nextContentIdeas": [
+      "Best USB-C chargers for remote work",
+      "UGREEN Nexode alternatives for travel"
     ]
   },
   "vtopmart-drawer-organizer-set": {
@@ -377,250 +658,6 @@
     "nextContentIdeas": [
       "Zulay Kitchen Milk Frother Wand alternatives",
       "Is Zulay Kitchen Milk Frother Wand worth it for coffee routine?"
-    ]
-  },
-  "omoton-adjustable-laptop-stand": {
-    "primaryGuide": "best-tech-for-small-desks",
-    "supportingGuides": [
-      "best-home-office-upgrades-under-150",
-      "best-desk-upgrades-for-students",
-      "is-logitech-pebble-2-worth-it",
-      "best-student-tech-under-100"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "small desk ergonomics",
-      "budget buy",
-      "work productivity",
-      "home office"
-    ],
-    "nextContentIdeas": [
-      "Best laptop stands for small desks",
-      "Is OMOTON Adjustable Laptop Stand worth it for a compact desk?"
-    ]
-  },
-  "echo-pop-smart-speaker": {
-    "primaryGuide": "best-smart-home-starter-kit-under-100",
-    "supportingGuides": [
-      "best-tech-for-dorm-rooms",
-      "echo-pop-vs-kasa-smart-plug",
-      "is-echo-pop-worth-it",
-      "best-tech-gifts-under-50",
-      "best-smart-home-gifts-under-50"
-    ],
-    "comparisonGuides": [
-      "echo-pop-vs-kasa-smart-plug"
-    ],
-    "buyerIntents": [
-      "smart-home starter",
-      "budget gift",
-      "voice control",
-      "dorm room audio"
-    ],
-    "nextContentIdeas": [
-      "Best Alexa devices for small rooms",
-      "Echo Pop alternatives for beginners"
-    ]
-  },
-  "logitech-pebble-2-m350s": {
-    "primaryGuide": "logitech-pebble-2-vs-mx-anywhere-3s",
-    "supportingGuides": [
-      "best-budget-home-office-tech",
-      "best-portable-work-setup",
-      "best-remote-work-starter-kit",
-      "best-student-desk-setup-under-150",
-      "best-tech-for-dorm-rooms",
-      "is-logitech-pebble-2-worth-it",
-      "best-tech-gifts-under-50",
-      "best-student-tech-under-100"
-    ],
-    "comparisonGuides": [
-      "logitech-pebble-2-vs-mx-anywhere-3s"
-    ],
-    "buyerIntents": [
-      "budget mouse",
-      "student desk",
-      "portable work",
-      "travel carry"
-    ],
-    "nextContentIdeas": [
-      "Best budget wireless mice for students",
-      "Logitech Pebble 2 alternatives"
-    ]
-  },
-  "sandisk-extreme-portable-ssd-1tb": {
-    "primaryGuide": "best-portable-work-setup",
-    "supportingGuides": [
-      "best-remote-work-starter-kit",
-      "best-tech-for-dorm-rooms",
-      "is-sandisk-extreme-ssd-worth-it",
-      "best-student-tech-under-100"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "portable storage",
-      "remote work",
-      "travel backup",
-      "student files"
-    ],
-    "nextContentIdeas": [
-      "Best portable SSDs for remote work",
-      "External storage starter kit for students"
-    ]
-  },
-  "ugreen-nexode-100w-usb-c-charger": {
-    "primaryGuide": "ugreen-nexode-100w-vs-anker-maggo-power-bank",
-    "supportingGuides": [
-      "best-budget-home-office-tech",
-      "best-portable-work-setup",
-      "best-remote-work-starter-kit",
-      "best-student-desk-setup-under-150",
-      "best-tech-for-dorm-rooms",
-      "best-tech-gifts-under-50",
-      "best-student-tech-under-100"
-    ],
-    "comparisonGuides": [
-      "ugreen-nexode-100w-vs-anker-maggo-power-bank"
-    ],
-    "buyerIntents": [
-      "laptop charging",
-      "portable work",
-      "travel charging",
-      "budget office"
-    ],
-    "nextContentIdeas": [
-      "Best USB-C chargers for remote work",
-      "UGREEN Nexode alternatives for travel"
-    ]
-  },
-  "anker-nano-power-bank-30w": {
-    "primaryGuide": "best-travel-tech-under-100",
-    "supportingGuides": [
-      "best-travel-tech-essentials",
-      "best-tech-gifts-under-50",
-      "best-everyday-carry-tech-under-50"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "portable charging",
-      "travel carry",
-      "budget tech gift",
-      "remote work backup"
-    ],
-    "nextContentIdeas": [
-      "Anker Nano Power Bank alternatives",
-      "Best compact power banks with built-in cables"
-    ]
-  },
-  "etekcity-food-kitchen-scale": {
-    "primaryGuide": "best-kitchen-tools-for-precision-cooking",
-    "supportingGuides": [
-      "best-products-under-50",
-      "best-coffee-upgrades-under-50"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "coffee dosing",
-      "baking accuracy",
-      "meal prep",
-      "budget kitchen tool"
-    ],
-    "nextContentIdeas": [
-      "Best kitchen scales for coffee",
-      "Etekcity kitchen scale alternatives"
-    ]
-  },
-  "tapo-c500-security-camera": {
-    "primaryGuide": "best-smart-home-upgrades-for-beginners",
-    "supportingGuides": [
-      "best-smart-home-starter-kit-under-100",
-      "best-smart-home-gifts-under-50"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "budget security camera",
-      "smart home starter",
-      "outdoor monitoring",
-      "home safety"
-    ],
-    "nextContentIdeas": [
-      "Best budget outdoor security cameras",
-      "Tapo C500 alternatives for smart homes"
-    ]
-  },
-  "blink-mini-2-security-camera": {
-    "primaryGuide": "best-smart-home-upgrades-for-beginners",
-    "supportingGuides": [
-      "best-smart-home-starter-kit-under-100",
-      "best-smart-home-gifts-under-50",
-      "best-products-under-50",
-      "best-products-for-small-apartments"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "budget security camera",
-      "apartment monitoring",
-      "pet camera",
-      "smart-home starter"
-    ],
-    "nextContentIdeas": [
-      "Blink Mini 2 alternatives",
-      "Best indoor cameras for apartments"
-    ]
-  },
-  "cosori-electric-gooseneck-kettle": {
-    "primaryGuide": "best-coffee-gear-for-home",
-    "supportingGuides": [
-      "best-coffee-gear-for-beginners",
-      "best-coffee-gear-for-small-kitchens",
-      "best-kitchen-tools-for-precision-cooking"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "pour-over coffee",
-      "tea routine",
-      "temperature control",
-      "countertop coffee upgrade"
-    ],
-    "nextContentIdeas": [
-      "Best gooseneck kettles for beginners",
-      "COSORI gooseneck kettle alternatives"
-    ]
-  },
-  "instant-pot-duo-7-in-1-6-quart": {
-    "primaryGuide": "best-products-for-small-apartments",
-    "supportingGuides": [
-      "best-kitchen-tools-for-precision-cooking"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "weeknight cooking",
-      "batch meal prep",
-      "small kitchen appliance",
-      "one-pot meals"
-    ],
-    "nextContentIdeas": [
-      "Best multi-cookers for small kitchens",
-      "Instant Pot Duo alternatives"
-    ]
-  },
-  "oxo-brew-conical-burr-coffee-grinder": {
-    "primaryGuide": "best-coffee-gear-for-home",
-    "supportingGuides": [
-      "best-coffee-gear-for-beginners",
-      "best-coffee-gear-for-small-kitchens",
-      "best-kitchen-tools-for-precision-cooking"
-    ],
-    "comparisonGuides": [],
-    "buyerIntents": [
-      "coffee grinder upgrade",
-      "pour-over coffee",
-      "home brewing consistency",
-      "countertop coffee gear"
-    ],
-    "nextContentIdeas": [
-      "Best burr grinders for beginners",
-      "OXO Brew grinder alternatives"
     ]
   }
 }

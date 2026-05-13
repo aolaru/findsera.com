@@ -4,11 +4,11 @@
 - New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 0
-- Remaining product refresh backlog: 0
+- Remaining product backlog: 12
+- Remaining product refresh backlog: 18
 - Remaining guide backlog: 8
 - Products with stale price checks: 17
-- Products missing content-map coverage: 2
+- Products missing content-map coverage: 0
 - Validation failures: 0
 
 ## Added products today
@@ -45,17 +45,15 @@
 
 ## Products missing exact Amazon URLs
 
-- Joseph Joseph DrawerStore Cutlery Organizer (`joseph-joseph-drawerstore-cutlery-organizer`)
+- None
 
 ## Unused products
 
-- Joseph Joseph DrawerStore Cutlery Organizer (`joseph-joseph-drawerstore-cutlery-organizer`)
-- Nespresso Aeroccino 4 Milk Frother (`nespresso-aeroccino-4-milk-frother`)
+- None
 
 ## Products missing content-map coverage
 
-- Joseph Joseph DrawerStore Cutlery Organizer (`joseph-joseph-drawerstore-cutlery-organizer`)
-- Nespresso Aeroccino 4 Milk Frother (`nespresso-aeroccino-4-milk-frother`)
+- None
 
 ## Guides with short intros
 

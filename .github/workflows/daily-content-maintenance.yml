@@ -47,7 +47,7 @@ jobs:
       - name: Run daily maintenance
         env:
           MAX_NEW_PRODUCTS: "1"
-          MAX_PRODUCT_REFRESHES: "2"
+          MAX_PRODUCT_REFRESHES: "3"
           MAX_NEW_GUIDES: "0"
         run: npm run content:maintain
 

@@ -167,6 +167,7 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B0BWWZXWPL",
+    "sourceUrl": "https://www.amazon.com/blink-mini-2/dp/B0B1N5HW22",
     "slug": "blink-mini-2-security-camera",
     "priceLabel": "$39.99",
     "affiliateUrl": "https://www.amazon.com/dp/B0BWWZXWPL?tag=kreativauto-20",
@@ -195,6 +196,7 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B07T1CH2HH",
+    "sourceUrl": "https://cosori.com/products/original-electric-gooseneck-kettle-co108-nk",
     "slug": "cosori-electric-gooseneck-kettle",
     "priceLabel": "$67.99",
     "affiliateUrl": "https://www.amazon.com/dp/B07T1CH2HH?tag=kreativauto-20",
@@ -223,6 +225,7 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B09ZXJDSL5",
+    "sourceUrl": "https://www.amazon.com/echo-pop/dp/B09ZXJDSL5",
     "slug": "echo-pop-smart-speaker",
     "priceLabel": "$39.99",
     "affiliateUrl": "https://www.amazon.com/dp/B09ZXJDSL5?tag=kreativauto-20",
@@ -396,6 +399,7 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B00FLYWNYQ",
+    "sourceUrl": "https://instantpot.com/products/instant-pot-duo-6-quart-multi-use-pressure-cooker-v5",
     "slug": "instant-pot-duo-7-in-1-6-quart",
     "priceLabel": "$89.99",
     "affiliateUrl": "https://www.amazon.com/dp/B00FLYWNYQ?tag=kreativauto-20",
@@ -408,9 +412,9 @@
     "category": "home",
     "price": 11.99,
     "image": "/images/products/joseph-joseph-drawerstore-cutlery-organizer.png",
-    "description": "A compact tiered drawer organizer that makes narrow kitchen drawers more functional without needing a full set of storage bins.",
-    "priceCheckedAt": "2026-04-30",
-    "amazonQuery": "Joseph Joseph DrawerStore Cutlery Organizer",
+    "description": "A compact tiered drawer organizer that makes narrow kitchen drawers more functional, especially in apartments where every inch of storage needs to work harder.",
+    "priceCheckedAt": "2026-05-13",
+    "amazonQuery": "Joseph Joseph 85119 DrawerStore Compact Cutlery Organizer",
     "tags": [
       "organization",
       "home",
@@ -418,15 +422,17 @@
       "kitchen"
     ],
     "highlights": [
-      "Space-saving drawer layout",
-      "Strong fit for small kitchens",
-      "Quick organization upgrade"
+      "Space-saving tiered cutlery layout",
+      "Strong fit for small kitchens and narrow drawers",
+      "Quick under-$20 organization upgrade"
     ],
     "isTrending": true,
+    "sourceUrl": "https://us.josephjoseph.com/products/drawerstore-compact-cutlery-organiser-gray",
+    "amazonUrl": "https://www.amazon.com/dp/B072R6CLRC",
     "slug": "joseph-joseph-drawerstore-cutlery-organizer",
     "priceLabel": "$11.99",
-    "affiliateUrl": "https://www.amazon.com/s?k=Joseph+Joseph+DrawerStore+Cutlery+Organizer&tag=kreativauto-20",
-    "affiliateMode": "search"
+    "affiliateUrl": "https://www.amazon.com/dp/B072R6CLRC?tag=kreativauto-20",
+    "affiliateMode": "exact"
   },
   {
     "id": "kasa-smart-plug-mini-4-pack",
@@ -567,6 +573,7 @@
       "Easy fit for lightweight desk kits"
     ],
     "isTrending": true,
+    "sourceUrl": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse",
     "slug": "logitech-pebble-2-m350s",
     "priceLabel": "$29.99",
     "affiliateUrl": "https://www.amazon.com/Logitech-Bluetooth-Lightweight-Customizable-Easy-Switch/dp/B0BT4DXWQD?tag=kreativauto-20",
@@ -624,6 +631,7 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B0BBH5B7MD",
+    "sourceUrl": "https://www.nespresso.com/us/en/order/accessories/vertuo/aeroccino-4-milk-frother",
     "slug": "nespresso-aeroccino-4-milk-frother",
     "priceLabel": "$119.95",
     "affiliateUrl": "https://www.amazon.com/dp/B0BBH5B7MD?tag=kreativauto-20",
@@ -681,6 +689,7 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B07CSKGLMM",
+    "sourceUrl": "https://www.oxo.com/conical-burr-coffee-grinder.html",
     "slug": "oxo-brew-conical-burr-coffee-grinder",
     "priceLabel": "$99.95",
     "affiliateUrl": "https://www.amazon.com/dp/B07CSKGLMM?tag=kreativauto-20",
@@ -709,6 +718,7 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B08GTYFC37",
+    "sourceUrl": "https://www.westerndigital.com/products/portable-drives/sandisk-extreme-usb-3-2-ssd",
     "slug": "sandisk-extreme-portable-ssd-1tb",
     "priceLabel": "$99.99",
     "affiliateUrl": "https://www.amazon.com/dp/B08GTYFC37?tag=kreativauto-20",
@@ -853,6 +863,7 @@
       "GaN design saves bag space"
     ],
     "isTrending": true,
+    "sourceUrl": "https://www.ugreen.com/products/ugreen-nexode-100w-usb-c-wall-charger-4-ports",
     "slug": "ugreen-nexode-100w-usb-c-charger",
     "priceLabel": "$79.90",
     "affiliateUrl": "https://www.amazon.com/UGREEN-100W-USB-Multiport-Charger/dp/B091Z6JNX4?tag=kreativauto-20",

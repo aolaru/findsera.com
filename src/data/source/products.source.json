@@ -146,7 +146,8 @@
       "Low-cost starter security upgrade"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B0BWWZXWPL"
+    "amazonUrl": "https://www.amazon.com/dp/B0BWWZXWPL",
+    "sourceUrl": "https://www.amazon.com/blink-mini-2/dp/B0B1N5HW22"
   },
   {
     "id": "cosori-electric-gooseneck-kettle",
@@ -170,7 +171,8 @@
       "Compact tea and coffee upgrade"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B07T1CH2HH"
+    "amazonUrl": "https://www.amazon.com/dp/B07T1CH2HH",
+    "sourceUrl": "https://cosori.com/products/original-electric-gooseneck-kettle-co108-nk"
   },
   {
     "id": "echo-pop-smart-speaker",
@@ -194,7 +196,8 @@
       "Easy giftable price point"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B09ZXJDSL5"
+    "amazonUrl": "https://www.amazon.com/dp/B09ZXJDSL5",
+    "sourceUrl": "https://www.amazon.com/echo-pop/dp/B09ZXJDSL5"
   },
   {
     "id": "ember-mug-2",
@@ -343,7 +346,8 @@
       "Strong fit for batch meal prep"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B00FLYWNYQ"
+    "amazonUrl": "https://www.amazon.com/dp/B00FLYWNYQ",
+    "sourceUrl": "https://instantpot.com/products/instant-pot-duo-6-quart-multi-use-pressure-cooker-v5"
   },
   {
     "id": "joseph-joseph-drawerstore-cutlery-organizer",
@@ -352,9 +356,9 @@
     "category": "home",
     "price": 11.99,
     "image": "/images/products/joseph-joseph-drawerstore-cutlery-organizer.png",
-    "description": "A compact tiered drawer organizer that makes narrow kitchen drawers more functional without needing a full set of storage bins.",
-    "priceCheckedAt": "2026-04-30",
-    "amazonQuery": "Joseph Joseph DrawerStore Cutlery Organizer",
+    "description": "A compact tiered drawer organizer that makes narrow kitchen drawers more functional, especially in apartments where every inch of storage needs to work harder.",
+    "priceCheckedAt": "2026-05-13",
+    "amazonQuery": "Joseph Joseph 85119 DrawerStore Compact Cutlery Organizer",
     "tags": [
       "organization",
       "home",
@@ -362,11 +366,13 @@
       "kitchen"
     ],
     "highlights": [
-      "Space-saving drawer layout",
-      "Strong fit for small kitchens",
-      "Quick organization upgrade"
+      "Space-saving tiered cutlery layout",
+      "Strong fit for small kitchens and narrow drawers",
+      "Quick under-$20 organization upgrade"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "sourceUrl": "https://us.josephjoseph.com/products/drawerstore-compact-cutlery-organiser-gray",
+    "amazonUrl": "https://www.amazon.com/dp/B072R6CLRC"
   },
   {
     "id": "kasa-smart-plug-mini-4-pack",
@@ -490,7 +496,8 @@
       "Quiet clicks for shared spaces",
       "Easy fit for lightweight desk kits"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "sourceUrl": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse"
   },
   {
     "id": "meater-plus-wireless-thermometer",
@@ -539,7 +546,8 @@
       "Good step up from manual frothers"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B0BBH5B7MD"
+    "amazonUrl": "https://www.amazon.com/dp/B0BBH5B7MD",
+    "sourceUrl": "https://www.nespresso.com/us/en/order/accessories/vertuo/aeroccino-4-milk-frother"
   },
   {
     "id": "omoton-adjustable-laptop-stand",
@@ -588,7 +596,8 @@
       "Clear upgrade from blade grinders"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B07CSKGLMM"
+    "amazonUrl": "https://www.amazon.com/dp/B07CSKGLMM",
+    "sourceUrl": "https://www.oxo.com/conical-burr-coffee-grinder.html"
   },
   {
     "id": "sandisk-extreme-portable-ssd-1tb",
@@ -612,7 +621,8 @@
       "Useful for backup-heavy workflows"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B08GTYFC37"
+    "amazonUrl": "https://www.amazon.com/dp/B08GTYFC37",
+    "sourceUrl": "https://www.westerndigital.com/products/portable-drives/sandisk-extreme-usb-3-2-ssd"
   },
   {
     "id": "soundcore-q20i-headphones",
@@ -736,7 +746,8 @@
       "Multi-port travel charger",
       "GaN design saves bag space"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "sourceUrl": "https://www.ugreen.com/products/ugreen-nexode-100w-usb-c-wall-charger-4-ports"
   },
   {
     "id": "vtopmart-drawer-organizer-set",

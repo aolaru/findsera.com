@@ -1,1 +1,236 @@
-[]
+[
+  {
+    "id": "aeropress-original-coffee-maker",
+    "price": 39.95,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B0047BIWSK",
+    "description": "A compact press brewer for smooth, fast coffee at home, work, or travel when buyers want better manual brewing without a fragile glass setup.",
+    "highlights": [
+      "Fast manual brewing with easy cleanup",
+      "Travel-ready compact footprint",
+      "Strong starter pick for better coffee"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "anker-maggo-power-bank-10k-slim",
+    "price": 69.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B0DZHPCP3K",
+    "description": "A slim Qi2 magnetic battery pack built for commute charging, travel days, and lighter everyday carry without the bulk of a full power brick.",
+    "highlights": [
+      "Qi2 magnetic charging support",
+      "Slim 10,000mAh travel profile",
+      "Better fit for everyday carry kits"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "apple-airtag-1-pack",
+    "price": 29,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B0933BVK6T",
+    "description": "A simple Bluetooth tracker for keys, bags, and travel gear that fits neatly into Apple-heavy everyday carry setups.",
+    "highlights": [
+      "Easy Find My integration",
+      "Strong everyday carry use case",
+      "Popular travel and luggage tracker"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "arzopa-portable-monitor-15-6",
+    "price": 129.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B093GCL18V",
+    "description": "A portable second screen for travel work, hybrid setups, and anyone who needs more screen space without a permanent monitor.",
+    "highlights": [
+      "Easy second-screen setup",
+      "Useful for travel work",
+      "Simple USB-C connectivity"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "ember-mug-2",
+    "price": 124.95,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B08D3XPCZR",
+    "description": "A temperature-control mug that keeps coffee or tea at a steady drinking temperature for longer desk sessions and slower mornings.",
+    "highlights": [
+      "App-adjustable drink temperature",
+      "Strong home-office gift appeal",
+      "Cuts down on microwave reheats"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "eufy-11s-max-robot-vacuum",
+    "price": 199.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/eufy-Super-Thin-Super-Strong-Self-Charging-Medium-Pile/dp/B07R295MLS",
+    "description": "A slim robot vacuum for apartments and busy homes that need simple scheduled cleaning without a bulky dock setup.",
+    "highlights": [
+      "Slim profile for low furniture",
+      "Straightforward controls",
+      "Good fit for first robot-vacuum buyers"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "fellow-stagg-ekg-electric-kettle",
+    "price": 179.95,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B077JBQZPX",
+    "description": "A precision gooseneck kettle for pour-over coffee and tea, with variable temperature control and standout countertop design.",
+    "highlights": [
+      "Variable temperature control",
+      "Balanced gooseneck pour",
+      "Strong design-led appeal"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "govee-smart-desk-lamp-pro",
+    "price": 89.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/Govee-Cordless-Music-Light-Customized-Rechargeable/dp/B0F3D8RB4H",
+    "description": "A modern task lamp for home offices and desk setups with adjustable scenes, brighter work lighting, and a cleaner footprint.",
+    "highlights": [
+      "Adjustable lighting scenes",
+      "Good for work and ambient light",
+      "Fits compact desks well"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "kasa-smart-plug-mini-4-pack",
+    "price": 23.98,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B091FXLMS8",
+    "description": "A value-focused four-pack of smart plugs for lamps, coffee corners, fans, and simple schedules without requiring a hub or complex automation setup.",
+    "highlights": [
+      "Four-plug starter value",
+      "Works well for lamps and routines",
+      "Easy Alexa and Google Home setup"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "levoit-core-mini-air-purifier",
+    "price": 34.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B09GTRVJQM",
+    "description": "A compact air purifier for bedrooms, desks, and apartments that need quieter air cleanup without taking over the room.",
+    "highlights": [
+      "Compact footprint for small rooms",
+      "Easy bedroom or desk placement",
+      "Accessible sub-$50 air-quality upgrade"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "logitech-mx-anywhere-3s",
+    "price": 76.49,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B0BPY4ZQXG",
+    "description": "A compact premium mouse for travel desks and hybrid work setups with quiet clicks, fast scrolling, and reliable multi-device switching.",
+    "highlights": [
+      "Quiet click switches",
+      "Travel-friendly compact body",
+      "Easy multi-device workflow"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "logitech-mx-keys-mini",
+    "price": 99.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B098JPSVKY",
+    "description": "A compact wireless keyboard for cleaner desks and hybrid work setups, with smart backlighting and a strong typing feel.",
+    "highlights": [
+      "Compact minimalist layout",
+      "Smart illumination",
+      "Multi-device Bluetooth support"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "meater-plus-wireless-thermometer",
+    "price": 99.95,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B07H8WTFHW",
+    "description": "A wireless probe thermometer that helps with grilling, roasting, and more predictable cook times without babysitting the oven.",
+    "highlights": [
+      "Wireless probe design",
+      "Useful app guidance",
+      "Great for grilling and roasting"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "soundcore-q20i-headphones",
+    "price": 39.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B0F4884LN3",
+    "description": "A budget-friendly pair of wireless ANC headphones that works well for travel, focused work, and everyday listening.",
+    "highlights": [
+      "Affordable active noise cancellation",
+      "Good pick for commute listening",
+      "Strong value for casual travel audio"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "takeya-cold-brew-maker",
+    "price": 24.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B00FFLY64U",
+    "description": "A fridge-friendly cold brew maker for smoother multi-serving coffee batches, lower-cost iced coffee, and simple prep without countertop equipment.",
+    "highlights": [
+      "Fridge-friendly pitcher format",
+      "Makes multi-serving iced coffee batches",
+      "Strong value for daily cold brew"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "thermoworks-thermapen-one",
+    "price": 115,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B0DC8MWQ8K",
+    "description": "A premium instant-read thermometer for grilling, roasting, baking, and repeatable kitchen accuracy when guessing doneness is no longer good enough.",
+    "highlights": [
+      "One-second temperature readings",
+      "Pro-level accuracy for serious cooks",
+      "Useful across grilling and roasting"
+    ],
+    "isTrending": false
+  },
+  {
+    "id": "vtopmart-drawer-organizer-set",
+    "price": 26.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B08KXKVT4K",
+    "description": "A modular organizer set for kitchen, bath, and desk drawers that makes small-space storage easier to keep tidy.",
+    "highlights": [
+      "Multiple tray sizes",
+      "Useful across rooms",
+      "Easy small-space upgrade"
+    ],
+    "isTrending": true
+  },
+  {
+    "id": "zulay-milk-frother-wand",
+    "price": 14.99,
+    "priceCheckedAt": "2026-05-13",
+    "amazonUrl": "https://www.amazon.com/dp/B09D8T11YS",
+    "description": "A simple handheld frother for faster lattes, matcha, protein drinks, and everyday coffee upgrades without buying a full espresso setup.",
+    "highlights": [
+      "Budget-friendly latte upgrade",
+      "Compact drawer-friendly storage",
+      "Quick cleanup for daily drinks"
+    ],
+    "isTrending": true
+  }
+]

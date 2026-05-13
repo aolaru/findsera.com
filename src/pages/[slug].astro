@@ -110,8 +110,24 @@ const structuredData = {
         itemListElement: products.map((product, index) => ({
           "@type": "ListItem",
           position: index + 1,
-          name: product.title,
-          url: product.affiliateUrl
+          item: {
+            "@type": "Product",
+            name: product.title,
+            brand: {
+              "@type": "Brand",
+              name: product.brand
+            },
+            description: product.description,
+            image: `https://findsera.com${product.image}`,
+            url: `https://findsera.com/products/${product.slug}`,
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "USD",
+              price: product.price,
+              url: product.affiliateUrl,
+              availability: "https://schema.org/InStock"
+            }
+          }
         }))
       }
     },
