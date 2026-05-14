@@ -112,6 +112,20 @@
     "roundupCount": 0
   },
   {
+    "slug": "closet",
+    "title": "Closet",
+    "description": "Findsera content related to closet.",
+    "productIds": [
+      "amazon-basics-velvet-hangers-50-pack"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
+    "roundupCount": 0
+  },
+  {
     "slug": "coffee",
     "title": "Coffee",
     "description": "Findsera content related to coffee.",
@@ -257,6 +271,7 @@
     "title": "Home",
     "description": "Findsera content related to home.",
     "productIds": [
+      "amazon-basics-velvet-hangers-50-pack",
       "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "eufy-11s-max-robot-vacuum",
@@ -269,10 +284,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 8,
+      "home": 9,
       "kitchen": 1
     },
-    "productCount": 9,
+    "productCount": 10,
     "roundupCount": 0
   },
   {
@@ -392,14 +407,15 @@
     "title": "Organization",
     "description": "Findsera content related to organization.",
     "productIds": [
+      "amazon-basics-velvet-hangers-50-pack",
       "joseph-joseph-drawerstore-cutlery-organizer",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 2
+      "home": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -589,6 +605,7 @@
     "description": "Findsera content related to under-50.",
     "productIds": [
       "aeropress-original-coffee-maker",
+      "amazon-basics-velvet-hangers-50-pack",
       "anker-nano-power-bank-30w",
       "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
@@ -606,10 +623,10 @@
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 4,
-      "gadgets": 3,
-      "home": 7
+      "home": 8,
+      "gadgets": 3
     },
-    "productCount": 14,
+    "productCount": 15,
     "roundupCount": 0
   },
   {

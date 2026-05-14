@@ -1,44 +1,5 @@
 [
   {
-    "id": "aeropress-original-coffee-maker",
-    "price": 39.95,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B0047BIWSK",
-    "description": "A compact press brewer for smooth, fast coffee at home, work, or travel when buyers want better manual brewing without a fragile glass setup.",
-    "highlights": [
-      "Fast manual brewing with easy cleanup",
-      "Travel-ready compact footprint",
-      "Strong starter pick for better coffee"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "anker-maggo-power-bank-10k-slim",
-    "price": 69.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B0DZHPCP3K",
-    "description": "A slim Qi2 magnetic battery pack built for commute charging, travel days, and lighter everyday carry without the bulk of a full power brick.",
-    "highlights": [
-      "Qi2 magnetic charging support",
-      "Slim 10,000mAh travel profile",
-      "Better fit for everyday carry kits"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "apple-airtag-1-pack",
-    "price": 29,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B0933BVK6T",
-    "description": "A simple Bluetooth tracker for keys, bags, and travel gear that fits neatly into Apple-heavy everyday carry setups.",
-    "highlights": [
-      "Easy Find My integration",
-      "Strong everyday carry use case",
-      "Popular travel and luggage tracker"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "arzopa-portable-monitor-15-6",
     "price": 129.99,
     "priceCheckedAt": "2026-05-13",

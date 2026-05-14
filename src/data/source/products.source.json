@@ -8,7 +8,7 @@
     "image": "/images/products/aeropress-original-coffee-maker.png",
     "description": "A compact press brewer for smooth, fast coffee at home, work, or travel when buyers want better manual brewing without a fragile glass setup.",
     "sourceUrl": "https://www.aeropress.com/products/aeropress-coffee-maker",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B0047BIWSK",
     "amazonQuery": "AeroPress Original Coffee Maker",
     "tags": [
@@ -25,6 +25,31 @@
     "isTrending": true
   },
   {
+    "id": "amazon-basics-velvet-hangers-50-pack",
+    "title": "Amazon Basics Velvet Hangers 50-Pack",
+    "brand": "Amazon Basics",
+    "category": "home",
+    "price": 20.99,
+    "image": "/images/products/amazon-basics-velvet-hangers-50-pack.png",
+    "description": "A slim non-slip hanger set for closet resets, apartment move-ins, dorm rooms, and simple home organization projects under $25.",
+    "sourceUrl": "https://www.amazon.com/amazon-basics",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B00FXNAAW2",
+    "amazonQuery": "Amazon Basics Velvet Hangers 50 Pack",
+    "tags": [
+      "organization",
+      "home",
+      "under-50",
+      "closet"
+    ],
+    "highlights": [
+      "Slim closet-saving profile",
+      "Non-slip velvet surface",
+      "Low-cost full closet reset"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "anker-maggo-power-bank-10k-slim",
     "title": "Anker MagGo Power Bank (10K, Slim)",
     "brand": "Anker",
@@ -33,7 +58,7 @@
     "image": "/images/products/anker-maggo-power-bank-10k-slim.png",
     "description": "A slim Qi2 magnetic battery pack built for commute charging, travel days, and lighter everyday carry without the bulk of a full power brick.",
     "sourceUrl": "https://www.anker.com/products/a1664-maggo-10000mah-slim-power-bank",
-    "priceCheckedAt": "2026-04-26",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B0DZHPCP3K",
     "amazonQuery": "Anker MagGo Power Bank 10K Slim",
     "tags": [
@@ -83,7 +108,7 @@
     "image": "/images/products/apple-airtag-1-pack.png",
     "description": "A simple Bluetooth tracker for keys, bags, and travel gear that fits neatly into Apple-heavy everyday carry setups.",
     "sourceUrl": "https://www.apple.com/airtag/",
-    "priceCheckedAt": "2026-04-27",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B0933BVK6T",
     "amazonQuery": "Apple AirTag 1 Pack",
     "tags": [

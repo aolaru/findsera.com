@@ -1,23 +1,25 @@
 # Daily maintenance report
 
-- Run date: 2026-05-13
-- New products added: 0
-- Existing products refreshed: 0
+- Run date: 2026-05-14
+- New products added: 1
+- Existing products refreshed: 3
 - New guides added: 0
-- Remaining product backlog: 12
-- Remaining product refresh backlog: 18
+- Remaining product backlog: 11
+- Remaining product refresh backlog: 15
 - Remaining guide backlog: 8
-- Products with stale price checks: 17
-- Products missing content-map coverage: 0
+- Products with stale price checks: 14
+- Products missing content-map coverage: 1
 - Validation failures: 0
 
 ## Added products today
 
-- None
+- Amazon Basics Velvet Hangers 50-Pack (`amazon-basics-velvet-hangers-50-pack`)
 
 ## Refreshed products today
 
-- None
+- AeroPress Original Coffee Maker (`aeropress-original-coffee-maker`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Anker MagGo Power Bank (10K, Slim) (`anker-maggo-power-bank-10k-slim`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Apple AirTag (1-Pack) (`apple-airtag-1-pack`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
 
 ## Added guides today
 
@@ -25,9 +27,6 @@
 
 ## Price checks to refresh
 
-- AeroPress Original Coffee Maker last checked on 2026-04-17
-- Anker MagGo Power Bank (10K, Slim) last checked on 2026-04-26
-- Apple AirTag (1-Pack) last checked on 2026-04-27
 - ARZOPA 15.6-Inch Portable Monitor last checked on 2026-04-25
 - Ember Mug 2 last checked on 2026-04-26
 - eufy RoboVac 11S Max last checked on 2026-04-25
@@ -49,11 +48,11 @@
 
 ## Unused products
 
-- None
+- Amazon Basics Velvet Hangers 50-Pack (`amazon-basics-velvet-hangers-50-pack`)
 
 ## Products missing content-map coverage
 
-- None
+- Amazon Basics Velvet Hangers 50-Pack (`amazon-basics-velvet-hangers-50-pack`)
 
 ## Guides with short intros
 
