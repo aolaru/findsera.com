@@ -50,6 +50,31 @@
     "isTrending": true
   },
   {
+    "id": "anker-525-charging-station",
+    "title": "Anker 525 Charging Station",
+    "brand": "Anker",
+    "category": "gadgets",
+    "price": 39.99,
+    "image": "/images/products/anker-525-charging-station.png",
+    "description": "A compact 7-in-1 desk charging station with AC outlets, USB-C, and USB-A ports for cleaning up workspaces without losing charging flexibility.",
+    "sourceUrl": "https://www.anker.com/products/bundle-a91c0111-1-a91c0121-1",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0B3HSJ5NL",
+    "amazonQuery": "Anker 525 Charging Station",
+    "tags": [
+      "charging",
+      "desk setup",
+      "office",
+      "productivity"
+    ],
+    "highlights": [
+      "7-in-1 desktop power layout",
+      "Front-facing USB-C charging",
+      "Helps reduce desk cable clutter"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "anker-maggo-power-bank-10k-slim",
     "title": "Anker MagGo Power Bank (10K, Slim)",
     "brand": "Anker",
@@ -133,7 +158,7 @@
     "image": "/images/products/arzopa-portable-monitor-15-6-v2.png",
     "description": "A portable second screen for travel work, hybrid setups, and anyone who needs more screen space without a permanent monitor.",
     "sourceUrl": "https://www.arzopa.com/products/arzopa-a1-gamut-slim-portable-monitor",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-13",
     "amazonQuery": "ARZOPA 15.6 Portable Monitor",
     "tags": [
       "travel",
@@ -233,7 +258,7 @@
     "image": "/images/products/ember-mug-2.jpg",
     "description": "A temperature-control mug that keeps coffee or tea at a steady drinking temperature for longer desk sessions and slower mornings.",
     "sourceUrl": "https://ember.com/products/ember-mug-2",
-    "priceCheckedAt": "2026-04-26",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B08D3XPCZR",
     "amazonQuery": "Ember Mug 2",
     "tags": [
@@ -283,7 +308,7 @@
     "image": "/images/products/eufy-11s-max-robot-vacuum.png",
     "description": "A slim robot vacuum for apartments and busy homes that need simple scheduled cleaning without a bulky dock setup.",
     "sourceUrl": "https://www.eufy.com/products/t2291111",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/eufy-Super-Thin-Super-Strong-Self-Charging-Medium-Pile/dp/B07R295MLS",
     "amazonQuery": "eufy RoboVac 11S Max",
     "tags": [

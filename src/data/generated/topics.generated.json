@@ -86,15 +86,16 @@
     "title": "Charging",
     "description": "Findsera content related to charging.",
     "productIds": [
+      "anker-525-charging-station",
       "anker-maggo-power-bank-10k-slim",
       "anker-nano-power-bank-30w",
       "ugreen-nexode-100w-usb-c-charger"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 3
+      "gadgets": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -221,15 +222,16 @@
     "title": "Desk Setup",
     "description": "Findsera content related to desk setup.",
     "productIds": [
+      "anker-525-charging-station",
       "govee-smart-desk-lamp-pro",
       "logitech-mx-keys-mini",
       "omoton-adjustable-laptop-stand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 3
+      "gadgets": 4
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -385,6 +387,7 @@
     "title": "Office",
     "description": "Findsera content related to office.",
     "productIds": [
+      "anker-525-charging-station",
       "arzopa-portable-monitor-15-6",
       "govee-smart-desk-lamp-pro",
       "kasa-smart-plug-mini-4-pack",
@@ -396,10 +399,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 6,
+      "gadgets": 7,
       "home": 2
     },
-    "productCount": 8,
+    "productCount": 9,
     "roundupCount": 0
   },
   {
@@ -487,6 +490,7 @@
     "title": "Productivity",
     "description": "Findsera content related to productivity.",
     "productIds": [
+      "anker-525-charging-station",
       "arzopa-portable-monitor-15-6",
       "govee-smart-desk-lamp-pro",
       "logitech-mx-anywhere-3s",
@@ -498,9 +502,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "gadgets": 8
+      "gadgets": 9
     },
-    "productCount": 8,
+    "productCount": 9,
     "roundupCount": 0
   },
   {

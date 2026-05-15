@@ -1,30 +1,5 @@
 [
   {
-    "id": "anker-525-charging-station",
-    "title": "Anker 525 Charging Station",
-    "brand": "Anker",
-    "category": "gadgets",
-    "price": 39.99,
-    "image": "/images/products/anker-525-charging-station.png",
-    "description": "A compact 7-in-1 desk charging station with AC outlets, USB-C, and USB-A ports for cleaning up workspaces without losing charging flexibility.",
-    "sourceUrl": "https://www.anker.com/products/bundle-a91c0111-1-a91c0121-1",
-    "priceCheckedAt": "2026-05-01",
-    "amazonUrl": "https://www.amazon.com/dp/B0B3HSJ5NL",
-    "amazonQuery": "Anker 525 Charging Station",
-    "tags": [
-      "charging",
-      "desk setup",
-      "office",
-      "productivity"
-    ],
-    "highlights": [
-      "7-in-1 desktop power layout",
-      "Front-facing USB-C charging",
-      "Helps reduce desk cable clutter"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "aqara-door-window-sensor-p2",
     "title": "Aqara Door and Window Sensor P2",
     "brand": "Aqara",

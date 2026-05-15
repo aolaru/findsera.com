@@ -1,44 +1,5 @@
 [
   {
-    "id": "arzopa-portable-monitor-15-6",
-    "price": 129.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B093GCL18V",
-    "description": "A portable second screen for travel work, hybrid setups, and anyone who needs more screen space without a permanent monitor.",
-    "highlights": [
-      "Easy second-screen setup",
-      "Useful for travel work",
-      "Simple USB-C connectivity"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "ember-mug-2",
-    "price": 124.95,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B08D3XPCZR",
-    "description": "A temperature-control mug that keeps coffee or tea at a steady drinking temperature for longer desk sessions and slower mornings.",
-    "highlights": [
-      "App-adjustable drink temperature",
-      "Strong home-office gift appeal",
-      "Cuts down on microwave reheats"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "eufy-11s-max-robot-vacuum",
-    "price": 199.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/eufy-Super-Thin-Super-Strong-Self-Charging-Medium-Pile/dp/B07R295MLS",
-    "description": "A slim robot vacuum for apartments and busy homes that need simple scheduled cleaning without a bulky dock setup.",
-    "highlights": [
-      "Slim profile for low furniture",
-      "Straightforward controls",
-      "Good fit for first robot-vacuum buyers"
-    ],
-    "isTrending": false
-  },
-  {
     "id": "fellow-stagg-ekg-electric-kettle",
     "price": 179.95,
     "priceCheckedAt": "2026-05-13",
