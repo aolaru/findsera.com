@@ -1,30 +1,5 @@
 [
   {
-    "id": "aqara-door-window-sensor-p2",
-    "title": "Aqara Door and Window Sensor P2",
-    "brand": "Aqara",
-    "category": "home",
-    "price": 29.99,
-    "image": "/images/products/aqara-door-window-sensor-p2.png",
-    "description": "A Matter-over-Thread contact sensor for doors, windows, cabinets, and simple home automations where open-close status matters.",
-    "sourceUrl": "https://www.aqara.com/en/product/door-and-window-sensor-p2/",
-    "priceCheckedAt": "2026-05-01",
-    "amazonUrl": "https://www.amazon.com/dp/B0BTL8B72D",
-    "amazonQuery": "Aqara Door and Window Sensor P2",
-    "tags": [
-      "smart-home",
-      "home",
-      "security",
-      "matter"
-    ],
-    "highlights": [
-      "Matter-over-Thread support",
-      "Useful for doors and cabinets",
-      "Strong smart-home expansion pick"
-    ],
-    "isTrending": false
-  },
-  {
     "id": "bodum-bistro-burr-coffee-grinder",
     "title": "Bodum Bistro Burr Coffee Grinder",
     "brand": "Bodum",

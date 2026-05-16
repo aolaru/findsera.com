@@ -1,25 +1,25 @@
 # Daily maintenance report
 
-- Run date: 2026-05-15
+- Run date: 2026-05-16
 - New products added: 1
 - Existing products refreshed: 3
 - New guides added: 0
-- Remaining product backlog: 10
-- Remaining product refresh backlog: 12
+- Remaining product backlog: 9
+- Remaining product refresh backlog: 9
 - Remaining guide backlog: 8
-- Products with stale price checks: 18
-- Products missing content-map coverage: 2
+- Products with stale price checks: 19
+- Products missing content-map coverage: 3
 - Validation failures: 0
 
 ## Added products today
 
-- Anker 525 Charging Station (`anker-525-charging-station`)
+- Aqara Door and Window Sensor P2 (`aqara-door-window-sensor-p2`)
 
 ## Refreshed products today
 
-- ARZOPA 15.6-Inch Portable Monitor (`arzopa-portable-monitor-15-6`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
-- Ember Mug 2 (`ember-mug-2`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
-- eufy RoboVac 11S Max (`eufy-11s-max-robot-vacuum`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Fellow Stagg EKG Electric Kettle (`fellow-stagg-ekg-electric-kettle`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Govee Smart Desk Lamp Pro (`govee-smart-desk-lamp-pro`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Kasa Smart Plug Mini 4-Pack (`kasa-smart-plug-mini-4-pack`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
 
 ## Added guides today
 
@@ -27,17 +27,18 @@
 
 ## Price checks to refresh
 
+- Amazon Basics Velvet Hangers 50-Pack last checked on 2026-05-01
+- Anker 525 Charging Station last checked on 2026-05-01
+- Aqara Door and Window Sensor P2 last checked on 2026-05-01
 - Blink Mini 2 Security Camera last checked on 2026-04-30
 - Amazon Echo Pop Smart Speaker last checked on 2026-04-30
-- Fellow Stagg EKG Electric Kettle last checked on 2026-04-17
-- Govee Smart Desk Lamp Pro last checked on 2026-04-25
 - Instant Pot Duo 7-in-1 6-Quart last checked on 2026-04-30
-- Kasa Smart Plug Mini 4-Pack last checked on 2026-04-27
 - Levoit Core Mini Air Purifier last checked on 2026-04-26
 - Logitech MX Keys Mini last checked on 2026-04-17
 - Logitech Pebble 2 M350s last checked on 2026-04-30
 - MEATER Plus Wireless Meat Thermometer last checked on 2026-04-25
 - Nespresso Aeroccino 4 Milk Frother last checked on 2026-04-30
+- OMOTON Adjustable Laptop Stand last checked on 2026-05-01
 - OXO Brew Conical Burr Coffee Grinder last checked on 2026-04-30
 - SanDisk Extreme Portable SSD 1TB last checked on 2026-04-30
 - soundcore Q20i Headphones last checked on 2026-04-27
@@ -54,11 +55,13 @@
 
 - Amazon Basics Velvet Hangers 50-Pack (`amazon-basics-velvet-hangers-50-pack`)
 - Anker 525 Charging Station (`anker-525-charging-station`)
+- Aqara Door and Window Sensor P2 (`aqara-door-window-sensor-p2`)
 
 ## Products missing content-map coverage
 
 - Amazon Basics Velvet Hangers 50-Pack (`amazon-basics-velvet-hangers-50-pack`)
 - Anker 525 Charging Station (`anker-525-charging-station`)
+- Aqara Door and Window Sensor P2 (`aqara-door-window-sensor-p2`)
 
 ## Guides with short intros
 

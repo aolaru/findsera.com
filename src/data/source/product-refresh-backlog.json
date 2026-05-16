@@ -1,44 +1,5 @@
 [
   {
-    "id": "fellow-stagg-ekg-electric-kettle",
-    "price": 179.95,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B077JBQZPX",
-    "description": "A precision gooseneck kettle for pour-over coffee and tea, with variable temperature control and standout countertop design.",
-    "highlights": [
-      "Variable temperature control",
-      "Balanced gooseneck pour",
-      "Strong design-led appeal"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "govee-smart-desk-lamp-pro",
-    "price": 89.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/Govee-Cordless-Music-Light-Customized-Rechargeable/dp/B0F3D8RB4H",
-    "description": "A modern task lamp for home offices and desk setups with adjustable scenes, brighter work lighting, and a cleaner footprint.",
-    "highlights": [
-      "Adjustable lighting scenes",
-      "Good for work and ambient light",
-      "Fits compact desks well"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "kasa-smart-plug-mini-4-pack",
-    "price": 23.98,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B091FXLMS8",
-    "description": "A value-focused four-pack of smart plugs for lamps, coffee corners, fans, and simple schedules without requiring a hub or complex automation setup.",
-    "highlights": [
-      "Four-plug starter value",
-      "Works well for lamps and routines",
-      "Easy Alexa and Google Home setup"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "levoit-core-mini-air-purifier",
     "price": 34.99,
     "priceCheckedAt": "2026-05-13",

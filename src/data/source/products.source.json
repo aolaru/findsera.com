@@ -150,6 +150,31 @@
     "isTrending": true
   },
   {
+    "id": "aqara-door-window-sensor-p2",
+    "title": "Aqara Door and Window Sensor P2",
+    "brand": "Aqara",
+    "category": "home",
+    "price": 29.99,
+    "image": "/images/products/aqara-door-window-sensor-p2.png",
+    "description": "A Matter-over-Thread contact sensor for doors, windows, cabinets, and simple home automations where open-close status matters.",
+    "sourceUrl": "https://www.aqara.com/en/product/door-and-window-sensor-p2/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0BTL8B72D",
+    "amazonQuery": "Aqara Door and Window Sensor P2",
+    "tags": [
+      "smart-home",
+      "home",
+      "security",
+      "matter"
+    ],
+    "highlights": [
+      "Matter-over-Thread support",
+      "Useful for doors and cabinets",
+      "Strong smart-home expansion pick"
+    ],
+    "isTrending": false
+  },
+  {
     "id": "arzopa-portable-monitor-15-6",
     "title": "ARZOPA 15.6-Inch Portable Monitor",
     "brand": "ARZOPA",
@@ -333,7 +358,7 @@
     "image": "/images/products/fellow-stagg-ekg-electric-kettle.png",
     "description": "A precision gooseneck kettle for pour-over coffee and tea, with variable temperature control and standout countertop design.",
     "sourceUrl": "https://fellowproducts.com/products/stagg-ekg-electric-pour-over-kettle",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B077JBQZPX",
     "amazonQuery": "Fellow Stagg EKG Electric Kettle",
     "tags": [
@@ -358,7 +383,7 @@
     "image": "/images/products/govee-smart-desk-lamp-pro.png",
     "description": "A modern task lamp for home offices and desk setups with adjustable scenes, brighter work lighting, and a cleaner footprint.",
     "sourceUrl": "https://us.govee.com/products/govee-smart-desk-lamp-pro",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/Govee-Cordless-Music-Light-Customized-Rechargeable/dp/B0F3D8RB4H",
     "amazonQuery": "Govee Smart Desk Lamp Pro",
     "tags": [
@@ -433,7 +458,7 @@
     "image": "/images/products/kasa-smart-plug-mini-4-pack.jpg",
     "description": "A value-focused four-pack of smart plugs for lamps, coffee corners, fans, and simple schedules without requiring a hub or complex automation setup.",
     "sourceUrl": "https://www.kasasmart.com/us/products/smart-plugs/kasa-smart-plug-mini-ep10",
-    "priceCheckedAt": "2026-04-27",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B091FXLMS8",
     "amazonQuery": "Kasa Smart Plug Mini 4-Pack EP10P4",
     "tags": [
