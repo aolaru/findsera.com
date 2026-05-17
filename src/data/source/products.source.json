@@ -225,6 +225,31 @@
     "sourceUrl": "https://www.amazon.com/blink-mini-2/dp/B0B1N5HW22"
   },
   {
+    "id": "bodum-bistro-burr-coffee-grinder",
+    "title": "Bodum Bistro Burr Coffee Grinder",
+    "brand": "Bodum",
+    "category": "kitchen",
+    "price": 69.99,
+    "image": "/images/products/bodum-bistro-burr-coffee-grinder.png",
+    "description": "An approachable electric burr grinder for coffee beginners who want more consistent grounds without jumping straight to premium grinder prices.",
+    "sourceUrl": "https://www.bodum.com/us/en/10903-01us-3-bistro",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B00430AXLO",
+    "amazonQuery": "Bodum Bistro Burr Coffee Grinder",
+    "tags": [
+      "coffee",
+      "brewing",
+      "countertop",
+      "gift"
+    ],
+    "highlights": [
+      "Burr grinding at a beginner price",
+      "Preset timer controls",
+      "Good first grinder upgrade"
+    ],
+    "isTrending": false
+  },
+  {
     "id": "cosori-electric-gooseneck-kettle",
     "title": "COSORI Electric Gooseneck Kettle",
     "brand": "COSORI",
@@ -483,7 +508,7 @@
     "image": "/images/products/levoit-core-mini-air-purifier.jpg",
     "description": "A compact air purifier for bedrooms, desks, and apartments that need quieter air cleanup without taking over the room.",
     "sourceUrl": "https://levoit.com/products/core-mini-air-purifier",
-    "priceCheckedAt": "2026-04-26",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B09GTRVJQM",
     "amazonQuery": "Levoit Core Mini Air Purifier",
     "tags": [
@@ -508,7 +533,7 @@
     "image": "/images/products/logitech-mx-anywhere-3s.png",
     "description": "A compact premium mouse for travel desks and hybrid work setups with quiet clicks, fast scrolling, and reliable multi-device switching.",
     "sourceUrl": "https://www.logitech.com/en-us/shop/p/mx-anywhere-3s",
-    "priceCheckedAt": "2026-05-10",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B0BPY4ZQXG",
     "amazonQuery": "Logitech MX Anywhere 3S",
     "tags": [
@@ -533,7 +558,7 @@
     "image": "/images/products/logitech-mx-keys-mini.png",
     "description": "A compact wireless keyboard for cleaner desks and hybrid work setups, with smart backlighting and a strong typing feel.",
     "sourceUrl": "https://www.logitech.com/en-us/shop/p/mx-keys-mini",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B098JPSVKY",
     "amazonQuery": "Logitech MX Keys Mini",
     "tags": [

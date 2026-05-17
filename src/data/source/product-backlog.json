@@ -1,30 +1,5 @@
 [
   {
-    "id": "bodum-bistro-burr-coffee-grinder",
-    "title": "Bodum Bistro Burr Coffee Grinder",
-    "brand": "Bodum",
-    "category": "kitchen",
-    "price": 69.99,
-    "image": "/images/products/bodum-bistro-burr-coffee-grinder.png",
-    "description": "An approachable electric burr grinder for coffee beginners who want more consistent grounds without jumping straight to premium grinder prices.",
-    "sourceUrl": "https://www.bodum.com/us/en/10903-01us-3-bistro",
-    "priceCheckedAt": "2026-05-01",
-    "amazonUrl": "https://www.amazon.com/dp/B00430AXLO",
-    "amazonQuery": "Bodum Bistro Burr Coffee Grinder",
-    "tags": [
-      "coffee",
-      "brewing",
-      "countertop",
-      "gift"
-    ],
-    "highlights": [
-      "Burr grinding at a beginner price",
-      "Preset timer controls",
-      "Good first grinder upgrade"
-    ],
-    "isTrending": false
-  },
-  {
     "id": "bonavita-variable-temperature-kettle",
     "title": "Bonavita Variable Temperature Gooseneck Kettle",
     "brand": "Bonavita",

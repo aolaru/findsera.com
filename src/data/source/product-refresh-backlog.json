@@ -1,44 +1,5 @@
 [
   {
-    "id": "levoit-core-mini-air-purifier",
-    "price": 34.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B09GTRVJQM",
-    "description": "A compact air purifier for bedrooms, desks, and apartments that need quieter air cleanup without taking over the room.",
-    "highlights": [
-      "Compact footprint for small rooms",
-      "Easy bedroom or desk placement",
-      "Accessible sub-$50 air-quality upgrade"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "logitech-mx-anywhere-3s",
-    "price": 76.49,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B0BPY4ZQXG",
-    "description": "A compact premium mouse for travel desks and hybrid work setups with quiet clicks, fast scrolling, and reliable multi-device switching.",
-    "highlights": [
-      "Quiet click switches",
-      "Travel-friendly compact body",
-      "Easy multi-device workflow"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "logitech-mx-keys-mini",
-    "price": 99.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B098JPSVKY",
-    "description": "A compact wireless keyboard for cleaner desks and hybrid work setups, with smart backlighting and a strong typing feel.",
-    "highlights": [
-      "Compact minimalist layout",
-      "Smart illumination",
-      "Multi-device Bluetooth support"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "meater-plus-wireless-thermometer",
     "price": 99.95,
     "priceCheckedAt": "2026-05-13",
