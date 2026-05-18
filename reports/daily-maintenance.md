@@ -1,29 +1,27 @@
 # Daily maintenance report
 
 - Run date: 2026-05-18
-- New products added: 1
-- Existing products refreshed: 3
-- New guides added: 0
+- New products added: 0
+- Existing products refreshed: 0
+- New guides added: 1
 - Remaining product backlog: 7
 - Remaining product refresh backlog: 3
-- Remaining guide backlog: 8
+- Remaining guide backlog: 7
 - Products with stale price checks: 16
 - Products missing content-map coverage: 5
 - Validation failures: 0
 
 ## Added products today
 
-- Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
+- None
 
 ## Refreshed products today
 
-- MEATER Plus Wireless Meat Thermometer (`meater-plus-wireless-thermometer`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
-- soundcore Q20i Headphones (`soundcore-q20i-headphones`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
-- Takeya Deluxe Cold Brew Coffee Maker (`takeya-cold-brew-maker`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- None
 
 ## Added guides today
 
-- None
+- Best Apple Travel Essentials (`best-apple-travel-essentials`)
 
 ## Price checks to refresh
 

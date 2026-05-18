@@ -85,6 +85,7 @@
     "description": "Travel Tech cluster pages on Findsera.",
     "roundupSlugs": [
       "best-amazon-gadgets-2026",
+      "best-apple-travel-essentials",
       "best-gadgets-for-hybrid-work",
       "best-portable-work-setup",
       "best-remote-work-starter-kit",
@@ -99,6 +100,6 @@
     "categories": [
       "gadgets"
     ],
-    "roundupCount": 11
+    "roundupCount": 12
   }
 ]
