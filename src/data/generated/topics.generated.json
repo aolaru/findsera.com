@@ -134,6 +134,7 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "bodum-bistro-burr-coffee-grinder",
+      "bonavita-variable-temperature-kettle",
       "cosori-electric-gooseneck-kettle",
       "ember-mug-2",
       "fellow-stagg-ekg-electric-kettle",
@@ -144,10 +145,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 8,
+      "kitchen": 9,
       "home": 1
     },
-    "productCount": 9,
+    "productCount": 10,
     "roundupCount": 0
   },
   {
@@ -192,6 +193,7 @@
     "description": "Findsera content related to countertop.",
     "productIds": [
       "bodum-bistro-burr-coffee-grinder",
+      "bonavita-variable-temperature-kettle",
       "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle",
       "instant-pot-duo-7-in-1-6-quart",
@@ -201,9 +203,9 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 7
+      "kitchen": 8
     },
-    "productCount": 7,
+    "productCount": 8,
     "roundupCount": 0
   },
   {
@@ -465,14 +467,15 @@
     "title": "Pour Over",
     "description": "Findsera content related to pour over.",
     "productIds": [
+      "bonavita-variable-temperature-kettle",
       "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -568,14 +571,15 @@
     "title": "Tea",
     "description": "Findsera content related to tea.",
     "productIds": [
+      "bonavita-variable-temperature-kettle",
       "cosori-electric-gooseneck-kettle",
       "fellow-stagg-ekg-electric-kettle"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {

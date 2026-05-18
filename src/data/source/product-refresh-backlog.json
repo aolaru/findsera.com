@@ -1,44 +1,5 @@
 [
   {
-    "id": "meater-plus-wireless-thermometer",
-    "price": 99.95,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B07H8WTFHW",
-    "description": "A wireless probe thermometer that helps with grilling, roasting, and more predictable cook times without babysitting the oven.",
-    "highlights": [
-      "Wireless probe design",
-      "Useful app guidance",
-      "Great for grilling and roasting"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "soundcore-q20i-headphones",
-    "price": 39.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B0F4884LN3",
-    "description": "A budget-friendly pair of wireless ANC headphones that works well for travel, focused work, and everyday listening.",
-    "highlights": [
-      "Affordable active noise cancellation",
-      "Good pick for commute listening",
-      "Strong value for casual travel audio"
-    ],
-    "isTrending": true
-  },
-  {
-    "id": "takeya-cold-brew-maker",
-    "price": 24.99,
-    "priceCheckedAt": "2026-05-13",
-    "amazonUrl": "https://www.amazon.com/dp/B00FFLY64U",
-    "description": "A fridge-friendly cold brew maker for smoother multi-serving coffee batches, lower-cost iced coffee, and simple prep without countertop equipment.",
-    "highlights": [
-      "Fridge-friendly pitcher format",
-      "Makes multi-serving iced coffee batches",
-      "Strong value for daily cold brew"
-    ],
-    "isTrending": false
-  },
-  {
     "id": "thermoworks-thermapen-one",
     "price": 115,
     "priceCheckedAt": "2026-05-13",

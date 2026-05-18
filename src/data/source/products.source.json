@@ -250,6 +250,31 @@
     "isTrending": false
   },
   {
+    "id": "bonavita-variable-temperature-kettle",
+    "title": "Bonavita Variable Temperature Gooseneck Kettle",
+    "brand": "Bonavita",
+    "category": "kitchen",
+    "price": 64.99,
+    "image": "/images/products/bonavita-variable-temperature-kettle.png",
+    "description": "A variable-temperature gooseneck kettle for pour-over coffee and tea buyers who want temperature control without paying premium design prices.",
+    "sourceUrl": "https://bonavita.co/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B005YR0F40",
+    "amazonQuery": "Bonavita Variable Temperature Gooseneck Kettle",
+    "tags": [
+      "coffee",
+      "tea",
+      "pour over",
+      "countertop"
+    ],
+    "highlights": [
+      "Variable temperature control",
+      "Controlled gooseneck pour",
+      "Value alternative to premium kettles"
+    ],
+    "isTrending": false
+  },
+  {
     "id": "cosori-electric-gooseneck-kettle",
     "title": "COSORI Electric Gooseneck Kettle",
     "brand": "COSORI",
@@ -608,7 +633,7 @@
     "image": "/images/products/meater-plus-wireless-thermometer.png",
     "description": "A wireless probe thermometer that helps with grilling, roasting, and more predictable cook times without babysitting the oven.",
     "sourceUrl": "https://store-us.meater.com/products/meater-plus",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B07H8WTFHW",
     "amazonQuery": "MEATER Plus Wireless Meat Thermometer",
     "tags": [
@@ -733,7 +758,7 @@
     "image": "/images/products/soundcore-q20i-headphones.png",
     "description": "A budget-friendly pair of wireless ANC headphones that works well for travel, focused work, and everyday listening.",
     "sourceUrl": "https://www.soundcore.com/products/q20i-a3004z31",
-    "priceCheckedAt": "2026-04-27",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B0F4884LN3",
     "amazonQuery": "soundcore Q20i Hybrid ANC Headphones",
     "tags": [
@@ -758,7 +783,7 @@
     "image": "/images/products/takeya-cold-brew-maker.png",
     "description": "A fridge-friendly cold brew maker for smoother multi-serving coffee batches, lower-cost iced coffee, and simple prep without countertop equipment.",
     "sourceUrl": "https://takeyausa.com/products/deluxe-cold-brew-coffee-maker",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B00FFLY64U",
     "amazonQuery": "Takeya Deluxe Cold Brew Coffee Maker",
     "tags": [
