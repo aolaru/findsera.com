@@ -493,6 +493,35 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "govee-rgbic-led-strip-lights-65ft",
+    "title": "Govee RGBIC LED Strip Lights 65.6ft",
+    "brand": "Govee",
+    "category": "home",
+    "price": 29.99,
+    "image": "/images/products/govee-rgbic-led-strip-lights-65ft.png",
+    "description": "A long RGBIC light strip for bedrooms, desks, shelves, and living spaces where app-controlled color scenes can change the room quickly.",
+    "sourceUrl": "https://us.govee.com/collections/rgbic-strip-lights",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B09BBHCQ3L",
+    "amazonQuery": "Govee RGBIC LED Strip Lights 65.6ft",
+    "tags": [
+      "smart-home",
+      "home",
+      "bedroom",
+      "gift"
+    ],
+    "highlights": [
+      "Segmented RGBIC effects",
+      "App and voice control",
+      "Easy atmosphere upgrade for rooms"
+    ],
+    "isTrending": true,
+    "slug": "govee-rgbic-led-strip-lights-65ft",
+    "priceLabel": "$29.99",
+    "affiliateUrl": "https://www.amazon.com/dp/B09BBHCQ3L?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "govee-smart-desk-lamp-pro",
     "title": "Govee Smart Desk Lamp Pro",
     "brand": "Govee",
@@ -965,7 +994,7 @@
     "image": "/images/products/thermoworks-thermapen-one.jpg",
     "description": "A premium instant-read thermometer for grilling, roasting, baking, and repeatable kitchen accuracy when guessing doneness is no longer good enough.",
     "sourceUrl": "https://www.thermoworks.com/thermapen-one/",
-    "priceCheckedAt": "2026-04-17",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B0DC8MWQ8K",
     "amazonQuery": "ThermoWorks Thermapen ONE",
     "tags": [
@@ -1023,7 +1052,7 @@
     "image": "/images/products/vtopmart-drawer-organizer-set-v2.png",
     "description": "A modular organizer set for kitchen, bath, and desk drawers that makes small-space storage easier to keep tidy.",
     "sourceUrl": "https://www.vtopmart.com/products/drawer-organizers",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B08KXKVT4K",
     "amazonQuery": "Vtopmart Drawer Organizer Set",
     "tags": [
@@ -1052,7 +1081,7 @@
     "image": "/images/products/zulay-milk-frother-wand.jpg",
     "description": "A simple handheld frother for faster lattes, matcha, protein drinks, and everyday coffee upgrades without buying a full espresso setup.",
     "sourceUrl": "https://www.zulaykitchen.com/products/milk-frother",
-    "priceCheckedAt": "2026-04-25",
+    "priceCheckedAt": "2026-05-13",
     "amazonUrl": "https://www.amazon.com/dp/B09D8T11YS",
     "amazonQuery": "Zulay Kitchen Milk Frother Wand",
     "tags": [

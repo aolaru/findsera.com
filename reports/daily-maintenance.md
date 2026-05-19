@@ -1,27 +1,29 @@
 # Daily maintenance report
 
-- Run date: 2026-05-18
-- New products added: 0
-- Existing products refreshed: 0
-- New guides added: 1
-- Remaining product backlog: 7
-- Remaining product refresh backlog: 3
+- Run date: 2026-05-19
+- New products added: 1
+- Existing products refreshed: 3
+- New guides added: 0
+- Remaining product backlog: 6
+- Remaining product refresh backlog: 0
 - Remaining guide backlog: 7
-- Products with stale price checks: 16
-- Products missing content-map coverage: 5
+- Products with stale price checks: 14
+- Products missing content-map coverage: 6
 - Validation failures: 0
 
 ## Added products today
 
-- None
+- Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 
 ## Refreshed products today
 
-- None
+- ThermoWorks Thermapen ONE (`thermoworks-thermapen-one`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Vtopmart Drawer Organizer Set (`vtopmart-drawer-organizer-set`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- Zulay Kitchen Milk Frother Wand (`zulay-milk-frother-wand`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
 
 ## Added guides today
 
-- Best Apple Travel Essentials (`best-apple-travel-essentials`)
+- None
 
 ## Price checks to refresh
 
@@ -32,15 +34,13 @@
 - Bodum Bistro Burr Coffee Grinder last checked on 2026-05-01
 - Bonavita Variable Temperature Gooseneck Kettle last checked on 2026-05-01
 - Amazon Echo Pop Smart Speaker last checked on 2026-04-30
+- Govee RGBIC LED Strip Lights 65.6ft last checked on 2026-05-01
 - Instant Pot Duo 7-in-1 6-Quart last checked on 2026-04-30
 - Logitech Pebble 2 M350s last checked on 2026-04-30
 - Nespresso Aeroccino 4 Milk Frother last checked on 2026-04-30
 - OMOTON Adjustable Laptop Stand last checked on 2026-05-01
 - OXO Brew Conical Burr Coffee Grinder last checked on 2026-04-30
 - SanDisk Extreme Portable SSD 1TB last checked on 2026-04-30
-- ThermoWorks Thermapen ONE last checked on 2026-04-17
-- Vtopmart Drawer Organizer Set last checked on 2026-04-25
-- Zulay Kitchen Milk Frother Wand last checked on 2026-04-25
 
 ## Products missing exact Amazon URLs
 
@@ -53,6 +53,7 @@
 - Aqara Door and Window Sensor P2 (`aqara-door-window-sensor-p2`)
 - Bodum Bistro Burr Coffee Grinder (`bodum-bistro-burr-coffee-grinder`)
 - Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
+- Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 
 ## Products missing content-map coverage
 
@@ -61,6 +62,7 @@
 - Aqara Door and Window Sensor P2 (`aqara-door-window-sensor-p2`)
 - Bodum Bistro Burr Coffee Grinder (`bodum-bistro-burr-coffee-grinder`)
 - Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
+- Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 
 ## Guides with short intros
 

@@ -33,13 +33,14 @@
     "description": "Findsera content related to bedroom.",
     "productIds": [
       "blink-mini-2-security-camera",
+      "govee-rgbic-led-strip-lights-65ft",
       "levoit-core-mini-air-purifier"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 2
+      "home": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -248,15 +249,16 @@
       "bodum-bistro-burr-coffee-grinder",
       "echo-pop-smart-speaker",
       "ember-mug-2",
+      "govee-rgbic-led-strip-lights-65ft",
       "nespresso-aeroccino-4-milk-frother"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "gadgets": 1,
       "kitchen": 2,
-      "home": 2
+      "home": 3
     },
-    "productCount": 5,
+    "productCount": 6,
     "roundupCount": 0
   },
   {
@@ -284,6 +286,7 @@
       "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "eufy-11s-max-robot-vacuum",
+      "govee-rgbic-led-strip-lights-65ft",
       "instant-pot-duo-7-in-1-6-quart",
       "joseph-joseph-drawerstore-cutlery-organizer",
       "kasa-smart-plug-mini-4-pack",
@@ -293,10 +296,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 10,
+      "home": 11,
       "kitchen": 1
     },
-    "productCount": 11,
+    "productCount": 12,
     "roundupCount": 0
   },
   {
@@ -554,16 +557,17 @@
       "echo-pop-smart-speaker",
       "ember-mug-2",
       "eufy-11s-max-robot-vacuum",
+      "govee-rgbic-led-strip-lights-65ft",
       "govee-smart-desk-lamp-pro",
       "kasa-smart-plug-mini-4-pack",
       "tapo-c500-security-camera"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 7,
+      "home": 8,
       "gadgets": 1
     },
-    "productCount": 8,
+    "productCount": 9,
     "roundupCount": 0
   },
   {

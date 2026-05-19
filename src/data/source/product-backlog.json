@@ -1,30 +1,5 @@
 [
   {
-    "id": "govee-rgbic-led-strip-lights-65ft",
-    "title": "Govee RGBIC LED Strip Lights 65.6ft",
-    "brand": "Govee",
-    "category": "home",
-    "price": 29.99,
-    "image": "/images/products/govee-rgbic-led-strip-lights-65ft.png",
-    "description": "A long RGBIC light strip for bedrooms, desks, shelves, and living spaces where app-controlled color scenes can change the room quickly.",
-    "sourceUrl": "https://us.govee.com/collections/rgbic-strip-lights",
-    "priceCheckedAt": "2026-05-01",
-    "amazonUrl": "https://www.amazon.com/dp/B09BBHCQ3L",
-    "amazonQuery": "Govee RGBIC LED Strip Lights 65.6ft",
-    "tags": [
-      "smart-home",
-      "home",
-      "bedroom",
-      "gift"
-    ],
-    "highlights": [
-      "Segmented RGBIC effects",
-      "App and voice control",
-      "Easy atmosphere upgrade for rooms"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "govee-tv-led-backlight-strip",
     "title": "Govee TV LED Backlight Strip",
     "brand": "Govee",
