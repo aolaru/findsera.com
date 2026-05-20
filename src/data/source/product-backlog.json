@@ -1,30 +1,5 @@
 [
   {
-    "id": "govee-tv-led-backlight-strip",
-    "title": "Govee TV LED Backlight Strip",
-    "brand": "Govee",
-    "category": "home",
-    "price": 19.99,
-    "image": "/images/products/govee-tv-led-backlight-strip.png",
-    "description": "A TV backlight strip for adding simple bias lighting and color scenes to small entertainment setups without installing permanent fixtures.",
-    "sourceUrl": "https://us.govee.com/collections/tv-lights",
-    "priceCheckedAt": "2026-05-01",
-    "amazonUrl": "https://www.amazon.com/dp/B0CFVM1QTR",
-    "amazonQuery": "Govee TV LED Backlight Strip RGBIC",
-    "tags": [
-      "smart-home",
-      "home",
-      "under-50",
-      "gift"
-    ],
-    "highlights": [
-      "Budget TV lighting upgrade",
-      "App-controlled color scenes",
-      "Good gift for media rooms"
-    ],
-    "isTrending": true
-  },
-  {
     "id": "lodge-12-inch-cast-iron-skillet",
     "title": "Lodge 12-Inch Cast Iron Skillet",
     "brand": "Lodge",

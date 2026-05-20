@@ -250,15 +250,16 @@
       "echo-pop-smart-speaker",
       "ember-mug-2",
       "govee-rgbic-led-strip-lights-65ft",
+      "govee-tv-led-backlight-strip",
       "nespresso-aeroccino-4-milk-frother"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "gadgets": 1,
       "kitchen": 2,
-      "home": 3
+      "home": 4
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -287,6 +288,7 @@
       "echo-pop-smart-speaker",
       "eufy-11s-max-robot-vacuum",
       "govee-rgbic-led-strip-lights-65ft",
+      "govee-tv-led-backlight-strip",
       "instant-pot-duo-7-in-1-6-quart",
       "joseph-joseph-drawerstore-cutlery-organizer",
       "kasa-smart-plug-mini-4-pack",
@@ -296,10 +298,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 11,
+      "home": 12,
       "kitchen": 1
     },
-    "productCount": 12,
+    "productCount": 13,
     "roundupCount": 0
   },
   {
@@ -559,15 +561,16 @@
       "eufy-11s-max-robot-vacuum",
       "govee-rgbic-led-strip-lights-65ft",
       "govee-smart-desk-lamp-pro",
+      "govee-tv-led-backlight-strip",
       "kasa-smart-plug-mini-4-pack",
       "tapo-c500-security-camera"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 8,
+      "home": 9,
       "gadgets": 1
     },
-    "productCount": 9,
+    "productCount": 10,
     "roundupCount": 0
   },
   {
@@ -644,6 +647,7 @@
       "blink-mini-2-security-camera",
       "echo-pop-smart-speaker",
       "etekcity-food-kitchen-scale",
+      "govee-tv-led-backlight-strip",
       "joseph-joseph-drawerstore-cutlery-organizer",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
@@ -657,10 +661,10 @@
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 4,
-      "home": 8,
+      "home": 9,
       "gadgets": 3
     },
-    "productCount": 15,
+    "productCount": 16,
     "roundupCount": 0
   },
   {

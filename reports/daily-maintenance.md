@@ -1,25 +1,23 @@
 # Daily maintenance report
 
-- Run date: 2026-05-19
+- Run date: 2026-05-20
 - New products added: 1
-- Existing products refreshed: 3
+- Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 6
+- Remaining product backlog: 5
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 7
-- Products with stale price checks: 14
-- Products missing content-map coverage: 6
+- Products with stale price checks: 15
+- Products missing content-map coverage: 7
 - Validation failures: 0
 
 ## Added products today
 
-- Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
+- Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 
 ## Refreshed products today
 
-- ThermoWorks Thermapen ONE (`thermoworks-thermapen-one`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
-- Vtopmart Drawer Organizer Set (`vtopmart-drawer-organizer-set`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
-- Zulay Kitchen Milk Frother Wand (`zulay-milk-frother-wand`) updated: amazonUrl, description, highlights, isTrending, price, priceCheckedAt
+- None
 
 ## Added guides today
 
@@ -35,6 +33,7 @@
 - Bonavita Variable Temperature Gooseneck Kettle last checked on 2026-05-01
 - Amazon Echo Pop Smart Speaker last checked on 2026-04-30
 - Govee RGBIC LED Strip Lights 65.6ft last checked on 2026-05-01
+- Govee TV LED Backlight Strip last checked on 2026-05-01
 - Instant Pot Duo 7-in-1 6-Quart last checked on 2026-04-30
 - Logitech Pebble 2 M350s last checked on 2026-04-30
 - Nespresso Aeroccino 4 Milk Frother last checked on 2026-04-30
@@ -54,6 +53,7 @@
 - Bodum Bistro Burr Coffee Grinder (`bodum-bistro-burr-coffee-grinder`)
 - Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
 - Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
+- Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 
 ## Products missing content-map coverage
 
@@ -63,6 +63,7 @@
 - Bodum Bistro Burr Coffee Grinder (`bodum-bistro-burr-coffee-grinder`)
 - Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
 - Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
+- Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 
 ## Guides with short intros
 
