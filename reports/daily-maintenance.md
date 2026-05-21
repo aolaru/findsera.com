@@ -1,19 +1,19 @@
 # Daily maintenance report
 
-- Run date: 2026-05-20
+- Run date: 2026-05-21
 - New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 5
+- Remaining product backlog: 4
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 7
-- Products with stale price checks: 15
-- Products missing content-map coverage: 7
+- Products with stale price checks: 16
+- Products missing content-map coverage: 8
 - Validation failures: 0
 
 ## Added products today
 
-- Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
+- Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 
 ## Refreshed products today
 
@@ -35,6 +35,7 @@
 - Govee RGBIC LED Strip Lights 65.6ft last checked on 2026-05-01
 - Govee TV LED Backlight Strip last checked on 2026-05-01
 - Instant Pot Duo 7-in-1 6-Quart last checked on 2026-04-30
+- Lodge 12-Inch Cast Iron Skillet last checked on 2026-05-01
 - Logitech Pebble 2 M350s last checked on 2026-04-30
 - Nespresso Aeroccino 4 Milk Frother last checked on 2026-04-30
 - OMOTON Adjustable Laptop Stand last checked on 2026-05-01
@@ -54,6 +55,7 @@
 - Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
 - Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 - Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
+- Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 
 ## Products missing content-map coverage
 
@@ -64,6 +66,7 @@
 - Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
 - Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 - Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
+- Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 
 ## Guides with short intros
 

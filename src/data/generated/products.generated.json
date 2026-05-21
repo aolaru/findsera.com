@@ -696,6 +696,35 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "lodge-12-inch-cast-iron-skillet",
+    "title": "Lodge 12-Inch Cast Iron Skillet",
+    "brand": "Lodge",
+    "category": "kitchen",
+    "price": 39.9,
+    "image": "/images/products/lodge-12-inch-cast-iron-skillet.png",
+    "description": "A pre-seasoned 12-inch cast iron skillet for searing, baking, roasting, and stovetop-to-oven cooking with long-term kitchen value.",
+    "sourceUrl": "https://www.lodgecastiron.com/product/round-cast-iron-classic-skillet",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B00G2XGC88",
+    "amazonQuery": "Lodge 12 Inch Cast Iron Skillet",
+    "tags": [
+      "cooking",
+      "kitchen",
+      "grilling",
+      "gift"
+    ],
+    "highlights": [
+      "Durable cast iron build",
+      "Useful on stove, oven, or grill",
+      "Strong evergreen kitchen gift"
+    ],
+    "isTrending": false,
+    "slug": "lodge-12-inch-cast-iron-skillet",
+    "priceLabel": "$39.90",
+    "affiliateUrl": "https://www.amazon.com/dp/B00G2XGC88?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "logitech-mx-anywhere-3s",
     "title": "Logitech MX Anywhere 3S",
     "brand": "Logitech",

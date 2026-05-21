@@ -178,14 +178,15 @@
     "productIds": [
       "etekcity-food-kitchen-scale",
       "instant-pot-duo-7-in-1-6-quart",
+      "lodge-12-inch-cast-iron-skillet",
       "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 4
+      "kitchen": 5
     },
-    "productCount": 4,
+    "productCount": 5,
     "roundupCount": 0
   },
   {
@@ -251,15 +252,16 @@
       "ember-mug-2",
       "govee-rgbic-led-strip-lights-65ft",
       "govee-tv-led-backlight-strip",
+      "lodge-12-inch-cast-iron-skillet",
       "nespresso-aeroccino-4-milk-frother"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "gadgets": 1,
-      "kitchen": 2,
+      "kitchen": 3,
       "home": 4
     },
-    "productCount": 7,
+    "productCount": 8,
     "roundupCount": 0
   },
   {
@@ -267,14 +269,15 @@
     "title": "Grilling",
     "description": "Findsera content related to grilling.",
     "productIds": [
+      "lodge-12-inch-cast-iron-skillet",
       "meater-plus-wireless-thermometer",
       "thermoworks-thermapen-one"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 2
+      "kitchen": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -366,6 +369,7 @@
       "etekcity-food-kitchen-scale",
       "instant-pot-duo-7-in-1-6-quart",
       "joseph-joseph-drawerstore-cutlery-organizer",
+      "lodge-12-inch-cast-iron-skillet",
       "meater-plus-wireless-thermometer",
       "oxo-brew-conical-burr-coffee-grinder",
       "thermoworks-thermapen-one",
@@ -373,10 +377,10 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 6,
+      "kitchen": 7,
       "home": 1
     },
-    "productCount": 7,
+    "productCount": 8,
     "roundupCount": 0
   },
   {
