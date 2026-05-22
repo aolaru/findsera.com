@@ -296,15 +296,16 @@
       "joseph-joseph-drawerstore-cutlery-organizer",
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
+      "oxo-good-grips-pop-container-4-4qt",
       "tapo-c500-security-camera",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "home": 12,
-      "kitchen": 1
+      "kitchen": 2
     },
-    "productCount": 13,
+    "productCount": 14,
     "roundupCount": 0
   },
   {
@@ -372,15 +373,16 @@
       "lodge-12-inch-cast-iron-skillet",
       "meater-plus-wireless-thermometer",
       "oxo-brew-conical-burr-coffee-grinder",
+      "oxo-good-grips-pop-container-4-4qt",
       "thermoworks-thermapen-one",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 7,
+      "kitchen": 8,
       "home": 1
     },
-    "productCount": 8,
+    "productCount": 9,
     "roundupCount": 0
   },
   {
@@ -442,13 +444,15 @@
     "productIds": [
       "amazon-basics-velvet-hangers-50-pack",
       "joseph-joseph-drawerstore-cutlery-organizer",
+      "oxo-good-grips-pop-container-4-4qt",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 3
+      "home": 3,
+      "kitchen": 1
     },
-    "productCount": 3,
+    "productCount": 4,
     "roundupCount": 0
   },
   {
@@ -656,6 +660,7 @@
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "omoton-adjustable-laptop-stand",
+      "oxo-good-grips-pop-container-4-4qt",
       "soundcore-q20i-headphones",
       "takeya-cold-brew-maker",
       "tapo-c500-security-camera",
@@ -664,11 +669,11 @@
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 4,
+      "kitchen": 5,
       "home": 9,
       "gadgets": 3
     },
-    "productCount": 16,
+    "productCount": 17,
     "roundupCount": 0
   },
   {

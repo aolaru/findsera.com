@@ -1,19 +1,19 @@
 # Daily maintenance report
 
-- Run date: 2026-05-21
+- Run date: 2026-05-22
 - New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 4
+- Remaining product backlog: 3
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 7
-- Products with stale price checks: 16
-- Products missing content-map coverage: 8
+- Products with stale price checks: 17
+- Products missing content-map coverage: 9
 - Validation failures: 0
 
 ## Added products today
 
-- Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
+- OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
 
 ## Refreshed products today
 
@@ -40,6 +40,7 @@
 - Nespresso Aeroccino 4 Milk Frother last checked on 2026-04-30
 - OMOTON Adjustable Laptop Stand last checked on 2026-05-01
 - OXO Brew Conical Burr Coffee Grinder last checked on 2026-04-30
+- OXO Good Grips POP Container 4.4 Qt last checked on 2026-05-01
 - SanDisk Extreme Portable SSD 1TB last checked on 2026-04-30
 
 ## Products missing exact Amazon URLs
@@ -56,6 +57,7 @@
 - Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 - Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
+- OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
 
 ## Products missing content-map coverage
 
@@ -67,6 +69,7 @@
 - Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 - Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
+- OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
 
 ## Guides with short intros
 

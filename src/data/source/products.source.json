@@ -800,6 +800,31 @@
     "sourceUrl": "https://www.oxo.com/conical-burr-coffee-grinder.html"
   },
   {
+    "id": "oxo-good-grips-pop-container-4-4qt",
+    "title": "OXO Good Grips POP Container 4.4 Qt",
+    "brand": "OXO",
+    "category": "kitchen",
+    "price": 21.99,
+    "image": "/images/products/oxo-good-grips-pop-container-4-4qt.png",
+    "description": "A large airtight pantry container for flour, sugar, pasta, or snacks when buyers want cleaner shelves and food storage that stacks neatly.",
+    "sourceUrl": "https://www.oxo.com/categories/cooking-and-baking/food-containers/pop-containers.html",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B07856RRDW",
+    "amazonQuery": "OXO Good Grips POP Container 4.4 Qt",
+    "tags": [
+      "organization",
+      "kitchen",
+      "under-50",
+      "home"
+    ],
+    "highlights": [
+      "Airtight push-button seal",
+      "Stackable pantry shape",
+      "Good small-kitchen organization pick"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "sandisk-extreme-portable-ssd-1tb",
     "title": "SanDisk Extreme Portable SSD 1TB",
     "brand": "SanDisk",
