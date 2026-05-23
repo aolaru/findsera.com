@@ -298,14 +298,15 @@
       "levoit-core-mini-air-purifier",
       "oxo-good-grips-pop-container-4-4qt",
       "tapo-c500-security-camera",
+      "tp-link-tapo-p125m-matter-smart-plug",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 12,
+      "home": 13,
       "kitchen": 2
     },
-    "productCount": 14,
+    "productCount": 15,
     "roundupCount": 0
   },
   {
@@ -390,13 +391,14 @@
     "title": "Matter",
     "description": "Findsera content related to matter.",
     "productIds": [
-      "aqara-door-window-sensor-p2"
+      "aqara-door-window-sensor-p2",
+      "tp-link-tapo-p125m-matter-smart-plug"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 1
+      "home": 2
     },
-    "productCount": 1,
+    "productCount": 2,
     "roundupCount": 0
   },
   {
@@ -571,14 +573,15 @@
       "govee-smart-desk-lamp-pro",
       "govee-tv-led-backlight-strip",
       "kasa-smart-plug-mini-4-pack",
-      "tapo-c500-security-camera"
+      "tapo-c500-security-camera",
+      "tp-link-tapo-p125m-matter-smart-plug"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 9,
+      "home": 10,
       "gadgets": 1
     },
-    "productCount": 10,
+    "productCount": 11,
     "roundupCount": 0
   },
   {
@@ -664,16 +667,17 @@
       "soundcore-q20i-headphones",
       "takeya-cold-brew-maker",
       "tapo-c500-security-camera",
+      "tp-link-tapo-p125m-matter-smart-plug",
       "vtopmart-drawer-organizer-set",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "kitchen": 5,
-      "home": 9,
+      "home": 10,
       "gadgets": 3
     },
-    "productCount": 17,
+    "productCount": 18,
     "roundupCount": 0
   },
   {

@@ -1,19 +1,19 @@
 # Daily maintenance report
 
-- Run date: 2026-05-22
+- Run date: 2026-05-23
 - New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 3
+- Remaining product backlog: 2
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 7
-- Products with stale price checks: 17
-- Products missing content-map coverage: 9
+- Products with stale price checks: 18
+- Products missing content-map coverage: 10
 - Validation failures: 0
 
 ## Added products today
 
-- OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
+- TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
 
 ## Refreshed products today
 
@@ -42,6 +42,7 @@
 - OXO Brew Conical Burr Coffee Grinder last checked on 2026-04-30
 - OXO Good Grips POP Container 4.4 Qt last checked on 2026-05-01
 - SanDisk Extreme Portable SSD 1TB last checked on 2026-04-30
+- TP-Link Tapo P125M Matter Smart Plug last checked on 2026-05-01
 
 ## Products missing exact Amazon URLs
 
@@ -58,6 +59,7 @@
 - Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 - OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
+- TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
 
 ## Products missing content-map coverage
 
@@ -70,6 +72,7 @@
 - Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 - OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
+- TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
 
 ## Guides with short intros
 

@@ -950,6 +950,31 @@
     "isTrending": false
   },
   {
+    "id": "tp-link-tapo-p125m-matter-smart-plug",
+    "title": "TP-Link Tapo P125M Matter Smart Plug",
+    "brand": "TP-Link Tapo",
+    "category": "home",
+    "price": 21.99,
+    "image": "/images/products/tp-link-tapo-p125m-matter-smart-plug.png",
+    "description": "A compact Matter-compatible smart plug for adding app and voice control to lamps, fans, and small appliances without blocking the second outlet.",
+    "sourceUrl": "https://www.tp-link.com/us/home-networking/smart-plug/tapo-p125m/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0BXMNJDW3",
+    "amazonQuery": "TP-Link Tapo P125M Matter Smart Plug",
+    "tags": [
+      "smart-home",
+      "home",
+      "under-50",
+      "matter"
+    ],
+    "highlights": [
+      "Matter-compatible smart-home setup",
+      "Compact outlet-friendly body",
+      "Good starter automation product"
+    ],
+    "isTrending": true
+  },
+  {
     "id": "ugreen-nexode-100w-usb-c-charger",
     "title": "UGREEN Nexode 100W USB-C Charger",
     "brand": "UGREEN",
