@@ -1,19 +1,19 @@
 # Daily maintenance report
 
-- Run date: 2026-05-23
+- Run date: 2026-05-24
 - New products added: 1
 - Existing products refreshed: 0
 - New guides added: 0
-- Remaining product backlog: 2
+- Remaining product backlog: 1
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 7
-- Products with stale price checks: 18
-- Products missing content-map coverage: 10
+- Products with stale price checks: 19
+- Products missing content-map coverage: 11
 - Validation failures: 0
 
 ## Added products today
 
-- TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
+- TP-Link Tapo P400M Outdoor Smart Plug (`tp-link-tapo-p400m-outdoor-smart-plug`)
 
 ## Refreshed products today
 
@@ -43,6 +43,7 @@
 - OXO Good Grips POP Container 4.4 Qt last checked on 2026-05-01
 - SanDisk Extreme Portable SSD 1TB last checked on 2026-04-30
 - TP-Link Tapo P125M Matter Smart Plug last checked on 2026-05-01
+- TP-Link Tapo P400M Outdoor Smart Plug last checked on 2026-05-01
 
 ## Products missing exact Amazon URLs
 
@@ -60,6 +61,7 @@
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 - OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
 - TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
+- TP-Link Tapo P400M Outdoor Smart Plug (`tp-link-tapo-p400m-outdoor-smart-plug`)
 
 ## Products missing content-map coverage
 
@@ -73,6 +75,7 @@
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 - OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
 - TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
+- TP-Link Tapo P400M Outdoor Smart Plug (`tp-link-tapo-p400m-outdoor-smart-plug`)
 
 ## Guides with short intros
 

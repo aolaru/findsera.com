@@ -1131,6 +1131,35 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "tp-link-tapo-p400m-outdoor-smart-plug",
+    "title": "TP-Link Tapo P400M Outdoor Smart Plug",
+    "brand": "TP-Link Tapo",
+    "category": "home",
+    "price": 24.99,
+    "image": "/images/products/tp-link-tapo-p400m-outdoor-smart-plug.png",
+    "description": "A Matter-compatible outdoor smart plug with two individually controlled outlets for patio lights, holiday lights, and weather-exposed routines.",
+    "sourceUrl": "https://www.tp-link.com/us/home-networking/smart-plug/tapo-p400m/",
+    "priceCheckedAt": "2026-05-01",
+    "amazonUrl": "https://www.amazon.com/dp/B0CVN3CNCD",
+    "amazonQuery": "TP-Link Tapo P400M Outdoor Smart Plug",
+    "tags": [
+      "smart-home",
+      "outdoor",
+      "home",
+      "matter"
+    ],
+    "highlights": [
+      "Two individually controlled outlets",
+      "Outdoor-rated smart-home control",
+      "Useful for seasonal lighting"
+    ],
+    "isTrending": false,
+    "slug": "tp-link-tapo-p400m-outdoor-smart-plug",
+    "priceLabel": "$24.99",
+    "affiliateUrl": "https://www.amazon.com/dp/B0CVN3CNCD?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "ugreen-nexode-100w-usb-c-charger",
     "title": "UGREEN Nexode 100W USB-C Charger",
     "brand": "UGREEN",

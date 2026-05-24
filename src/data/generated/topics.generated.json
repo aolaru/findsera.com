@@ -299,14 +299,15 @@
       "oxo-good-grips-pop-container-4-4qt",
       "tapo-c500-security-camera",
       "tp-link-tapo-p125m-matter-smart-plug",
+      "tp-link-tapo-p400m-outdoor-smart-plug",
       "vtopmart-drawer-organizer-set"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 13,
+      "home": 14,
       "kitchen": 2
     },
-    "productCount": 15,
+    "productCount": 16,
     "roundupCount": 0
   },
   {
@@ -392,13 +393,14 @@
     "description": "Findsera content related to matter.",
     "productIds": [
       "aqara-door-window-sensor-p2",
-      "tp-link-tapo-p125m-matter-smart-plug"
+      "tp-link-tapo-p125m-matter-smart-plug",
+      "tp-link-tapo-p400m-outdoor-smart-plug"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 2
+      "home": 3
     },
-    "productCount": 2,
+    "productCount": 3,
     "roundupCount": 0
   },
   {
@@ -455,6 +457,20 @@
       "kitchen": 1
     },
     "productCount": 4,
+    "roundupCount": 0
+  },
+  {
+    "slug": "outdoor",
+    "title": "Outdoor",
+    "description": "Findsera content related to outdoor.",
+    "productIds": [
+      "tp-link-tapo-p400m-outdoor-smart-plug"
+    ],
+    "roundupSlugs": [],
+    "categoryCounts": {
+      "home": 1
+    },
+    "productCount": 1,
     "roundupCount": 0
   },
   {
@@ -574,14 +590,15 @@
       "govee-tv-led-backlight-strip",
       "kasa-smart-plug-mini-4-pack",
       "tapo-c500-security-camera",
-      "tp-link-tapo-p125m-matter-smart-plug"
+      "tp-link-tapo-p125m-matter-smart-plug",
+      "tp-link-tapo-p400m-outdoor-smart-plug"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "home": 10,
+      "home": 11,
       "gadgets": 1
     },
-    "productCount": 11,
+    "productCount": 12,
     "roundupCount": 0
   },
   {
