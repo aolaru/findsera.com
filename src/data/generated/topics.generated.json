@@ -53,13 +53,14 @@
       "nespresso-aeroccino-4-milk-frother",
       "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker",
+      "zulay-electric-milk-frother-heater",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 6
+      "kitchen": 7
     },
-    "productCount": 6,
+    "productCount": 7,
     "roundupCount": 0
   },
   {
@@ -142,14 +143,15 @@
       "nespresso-aeroccino-4-milk-frother",
       "oxo-brew-conical-burr-coffee-grinder",
       "takeya-cold-brew-maker",
+      "zulay-electric-milk-frother-heater",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 9,
+      "kitchen": 10,
       "home": 1
     },
-    "productCount": 10,
+    "productCount": 11,
     "roundupCount": 0
   },
   {
@@ -253,15 +255,16 @@
       "govee-rgbic-led-strip-lights-65ft",
       "govee-tv-led-backlight-strip",
       "lodge-12-inch-cast-iron-skillet",
-      "nespresso-aeroccino-4-milk-frother"
+      "nespresso-aeroccino-4-milk-frother",
+      "zulay-electric-milk-frother-heater"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
       "gadgets": 1,
-      "kitchen": 3,
+      "kitchen": 4,
       "home": 4
     },
-    "productCount": 8,
+    "productCount": 9,
     "roundupCount": 0
   },
   {
@@ -686,15 +689,16 @@
       "tapo-c500-security-camera",
       "tp-link-tapo-p125m-matter-smart-plug",
       "vtopmart-drawer-organizer-set",
+      "zulay-electric-milk-frother-heater",
       "zulay-milk-frother-wand"
     ],
     "roundupSlugs": [],
     "categoryCounts": {
-      "kitchen": 5,
+      "kitchen": 6,
       "home": 10,
       "gadgets": 3
     },
-    "productCount": 18,
+    "productCount": 19,
     "roundupCount": 0
   },
   {
