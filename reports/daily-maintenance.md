@@ -1,7 +1,7 @@
 # Daily maintenance report
 
-- Run date: 2026-05-26
-- New products added: 1
+- Run date: 2026-05-27
+- New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
 - Remaining product backlog: 0
@@ -13,7 +13,7 @@
 
 ## Added products today
 
-- Zulay Electric Milk Frother and Heater (`zulay-electric-milk-frother-heater`)
+- None
 
 ## Refreshed products today
 
