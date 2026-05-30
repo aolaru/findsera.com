@@ -15,6 +15,10 @@ const {
 } = Astro.props;
 
 const getBestFor = (product: Product) => {
+  if (product.editorial?.bestFor) {
+    return product.editorial.bestFor;
+  }
+
   if (product.price <= 50 || product.tags.includes("under-50")) {
     return "Best under $50";
   }
@@ -39,6 +43,10 @@ const getBestFor = (product: Product) => {
 };
 
 const getTradeoff = (product: Product) => {
+  if (product.editorial?.skipIf) {
+    return product.editorial.skipIf;
+  }
+
   if (product.affiliateMode === "search") {
     return "Check the listing details carefully because Amazon results can change.";
   }
@@ -95,7 +103,7 @@ const formatDate = (value: string) =>
               </td>
               <td class="py-3 pr-4">{getBestFor(product)}</td>
               <td class="py-3 pr-4">{categoryLabels[product.category]}</td>
-              <td class="py-3 pr-4">{product.highlights[0]}</td>
+              <td class="py-3 pr-4">{product.editorial?.whyIncluded ?? product.highlights[0]}</td>
               <td class="py-3 pr-4">{getTradeoff(product)}</td>
               <td class="py-3 pr-4 font-semibold text-ink-900">{product.priceLabel}</td>
               <td class="py-3 pr-4">{formatDate(product.priceCheckedAt)}</td>

@@ -6,6 +6,14 @@ import topics from "./generated/topics.generated.json";
 export type ProductCategory = "gadgets" | "kitchen" | "home";
 export type AffiliateMode = "exact" | "search";
 
+export type ProductEditorial = {
+  bestFor: string;
+  buyIf: string;
+  skipIf: string;
+  whyIncluded: string;
+  verification: string;
+};
+
 export type Product = {
   id: string;
   slug: string;
@@ -27,6 +35,7 @@ export type Product = {
   tags: string[];
   highlights: string[];
   isTrending: boolean;
+  editorial?: ProductEditorial;
 };
 
 export type RoundupSection = {
@@ -53,6 +62,11 @@ export type Roundup = {
   productCount: number;
   sections: RoundupSection[];
   faqs: RoundupFaq[];
+  editorial?: {
+    audience: string;
+    selectionCriteria: string[];
+    reviewNote: string;
+  };
 };
 
 export type Topic = {

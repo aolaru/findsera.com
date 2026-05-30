@@ -22,7 +22,14 @@
       "Travel-ready compact footprint",
       "Strong starter pick for better coffee"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "compact manual coffee brewing",
+      "buyIf": "Buy it if you want a low-cost manual brewer that works for quick hot coffee, travel, and small kitchens with minimal cleanup.",
+      "skipIf": "Skip it if you mainly want hands-off batch coffee, espresso-style milk drinks, or a brewer that makes several cups at once.",
+      "whyIncluded": "AeroPress is a strong anchor product because it solves the beginner coffee problem without requiring a grinder, scale, kettle upgrade, and counter space all at once.",
+      "verification": "Findsera checked the brand source, the current price-check date, and comparison coverage against cold-brew and beginner coffee setups."
+    }
   },
   {
     "id": "amazon-basics-velvet-hangers-50-pack",
@@ -97,7 +104,14 @@
       "Slim 10,000mAh travel profile",
       "Better fit for everyday carry kits"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "iPhone travel charging",
+      "buyIf": "Buy it if you want a magnetic battery pack that can cover travel days, commutes, and backup charging without carrying a larger cable-heavy power bank.",
+      "skipIf": "Skip it if you need the lowest-cost backup battery, mostly charge USB-C laptops, or do not use a magnetic/Qi2-friendly phone setup.",
+      "whyIncluded": "Anker MagGo 10K Slim appears in travel and Apple-accessory guides because it directly addresses low-battery anxiety while staying bag-friendly.",
+      "verification": "Findsera checked the brand source, the current price-check date, and guide roles for Apple travel, remote work, and everyday carry."
+    }
   },
   {
     "id": "anker-nano-power-bank-30w",
@@ -122,7 +136,14 @@
       "10,000mAh daily carry capacity",
       "30W phone and tablet charging"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "small backup charging under $50",
+      "buyIf": "Buy it if you want a compact power bank with a built-in USB-C cable for phone and tablet top-ups on commute or travel days.",
+      "skipIf": "Skip it if you need laptop-class backup power, MagSafe-style magnetic charging, or multiple full phone recharges.",
+      "whyIncluded": "Anker Nano 30W is included because the built-in cable removes a common travel annoyance while keeping the price approachable.",
+      "verification": "Findsera checked the brand source, the current price-check date, and travel-tech guide placement."
+    }
   },
   {
     "id": "apple-airtag-1-pack",
@@ -147,7 +168,14 @@
       "Strong everyday carry use case",
       "Popular travel and luggage tracker"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "Apple users tracking bags and keys",
+      "buyIf": "Buy it if you already use an iPhone and want a simple tracker for luggage, keys, backpacks, or everyday carry items.",
+      "skipIf": "Skip it if you are not in the Apple ecosystem or need a tracker with a built-in keyring hole and platform-neutral app support.",
+      "whyIncluded": "AirTag is included because it solves a common travel and everyday-carry problem with almost no learning curve for iPhone users.",
+      "verification": "Findsera checked Apple source information, the current price-check date, and recurring placement in Apple travel and gift guides."
+    }
   },
   {
     "id": "aqara-door-window-sensor-p2",
@@ -222,7 +250,14 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B0BWWZXWPL",
-    "sourceUrl": "https://www.amazon.com/blink-mini-2/dp/B0B1N5HW22"
+    "sourceUrl": "https://www.amazon.com/blink-mini-2/dp/B0B1N5HW22",
+    "editorial": {
+      "bestFor": "small-room monitoring",
+      "buyIf": "Buy it if you want an affordable plug-in camera for pets, entryways, bedrooms, or apartment monitoring without building a full security system.",
+      "skipIf": "Skip it if you need a battery-powered outdoor camera, local-only recording, or coverage for a large multi-camera property.",
+      "whyIncluded": "Blink Mini 2 is included because it gives smart-home and small-apartment guides a clear monitoring pick under $50.",
+      "verification": "Findsera checked the current price-check date and guide roles in bedroom, apartment, and starter smart-home pages."
+    }
   },
   {
     "id": "bodum-bistro-burr-coffee-grinder",
@@ -322,7 +357,14 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B09ZXJDSL5",
-    "sourceUrl": "https://www.amazon.com/echo-pop/dp/B09ZXJDSL5"
+    "sourceUrl": "https://www.amazon.com/echo-pop/dp/B09ZXJDSL5",
+    "editorial": {
+      "bestFor": "entry-level Alexa control",
+      "buyIf": "Buy it if you want a small speaker for voice control, timers, simple smart-home commands, or a low-cost tech gift.",
+      "skipIf": "Skip it if music quality is the main priority, you avoid Alexa, or you need a screen-based smart display.",
+      "whyIncluded": "Echo Pop is included because it is an easy smart-home starting point when paired with plugs, lights, and simple routines.",
+      "verification": "Findsera checked the current price-check date and its comparison role beside Kasa Smart Plug in starter smart-home pages."
+    }
   },
   {
     "id": "ember-mug-2",
@@ -347,7 +389,14 @@
       "Strong home-office gift appeal",
       "Cuts down on microwave reheats"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "slow coffee drinkers at a desk",
+      "buyIf": "Buy it if your coffee often goes cold during focused work and you want a giftable desk upgrade with a very obvious daily use case.",
+      "skipIf": "Skip it if you finish drinks quickly, prefer dishwasher-simple mugs, or would rather spend the budget on better brewing gear first.",
+      "whyIncluded": "Ember Mug 2 is included because it solves a specific desk-and-coffee problem, not because it is the cheapest way to drink coffee.",
+      "verification": "Findsera checked the brand source, the current price-check date, and its role in coffee gift and home-office comfort guides."
+    }
   },
   {
     "id": "etekcity-food-kitchen-scale",
@@ -422,7 +471,14 @@
       "Balanced gooseneck pour",
       "Strong design-led appeal"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "premium pour-over control",
+      "buyIf": "Buy it if controlled pouring, temperature precision, and countertop presentation matter enough to justify a premium coffee upgrade.",
+      "skipIf": "Skip it if you mainly need hot water quickly, are building a first coffee setup, or want the best value under $100.",
+      "whyIncluded": "Fellow Stagg EKG gives coffee guides a true upgrade pick for readers who care about pour control and temperature consistency.",
+      "verification": "Findsera checked the brand source, the current price-check date, and its role as the premium kettle option in coffee guides."
+    }
   },
   {
     "id": "govee-rgbic-led-strip-lights-65ft",
@@ -472,7 +528,14 @@
       "Good for work and ambient light",
       "Fits compact desks well"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "lighting-focused desk upgrades",
+      "buyIf": "Buy it if your desk needs better task lighting and you also want app or smart-home control without buying separate light strips.",
+      "skipIf": "Skip it if you only need a basic lamp, dislike app-controlled lighting, or want the smallest possible dorm-desk footprint.",
+      "whyIncluded": "Govee Smart Desk Lamp Pro is included because lighting is a real productivity and comfort upgrade, not just a visual desk accessory.",
+      "verification": "Findsera checked the brand source, the current price-check date, and home-office guide placement."
+    }
   },
   {
     "id": "govee-tv-led-backlight-strip",
@@ -572,7 +635,14 @@
       "Works well for lamps and routines",
       "Easy Alexa and Google Home setup"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "simple smart-home starters",
+      "buyIf": "Buy it if you want several lamps, fans, or coffee-corner devices on simple schedules without replacing bulbs or buying a hub.",
+      "skipIf": "Skip it if you need Matter-first compatibility, outdoor use, or energy monitoring as the main reason for buying.",
+      "whyIncluded": "Kasa Smart Plug Mini is a practical starter pick because one purchase can improve several small routines in apartments, offices, and bedrooms.",
+      "verification": "Findsera checked the product source, the current price-check date, and comparison coverage against smart speakers and starter kits."
+    }
   },
   {
     "id": "levoit-core-mini-air-purifier",
@@ -597,7 +667,14 @@
       "Easy bedroom or desk placement",
       "Accessible sub-$50 air-quality upgrade"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "small-room air quality upgrades",
+      "buyIf": "Buy it if you want a compact air purifier for a bedroom, desk corner, dorm room, or small apartment zone without moving to a large floor unit.",
+      "skipIf": "Skip it if you need whole-room coverage for a large living area or want advanced air-quality sensors and app controls.",
+      "whyIncluded": "Levoit Core Mini earns its place because it gives small-space readers a clear comfort upgrade under $50 instead of another decorative desk item.",
+      "verification": "Findsera checked the product source, the current price-check date, and guide usage in bedroom, apartment, and desk-comfort contexts."
+    }
   },
   {
     "id": "lodge-12-inch-cast-iron-skillet",
@@ -647,7 +724,14 @@
       "Travel-friendly compact body",
       "Easy multi-device workflow"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "portable productivity mouse users",
+      "buyIf": "Buy it if you switch between a home desk, travel bag, and temporary workspaces and want a small mouse that still feels more precise than basic Bluetooth mice.",
+      "skipIf": "Skip it if you only need a cheap spare mouse or prefer a full-size ergonomic shape for all-day desktop use.",
+      "whyIncluded": "MX Anywhere 3S appears across the most Findsera guides because it bridges travel and desk productivity better than many cheaper compact mice.",
+      "verification": "Findsera checked the brand source, the current price-check date, and repeated guide placement across travel and home-office pages."
+    }
   },
   {
     "id": "logitech-mx-keys-mini",
@@ -672,7 +756,14 @@
       "Smart illumination",
       "Multi-device Bluetooth support"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "compact desk keyboard upgrades",
+      "buyIf": "Buy it if you want a smaller keyboard for a laptop-centered desk and care more about typing comfort than RGB lighting or a number pad.",
+      "skipIf": "Skip it if you need a full-size keyboard, mechanical switches, gaming features, or a very low-cost student setup.",
+      "whyIncluded": "MX Keys Mini gives desk-setup guides a premium but still compact keyboard option for people improving a work area without buying a full workstation.",
+      "verification": "Findsera checked the brand source, the current price-check date, and repeated placement in home-office and student-desk guides."
+    }
   },
   {
     "id": "logitech-pebble-2-m350s",
@@ -697,7 +788,14 @@
       "Easy fit for lightweight desk kits"
     ],
     "isTrending": true,
-    "sourceUrl": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse"
+    "sourceUrl": "https://www.logitech.com/en-us/shop/p/pebble-2-m350s-wireless-mouse",
+    "editorial": {
+      "bestFor": "budget portable mouse buyers",
+      "buyIf": "Buy it if you need a quiet, lightweight mouse for a laptop bag, dorm setup, or small desk and want to stay under a low accessory budget.",
+      "skipIf": "Skip it if you want premium scrolling, deeper productivity buttons, or a shape designed for long desktop sessions.",
+      "whyIncluded": "Pebble 2 gives budget and student guides a clear low-cost alternative to higher-end productivity mice without losing the portable-work use case.",
+      "verification": "Findsera checked the brand source, the current price-check date, and its comparison role beside MX Anywhere 3S."
+    }
   },
   {
     "id": "meater-plus-wireless-thermometer",
@@ -772,7 +870,14 @@
       "Useful for small desks"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B08R8GWBSM"
+    "amazonUrl": "https://www.amazon.com/dp/B08R8GWBSM",
+    "editorial": {
+      "bestFor": "cheap laptop-height fixes",
+      "buyIf": "Buy it if your laptop sits too low on a desk and you want a simple height improvement before spending on a full monitor setup.",
+      "skipIf": "Skip it if you need a highly portable folding stand for travel or already use an external monitor at eye level.",
+      "whyIncluded": "OMOTON is included because laptop height is one of the cheapest high-impact fixes for students, small desks, and hybrid work setups.",
+      "verification": "Findsera checked the the current price-check date and repeated guide placement in budget office and student desk pages."
+    }
   },
   {
     "id": "oxo-brew-conical-burr-coffee-grinder",
@@ -847,7 +952,14 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B08GTYFC37",
-    "sourceUrl": "https://www.westerndigital.com/products/portable-drives/sandisk-extreme-usb-3-2-ssd"
+    "sourceUrl": "https://www.westerndigital.com/products/portable-drives/sandisk-extreme-usb-3-2-ssd",
+    "editorial": {
+      "bestFor": "portable file backup",
+      "buyIf": "Buy it if you travel with large files, need quick backups, or want a compact external drive for student, creator, or remote-work storage.",
+      "skipIf": "Skip it if cloud storage covers your needs or you only move small documents that fit on a basic flash drive.",
+      "whyIncluded": "SanDisk Extreme Portable SSD is included because storage is one of the few travel-tech upgrades that can prevent a serious work disruption.",
+      "verification": "Findsera checked the brand source, the current price-check date, and guide roles for remote work and travel backup."
+    }
   },
   {
     "id": "soundcore-q20i-headphones",
@@ -872,7 +984,14 @@
       "Good pick for commute listening",
       "Strong value for casual travel audio"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "budget noise-reducing travel audio",
+      "buyIf": "Buy it if you want affordable over-ear headphones for flights, commutes, studying, or shared workspaces without paying flagship prices.",
+      "skipIf": "Skip it if you need compact earbuds, premium noise cancellation, or the smallest possible travel audio setup.",
+      "whyIncluded": "soundcore Q20i gives travel and student guides a practical under-$50 audio option where the benefit is easy to understand.",
+      "verification": "Findsera checked the product source, the current price-check date, and guide roles in travel, student, and gift contexts."
+    }
   },
   {
     "id": "takeya-cold-brew-maker",
@@ -897,7 +1016,14 @@
       "Makes multi-serving iced coffee batches",
       "Strong value for daily cold brew"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "make-ahead cold brew routines",
+      "buyIf": "Buy it if you want cold coffee ready in the fridge and prefer simple batch brewing over making a fresh cup every morning.",
+      "skipIf": "Skip it if you mostly drink hot coffee, have limited refrigerator space, or want a compact travel brewer.",
+      "whyIncluded": "Takeya is included because it solves a different coffee problem than AeroPress: repeatable cold brew with less morning effort.",
+      "verification": "Findsera checked the product source, the current price-check date, and direct comparison coverage with AeroPress."
+    }
   },
   {
     "id": "tapo-c500-security-camera",
@@ -1022,7 +1148,14 @@
       "GaN design saves bag space"
     ],
     "isTrending": true,
-    "sourceUrl": "https://www.ugreen.com/products/ugreen-nexode-100w-usb-c-wall-charger-4-ports"
+    "sourceUrl": "https://www.ugreen.com/products/ugreen-nexode-100w-usb-c-wall-charger-4-ports",
+    "editorial": {
+      "bestFor": "one-charger travel setups",
+      "buyIf": "Buy it if you want one compact wall charger for laptop-class USB-C power plus phone or accessory charging while traveling.",
+      "skipIf": "Skip it if you only charge phones, need an included long cable, or prefer a power bank for outlet-free top-ups.",
+      "whyIncluded": "UGREEN Nexode 100W is useful in travel-tech pages because it reduces the number of wall chargers a laptop user needs to pack.",
+      "verification": "Findsera checked the brand source, the current price-check date, and guide roles around remote work, charging, and travel."
+    }
   },
   {
     "id": "vtopmart-drawer-organizer-set",
@@ -1047,7 +1180,14 @@
       "Useful across rooms",
       "Easy small-space upgrade"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "cheap drawer and desk organization",
+      "buyIf": "Buy it if small items keep spreading across drawers, desks, vanities, or kitchen spaces and you want a modular low-cost reset.",
+      "skipIf": "Skip it if you need heavy-duty storage, matching decorative bins, or a one-piece organizer sized for a specific drawer.",
+      "whyIncluded": "Vtopmart is included because organization products can be genuinely useful when they solve visible clutter at a low price.",
+      "verification": "Findsera checked the current price-check date and recurring guide roles in office, apartment, and under-$50 pages."
+    }
   },
   {
     "id": "zulay-electric-milk-frother-heater",

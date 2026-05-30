@@ -40,7 +40,16 @@
         "question": "Which is better for a small kitchen?",
         "answer": "Both are compact, but AeroPress is easier to store in a drawer while Takeya needs refrigerator space during brewing."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For coffee buyers choosing between quick hot cups and make-ahead iced coffee rather than comparing every manual brewer.",
+      "selectionCriteria": [
+        "Clear difference between hot single-cup brewing and cold-brew batching",
+        "Beginner-friendly setup with minimal extra gear required",
+        "Small-kitchen fit and cleanup effort considered before price"
+      ],
+      "reviewNote": "This comparison focuses on the real routine choice: fast hot coffee now versus cold coffee prepared ahead."
+    }
   },
   {
     "slug": "best-amazon-gadgets-2026",
@@ -80,7 +89,16 @@
         "question": "Why use exact Amazon product links when possible?",
         "answer": "Exact product URLs reduce ambiguity and make it easier to trust the recommendation. Search-result links are temporary when a stable product listing still needs verification."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For shoppers who want practical Amazon tech that solves repeat problems instead of novelty gadgets with weak daily use.",
+      "selectionCriteria": [
+        "A clear daily problem such as charging, working, tracking, or desk comfort",
+        "Useful beyond one narrow situation or one season",
+        "Easy enough to understand before leaving the page for Amazon"
+      ],
+      "reviewNote": "The shortlist favors repeat utility and avoids items that only look interesting in a scrolling product feed."
+    }
   },
   {
     "slug": "best-apple-travel-essentials",
@@ -117,7 +135,16 @@
         "question": "Do Apple travel pages need Apple-only accessories?",
         "answer": "No. They just need to work well with common Apple workflows and solve the problems travelers actually encounter."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For Apple users packing lighter and trying to keep phones, bags, audio, and mobile work gear dependable on trips.",
+      "selectionCriteria": [
+        "Works naturally with iPhone-heavy travel habits",
+        "Reduces a common trip problem such as low battery, misplaced bags, or noisy travel",
+        "Small enough to earn space in a carry-on or work bag"
+      ],
+      "reviewNote": "The shortlist is framed around Apple travel workflows, not around accessories that merely share an Apple-compatible label."
+    }
   },
   {
     "slug": "best-beginner-coffee-setup",
@@ -158,7 +185,16 @@
         "question": "Should a beginner coffee setup include premium gear?",
         "answer": "Only if the value is easy to explain. Premium products can work, but they should feel like an upgrade path, not a mandatory starting point."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For beginners who want noticeably better coffee without buying a crowded counter setup or learning every brewing variable at once.",
+      "selectionCriteria": [
+        "Improves one beginner coffee problem at a time",
+        "Easy to clean, store, and keep using after the first week",
+        "Avoids pushing premium gear before the routine is clear"
+      ],
+      "reviewNote": "The guide prioritizes a manageable first setup over a maximal coffee gear checklist."
+    }
   },
   {
     "slug": "best-budget-home-office-tech",
@@ -200,7 +236,16 @@
         "question": "Can budget office tech still be useful long term?",
         "answer": "Yes. Compact products like chargers, stands, smart plugs, and organizers often stay useful even after the workspace improves."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For laptop workers who want a better desk through small, affordable fixes before buying furniture or premium peripherals.",
+      "selectionCriteria": [
+        "Targets a visible workday annoyance such as laptop height, cables, lighting, input control, or clutter",
+        "Fits small desks, student rooms, and apartment workspaces",
+        "Low enough cost to make sense as a first upgrade"
+      ],
+      "reviewNote": "This guide focuses on small upgrades that change a daily desk experience rather than products that simply look good in a setup photo."
+    }
   },
   {
     "slug": "best-coffee-gear-for-beginners",
@@ -251,7 +296,16 @@
         "question": "Do beginner coffee pages need grinders and scales right away?",
         "answer": "Not always. General-intent buyers often respond better to a smaller shortlist that solves the biggest pain points first."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For new coffee buyers who want a better cup without turning the kitchen into a hobby station immediately.",
+      "selectionCriteria": [
+        "Makes brewing more consistent or easier to repeat",
+        "Works before the buyer has advanced technique",
+        "Leaves room to upgrade later instead of forcing a full setup now"
+      ],
+      "reviewNote": "The shortlist separates forgiving beginner gear from upgrades that only make sense after the routine is established."
+    }
   },
   {
     "slug": "best-coffee-gear-for-home",
@@ -293,7 +347,16 @@
         "question": "Do premium coffee products work in affiliate content?",
         "answer": "Yes, if the use case is obvious. Premium coffee gear makes sense when it improves a daily ritual rather than feeling like niche enthusiast equipment."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For home coffee drinkers comparing which part of the routine deserves the next upgrade: brewing, grinding, pouring, cold brew, or drink temperature.",
+      "selectionCriteria": [
+        "Improves a repeat part of the home coffee routine",
+        "Balances counter space against control and convenience",
+        "Gives a mix of affordable tools and serious upgrades"
+      ],
+      "reviewNote": "The home routine is the main filter so readers can avoid buying every coffee accessory at once."
+    }
   },
   {
     "slug": "best-coffee-gear-for-renters",
@@ -338,7 +401,16 @@
         "question": "Should renters buy premium coffee gear?",
         "answer": "Premium gear can make sense when it is portable and useful across apartments, but renters should avoid products that require permanent setup."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For renters and apartment dwellers who need coffee gear that stores easily and does not depend on permanent counter space.",
+      "selectionCriteria": [
+        "Portable or compact enough for small kitchens",
+        "Useful without permanent installation or bulky machines",
+        "Easy to move, clean, or store between uses"
+      ],
+      "reviewNote": "The shortlist emphasizes space and portability because renter coffee setups fail when gear becomes hard to keep out."
+    }
   },
   {
     "slug": "best-coffee-gear-for-small-kitchens",
@@ -380,7 +452,16 @@
         "question": "Should small-kitchen coffee guides avoid premium products?",
         "answer": "Not necessarily. Premium products still work if they justify the space they occupy and solve a clear part of the daily routine."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For small-kitchen coffee drinkers who need each product to earn its footprint before taking counter or cabinet space.",
+      "selectionCriteria": [
+        "Compact footprint relative to the routine it improves",
+        "Works without a large espresso-machine style setup",
+        "Solves a real brewing or storage problem in tight spaces"
+      ],
+      "reviewNote": "Space is treated as a core buying constraint rather than an afterthought."
+    }
   },
   {
     "slug": "best-coffee-upgrades-under-50",
@@ -421,7 +502,16 @@
         "question": "Do budget coffee pages need premium products to be useful?",
         "answer": "No. They usually perform better when the products are easy to understand, affordable to try, and genuinely useful in a daily routine."
       }
-    ]
+    ],
+    "editorial": {
+      "audience": "For coffee buyers looking for a low-risk upgrade that changes the daily cup without moving into premium equipment.",
+      "selectionCriteria": [
+        "Current catalog price sits in an approachable budget range",
+        "Improves brewing, frothing, measuring, or cold-brew routines directly",
+        "Useful on its own without requiring several follow-up purchases"
+      ],
+      "reviewNote": "This guide focuses on small upgrades with clear payoffs, not cheap accessories that only add clutter."
+    }
   },
   {
     "slug": "best-desk-setup-products",

@@ -71,6 +71,14 @@ const bestFor = getProductBestFor(product);
 
     <p class="mt-4 flex-1 text-sm leading-7 text-ink-700">{product.description}</p>
 
+    {
+      product.editorial && (
+        <p class="mt-4 rounded-[1.25rem] bg-sand-50 p-3 text-sm leading-6 text-ink-700">
+          <span class="font-semibold text-ink-900">Editor note:</span> {product.editorial.whyIncluded}
+        </p>
+      )
+    }
+
     <ul class="mt-4 space-y-2 text-sm text-ink-700">
       {product.highlights.slice(0, 2).map((item) => <li>- {item}</li>)}
     </ul>

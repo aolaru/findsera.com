@@ -16,6 +16,7 @@ const rows = [
   ["Category", categoryLabels[product.category]],
   ["Current catalog price", product.priceLabel],
   ["Price tier", priceTier],
+  ...(product.editorial ? [["Best fit", product.editorial.bestFor]] : []),
   ["Primary use", useCase],
   ["Secondary use", secondaryUseCase],
   ["Retailer title", product.retailerTitle ?? product.title],
