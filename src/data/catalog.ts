@@ -140,6 +140,13 @@ const staticSearchPages: SearchItem[] = [
     keywords: ["affiliate disclosure", "commission", "links", "amazon associates"]
   },
   {
+    title: "Privacy Policy",
+    href: "/privacy-policy",
+    type: "Page",
+    meta: "Privacy",
+    keywords: ["privacy policy", "cookies", "analytics", "advertising"]
+  },
+  {
     title: "Contact Findsera",
     href: "/contact",
     type: "Page",

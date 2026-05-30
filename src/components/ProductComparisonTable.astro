@@ -40,7 +40,7 @@ const getBestFor = (product: Product) => {
 
 const getTradeoff = (product: Product) => {
   if (product.affiliateMode === "search") {
-    return "Check the listing carefully because this uses an Amazon search fallback.";
+    return "Check the listing details carefully because Amazon results can change.";
   }
 
   if (product.price >= 120) {

@@ -28,7 +28,14 @@ export default defineConfig({
       destination: "/guides"
     }
   },
-  integrations: [sitemap()],
+  integrations: [
+    sitemap({
+      filter: (page) => {
+        const { pathname } = new URL(page);
+        return pathname !== "/search/" && !pathname.startsWith("/topics/");
+      }
+    })
+  ],
   vite: {
     plugins: [tailwindcss()]
   }

@@ -20,7 +20,7 @@ const rows = [
   ["Secondary use", secondaryUseCase],
   ["Retailer title", product.retailerTitle ?? product.title],
   ["Price checked", product.priceCheckedAt],
-  ["Amazon link type", product.affiliateMode === "exact" ? "Direct product listing" : "Search fallback"],
+  ["Retailer path", product.affiliateMode === "exact" ? "Direct product listing" : "Amazon search results"],
   ["Tags", product.tags.join(", ")]
 ];
 ---
@@ -31,7 +31,7 @@ const rows = [
     Key details before you open Amazon
   </h2>
   <p class="mt-3 text-sm leading-7 text-ink-700">
-    This table keeps the practical buying details visible in one place so the page is useful even before the outbound click.
+    This table keeps the practical buying details visible in one place so the page is useful before you open a retailer listing.
   </p>
   <div class="mt-5 overflow-x-auto">
     <table class="min-w-full text-left text-sm text-ink-700">

@@ -10,6 +10,7 @@ import {
   categories,
   categoryDescriptions,
   categoryLabels,
+  type ProductCategory,
   getProductsByCategory,
   getRoundupsByCategory
 } from "../../data/catalog";
@@ -34,6 +35,49 @@ export function getStaticPaths() {
 const { slug, label, description, products, roundups, topics } = Astro.props;
 const title = `${label} Finds | Findsera`;
 const metaDescription = `Browse ${label.toLowerCase()} picks on Findsera. ${description}`;
+
+const categoryEditorial: Record<
+  ProductCategory,
+  {
+    buyerNeed: string;
+    selectionFocus: string;
+    tradeoff: string;
+    firstMove: string;
+  }
+> = {
+  gadgets: {
+    buyerNeed:
+      "Gadget pages should help readers separate genuinely useful accessories from novelty tech. The strongest picks here support charging, travel, small-desk work, or everyday carry without demanding a complicated setup.",
+    selectionFocus:
+      "We look for products that solve repeat problems: a phone that runs low before the day ends, a laptop setup that needs a second screen, or a travel bag that needs lighter accessories.",
+    tradeoff:
+      "The common tradeoff is portability versus comfort or power. Smaller products are easier to carry, while larger chargers, monitors, and peripherals can make a temporary workspace feel more stable.",
+    firstMove:
+      "Start with the problem you notice most often: battery life, bag tracking, laptop ergonomics, or input control."
+  },
+  kitchen: {
+    buyerNeed:
+      "Kitchen pages focus on repeatable routines rather than one-off gadgets. The best products make coffee, cooking, measuring, or prep more consistent without adding too many steps.",
+    selectionFocus:
+      "We favor tools that improve the daily result: better pour control, easier milk texture, accurate measurements, reliable temperature checks, or more predictable batch cooking.",
+    tradeoff:
+      "The common tradeoff is counter space versus control. Premium tools can add precision, but compact products are often better for renters, beginners, and small kitchens.",
+    firstMove:
+      "Start with the routine you already repeat: morning coffee, weeknight cooking, meal prep, or better storage."
+  },
+  home: {
+    buyerNeed:
+      "Home pages cover comfort, organization, smart-home basics, and small-apartment upgrades. The goal is to highlight products that improve a room without turning it into a project.",
+    selectionFocus:
+      "We prioritize products with clear jobs: cleaner air near a desk, better lighting, easier storage, simple voice control, or small devices that make a room more convenient.",
+    tradeoff:
+      "The common tradeoff is simplicity versus ecosystem depth. A basic plug or lamp is easier to adopt, while connected devices can become more useful when they fit an existing smart-home setup.",
+    firstMove:
+      "Start with the room or routine that creates the most friction: bedroom comfort, desk focus, storage, cleaning, or simple automation."
+  }
+};
+
+const editorial = categoryEditorial[slug];
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -78,8 +122,22 @@ const structuredData = {
     <div class="container-shell">
       <SectionHeader
         title={`Best ${categoryLabels[slug]} Products`}
-        description={`${categoryDescriptions[slug]} This category page is powered by the same generated catalog used for roundup automation.`}
+        description={`${categoryDescriptions[slug]} Use the shortlist below to compare practical fits before opening a product page or guide.`}
       />
+      <div class="mb-8 grid gap-6 lg:grid-cols-3">
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">What belongs here</p>
+          <p class="mt-4 text-sm leading-7 text-ink-700">{editorial.buyerNeed}</p>
+        </article>
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">How to choose</p>
+          <p class="mt-4 text-sm leading-7 text-ink-700">{editorial.selectionFocus}</p>
+        </article>
+        <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Main tradeoff</p>
+          <p class="mt-4 text-sm leading-7 text-ink-700">{editorial.tradeoff}</p>
+        </article>
+      </div>
       <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
         {products.map((product) => <ProductCard product={product} />)}
       </div>
@@ -92,7 +150,7 @@ const structuredData = {
         <div class="container-shell">
           <SectionHeader
             title={`Related ${label} Roundups`}
-            description="Related guide links help this category feel connected instead of becoming a disconnected product grid."
+            description={`Use these ${label.toLowerCase()} guides when you want a narrower shortlist built around a specific budget, room, routine, or comparison.`}
           />
           <div class="grid gap-6 lg:grid-cols-3">
             {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}
@@ -122,14 +180,13 @@ const structuredData = {
         title={`About ${label}`}
         items={[
           {
-            question: `How should ${label.toLowerCase()} pages scale over time?`,
-            answer:
-              "Category pages should stay broad while related guides target more specific buying situations. That keeps browsing cleaner as the catalog grows."
+            question: `How should I start browsing ${label.toLowerCase()} products?`,
+            answer: editorial.firstMove
           },
           {
-            question: "Why keep the catalog in generated JSON for now?",
+            question: `Why are some ${label.toLowerCase()} products also in buying guides?`,
             answer:
-              "Generated local data is extremely fast on static hosting, easy to version, and a clean foundation for later automation before adding a CMS or database."
+              "A category page gives the broad view, while guides narrow the decision around price, use case, room, or a direct product comparison."
           }
         ]}
       />
