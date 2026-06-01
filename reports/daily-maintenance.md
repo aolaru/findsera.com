@@ -3,10 +3,10 @@
 - Run date: 2026-06-01
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 0
+- New guides added: 1
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
-- Remaining guide backlog: 7
+- Remaining guide backlog: 6
 - Products with stale price checks: 44
 - Products missing content-map coverage: 12
 - Validation failures: 0
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- None
+- Best Wireless Tech for Commuters (`best-wireless-tech-for-commuters`)
 
 ## Price checks to refresh
 
