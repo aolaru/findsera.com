@@ -48,6 +48,18 @@ export type RoundupFaq = {
   answer: string;
 };
 
+export type RoundupDecisionSummary = {
+  bestOverall: string;
+  bestBudget: string;
+  bestUpgrade: string;
+  skipIf: string;
+  readInstead: {
+    label: string;
+    href: string;
+    reason: string;
+  };
+};
+
 export type Roundup = {
   slug: string;
   title: string;
@@ -64,8 +76,10 @@ export type Roundup = {
   faqs: RoundupFaq[];
   editorial?: {
     audience: string;
+    decisionSummary?: RoundupDecisionSummary;
     selectionCriteria: string[];
     reviewNote: string;
+    whatChecked?: string[];
   };
 };
 

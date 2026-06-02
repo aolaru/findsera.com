@@ -67,23 +67,40 @@ const exactLinkCount = products.filter((product) => product.affiliateMode === "e
 const isComparisonGuide = roundup.slug.includes("-vs-") && products.length >= 2;
 const comparisonProducts = products.slice(0, 2);
 const editorial = roundup.editorial;
+const decisionSummary = editorial?.decisionSummary;
 const quickDecisionCards = [
   {
     label: "Best overall",
-    title: topPick.title,
+    title: decisionSummary?.bestOverall ?? topPick.title,
     note: topPick.editorial?.bestFor ?? getBestForLabel(topPick)
   },
   {
     label: "Best value",
-    title: budgetPick.title,
-    note: budgetPick.priceLabel
+    title: decisionSummary?.bestBudget ?? budgetPick.title,
+    note: decisionSummary ? "Lowest-friction value path" : budgetPick.priceLabel
   },
   {
     label: "Upgrade pick",
-    title: upgradePick.title,
-    note: upgradePick.priceLabel
+    title: decisionSummary?.bestUpgrade ?? upgradePick.title,
+    note: decisionSummary ? "Worth it when the routine needs more control" : upgradePick.priceLabel
   }
 ];
+
+const boundaryDecisionCards = decisionSummary
+  ? [
+      {
+        label: "Skip this guide if",
+        title: decisionSummary.skipIf,
+        note: "A narrower page will be more useful."
+      },
+      {
+        label: "Read instead if",
+        title: decisionSummary.readInstead.label,
+        href: decisionSummary.readInstead.href,
+        note: decisionSummary.readInstead.reason
+      }
+    ]
+  : [];
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -170,11 +187,19 @@ const structuredData = {
             {roundup.title}
           </h1>
           <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{roundup.intro}</p>
-          <div class="mt-8 grid gap-4 sm:grid-cols-3">
-            {quickDecisionCards.map((item) => (
+          <div class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
+            {[...quickDecisionCards, ...boundaryDecisionCards].map((item) => (
               <article class="rounded-[1.5rem] border border-black/6 bg-white p-4 shadow-card">
                 <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">{item.label}</p>
-                <p class="mt-3 font-semibold text-ink-900">{item.title}</p>
+                {
+                  item.href ? (
+                    <a href={item.href} class="mt-3 block font-semibold text-ink-900 hover:text-accent-600">
+                      {item.title}
+                    </a>
+                  ) : (
+                    <p class="mt-3 font-semibold text-ink-900">{item.title}</p>
+                  )
+                }
                 <p class="mt-2 text-sm text-ink-700">{item.note}</p>
               </article>
             ))}
@@ -352,13 +377,13 @@ const structuredData = {
         </article>
 
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Methodology</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">What we checked</p>
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
-            How products make the page
+            The shortlist had to pass a practical screen
           </h2>
           <ul class="mt-5 space-y-3 text-sm leading-7 text-ink-700">
             {
-              (editorial?.selectionCriteria ?? [
+              (editorial?.whatChecked ?? editorial?.selectionCriteria ?? [
                 "Products are chosen for a clear use case, not to inflate the list length.",
                 "Preference goes to products that are easy to compare and act on.",
                 "We keep pages tight so readers can compare options quickly and reach a buying decision faster."
