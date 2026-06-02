@@ -1,9 +1,9 @@
 # Daily maintenance report
 
-- Run date: 2026-06-01
+- Run date: 2026-06-02
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 1
+- New guides added: 0
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 6
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- Best Wireless Tech for Commuters (`best-wireless-tech-for-commuters`)
+- None
 
 ## Price checks to refresh
 
