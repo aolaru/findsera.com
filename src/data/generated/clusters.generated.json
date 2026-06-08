@@ -4,6 +4,7 @@
     "title": "Budget Finds",
     "description": "Budget Finds cluster pages on Findsera.",
     "roundupSlugs": [
+      "best-coffee-gifts-under-50",
       "best-everyday-carry-tech-under-50",
       "best-products-for-small-apartments",
       "best-products-under-50",
@@ -16,10 +17,11 @@
       "is-echo-pop-worth-it"
     ],
     "categories": [
+      "kitchen",
       "gadgets",
       "home"
     ],
-    "roundupCount": 10
+    "roundupCount": 11
   },
   {
     "slug": "coffee-gear",

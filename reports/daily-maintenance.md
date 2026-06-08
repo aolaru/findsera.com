@@ -3,10 +3,10 @@
 - Run date: 2026-06-08
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 0
+- New guides added: 1
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
-- Remaining guide backlog: 6
+- Remaining guide backlog: 5
 - Products with stale price checks: 44
 - Products missing content-map coverage: 12
 - Validation failures: 0
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- None
+- Best Coffee Gifts Under $50 (`best-coffee-gifts-under-50`)
 
 ## Price checks to refresh
 

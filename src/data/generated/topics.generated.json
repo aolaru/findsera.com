@@ -69,6 +69,7 @@
     "description": "Budget Finds guides, products, and roundup pages on Findsera.",
     "productIds": [],
     "roundupSlugs": [
+      "best-coffee-gifts-under-50",
       "best-everyday-carry-tech-under-50",
       "best-products-for-small-apartments",
       "best-products-under-50",
@@ -82,7 +83,7 @@
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 10
+    "roundupCount": 11
   },
   {
     "slug": "charging",
