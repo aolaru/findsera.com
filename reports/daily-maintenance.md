@@ -1,9 +1,9 @@
 # Daily maintenance report
 
-- Run date: 2026-06-08
+- Run date: 2026-06-09
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 1
+- New guides added: 0
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 5
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- Best Coffee Gifts Under $50 (`best-coffee-gifts-under-50`)
+- None
 
 ## Price checks to refresh
 
