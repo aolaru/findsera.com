@@ -1,38 +1,170 @@
 ---
-import RoundupCard from "../../components/RoundupCard.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
-import { allRoundups } from "../../data/catalog";
+import { allRoundups, type Roundup } from "../../data/catalog";
 import Layout from "../../layouts/Layout.astro";
 
 const guides = [...allRoundups].sort((a, b) => a.title.localeCompare(b.title));
+const guideBySlug = new Map(guides.map((guide) => [guide.slug, guide]));
 
-const title = "All Guides | Findsera";
+const isComparisonGuide = (guide: Roundup) => guide.slug.includes("-vs-") || guide.slug.startsWith("is-");
+const bySlugs = (slugs: string[]) =>
+  slugs.map((slug) => guideBySlug.get(slug)).filter((guide): guide is Roundup => Boolean(guide));
+
+const startHereGuides = bySlugs([
+  "best-travel-tech-essentials",
+  "best-desk-setup-products",
+  "best-coffee-gear-for-beginners",
+  "best-smart-home-starter-kit-under-100"
+]);
+
+const guideGroups = [
+  {
+    id: "budget",
+    title: "Budget Picks",
+    description: "Lower-risk guides for gifts, first upgrades, small apartments, and practical under-$100 choices.",
+    guides: guides.filter((guide) => guide.cluster === "budget-finds" && !isComparisonGuide(guide))
+  },
+  {
+    id: "coffee",
+    title: "Coffee Gear",
+    description: "Coffee guides split by beginner setup, small kitchens, gifts, renters, and better home routines.",
+    guides: guides.filter((guide) => guide.cluster === "coffee-gear" && !isComparisonGuide(guide))
+  },
+  {
+    id: "travel-tech",
+    title: "Travel Tech",
+    description: "Portable charging, tracking, headphones, Apple-friendly travel, commuter gear, and remote-work kits.",
+    guides: guides.filter((guide) => guide.cluster === "travel-tech" && !isComparisonGuide(guide))
+  },
+  {
+    id: "desk-home-office",
+    title: "Desk and Home Office",
+    description: "Workday upgrades for desks, students, small workspaces, dorm rooms, and home-office comfort.",
+    guides: guides.filter((guide) => guide.cluster === "home-office" && !isComparisonGuide(guide))
+  },
+  {
+    id: "home-upgrades",
+    title: "Smart Home and Small Spaces",
+    description: "Guides for simple smart-home starters, small apartments, home comfort, and practical room upgrades.",
+    guides: bySlugs([
+      "best-smart-home-starter-kit-under-100",
+      "best-smart-home-gifts-under-50",
+      "best-smart-home-upgrades-for-beginners",
+      "best-products-for-small-apartments",
+      "best-small-apartment-upgrades-under-200"
+    ])
+  },
+  {
+    id: "comparisons",
+    title: "Comparisons and Worth-It Guides",
+    description: "Use these when the decision is between two products or one product needs a clearer verdict.",
+    guides: guides.filter((guide) => isComparisonGuide(guide))
+  }
+].filter((group) => group.guides.length > 0);
+
+const quickLinks = [
+  { href: "#start-here", label: "Start here" },
+  { href: "#budget", label: "Budget" },
+  { href: "#coffee", label: "Coffee" },
+  { href: "#travel-tech", label: "Travel" },
+  { href: "#desk-home-office", label: "Desk" },
+  { href: "#home-upgrades", label: "Home" },
+  { href: "#comparisons", label: "Comparisons" }
+];
+
+const title = "Buying Guides | Findsera";
 const description =
-  "Browse every Findsera buying guide and product roundup across gadgets, home, and kitchen.";
+  "Browse Findsera buying guides grouped by shopping intent, including budget picks, coffee gear, travel tech, desk setups, home upgrades, and product comparisons.";
 ---
 
 <Layout title={title} description={description} canonicalPath="/guides">
   <section class="section-spacing">
     <div class="container-shell">
       <span class="eyebrow">Buying guides</span>
-      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
-        All Guides
-      </h1>
-      <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
-        Browse every guide page on Findsera, from budget roundups to use-case-specific buying pages and comparison-driven picks.
-      </p>
+      <div class="mt-6 grid gap-8 lg:grid-cols-[minmax(0,0.9fr),minmax(0,1.1fr)] lg:items-end">
+        <div>
+          <h1 class="font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+            Pick a guide by shopping intent
+          </h1>
+          <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
+            Start with the situation that matches the purchase: budget, coffee, travel, desk work, home upgrades, or a
+            direct product comparison.
+          </p>
+        </div>
+        <nav class="flex flex-wrap gap-3" aria-label="Guide groups">
+          {
+            quickLinks.map((link) => (
+              <a
+                href={link.href}
+                class="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+              >
+                {link.label}
+              </a>
+            ))
+          }
+        </nav>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-16" id="start-here">
+    <div class="container-shell">
+      <SectionHeader
+        title="Start Here"
+        description="Four broad guides that cover the most common Findsera paths before you narrow the decision."
+      />
+      <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+        {
+          startHereGuides.map((guide) => (
+            <a
+              href={`/${guide.slug}`}
+              class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card hover:border-accent-500/30"
+            >
+              <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">{guide.eyebrow}</p>
+              <h2 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">{guide.title}</h2>
+              <p class="mt-3 text-sm leading-7 text-ink-700">{guide.description}</p>
+            </a>
+          ))
+        }
+      </div>
     </div>
   </section>
 
   <section class="pb-20">
-    <div class="container-shell">
-      <SectionHeader
-        title={`${guides.length} guide pages`}
-        description="These pages organize the catalog around real buying situations, price brackets, and product use cases."
-      />
-      <div class="grid gap-6 lg:grid-cols-3">
-        {guides.map((roundup) => <RoundupCard roundup={roundup} />)}
-      </div>
+    <div class="container-shell space-y-14">
+      {
+        guideGroups.map((group) => (
+          <section id={group.id} class="scroll-mt-28">
+            <SectionHeader
+              title={group.title}
+              description={`${group.description} ${group.guides.length} guides in this group.`}
+            />
+            <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+              {
+                group.guides.map((guide) => (
+                  <article class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card">
+                    <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">
+                      {guide.eyebrow}
+                    </p>
+                    <h2 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
+                      <a href={`/${guide.slug}`} class="hover:text-accent-600">
+                        {guide.title}
+                      </a>
+                    </h2>
+                    <p class="mt-3 text-sm leading-7 text-ink-700">{guide.description}</p>
+                    <div class="mt-5 flex items-center justify-between gap-4 text-sm text-ink-700">
+                      <span>{guide.productCount} products</span>
+                      <a href={`/${guide.slug}`} class="font-semibold text-ink-900 hover:text-accent-600">
+                        Read guide
+                      </a>
+                    </div>
+                  </article>
+                ))
+              }
+            </div>
+          </section>
+        ))
+      }
     </div>
   </section>
 </Layout>
