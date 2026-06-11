@@ -1,6 +1,6 @@
 # Daily maintenance report
 
-- Run date: 2026-06-10
+- Run date: 2026-06-11
 - New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
@@ -76,18 +76,7 @@
 
 ## Unused products
 
-- Amazon Basics Velvet Hangers 50-Pack (`amazon-basics-velvet-hangers-50-pack`)
-- Anker 525 Charging Station (`anker-525-charging-station`)
-- Aqara Door and Window Sensor P2 (`aqara-door-window-sensor-p2`)
-- Bodum Bistro Burr Coffee Grinder (`bodum-bistro-burr-coffee-grinder`)
-- Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
-- Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
-- Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
-- OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
-- TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
-- TP-Link Tapo P400M Outdoor Smart Plug (`tp-link-tapo-p400m-outdoor-smart-plug`)
-- Zulay Electric Milk Frother and Heater (`zulay-electric-milk-frother-heater`)
 
 ## Products missing content-map coverage
 
