@@ -54,7 +54,14 @@
       "Non-slip velvet surface",
       "Low-cost full closet reset"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "low-cost closet resets",
+      "buyIf": "Buy it if your closet feels crowded or mismatched and you want a simple, low-cost way to make shirts, jackets, and light layers hang more evenly.",
+      "skipIf": "Skip it if you need heavy-duty coat hangers, prefer wood or plastic hangers, or want hangers that let clothes slide off quickly.",
+      "whyIncluded": "Included because closet organization pages need inexpensive fixes that create visible order without tools, installation, or a full storage system.",
+      "verification": "Checked against the retailer listing path, current catalog price-check date, product tags, and related organization guides."
+    }
   },
   {
     "id": "anker-525-charging-station",
@@ -79,7 +86,14 @@
       "Front-facing USB-C charging",
       "Helps reduce desk cable clutter"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "small-desk charging cleanup",
+      "buyIf": "Buy it if your desk has several chargers or power bricks and you want one compact station for laptop accessories, phones, tablets, and everyday USB gear.",
+      "skipIf": "Skip it if you need a high-wattage USB-C charger for one demanding laptop or a surge strip with widely spaced AC outlets for bulky adapters.",
+      "whyIncluded": "Included because desk setup guides need charging products that reduce visible cable clutter while still keeping AC, USB-C, and USB-A options within reach.",
+      "verification": "Checked against the retailer listing path, current catalog price-check date, charging-use tags, and related home-office guides."
+    }
   },
   {
     "id": "anker-maggo-power-bank-10k-slim",
@@ -200,7 +214,14 @@
       "Useful for doors and cabinets",
       "Strong smart-home expansion pick"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "Matter-friendly entry sensors",
+      "buyIf": "Buy it if you are building a Matter-over-Thread smart home and want simple open-close status for doors, windows, cabinets, or basic automations.",
+      "skipIf": "Skip it if you do not have a compatible Matter or Thread setup yet, or if you only need a basic Wi-Fi sensor with no broader smart-home plan.",
+      "whyIncluded": "Included because smart-home guides need small expansion products that add useful automation signals without requiring a full security system.",
+      "verification": "Checked against the product listing path, Matter-related catalog tags, current price-check date, and related smart-home guides."
+    }
   },
   {
     "id": "arzopa-portable-monitor-15-6",
@@ -225,7 +246,14 @@
       "Simple USB-C connectivity"
     ],
     "isTrending": true,
-    "amazonUrl": "https://www.amazon.com/dp/B093GCL18V"
+    "amazonUrl": "https://www.amazon.com/dp/B093GCL18V",
+    "editorial": {
+      "bestFor": "portable second-screen work",
+      "buyIf": "Buy it if you work from a laptop while traveling, hot-desking, or moving between rooms and need extra screen space without a permanent monitor.",
+      "skipIf": "Skip it if you need color-critical display work, a high-refresh gaming monitor, or an ergonomic desk setup with a full-size adjustable screen.",
+      "whyIncluded": "Included because home-office and travel-work guides need a straightforward second-screen option for people who cannot leave a monitor fixed on one desk.",
+      "verification": "Checked against the retailer listing path, portable-work tags, current catalog price-check date, and related productivity guides."
+    }
   },
   {
     "id": "blink-mini-2-security-camera",
@@ -282,7 +310,14 @@
       "Preset timer controls",
       "Good first grinder upgrade"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "beginner burr grinding",
+      "buyIf": "Buy it if you want more consistent coffee grounds than a blade grinder can provide and want to stay below premium grinder prices.",
+      "skipIf": "Skip it if you already dial in espresso, need very fine grind control, or want a quieter, heavier grinder for daily specialty-coffee use.",
+      "whyIncluded": "Included because coffee guides need an approachable first burr grinder for buyers who are improving drip, French press, or pour-over routines.",
+      "verification": "Checked against the retailer listing path, coffee-use tags, current catalog price-check date, and related brewing guides."
+    }
   },
   {
     "id": "bonavita-variable-temperature-kettle",
@@ -307,7 +342,14 @@
       "Controlled gooseneck pour",
       "Value alternative to premium kettles"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "value pour-over temperature control",
+      "buyIf": "Buy it if you want controlled gooseneck pouring and adjustable water temperature for pour-over coffee or tea without paying for a design-led premium kettle.",
+      "skipIf": "Skip it if you care more about countertop styling, app features, or a faster general-purpose kettle than manual coffee control.",
+      "whyIncluded": "Included because coffee and tea guides need a practical temperature-control kettle that explains why gooseneck pouring matters for manual brewing.",
+      "verification": "Checked against the retailer listing path, pour-over tags, current catalog price-check date, and related coffee guides."
+    }
   },
   {
     "id": "cosori-electric-gooseneck-kettle",
@@ -332,7 +374,14 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B07T1CH2HH",
-    "sourceUrl": "https://cosori.com/products/original-electric-gooseneck-kettle-co108-nk"
+    "sourceUrl": "https://cosori.com/products/original-electric-gooseneck-kettle-co108-nk",
+    "editorial": {
+      "bestFor": "compact gooseneck control",
+      "buyIf": "Buy it if you want preset temperatures, a controlled pour, and a compact countertop footprint for coffee, tea, or small-kitchen hot-water prep.",
+      "skipIf": "Skip it if you need a large-capacity family kettle, a stovetop-only setup, or a premium kettle chosen mostly for industrial design.",
+      "whyIncluded": "Included because small-kitchen and coffee guides need an accessible electric kettle that balances pour control, presets, and countertop practicality.",
+      "verification": "Checked against the retailer listing path, coffee and tea tags, current catalog price-check date, and related brewing guides."
+    }
   },
   {
     "id": "echo-pop-smart-speaker",
@@ -421,7 +470,14 @@
       "Compact stainless-steel platform",
       "Budget precision cooking upgrade"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "low-cost kitchen precision",
+      "buyIf": "Buy it if you want more repeatable coffee dosing, baking, meal prep, or portioning without spending much or giving up drawer space.",
+      "skipIf": "Skip it if you need a lab-style scale, built-in timer modes for espresso, or a large platform for heavy mixing bowls.",
+      "whyIncluded": "Included because kitchen guides need a small precision upgrade that is easy to recommend for coffee, baking, and everyday cooking accuracy.",
+      "verification": "Checked against the retailer listing path, precision-cooking tags, current catalog price-check date, and related kitchen guides."
+    }
   },
   {
     "id": "eufy-11s-max-robot-vacuum",
@@ -446,7 +502,14 @@
       "Straightforward controls",
       "Good fit for first robot-vacuum buyers"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "simple apartment floor maintenance",
+      "buyIf": "Buy it if you want scheduled floor cleanup in an apartment or smaller home and prefer straightforward controls over advanced mapping or a bulky dock.",
+      "skipIf": "Skip it if you need self-emptying, room-by-room mapping, mopping, or strong navigation around complex floor plans.",
+      "whyIncluded": "Included because home guides need a first robot-vacuum option for buyers who want easier maintenance without jumping into high-end smart vacuum systems.",
+      "verification": "Checked against the retailer listing path, cleaning and apartment tags, current catalog price-check date, and related home guides."
+    }
   },
   {
     "id": "fellow-stagg-ekg-electric-kettle",
@@ -503,7 +566,14 @@
       "App and voice control",
       "Easy atmosphere upgrade for rooms"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "low-cost room lighting scenes",
+      "buyIf": "Buy it if you want a quick lighting change for a bedroom, desk, shelf, or gaming area and value app-controlled color scenes over permanent fixtures.",
+      "skipIf": "Skip it if you want architectural lighting, a hardwired setup, or neutral task lighting for accurate work and reading.",
+      "whyIncluded": "Included because room and gift guides need an inexpensive lighting pick that changes the feel of a space without tools or installation planning.",
+      "verification": "Checked against the retailer listing path, lighting tags, current catalog price-check date, and related smart-home guides."
+    }
   },
   {
     "id": "govee-smart-desk-lamp-pro",
@@ -560,7 +630,14 @@
       "App-controlled color scenes",
       "Good gift for media rooms"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "simple TV bias lighting",
+      "buyIf": "Buy it if you want a low-cost way to add backlighting, color scenes, or a softer TV-viewing setup without installing wall fixtures.",
+      "skipIf": "Skip it if you need accurate camera-synced lighting, built-in TV integration, or a premium home-theater lighting system.",
+      "whyIncluded": "Included because entertainment and gift guides need an under-$50 upgrade that is easy to understand and works for many small media spaces.",
+      "verification": "Checked against the retailer listing path, TV-lighting tags, current catalog price-check date, and related home guides."
+    }
   },
   {
     "id": "instant-pot-duo-7-in-1-6-quart",
@@ -585,7 +662,14 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B00FLYWNYQ",
-    "sourceUrl": "https://instantpot.com/products/instant-pot-duo-6-quart-multi-use-pressure-cooker-v5"
+    "sourceUrl": "https://instantpot.com/products/instant-pot-duo-6-quart-multi-use-pressure-cooker-v5",
+    "editorial": {
+      "bestFor": "weeknight multi-cooker meals",
+      "buyIf": "Buy it if you want one countertop appliance for pressure cooking, rice, soups, batch prep, and simple weeknight meals in a 6-quart size.",
+      "skipIf": "Skip it if you dislike countertop appliances, already use separate tools for each cooking job, or need a smaller unit for one-person kitchens.",
+      "whyIncluded": "Included because kitchen guides need a familiar multi-cooker that solves several meal-prep jobs without requiring a full cookware upgrade.",
+      "verification": "Checked against the retailer listing path, cooking tags, current catalog price-check date, and related kitchen guides."
+    }
   },
   {
     "id": "joseph-joseph-drawerstore-cutlery-organizer",
@@ -610,7 +694,14 @@
     ],
     "isTrending": true,
     "sourceUrl": "https://us.josephjoseph.com/products/drawerstore-compact-cutlery-organiser-gray",
-    "amazonUrl": "https://www.amazon.com/dp/B072R6CLRC"
+    "amazonUrl": "https://www.amazon.com/dp/B072R6CLRC",
+    "editorial": {
+      "bestFor": "narrow kitchen drawer organization",
+      "buyIf": "Buy it if your cutlery drawer is narrow, crowded, or hard to scan and you want a quick storage improvement without replacing the drawer insert.",
+      "skipIf": "Skip it if your drawers are very shallow, you prefer a flat tray layout, or you need storage for oversized utensils and cooking tools.",
+      "whyIncluded": "Included because organization guides need small-space products that make a crowded kitchen easier to use with a low price and no installation.",
+      "verification": "Checked against the retailer listing path, storage tags, current catalog price-check date, and related organization guides."
+    }
   },
   {
     "id": "kasa-smart-plug-mini-4-pack",
@@ -699,7 +790,14 @@
       "Useful on stove, oven, or grill",
       "Strong evergreen kitchen gift"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "durable everyday searing",
+      "buyIf": "Buy it if you want an affordable pan for searing, baking, roasting, stovetop-to-oven meals, and long-term kitchen use.",
+      "skipIf": "Skip it if you need a lightweight pan, dishwasher cleanup, or low-maintenance nonstick cooking for delicate foods.",
+      "whyIncluded": "Included because cooking and gift guides need an evergreen kitchen item with clear durability, broad usefulness, and easy value to explain.",
+      "verification": "Checked against the retailer listing path, cooking and grilling tags, current catalog price-check date, and related kitchen guides."
+    }
   },
   {
     "id": "logitech-mx-anywhere-3s",
@@ -820,7 +918,14 @@
       "Useful app guidance",
       "Great for grilling and roasting"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "wireless grill temperature tracking",
+      "buyIf": "Buy it if you roast or grill often and want app-guided temperature tracking without keeping a wired probe display next to the oven or grill.",
+      "skipIf": "Skip it if you only need a quick spot-check thermometer or prefer a lower-cost wired probe for occasional cooking.",
+      "whyIncluded": "Included because grilling and roasting guides need a wireless option for cooks who want more guidance than a basic instant-read thermometer provides.",
+      "verification": "Checked against the retailer listing path, grilling and precision tags, current catalog price-check date, and related cooking guides."
+    }
   },
   {
     "id": "nespresso-aeroccino-4-milk-frother",
@@ -845,7 +950,14 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B0BBH5B7MD",
-    "sourceUrl": "https://www.nespresso.com/us/en/order/accessories/vertuo/aeroccino-4-milk-frother"
+    "sourceUrl": "https://www.nespresso.com/us/en/order/accessories/vertuo/aeroccino-4-milk-frother",
+    "editorial": {
+      "bestFor": "automatic milk frothing",
+      "buyIf": "Buy it if you make latte-style drinks often and want a cleaner, more automatic frothing routine than a handheld wand.",
+      "skipIf": "Skip it if you only froth milk occasionally, need the lowest-cost option, or prefer the control of a steam wand on an espresso machine.",
+      "whyIncluded": "Included because coffee gift and upgrade guides need a simple countertop frother for readers who want better milk texture without buying an espresso setup.",
+      "verification": "Checked against the retailer listing path, coffee tags, current catalog price-check date, and related brewing guides."
+    }
   },
   {
     "id": "omoton-adjustable-laptop-stand",
@@ -902,7 +1014,14 @@
     ],
     "isTrending": true,
     "amazonUrl": "https://www.amazon.com/dp/B07CSKGLMM",
-    "sourceUrl": "https://www.oxo.com/conical-burr-coffee-grinder.html"
+    "sourceUrl": "https://www.oxo.com/conical-burr-coffee-grinder.html",
+    "editorial": {
+      "bestFor": "home coffee grind consistency",
+      "buyIf": "Buy it if you want a clear upgrade from blade grinding for drip, pour-over, or cold brew and value a simple hopper-style countertop grinder.",
+      "skipIf": "Skip it if you need espresso-focused adjustment, a compact travel grinder, or a premium grinder chosen for very quiet operation.",
+      "whyIncluded": "Included because coffee guides need a recognizable mid-range grinder that helps readers understand when burr consistency is worth paying for.",
+      "verification": "Checked against the retailer listing path, coffee and brewing tags, current catalog price-check date, and related coffee guides."
+    }
   },
   {
     "id": "oxo-good-grips-pop-container-4-4qt",
@@ -927,7 +1046,14 @@
       "Stackable pantry shape",
       "Good small-kitchen organization pick"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "pantry and counter organization",
+      "buyIf": "Buy it if you want a large stackable container for flour, sugar, pasta, snacks, or pantry staples and care about a cleaner shelf layout.",
+      "skipIf": "Skip it if you need a full matching storage set, glass containers, or a container sized for very narrow cabinets.",
+      "whyIncluded": "Included because pantry guides need a practical storage pick that solves clutter, visibility, and freshness in a way readers can apply immediately.",
+      "verification": "Checked against the retailer listing path, pantry organization tags, current catalog price-check date, and related kitchen guides."
+    }
   },
   {
     "id": "sandisk-extreme-portable-ssd-1tb",
@@ -1048,7 +1174,14 @@
       "Person detection and motion tracking",
       "Strong budget security-camera pick"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "budget outdoor security views",
+      "buyIf": "Buy it if you want an affordable outdoor camera with pan-and-tilt coverage for a driveway, patio, side yard, or entry area.",
+      "skipIf": "Skip it if you need battery-only installation, local professional monitoring, or a complete multi-camera security system.",
+      "whyIncluded": "Included because smart-home guides need a low-cost outdoor camera option that gives readers a clear first step beyond indoor-only devices.",
+      "verification": "Checked against the retailer listing path, security-camera tags, current catalog price-check date, and related smart-home guides."
+    }
   },
   {
     "id": "thermoworks-thermapen-one",
@@ -1073,7 +1206,14 @@
       "Pro-level accuracy for serious cooks",
       "Useful across grilling and roasting"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "fast precision temperature checks",
+      "buyIf": "Buy it if you cook meat, bake, grill, or roast often enough that quick, accurate temperature readings would prevent overcooking and guesswork.",
+      "skipIf": "Skip it if you only need an occasional budget thermometer or want a leave-in probe that tracks a cook from start to finish.",
+      "whyIncluded": "Included because serious cooking guides need a premium instant-read option that clearly explains what the higher price is buying.",
+      "verification": "Checked against the brand or retailer listing path, precision-cooking tags, current catalog price-check date, and related kitchen guides."
+    }
   },
   {
     "id": "tp-link-tapo-p125m-matter-smart-plug",
@@ -1098,7 +1238,14 @@
       "Compact outlet-friendly body",
       "Good starter automation product"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "Matter smart-plug starters",
+      "buyIf": "Buy it if you want a compact plug for lamps, fans, or small appliances and are trying to keep a smart-home setup Matter-compatible.",
+      "skipIf": "Skip it if you need outdoor use, high-load appliance control, energy monitoring, or a plug that works without any app or smart-home setup.",
+      "whyIncluded": "Included because smart-home guides need a low-risk starter automation product that is easier to understand than cameras, sensors, or hubs.",
+      "verification": "Checked against the retailer listing path, Matter and smart-plug tags, current catalog price-check date, and related smart-home guides."
+    }
   },
   {
     "id": "tp-link-tapo-p400m-outdoor-smart-plug",
@@ -1123,7 +1270,14 @@
       "Outdoor-rated smart-home control",
       "Useful for seasonal lighting"
     ],
-    "isTrending": false
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "outdoor plug-in automation",
+      "buyIf": "Buy it if you want app or voice control for patio lights, holiday lights, fountains, or other outdoor plug-in routines with two controlled outlets.",
+      "skipIf": "Skip it if you only need an indoor plug, hardwired outdoor lighting, or a weatherproof timer with no smart-home app involved.",
+      "whyIncluded": "Included because outdoor smart-home guides need a practical bridge between simple timers and more permanent lighting automation.",
+      "verification": "Checked against the retailer listing path, outdoor and Matter tags, current catalog price-check date, and related smart-home guides."
+    }
   },
   {
     "id": "ugreen-nexode-100w-usb-c-charger",
@@ -1212,7 +1366,14 @@
       "Good latte-style drink upgrade",
       "More hands-off than wand frothers"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "heated milk drinks under $50",
+      "buyIf": "Buy it if you want automatic hot or cold froth for latte-style drinks and prefer a hands-off countertop tool over a small wand.",
+      "skipIf": "Skip it if you need premium milk texture, dishwasher-simple cleanup for every part, or the smallest possible coffee accessory.",
+      "whyIncluded": "Included because coffee gift guides need an affordable automatic frother that feels like a real upgrade without crossing into espresso-machine territory.",
+      "verification": "Checked against the retailer listing path, coffee and gift tags, current catalog price-check date, and related brewing guides."
+    }
   },
   {
     "id": "zulay-milk-frother-wand",
@@ -1237,6 +1398,13 @@
       "Compact drawer-friendly storage",
       "Quick cleanup for daily drinks"
     ],
-    "isTrending": true
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "tiny milk frothing upgrades",
+      "buyIf": "Buy it if you want a very low-cost way to froth milk, mix matcha, blend protein drinks, or improve daily coffee without adding countertop clutter.",
+      "skipIf": "Skip it if you want heated milk, automatic frothing, or a sturdier countertop appliance for frequent latte-style drinks.",
+      "whyIncluded": "Included because coffee and under-$50 guides need a small, easy-to-gift accessory that solves a common drink-prep job with minimal setup.",
+      "verification": "Checked against the retailer listing path, coffee and under-$50 tags, current catalog price-check date, and related gift guides."
+    }
   }
 ]

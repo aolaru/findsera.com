@@ -77,11 +77,14 @@ const cons = [
 const trustReasons = [
   editorial?.verification,
   "Price-check date is visible on the page so readers can judge how fresh the listing context is.",
+  "The page explains buying fit and tradeoffs instead of only repeating retailer specifications.",
   "The product sits inside related buying guides, not just a standalone affiliate card.",
   product.affiliateMode === "exact"
-    ? "This page links to a verified Amazon product URL, not a generic search results page."
+    ? "This page links to a specific Amazon product URL, not a generic search results page."
     : "This page uses Amazon search results when a stable product listing still needs verification."
 ].filter((item): item is string => Boolean(item));
+const reviewScope =
+  "Findsera checks public product details, retailer path, price context, related guides, and category fit. The page does not claim hands-on testing or lab measurements unless that is stated directly.";
 
 const faqItems = [
   {
@@ -368,6 +371,7 @@ const structuredData = {
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
             Clearer buying context than a generic product listing
           </h2>
+          <p class="mt-4 text-sm leading-7 text-ink-700">{reviewScope}</p>
           <ul class="mt-5 space-y-3 text-sm leading-7 text-ink-700">
             {trustReasons.map((item) => <li>- {item}</li>)}
           </ul>
