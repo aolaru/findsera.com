@@ -173,12 +173,12 @@ const structuredData = {
               Last updated {formattedUpdatedAt}
             </span>
             <span class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">
-              Methodology included
+              Shortlist reviewed
             </span>
             {
               editorial && (
                 <span class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">
-                  Editorial notes added
+                  Decision notes
                 </span>
               )
             }
@@ -223,7 +223,7 @@ const structuredData = {
         </div>
 
         <aside class="rounded-[2rem] border border-black/6 bg-white p-6 shadow-card">
-          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Page snapshot</p>
+          <p class="text-sm font-semibold uppercase tracking-[0.18em] text-accent-600">Guide snapshot</p>
           <dl class="mt-5 space-y-4 text-sm text-ink-700">
             <div>
               <dt class="font-semibold text-ink-900">Updated</dt>
@@ -259,12 +259,12 @@ const structuredData = {
       <AffiliateDisclosure />
       <div class="grid gap-6 lg:grid-cols-3">
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Recently reviewed</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Review status</p>
           <h2 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
             Refreshed for easier shopping
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
-            This guide was last reviewed on {formattedUpdatedAt}. The shortlist currently includes {products.length}
+            Last reviewed on {formattedUpdatedAt}. The shortlist includes {products.length}
             products, with {exactLinkCount} direct retailer product links where available.{" "}
             {editorial?.reviewNote}
           </p>
@@ -284,10 +284,10 @@ const structuredData = {
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">More ways to compare</p>
           <h2 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
-            Connected to related guides
+            More useful angles
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
-            {editorial?.audience ?? "Each pick can appear in budget, gift, comparison, or use-case guides so you can narrow the decision from more than one angle."}
+            {editorial?.audience ?? "Compare the same products by budget, gift fit, setup effort, or the daily routine they are meant to improve."}
           </p>
         </article>
       </div>
@@ -304,7 +304,7 @@ const structuredData = {
           <p class="mt-4 text-sm leading-7 text-ink-700">
             {
               editorial?.reviewNote ??
-                "This page is built around products with a clear use case and visible differences. Each pick is here because it covers a distinct buyer scenario."
+                "The shortlist favors products with clear jobs and visible differences, so each option covers a distinct buyer scenario."
             }
           </p>
           <ul class="mt-5 space-y-3 text-sm text-ink-700">
@@ -321,7 +321,7 @@ const structuredData = {
         <ProductComparisonTable
           products={products}
           title="Compare price, fit, and tradeoffs"
-          description="A quick spec-style view of the products in this guide, including the strongest use case, main reason to buy, current catalog price, and last price-check date."
+          description="A quick spec-style view of the products in this guide, including the strongest use case, main reason to buy, current listed price, and last price-check date."
         />
       </div>
       {
@@ -371,7 +371,7 @@ const structuredData = {
           <p class="mt-4 text-sm leading-7 text-ink-700">
             {
               editorial?.audience ??
-                "This page is best for readers who already know the use case and want a confident shortlist, not an endless grid of barely differentiated products. The goal is to help you compare quickly, understand the tradeoffs, and choose the next product page to inspect."
+                "Best for shoppers who already know the use case and want a confident shortlist, not an endless grid of barely differentiated products."
             }
           </p>
         </article>
@@ -386,7 +386,7 @@ const structuredData = {
               (editorial?.whatChecked ?? editorial?.selectionCriteria ?? [
                 "Products are chosen for a clear use case, not to inflate the list length.",
                 "Preference goes to products that are easy to compare and act on.",
-                "We keep pages tight so readers can compare options quickly and reach a buying decision faster."
+                "The shortlist stays tight so differences are easier to understand."
               ]).map((criterion) => <li>- {criterion}</li>)
             }
           </ul>
@@ -406,7 +406,7 @@ const structuredData = {
               <p class="mt-2 text-sm font-semibold text-ink-900">Direct product links preferred</p>
             </div>
             <div class="rounded-[1.5rem] bg-sand-50 p-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Page focus</p>
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Shortlist</p>
               <p class="mt-2 text-sm font-semibold text-ink-900">{products.length} tightly matched picks</p>
             </div>
           </div>
@@ -418,7 +418,7 @@ const structuredData = {
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
             If you want the simplest path through this guide, begin with the overall pick. It is the most
-            broadly useful recommendation on the page and the fastest way to act without over-comparing.
+            broadly useful recommendation in the shortlist and the fastest way to act without over-comparing.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a
@@ -454,7 +454,7 @@ const structuredData = {
                   </p>
                 </div>
                 <h3 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
-                  Why {product.title} made the list
+                  Why {product.title} stands out
                 </h3>
                 <p class="mt-3 text-sm leading-7 text-ink-700">
                   {product.editorial?.whyIncluded ?? product.description}

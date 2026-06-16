@@ -47,7 +47,7 @@ const categoryEditorial: Record<
 > = {
   gadgets: {
     buyerNeed:
-      "Gadget pages should help readers separate genuinely useful accessories from novelty tech. The strongest picks here support charging, travel, small-desk work, or everyday carry without demanding a complicated setup.",
+      "Gadget picks should help shoppers separate genuinely useful accessories from novelty tech. The strongest options support charging, travel, small-desk work, or everyday carry without demanding a complicated setup.",
     selectionFocus:
       "We look for products that solve repeat problems: a phone that runs low before the day ends, a laptop setup that needs a second screen, or a travel bag that needs lighter accessories.",
     tradeoff:
@@ -57,7 +57,7 @@ const categoryEditorial: Record<
   },
   kitchen: {
     buyerNeed:
-      "Kitchen pages focus on repeatable routines rather than one-off gadgets. The best products make coffee, cooking, measuring, or prep more consistent without adding too many steps.",
+      "Kitchen picks focus on repeatable routines rather than one-off gadgets. The best products make coffee, cooking, measuring, or prep more consistent without adding too many steps.",
     selectionFocus:
       "We favor tools that improve the daily result: better pour control, easier milk texture, accurate measurements, reliable temperature checks, or more predictable batch cooking.",
     tradeoff:
@@ -67,7 +67,7 @@ const categoryEditorial: Record<
   },
   home: {
     buyerNeed:
-      "Home pages cover comfort, organization, smart-home basics, and small-apartment upgrades. The goal is to highlight products that improve a room without turning it into a project.",
+      "Home picks cover comfort, organization, smart-home basics, and small-apartment upgrades. The goal is to highlight products that improve a room without turning it into a project.",
     selectionFocus:
       "We prioritize products with clear jobs: cleaner air near a desk, better lighting, easier storage, simple voice control, or small devices that make a room more convenient.",
     tradeoff:
@@ -102,7 +102,7 @@ const structuredData = {
   <section class="section-spacing">
     <div class="container-shell">
       <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/category/${slug}`, label }]} />
-      <span class="eyebrow">Category page</span>
+      <span class="eyebrow">Category</span>
       <div class="mt-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div class="max-w-3xl">
           <h1 class="font-serif text-5xl font-semibold tracking-tight text-ink-900">{label}</h1>
@@ -122,7 +122,7 @@ const structuredData = {
     <div class="container-shell">
       <SectionHeader
         title={`Best ${categoryLabels[slug]} Products`}
-        description={`${categoryDescriptions[slug]} Use the shortlist below to compare practical fits before opening a product page or guide.`}
+        description={`${categoryDescriptions[slug]} Use the shortlist below to compare practical fits before opening full product details or a buying guide.`}
       />
       <div class="mb-8 grid gap-6 lg:grid-cols-3">
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
@@ -166,7 +166,7 @@ const structuredData = {
         <div class="container-shell">
           <SectionHeader
             title={`${label} Topics`}
-            description="These topic pages help broader category pages branch into narrower buying situations."
+            description="These topics narrow the category into more specific buying situations."
           />
           <TopicBadgeList topics={topics.map((topic) => ({ slug: topic.slug, title: topic.title }))} />
         </div>
@@ -186,7 +186,7 @@ const structuredData = {
           {
             question: `Why are some ${label.toLowerCase()} products also in buying guides?`,
             answer:
-              "A category page gives the broad view, while guides narrow the decision around price, use case, room, or a direct product comparison."
+              "Categories give the broad view, while guides narrow the decision around price, use case, room, or a direct product comparison."
           }
         ]}
       />

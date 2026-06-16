@@ -14,7 +14,7 @@ const { product, useCase, secondaryUseCase, priceTier } = Astro.props;
 const rows = [
   ["Brand", product.brand],
   ["Category", categoryLabels[product.category]],
-  ["Current catalog price", product.priceLabel],
+  ["Current listed price", product.priceLabel],
   ["Price tier", priceTier],
   ...(product.editorial ? [["Best fit", product.editorial.bestFor]] : []),
   ["Primary use", useCase],
@@ -32,7 +32,7 @@ const rows = [
     Key details before you open Amazon
   </h2>
   <p class="mt-3 text-sm leading-7 text-ink-700">
-    This table keeps the practical buying details visible in one place so the page is useful before you open a retailer listing.
+    Keep the practical details together before checking the retailer listing.
   </p>
   <div class="mt-5 max-w-full overflow-x-auto">
     <table class="min-w-full text-left text-sm text-ink-700">

@@ -25,22 +25,22 @@ const secondaryProduct = products[1];
 const topicName = topic.title.toLowerCase();
 const pageDescription =
   topic.productCount > 0
-    ? `${topic.title} products and related Findsera guides for comparing practical picks without opening a broad marketplace search.`
-    : `${topic.title} buying guides and Findsera roundups organized around practical shopping situations.`;
+    ? `${topic.title} products and buying guides for comparing practical picks by need, price, and everyday fit.`
+    : `${topic.title} buying guides organized around practical shopping situations.`;
 const comparisonProducts = products.slice(0, 5);
 const faqItems = [
   {
     question: `What does the ${topic.title} topic cover?`,
     answer:
       topic.productCount > 0
-        ? `It collects Findsera product pages connected to ${topicName}, so readers can compare a smaller set of relevant picks before moving into a guide or retailer listing.`
-        : `It collects Findsera buying guides connected to ${topicName}, so readers can start from a practical shopping situation instead of a generic product grid.`
+        ? `It brings together ${topicName} products with similar buying jobs, so you can compare a smaller set before checking prices or variants.`
+        : `It brings together ${topicName} buying guides so you can start from a practical shopping situation instead of a generic product grid.`
   },
   {
     question: `How should I use this ${topic.title} page?`,
     answer: leadProduct
-      ? `Start with ${leadProduct.title}${secondaryProduct ? ` and compare it with ${secondaryProduct.title}` : ""}, then use the related guides when you need a budget, room, or use-case-specific shortlist.`
-      : "Start with the related guides below and choose the page that best matches your budget, room, routine, or comparison question."
+      ? `Start with ${leadProduct.title}${secondaryProduct ? ` and compare it with ${secondaryProduct.title}` : ""}, then narrow by budget, room, routine, or tradeoff.`
+      : "Start with the guide that best matches your budget, room, routine, or comparison question."
   }
 ];
 ---
@@ -79,10 +79,10 @@ const faqItems = [
   <section class="pb-10">
     <div class="container-shell grid gap-6 lg:grid-cols-3">
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Why this topic exists</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Where to start</p>
         <p class="mt-4 text-sm leading-7 text-ink-700">
-          This page groups nearby product pages and guides so readers can move from a broad idea to a practical
-          shortlist. It is meant for discovery and comparison, not for ranking every possible product in the category.
+          Start with the product or guide that matches the job you need solved, then compare price, setup effort, and
+          the main tradeoff before opening a retailer listing.
         </p>
       </article>
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
@@ -106,7 +106,7 @@ const faqItems = [
     <div class="container-shell">
       <SectionHeader
         title="Products"
-        description={`Products connected to ${topicName} across the Findsera catalog.`}
+        description={`Products connected to ${topicName}, grouped for faster comparison.`}
       />
       {
         products.length > 0 ? (
@@ -129,7 +129,7 @@ const faqItems = [
           <ProductComparisonTable
             products={comparisonProducts}
             title={`Compare ${topic.title} products`}
-            description={`A compact comparison of the most relevant ${topicName} products, including price context, category fit, and current product-page details.`}
+            description={`A compact comparison of the most relevant ${topicName} products, including price context, category fit, and current buying details.`}
           />
         </div>
       </section>

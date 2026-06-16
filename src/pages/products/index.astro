@@ -19,18 +19,18 @@ const tags = getAllProductTags();
 
 const title = "All Products | Findsera";
 const description =
-  "Browse the full Findsera product catalog across gadgets, home, and kitchen, with filters for category, price range, trend status, and use case.";
+  "Browse Findsera products across gadgets, home, and kitchen, with filters for category, price range, trend status, and use case.";
 ---
 
 <Layout title={title} description={description} canonicalPath="/products">
   <section class="section-spacing">
     <div class="container-shell">
-      <span class="eyebrow">Product catalog</span>
+      <span class="eyebrow">Products</span>
       <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
         All Products
       </h1>
       <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
-        Explore every live Findsera product page across gadgets, kitchen, and home, then narrow the catalog by price, trend status, or use case.
+        Explore Findsera products across gadgets, kitchen, and home, then narrow the list by price, trend status, or use case.
       </p>
     </div>
   </section>
@@ -39,7 +39,7 @@ const description =
     <div class="container-shell">
       <SectionHeader
         title={`${products.length} live products`}
-        description="Every product listed below has its own detail page, visible price-check date, and a path into related guides or category browsing."
+        description="Every product listed below has decision notes, a visible price-check date, and related ways to compare."
       />
 
       <div class="rounded-[1.75rem] border border-black/6 bg-white p-5 shadow-card">

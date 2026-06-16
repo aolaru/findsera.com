@@ -76,15 +76,15 @@ const cons = [
 ];
 const trustReasons = [
   editorial?.verification,
-  "Price-check date is visible on the page so readers can judge how fresh the listing context is.",
-  "The page explains buying fit and tradeoffs instead of only repeating retailer specifications.",
-  "The product sits inside related buying guides, not just a standalone affiliate card.",
+  `Price was last checked on ${formattedUpdatedAt}, so the listing context is easy to judge.`,
+  "Buying notes focus on fit, tradeoffs, and everyday use instead of only repeating retailer specs.",
+  "Nearby alternatives and comparison guides are linked below when they help narrow the decision.",
   product.affiliateMode === "exact"
-    ? "This page links to a specific Amazon product URL, not a generic search results page."
-    : "This page uses Amazon search results when a stable product listing still needs verification."
+    ? "The Amazon button opens a specific product listing."
+    : "The Amazon button opens search results so you can verify seller, variant, and price."
 ].filter((item): item is string => Boolean(item));
 const reviewScope =
-  "Findsera checks public product details, retailer path, price context, related guides, and category fit. The page does not claim hands-on testing or lab measurements unless that is stated directly.";
+  "Scope: public product details, retailer links, price context, and nearby alternatives. Hands-on testing or lab measurements are only included when directly described.";
 
 const faqItems = [
   {
@@ -95,10 +95,10 @@ const faqItems = [
   },
   {
     question: `When was the ${product.title} price last checked?`,
-    answer: `The catalog entry for ${product.title} was last checked on ${formattedUpdatedAt}. Findsera keeps the latest manual check date visible because Amazon prices can move quickly.`
+    answer: `${product.title} was last checked on ${formattedUpdatedAt}. Amazon prices can move quickly, so confirm the current total, seller, and delivery details before buying.`
   },
   {
-    question: `Does this page link directly to Amazon?`,
+    question: `Does ${product.title} link directly to Amazon?`,
     answer: product.affiliateMode === "exact"
       ? `Yes. This product currently points to a specific Amazon product listing.`
       : `This product currently points to Amazon search results so readers can confirm the current listing, seller, variants, and price.`
@@ -106,7 +106,7 @@ const faqItems = [
 ];
 
 const pageTitle = `${product.title} Buying Guide, Price, and Alternatives | Findsera`;
-const pageDescription = `${product.description} See price context, decision notes, related buying guides, and the Amazon path for ${product.title}.`;
+const pageDescription = `${product.description} See price context, decision notes, alternatives, and the current retailer path for ${product.title}.`;
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -248,7 +248,7 @@ const structuredData = {
             <p class="mt-3 text-sm leading-7 text-ink-700">
               {
                 editorial?.buyIf ??
-                  `${product.title} is the stronger pick when you care most about ${useCase.toLowerCase()} and want something more intentional than a broad marketplace browse.`
+                  `${product.title} is strongest when ${useCase.toLowerCase()} matters more than chasing a random bestseller.`
               }
             </p>
           </div>
@@ -292,7 +292,7 @@ const structuredData = {
           <p class="mt-4 text-sm leading-7 text-ink-700">
             {
               editorial?.whyIncluded ??
-                `The value of ${product.title} is not just the feature list. It is a stronger fit for buyers who already know the job this product needs to do and want a more reliable option than a generic marketplace search.`
+                `${product.title} is most useful when the job is clear and the tradeoff is acceptable. It should solve a real routine, not just add another spec to compare.`
             }
           </p>
           {
@@ -369,7 +369,7 @@ const structuredData = {
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Why trust this pick</p>
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
-            Clearer buying context than a generic product listing
+            More context than a retailer listing alone
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">{reviewScope}</p>
           <ul class="mt-5 space-y-3 text-sm leading-7 text-ink-700">
@@ -384,8 +384,8 @@ const structuredData = {
     <section class="pb-10">
       <div class="container-shell">
         <SectionHeader
-          title="Guides that include this product"
-          description={`Use these buying guides to see where ${product.title} fits against nearby alternatives and stronger use-case-specific picks.`}
+          title="Where else it fits"
+          description={`Compare ${product.title} with nearby picks when budget, room, routine, or gift fit matters.`}
         />
         <div class="grid gap-6 md:grid-cols-2">
           {relatedRoundups.map((roundup) => <RoundupCard roundup={roundup} />)}
@@ -399,7 +399,7 @@ const structuredData = {
       <div class="container-shell">
         <SectionHeader
           title="Similar products"
-          description="Nearby alternatives from the same category or use-case neighborhood."
+          description="Nearby alternatives from the same category or shopping need."
         />
         <div class="mb-6 grid gap-4 lg:grid-cols-3">
           {relatedProducts.map((entry) => (
@@ -418,7 +418,7 @@ const structuredData = {
           <ProductComparisonTable
             products={[product, ...relatedProducts]}
             title="Compare this product with nearby alternatives"
-            description={`A spec-style view of ${product.title} against similar products from the same category or use-case neighborhood.`}
+            description={`A spec-style view of ${product.title} against similar products from the same category or shopping need.`}
           />
         </div>
         <div class="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
