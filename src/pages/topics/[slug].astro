@@ -25,8 +25,8 @@ const secondaryProduct = products[1];
 const topicName = topic.title.toLowerCase();
 const pageDescription =
   topic.productCount > 0
-    ? `${topic.title} products and buying guides for comparing practical picks by need, price, and everyday fit.`
-    : `${topic.title} buying guides organized around practical shopping situations.`;
+    ? `${topic.title} products and shopping roundups for comparing practical picks by need, price, and everyday fit.`
+    : `${topic.title} shopping roundups organized around practical buying situations.`;
 const comparisonProducts = products.slice(0, 5);
 const faqItems = [
   {
@@ -34,13 +34,13 @@ const faqItems = [
     answer:
       topic.productCount > 0
         ? `It brings together ${topicName} products with similar buying jobs, so you can compare a smaller set before checking prices or variants.`
-        : `It brings together ${topicName} buying guides so you can start from a practical shopping situation instead of a generic product grid.`
+        : `It brings together ${topicName} shopping roundups so you can start from a practical buying situation instead of a generic product grid.`
   },
   {
-    question: `How should I use this ${topic.title} page?`,
+    question: `Where should I start with ${topic.title}?`,
     answer: leadProduct
       ? `Start with ${leadProduct.title}${secondaryProduct ? ` and compare it with ${secondaryProduct.title}` : ""}, then narrow by budget, room, routine, or tradeoff.`
-      : "Start with the guide that best matches your budget, room, routine, or comparison question."
+      : "Start with the result that best matches your budget, room, routine, or comparison question."
   }
 ];
 ---
