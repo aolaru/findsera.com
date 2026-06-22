@@ -536,12 +536,13 @@
     "description": "Precision Cooking guides, products, and roundup pages on Findsera.",
     "productIds": [],
     "roundupSlugs": [
+      "best-grilling-thermometers-for-home-cooks",
       "best-kitchen-tools-for-precision-cooking",
       "meater-plus-vs-thermapen-one"
     ],
     "categoryCounts": {},
     "productCount": 0,
-    "roundupCount": 2
+    "roundupCount": 3
   },
   {
     "slug": "productivity",
