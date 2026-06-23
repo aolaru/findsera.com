@@ -1,9 +1,9 @@
 # Daily maintenance report
 
-- Run date: 2026-06-22
+- Run date: 2026-06-23
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 1
+- New guides added: 0
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 3
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- Best Grilling Thermometers for Home Cooks (`best-grilling-thermometers-for-home-cooks`)
+- None
 
 ## Price checks to refresh
 
