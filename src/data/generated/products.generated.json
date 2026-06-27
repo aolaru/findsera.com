@@ -288,6 +288,42 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "baratza-encore-esp-coffee-grinder",
+    "title": "Baratza Encore ESP Coffee Grinder",
+    "brand": "Baratza",
+    "category": "kitchen",
+    "price": 199.95,
+    "image": "/images/products/baratza-encore-esp-coffee-grinder.jpg",
+    "description": "A home burr grinder built for both espresso and filter coffee, useful when buyers want one compact grinder before committing to separate brewing setups.",
+    "sourceUrl": "https://www.baratza.com/en-us/product/encoretm-esp-zcg495",
+    "priceCheckedAt": "2026-06-27",
+    "amazonUrl": "https://www.amazon.com/dp/B0BW272XCV",
+    "amazonQuery": "Baratza Encore ESP Coffee Grinder",
+    "tags": [
+      "coffee",
+      "grinding",
+      "espresso",
+      "countertop"
+    ],
+    "highlights": [
+      "Grinds for espresso and filter coffee",
+      "Compact countertop footprint",
+      "Useful upgrade after basic coffee gear"
+    ],
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "one-grinder coffee upgrades",
+      "buyIf": "Buy it if you want one grinder that can handle espresso-style dialing and everyday filter coffee without moving into prosumer pricing.",
+      "skipIf": "Skip it if you only brew pre-ground coffee, need a very quiet grinder, or want a premium espresso grinder with heavier metal construction.",
+      "whyIncluded": "A practical step-up grinder for home coffee buyers who have outgrown blade grinders or inconsistent entry-level burr grinders.",
+      "verification": "Brand details, Amazon listing, price date, and grinder-use fit were reviewed."
+    },
+    "slug": "baratza-encore-esp-coffee-grinder",
+    "priceLabel": "$199.95",
+    "affiliateUrl": "https://www.amazon.com/dp/B0BW272XCV?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "blink-mini-2-security-camera",
     "title": "Blink Mini 2 Security Camera",
     "brand": "Blink",
@@ -465,6 +501,42 @@
     "slug": "echo-pop-smart-speaker",
     "priceLabel": "$39.99",
     "affiliateUrl": "https://www.amazon.com/dp/B09ZXJDSL5?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
+    "id": "elgato-stream-deck-neo",
+    "title": "Elgato Stream Deck Neo",
+    "brand": "Elgato",
+    "category": "gadgets",
+    "price": 99.99,
+    "image": "/images/products/elgato-stream-deck-neo.jpg",
+    "description": "A compact shortcut controller for calls, apps, creative tools, and repeat desktop actions when a keyboard shortcut sheet is not enough.",
+    "sourceUrl": "https://www.elgato.com/us/en/p/stream-deck-neo",
+    "priceCheckedAt": "2026-06-27",
+    "amazonUrl": "https://www.amazon.com/dp/B0CVY4566H",
+    "amazonQuery": "Elgato Stream Deck Neo",
+    "tags": [
+      "office",
+      "productivity",
+      "desk setup",
+      "streaming"
+    ],
+    "highlights": [
+      "Eight customizable shortcut keys",
+      "Compact desk-friendly body",
+      "Helpful for calls, apps, and creative workflows"
+    ],
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "repeat desktop shortcuts",
+      "buyIf": "Buy it if your workday repeats the same app launches, meeting controls, notes, media actions, or creative shortcuts often enough to deserve one-tap buttons.",
+      "skipIf": "Skip it if you only need basic keyboard shortcuts, dislike desk accessories, or want a larger controller with more physical keys.",
+      "whyIncluded": "A small productivity controller that fits desk setup, hybrid work, and tech gift pages without requiring a full creator workstation.",
+      "verification": "Brand details, Amazon listing, price date, and desktop-workflow fit were reviewed."
+    },
+    "slug": "elgato-stream-deck-neo",
+    "priceLabel": "$99.99",
+    "affiliateUrl": "https://www.amazon.com/dp/B0CVY4566H?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
   {
@@ -717,6 +789,42 @@
     "slug": "govee-tv-led-backlight-strip",
     "priceLabel": "$19.99",
     "affiliateUrl": "https://www.amazon.com/dp/B0CFVM1QTR?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
+    "id": "hario-v60-dripper-02-white",
+    "title": "Hario V60 Dripper 02 White",
+    "brand": "Hario",
+    "category": "kitchen",
+    "price": 13.33,
+    "image": "/images/products/hario-v60-dripper-02-white.jpg",
+    "description": "A low-cost pour-over dripper for buyers who want better manual coffee control without adding a bulky brewer to the counter.",
+    "sourceUrl": "https://global.hario.com/product/coffee/dripper/VD.html",
+    "priceCheckedAt": "2026-06-27",
+    "amazonUrl": "https://www.amazon.com/dp/B000P4D5HG",
+    "amazonQuery": "Hario V60 Dripper 02 White",
+    "tags": [
+      "coffee",
+      "brewing",
+      "pour over",
+      "under-50"
+    ],
+    "highlights": [
+      "Low-cost manual pour-over starter",
+      "Small cabinet-friendly footprint",
+      "Pairs well with a kettle and grinder upgrade"
+    ],
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "budget pour-over starters",
+      "buyIf": "Buy it if you want a cheap, compact way to learn pour-over coffee before spending more on grinders, kettles, or premium brewers.",
+      "skipIf": "Skip it if you want hands-off batch coffee, cold brew, or a brewer that is forgiving without careful pouring.",
+      "whyIncluded": "A simple coffee upgrade for small kitchens, beginners, and gift buyers who want better control without much cost or storage space.",
+      "verification": "Brand details, Amazon listing, price date, and pour-over routine fit were reviewed."
+    },
+    "slug": "hario-v60-dripper-02-white",
+    "priceLabel": "$13.33",
+    "affiliateUrl": "https://www.amazon.com/dp/B000P4D5HG?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
   {
@@ -1188,6 +1296,42 @@
     "affiliateMode": "exact"
   },
   {
+    "id": "philips-hue-smart-button",
+    "title": "Philips Hue Smart Button",
+    "brand": "Philips Hue",
+    "category": "home",
+    "price": 24.99,
+    "image": "/images/products/philips-hue-smart-button.jpg",
+    "description": "A small wireless Hue control button for renters, bedrooms, and shared spaces where app-only lighting control gets annoying.",
+    "sourceUrl": "https://www.philips-hue.com/en-us/p/smart-button-smart-button/046677605773",
+    "priceCheckedAt": "2026-06-27",
+    "amazonUrl": "https://www.amazon.com/dp/B07XV1HRVZ",
+    "amazonQuery": "Philips Hue Smart Button",
+    "tags": [
+      "smart-home",
+      "home",
+      "bedroom",
+      "under-50"
+    ],
+    "highlights": [
+      "Wireless button for Hue lighting",
+      "Useful when phones are not nearby",
+      "Small renter-friendly smart-home control"
+    ],
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "physical Hue lighting control",
+      "buyIf": "Buy it if you already use Hue lights and want a physical button by a bed, doorway, desk, or shared room.",
+      "skipIf": "Skip it if you do not use Hue lighting, want a general Matter switch, or need a hardwired wall control for non-Hue bulbs.",
+      "whyIncluded": "A practical smart-home accessory for making existing Hue setups easier to use without opening an app.",
+      "verification": "Brand details, Amazon listing, price date, and Hue-control fit were reviewed."
+    },
+    "slug": "philips-hue-smart-button",
+    "priceLabel": "$24.99",
+    "affiliateUrl": "https://www.amazon.com/dp/B07XV1HRVZ?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
     "id": "sandisk-extreme-portable-ssd-1tb",
     "title": "SanDisk Extreme Portable SSD 1TB",
     "brand": "SanDisk",
@@ -1221,6 +1365,42 @@
     "slug": "sandisk-extreme-portable-ssd-1tb",
     "priceLabel": "$99.99",
     "affiliateUrl": "https://www.amazon.com/dp/B08GTYFC37?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
+    "id": "satechi-slim-multi-port-adapter-v2",
+    "title": "Satechi Slim Multi-Port Adapter V2",
+    "brand": "Satechi",
+    "category": "gadgets",
+    "price": 59.99,
+    "image": "/images/products/satechi-slim-multi-port-adapter-v2.jpg",
+    "description": "A slim USB-C adapter for laptops that need HDMI, USB-A, card access, and pass-through charging in one travel-friendly hub.",
+    "sourceUrl": "https://satechi.com/products/satechi-slim-aluminum-type-c-multi-port-adapter",
+    "priceCheckedAt": "2026-06-27",
+    "amazonUrl": "https://www.amazon.com/dp/B01J4BO0X8",
+    "amazonQuery": "Satechi Slim Multi-Port Adapter V2",
+    "tags": [
+      "travel",
+      "office",
+      "productivity",
+      "portable"
+    ],
+    "highlights": [
+      "Adds HDMI, USB-A, and card access",
+      "Slim laptop-bag footprint",
+      "Useful for remote work and travel setups"
+    ],
+    "isTrending": false,
+    "editorial": {
+      "bestFor": "USB-C laptop port expansion",
+      "buyIf": "Buy it if your laptop needs a compact hub for displays, older USB accessories, SD cards, and charging while traveling or desk-hopping.",
+      "skipIf": "Skip it if you only need a charger, require multiple external displays, or want a full desktop dock with Ethernet and more ports.",
+      "whyIncluded": "A clear travel-work accessory for laptop users who need ports without carrying a large docking station.",
+      "verification": "Brand details, Amazon listing, price date, and laptop-port fit were reviewed."
+    },
+    "slug": "satechi-slim-multi-port-adapter-v2",
+    "priceLabel": "$59.99",
+    "affiliateUrl": "https://www.amazon.com/dp/B01J4BO0X8?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
   {
@@ -1365,6 +1545,42 @@
     "slug": "thermoworks-thermapen-one",
     "priceLabel": "$115",
     "affiliateUrl": "https://www.amazon.com/dp/B0DC8MWQ8K?tag=kreativauto-20",
+    "affiliateMode": "exact"
+  },
+  {
+    "id": "tp-link-tapo-c120-security-camera",
+    "title": "TP-Link Tapo C120 Security Camera",
+    "brand": "TP-Link Tapo",
+    "category": "home",
+    "price": 29.99,
+    "image": "/images/products/tp-link-tapo-c120-security-camera.jpg",
+    "description": "A compact wired 2K security camera for indoor rooms, covered outdoor spots, baby monitoring, or entryway checks without jumping to a larger camera kit.",
+    "sourceUrl": "https://www.tp-link.com/us/home-networking/cloud-camera/tapo-c120/",
+    "priceCheckedAt": "2026-06-27",
+    "amazonUrl": "https://www.amazon.com/dp/B0CH45HPZT",
+    "amazonQuery": "TP-Link Tapo C120 Security Camera",
+    "tags": [
+      "smart-home",
+      "security",
+      "home",
+      "under-50"
+    ],
+    "highlights": [
+      "2K wired indoor/outdoor camera",
+      "Person, pet, and vehicle detection support",
+      "Affordable entry camera for small spaces"
+    ],
+    "isTrending": true,
+    "editorial": {
+      "bestFor": "budget wired security monitoring",
+      "buyIf": "Buy it if you want a low-cost wired camera for an entryway, nursery, garage, porch, or small room where Wi-Fi power is available.",
+      "skipIf": "Skip it if you need battery power, a fully wireless install, pan-and-tilt coverage, or a complete multi-camera security system.",
+      "whyIncluded": "A useful smart-home camera step between tiny indoor cameras and larger outdoor security setups.",
+      "verification": "Brand details, Amazon listing, price date, and small-space security fit were reviewed."
+    },
+    "slug": "tp-link-tapo-c120-security-camera",
+    "priceLabel": "$29.99",
+    "affiliateUrl": "https://www.amazon.com/dp/B0CH45HPZT?tag=kreativauto-20",
     "affiliateMode": "exact"
   },
   {

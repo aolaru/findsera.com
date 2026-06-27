@@ -391,7 +391,8 @@
       "ember-mug-2",
       "cosori-electric-gooseneck-kettle",
       "oxo-brew-conical-burr-coffee-grinder",
-      "nespresso-aeroccino-4-milk-frother"
+      "nespresso-aeroccino-4-milk-frother",
+      "hario-v60-dripper-02-white"
     ],
     "sections": [
       {
@@ -443,7 +444,7 @@
         "Whether the product remains useful as the buyer upgrades later"
       ]
     },
-    "productCount": 6
+    "productCount": 7
   },
   {
     "slug": "best-coffee-gear-for-home",
@@ -460,7 +461,9 @@
       "fellow-stagg-ekg-electric-kettle",
       "ember-mug-2",
       "bodum-bistro-burr-coffee-grinder",
-      "nespresso-aeroccino-4-milk-frother"
+      "nespresso-aeroccino-4-milk-frother",
+      "baratza-encore-esp-coffee-grinder",
+      "hario-v60-dripper-02-white"
     ],
     "sections": [
       {
@@ -512,7 +515,7 @@
         "Whether the picks balance affordable entries with meaningful upgrades"
       ]
     },
-    "productCount": 5
+    "productCount": 7
   },
   {
     "slug": "best-coffee-gear-for-renters",
@@ -665,7 +668,8 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "takeya-cold-brew-maker",
-      "zulay-milk-frother-wand"
+      "zulay-milk-frother-wand",
+      "hario-v60-dripper-02-white"
     ],
     "sections": [
       {
@@ -687,7 +691,7 @@
         "answer": "No. Many affordable coffee tools feel thoughtful because they are useful, giftable, and easy to add to an existing routine."
       }
     ],
-    "productCount": 3
+    "productCount": 4
   },
   {
     "slug": "best-coffee-upgrades-under-50",
@@ -772,7 +776,8 @@
       "logitech-mx-anywhere-3s",
       "omoton-adjustable-laptop-stand",
       "govee-smart-desk-lamp-pro",
-      "anker-525-charging-station"
+      "anker-525-charging-station",
+      "elgato-stream-deck-neo"
     ],
     "sections": [
       {
@@ -824,7 +829,7 @@
         "Whether the product improves daily use rather than only desk appearance"
       ]
     },
-    "productCount": 5
+    "productCount": 6
   },
   {
     "slug": "best-desk-upgrades-for-students",
@@ -1082,7 +1087,8 @@
       "levoit-core-mini-air-purifier",
       "logitech-mx-keys-mini",
       "govee-smart-desk-lamp-pro",
-      "anker-nano-power-bank-30w"
+      "anker-nano-power-bank-30w",
+      "elgato-stream-deck-neo"
     ],
     "sections": [
       {
@@ -1108,7 +1114,7 @@
         "answer": "No. Premium gifts can work well when the benefit is clear and the product feels meaningfully better than a generic alternative."
       }
     ],
-    "productCount": 6
+    "productCount": 7
   },
   {
     "slug": "best-home-office-upgrades",
@@ -1195,7 +1201,8 @@
       "ember-mug-2",
       "levoit-core-mini-air-purifier",
       "vtopmart-drawer-organizer-set",
-      "omoton-adjustable-laptop-stand"
+      "omoton-adjustable-laptop-stand",
+      "elgato-stream-deck-neo"
     ],
     "sections": [
       {
@@ -1225,7 +1232,7 @@
         "answer": "Yes. Mixing utility-driven peripherals with comfort-oriented products reflects how people actually improve their setups."
       }
     ],
-    "productCount": 6
+    "productCount": 7
   },
   {
     "slug": "best-kitchen-tools-for-precision-cooking",
@@ -1245,7 +1252,8 @@
       "cosori-electric-gooseneck-kettle",
       "oxo-brew-conical-burr-coffee-grinder",
       "meater-plus-wireless-thermometer",
-      "instant-pot-duo-7-in-1-6-quart"
+      "instant-pot-duo-7-in-1-6-quart",
+      "baratza-encore-esp-coffee-grinder"
     ],
     "sections": [
       {
@@ -1279,7 +1287,7 @@
         "answer": "Yes. The need stays stable because cooks always need better temperature checks, cleaner measurements, and more repeatable results."
       }
     ],
-    "productCount": 8
+    "productCount": 9
   },
   {
     "slug": "best-portable-work-setup",
@@ -1571,7 +1579,9 @@
       "govee-rgbic-led-strip-lights-65ft",
       "blink-mini-2-security-camera",
       "tp-link-tapo-p125m-matter-smart-plug",
-      "aqara-door-window-sensor-p2"
+      "aqara-door-window-sensor-p2",
+      "philips-hue-smart-button",
+      "tp-link-tapo-c120-security-camera"
     ],
     "sections": [
       {
@@ -1597,7 +1607,7 @@
         "answer": "Yes. Smart plugs are useful for lamps, fans, coffee corners, and schedules, especially when paired with a voice assistant."
       }
     ],
-    "productCount": 6
+    "productCount": 8
   },
   {
     "slug": "best-smart-home-starter-kit-under-100",
@@ -1614,7 +1624,9 @@
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "tapo-c500-security-camera",
-      "blink-mini-2-security-camera"
+      "blink-mini-2-security-camera",
+      "philips-hue-smart-button",
+      "tp-link-tapo-c120-security-camera"
     ],
     "sections": [
       {
@@ -1644,7 +1656,7 @@
         "answer": "A smart speaker is not required, but it makes voice control, timers, routines, and future device expansion easier for beginners."
       }
     ],
-    "productCount": 5
+    "productCount": 7
   },
   {
     "slug": "best-smart-home-upgrades-for-beginners",
@@ -1662,7 +1674,9 @@
       "levoit-core-mini-air-purifier",
       "eufy-11s-max-robot-vacuum",
       "tapo-c500-security-camera",
-      "blink-mini-2-security-camera"
+      "blink-mini-2-security-camera",
+      "philips-hue-smart-button",
+      "tp-link-tapo-c120-security-camera"
     ],
     "sections": [
       {
@@ -1688,7 +1702,7 @@
         "answer": "Usually no. It is better to start with one or two clear-use-case products, then expand once the buyer knows what routines they actually want to automate."
       }
     ],
-    "productCount": 6
+    "productCount": 8
   },
   {
     "slug": "best-student-desk-setup-under-150",
@@ -2132,7 +2146,8 @@
       "sandisk-extreme-portable-ssd-1tb",
       "soundcore-q20i-headphones",
       "logitech-pebble-2-m350s",
-      "anker-maggo-power-bank-10k-slim"
+      "anker-maggo-power-bank-10k-slim",
+      "satechi-slim-multi-port-adapter-v2"
     ],
     "sections": [
       {
@@ -2158,7 +2173,7 @@
         "answer": "Yes. Travel-ready picks need smaller, more durable products that still feel useful after the trip is over."
       }
     ],
-    "productCount": 5
+    "productCount": 6
   },
   {
     "slug": "best-travel-tech-under-100",
@@ -2175,7 +2190,8 @@
       "sandisk-extreme-portable-ssd-1tb",
       "logitech-pebble-2-m350s",
       "anker-maggo-power-bank-10k-slim",
-      "apple-airtag-1-pack"
+      "apple-airtag-1-pack",
+      "satechi-slim-multi-port-adapter-v2"
     ],
     "sections": [
       {
@@ -2201,7 +2217,7 @@
         "answer": "Yes. Mixed travel lists work when every product still serves the same traveler mindset and solves a road-specific problem."
       }
     ],
-    "productCount": 5
+    "productCount": 6
   },
   {
     "slug": "best-wireless-tech-for-commuters",

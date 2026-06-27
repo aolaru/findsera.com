@@ -390,7 +390,8 @@
       "ember-mug-2",
       "cosori-electric-gooseneck-kettle",
       "oxo-brew-conical-burr-coffee-grinder",
-      "nespresso-aeroccino-4-milk-frother"
+      "nespresso-aeroccino-4-milk-frother",
+      "hario-v60-dripper-02-white"
     ],
     "sections": [
       {
@@ -459,7 +460,9 @@
       "fellow-stagg-ekg-electric-kettle",
       "ember-mug-2",
       "bodum-bistro-burr-coffee-grinder",
-      "nespresso-aeroccino-4-milk-frother"
+      "nespresso-aeroccino-4-milk-frother",
+      "baratza-encore-esp-coffee-grinder",
+      "hario-v60-dripper-02-white"
     ],
     "sections": [
       {
@@ -664,7 +667,8 @@
     "productIds": [
       "aeropress-original-coffee-maker",
       "takeya-cold-brew-maker",
-      "zulay-milk-frother-wand"
+      "zulay-milk-frother-wand",
+      "hario-v60-dripper-02-white"
     ],
     "sections": [
       {
@@ -770,7 +774,8 @@
       "logitech-mx-anywhere-3s",
       "omoton-adjustable-laptop-stand",
       "govee-smart-desk-lamp-pro",
-      "anker-525-charging-station"
+      "anker-525-charging-station",
+      "elgato-stream-deck-neo"
     ],
     "sections": [
       {
@@ -1079,7 +1084,8 @@
       "levoit-core-mini-air-purifier",
       "logitech-mx-keys-mini",
       "govee-smart-desk-lamp-pro",
-      "anker-nano-power-bank-30w"
+      "anker-nano-power-bank-30w",
+      "elgato-stream-deck-neo"
     ],
     "sections": [
       {
@@ -1192,7 +1198,8 @@
       "ember-mug-2",
       "levoit-core-mini-air-purifier",
       "vtopmart-drawer-organizer-set",
-      "omoton-adjustable-laptop-stand"
+      "omoton-adjustable-laptop-stand",
+      "elgato-stream-deck-neo"
     ],
     "sections": [
       {
@@ -1242,7 +1249,8 @@
       "cosori-electric-gooseneck-kettle",
       "oxo-brew-conical-burr-coffee-grinder",
       "meater-plus-wireless-thermometer",
-      "instant-pot-duo-7-in-1-6-quart"
+      "instant-pot-duo-7-in-1-6-quart",
+      "baratza-encore-esp-coffee-grinder"
     ],
     "sections": [
       {
@@ -1568,7 +1576,9 @@
       "govee-rgbic-led-strip-lights-65ft",
       "blink-mini-2-security-camera",
       "tp-link-tapo-p125m-matter-smart-plug",
-      "aqara-door-window-sensor-p2"
+      "aqara-door-window-sensor-p2",
+      "philips-hue-smart-button",
+      "tp-link-tapo-c120-security-camera"
     ],
     "sections": [
       {
@@ -1611,7 +1621,9 @@
       "kasa-smart-plug-mini-4-pack",
       "levoit-core-mini-air-purifier",
       "tapo-c500-security-camera",
-      "blink-mini-2-security-camera"
+      "blink-mini-2-security-camera",
+      "philips-hue-smart-button",
+      "tp-link-tapo-c120-security-camera"
     ],
     "sections": [
       {
@@ -1659,7 +1671,9 @@
       "levoit-core-mini-air-purifier",
       "eufy-11s-max-robot-vacuum",
       "tapo-c500-security-camera",
-      "blink-mini-2-security-camera"
+      "blink-mini-2-security-camera",
+      "philips-hue-smart-button",
+      "tp-link-tapo-c120-security-camera"
     ],
     "sections": [
       {
@@ -2129,7 +2143,8 @@
       "sandisk-extreme-portable-ssd-1tb",
       "soundcore-q20i-headphones",
       "logitech-pebble-2-m350s",
-      "anker-maggo-power-bank-10k-slim"
+      "anker-maggo-power-bank-10k-slim",
+      "satechi-slim-multi-port-adapter-v2"
     ],
     "sections": [
       {
@@ -2172,7 +2187,8 @@
       "sandisk-extreme-portable-ssd-1tb",
       "logitech-pebble-2-m350s",
       "anker-maggo-power-bank-10k-slim",
-      "apple-airtag-1-pack"
+      "apple-airtag-1-pack",
+      "satechi-slim-multi-port-adapter-v2"
     ],
     "sections": [
       {
