@@ -1,6 +1,6 @@
 # Daily maintenance report
 
-- Run date: 2026-06-27
+- Run date: 2026-06-28
 - New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
@@ -8,7 +8,7 @@
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 3
 - Products with stale price checks: 44
-- Products missing content-map coverage: 12
+- Products missing content-map coverage: 18
 - Validation failures: 0
 
 ## Added products today
@@ -83,12 +83,18 @@
 - Amazon Basics Velvet Hangers 50-Pack (`amazon-basics-velvet-hangers-50-pack`)
 - Anker 525 Charging Station (`anker-525-charging-station`)
 - Aqara Door and Window Sensor P2 (`aqara-door-window-sensor-p2`)
+- Baratza Encore ESP Coffee Grinder (`baratza-encore-esp-coffee-grinder`)
 - Bodum Bistro Burr Coffee Grinder (`bodum-bistro-burr-coffee-grinder`)
 - Bonavita Variable Temperature Gooseneck Kettle (`bonavita-variable-temperature-kettle`)
+- Elgato Stream Deck Neo (`elgato-stream-deck-neo`)
 - Govee RGBIC LED Strip Lights 65.6ft (`govee-rgbic-led-strip-lights-65ft`)
 - Govee TV LED Backlight Strip (`govee-tv-led-backlight-strip`)
+- Hario V60 Dripper 02 White (`hario-v60-dripper-02-white`)
 - Lodge 12-Inch Cast Iron Skillet (`lodge-12-inch-cast-iron-skillet`)
 - OXO Good Grips POP Container 4.4 Qt (`oxo-good-grips-pop-container-4-4qt`)
+- Philips Hue Smart Button (`philips-hue-smart-button`)
+- Satechi Slim Multi-Port Adapter V2 (`satechi-slim-multi-port-adapter-v2`)
+- TP-Link Tapo C120 Security Camera (`tp-link-tapo-c120-security-camera`)
 - TP-Link Tapo P125M Matter Smart Plug (`tp-link-tapo-p125m-matter-smart-plug`)
 - TP-Link Tapo P400M Outdoor Smart Plug (`tp-link-tapo-p400m-outdoor-smart-plug`)
 - Zulay Electric Milk Frother and Heater (`zulay-electric-milk-frother-heater`)
