@@ -3,10 +3,10 @@
 - Run date: 2026-06-29
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 0
+- New guides added: 1
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
-- Remaining guide backlog: 3
+- Remaining guide backlog: 2
 - Products with stale price checks: 44
 - Products missing content-map coverage: 18
 - Validation failures: 0
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- None
+- Best Desk Upgrades Under $100 (`best-desk-upgrades-under-100`)
 
 ## Price checks to refresh
 
