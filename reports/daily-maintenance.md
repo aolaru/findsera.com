@@ -1,9 +1,9 @@
 # Daily maintenance report
 
-- Run date: 2026-06-29
+- Run date: 2026-06-30
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 1
+- New guides added: 0
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 2
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- Best Desk Upgrades Under $100 (`best-desk-upgrades-under-100`)
+- None
 
 ## Price checks to refresh
 
