@@ -1,12 +1,12 @@
 # Daily maintenance report
 
-- Run date: 2026-07-05
+- Run date: 2026-07-06
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 0
+- New guides added: 1
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
-- Remaining guide backlog: 2
+- Remaining guide backlog: 1
 - Products with stale price checks: 44
 - Products missing content-map coverage: 18
 - Validation failures: 0
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- None
+- Best Smart Home Gifts Under $100 (`best-smart-home-gifts-under-100`)
 
 ## Price checks to refresh
 
