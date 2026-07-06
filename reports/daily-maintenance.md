@@ -3,7 +3,7 @@
 - Run date: 2026-07-06
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 1
+- New guides added: 0
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 1
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- Best Smart Home Gifts Under $100 (`best-smart-home-gifts-under-100`)
+- None
 
 ## Price checks to refresh
 
