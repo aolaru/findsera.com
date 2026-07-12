@@ -1,13 +1,13 @@
 # Daily maintenance report
 
-- Run date: 2026-07-11
+- Run date: 2026-07-12
 - New products added: 0
 - Existing products refreshed: 0
 - New guides added: 0
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
 - Remaining guide backlog: 1
-- Products with stale price checks: 44
+- Products with stale price checks: 50
 - Products missing content-map coverage: 18
 - Validation failures: 0
 
@@ -33,11 +33,13 @@
 - Apple AirTag (1-Pack) last checked on 2026-05-13
 - Aqara Door and Window Sensor P2 last checked on 2026-05-01
 - ARZOPA 15.6-Inch Portable Monitor last checked on 2026-05-13
+- Baratza Encore ESP Coffee Grinder last checked on 2026-06-27
 - Blink Mini 2 Security Camera last checked on 2026-04-30
 - Bodum Bistro Burr Coffee Grinder last checked on 2026-05-01
 - Bonavita Variable Temperature Gooseneck Kettle last checked on 2026-05-01
 - COSORI Electric Gooseneck Kettle last checked on 2026-05-10
 - Amazon Echo Pop Smart Speaker last checked on 2026-04-30
+- Elgato Stream Deck Neo last checked on 2026-06-27
 - Ember Mug 2 last checked on 2026-05-13
 - Etekcity Food Kitchen Scale last checked on 2026-05-10
 - eufy RoboVac 11S Max last checked on 2026-05-13
@@ -45,6 +47,7 @@
 - Govee RGBIC LED Strip Lights 65.6ft last checked on 2026-05-01
 - Govee Smart Desk Lamp Pro last checked on 2026-05-13
 - Govee TV LED Backlight Strip last checked on 2026-05-01
+- Hario V60 Dripper 02 White last checked on 2026-06-27
 - Instant Pot Duo 7-in-1 6-Quart last checked on 2026-04-30
 - Joseph Joseph DrawerStore Cutlery Organizer last checked on 2026-05-13
 - Kasa Smart Plug Mini 4-Pack last checked on 2026-05-13
@@ -58,11 +61,14 @@
 - OMOTON Adjustable Laptop Stand last checked on 2026-05-01
 - OXO Brew Conical Burr Coffee Grinder last checked on 2026-04-30
 - OXO Good Grips POP Container 4.4 Qt last checked on 2026-05-01
+- Philips Hue Smart Button last checked on 2026-06-27
 - SanDisk Extreme Portable SSD 1TB last checked on 2026-04-30
+- Satechi Slim Multi-Port Adapter V2 last checked on 2026-06-27
 - soundcore Q20i Headphones last checked on 2026-05-13
 - Takeya Deluxe Cold Brew Coffee Maker last checked on 2026-05-13
 - TP-Link Tapo C500 Security Camera last checked on 2026-05-10
 - ThermoWorks Thermapen ONE last checked on 2026-05-13
+- TP-Link Tapo C120 Security Camera last checked on 2026-06-27
 - TP-Link Tapo P125M Matter Smart Plug last checked on 2026-05-01
 - TP-Link Tapo P400M Outdoor Smart Plug last checked on 2026-05-01
 - UGREEN Nexode 100W USB-C Charger last checked on 2026-05-10
