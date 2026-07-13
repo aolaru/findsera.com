@@ -3,10 +3,10 @@
 - Run date: 2026-07-13
 - New products added: 0
 - Existing products refreshed: 0
-- New guides added: 0
+- New guides added: 1
 - Remaining product backlog: 0
 - Remaining product refresh backlog: 0
-- Remaining guide backlog: 1
+- Remaining guide backlog: 0
 - Products with stale price checks: 50
 - Products missing content-map coverage: 18
 - Validation failures: 0
@@ -21,7 +21,7 @@
 
 ## Added guides today
 
-- None
+- Best Compact Tech for Carry-On Travel (`best-compact-tech-for-carry-on-travel`)
 
 ## Price checks to refresh
 
