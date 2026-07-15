@@ -2,7 +2,7 @@
   {
     "slug": "air-quality",
     "title": "Air Quality",
-    "description": "Findsera content related to air quality.",
+    "description": "Findsera content related to Air Quality.",
     "productIds": [
       "levoit-core-mini-air-purifier"
     ],
@@ -16,7 +16,7 @@
   {
     "slug": "apartment",
     "title": "Apartment",
-    "description": "Findsera content related to apartment.",
+    "description": "Findsera content related to Apartment.",
     "productIds": [
       "eufy-11s-max-robot-vacuum"
     ],
@@ -30,7 +30,7 @@
   {
     "slug": "bedroom",
     "title": "Bedroom",
-    "description": "Findsera content related to bedroom.",
+    "description": "Findsera content related to Bedroom.",
     "productIds": [
       "blink-mini-2-security-camera",
       "govee-rgbic-led-strip-lights-65ft",
@@ -47,7 +47,7 @@
   {
     "slug": "brewing",
     "title": "Brewing",
-    "description": "Findsera content related to brewing.",
+    "description": "Findsera content related to Brewing.",
     "productIds": [
       "aeropress-original-coffee-maker",
       "bodum-bistro-burr-coffee-grinder",
@@ -91,7 +91,7 @@
   {
     "slug": "charging",
     "title": "Charging",
-    "description": "Findsera content related to charging.",
+    "description": "Findsera content related to Charging.",
     "productIds": [
       "anker-525-charging-station",
       "anker-maggo-power-bank-10k-slim",
@@ -108,7 +108,7 @@
   {
     "slug": "cleaning",
     "title": "Cleaning",
-    "description": "Findsera content related to cleaning.",
+    "description": "Findsera content related to Cleaning.",
     "productIds": [
       "eufy-11s-max-robot-vacuum"
     ],
@@ -122,7 +122,7 @@
   {
     "slug": "closet",
     "title": "Closet",
-    "description": "Findsera content related to closet.",
+    "description": "Findsera content related to Closet.",
     "productIds": [
       "amazon-basics-velvet-hangers-50-pack"
     ],
@@ -136,7 +136,7 @@
   {
     "slug": "coffee",
     "title": "Coffee",
-    "description": "Findsera content related to coffee.",
+    "description": "Findsera content related to Coffee.",
     "productIds": [
       "aeropress-original-coffee-maker",
       "baratza-encore-esp-coffee-grinder",
@@ -183,7 +183,7 @@
   {
     "slug": "cooking",
     "title": "Cooking",
-    "description": "Findsera content related to cooking.",
+    "description": "Findsera content related to Cooking.",
     "productIds": [
       "etekcity-food-kitchen-scale",
       "instant-pot-duo-7-in-1-6-quart",
@@ -201,7 +201,7 @@
   {
     "slug": "countertop",
     "title": "Countertop",
-    "description": "Findsera content related to countertop.",
+    "description": "Findsera content related to Countertop.",
     "productIds": [
       "baratza-encore-esp-coffee-grinder",
       "bodum-bistro-burr-coffee-grinder",
@@ -223,7 +223,7 @@
   {
     "slug": "desk",
     "title": "Desk",
-    "description": "Findsera content related to desk.",
+    "description": "Findsera content related to Desk.",
     "productIds": [
       "ember-mug-2"
     ],
@@ -237,7 +237,7 @@
   {
     "slug": "desk-setup",
     "title": "Desk Setup",
-    "description": "Findsera content related to desk setup.",
+    "description": "Findsera content related to Desk Setup.",
     "productIds": [
       "anker-525-charging-station",
       "elgato-stream-deck-neo",
@@ -255,7 +255,7 @@
   {
     "slug": "espresso",
     "title": "Espresso",
-    "description": "Findsera content related to espresso.",
+    "description": "Findsera content related to Espresso.",
     "productIds": [
       "baratza-encore-esp-coffee-grinder"
     ],
@@ -269,7 +269,7 @@
   {
     "slug": "gift",
     "title": "Gift",
-    "description": "Findsera content related to gift.",
+    "description": "Findsera content related to Gift.",
     "productIds": [
       "apple-airtag-1-pack",
       "bodum-bistro-burr-coffee-grinder",
@@ -293,7 +293,7 @@
   {
     "slug": "grilling",
     "title": "Grilling",
-    "description": "Findsera content related to grilling.",
+    "description": "Findsera content related to Grilling.",
     "productIds": [
       "lodge-12-inch-cast-iron-skillet",
       "meater-plus-wireless-thermometer",
@@ -309,7 +309,7 @@
   {
     "slug": "grinding",
     "title": "Grinding",
-    "description": "Findsera content related to grinding.",
+    "description": "Findsera content related to Grinding.",
     "productIds": [
       "baratza-encore-esp-coffee-grinder"
     ],
@@ -323,7 +323,7 @@
   {
     "slug": "home",
     "title": "Home",
-    "description": "Findsera content related to home.",
+    "description": "Findsera content related to Home.",
     "productIds": [
       "amazon-basics-velvet-hangers-50-pack",
       "aqara-door-window-sensor-p2",
@@ -380,8 +380,8 @@
   },
   {
     "slug": "iphone",
-    "title": "Iphone",
-    "description": "Findsera content related to iphone.",
+    "title": "iPhone",
+    "description": "Findsera content related to iPhone.",
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
       "apple-airtag-1-pack"
@@ -396,7 +396,7 @@
   {
     "slug": "keyboard",
     "title": "Keyboard",
-    "description": "Findsera content related to keyboard.",
+    "description": "Findsera content related to Keyboard.",
     "productIds": [
       "logitech-mx-keys-mini"
     ],
@@ -410,7 +410,7 @@
   {
     "slug": "kitchen",
     "title": "Kitchen",
-    "description": "Findsera content related to kitchen.",
+    "description": "Findsera content related to Kitchen.",
     "productIds": [
       "etekcity-food-kitchen-scale",
       "instant-pot-duo-7-in-1-6-quart",
@@ -433,7 +433,7 @@
   {
     "slug": "matter",
     "title": "Matter",
-    "description": "Findsera content related to matter.",
+    "description": "Findsera content related to Matter.",
     "productIds": [
       "aqara-door-window-sensor-p2",
       "tp-link-tapo-p125m-matter-smart-plug",
@@ -449,7 +449,7 @@
   {
     "slug": "mouse",
     "title": "Mouse",
-    "description": "Findsera content related to mouse.",
+    "description": "Findsera content related to Mouse.",
     "productIds": [
       "logitech-mx-anywhere-3s",
       "logitech-pebble-2-m350s"
@@ -464,7 +464,7 @@
   {
     "slug": "office",
     "title": "Office",
-    "description": "Findsera content related to office.",
+    "description": "Findsera content related to Office.",
     "productIds": [
       "anker-525-charging-station",
       "arzopa-portable-monitor-15-6",
@@ -489,7 +489,7 @@
   {
     "slug": "organization",
     "title": "Organization",
-    "description": "Findsera content related to organization.",
+    "description": "Findsera content related to Organization.",
     "productIds": [
       "amazon-basics-velvet-hangers-50-pack",
       "joseph-joseph-drawerstore-cutlery-organizer",
@@ -507,7 +507,7 @@
   {
     "slug": "outdoor",
     "title": "Outdoor",
-    "description": "Findsera content related to outdoor.",
+    "description": "Findsera content related to Outdoor.",
     "productIds": [
       "tp-link-tapo-p400m-outdoor-smart-plug"
     ],
@@ -521,7 +521,7 @@
   {
     "slug": "portable",
     "title": "Portable",
-    "description": "Findsera content related to portable.",
+    "description": "Findsera content related to Portable.",
     "productIds": [
       "anker-maggo-power-bank-10k-slim",
       "anker-nano-power-bank-30w",
@@ -542,7 +542,7 @@
   {
     "slug": "pour-over",
     "title": "Pour Over",
-    "description": "Findsera content related to pour over.",
+    "description": "Findsera content related to Pour Over.",
     "productIds": [
       "bonavita-variable-temperature-kettle",
       "cosori-electric-gooseneck-kettle",
@@ -559,7 +559,7 @@
   {
     "slug": "precision",
     "title": "Precision",
-    "description": "Findsera content related to precision.",
+    "description": "Findsera content related to Precision.",
     "productIds": [
       "etekcity-food-kitchen-scale",
       "meater-plus-wireless-thermometer",
@@ -589,7 +589,7 @@
   {
     "slug": "productivity",
     "title": "Productivity",
-    "description": "Findsera content related to productivity.",
+    "description": "Findsera content related to Productivity.",
     "productIds": [
       "anker-525-charging-station",
       "arzopa-portable-monitor-15-6",
@@ -613,7 +613,7 @@
   {
     "slug": "security",
     "title": "Security",
-    "description": "Findsera content related to security.",
+    "description": "Findsera content related to Security.",
     "productIds": [
       "aqara-door-window-sensor-p2",
       "tapo-c500-security-camera",
@@ -629,7 +629,7 @@
   {
     "slug": "smart-home",
     "title": "Smart Home",
-    "description": "Findsera content related to smart-home.",
+    "description": "Findsera content related to Smart Home.",
     "productIds": [
       "aqara-door-window-sensor-p2",
       "blink-mini-2-security-camera",
@@ -657,7 +657,7 @@
   {
     "slug": "streaming",
     "title": "Streaming",
-    "description": "Findsera content related to streaming.",
+    "description": "Findsera content related to Streaming.",
     "productIds": [
       "elgato-stream-deck-neo"
     ],
@@ -671,7 +671,7 @@
   {
     "slug": "tea",
     "title": "Tea",
-    "description": "Findsera content related to tea.",
+    "description": "Findsera content related to Tea.",
     "productIds": [
       "bonavita-variable-temperature-kettle",
       "cosori-electric-gooseneck-kettle",
@@ -687,7 +687,7 @@
   {
     "slug": "travel",
     "title": "Travel",
-    "description": "Findsera content related to travel.",
+    "description": "Findsera content related to Travel.",
     "productIds": [
       "aeropress-original-coffee-maker",
       "anker-maggo-power-bank-10k-slim",
@@ -737,7 +737,7 @@
   {
     "slug": "under-50",
     "title": "Under 50",
-    "description": "Findsera content related to under-50.",
+    "description": "Findsera content related to Under 50.",
     "productIds": [
       "aeropress-original-coffee-maker",
       "amazon-basics-velvet-hangers-50-pack",
@@ -774,7 +774,7 @@
   {
     "slug": "wireless",
     "title": "Wireless",
-    "description": "Findsera content related to wireless.",
+    "description": "Findsera content related to Wireless.",
     "productIds": [
       "logitech-mx-keys-mini",
       "soundcore-q20i-headphones"

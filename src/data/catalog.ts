@@ -134,6 +134,15 @@ export type ProductFreshness = {
   description: string;
 };
 
+export type ProductPriceReview = {
+  ageInDays: number;
+  checkedAtLabel: string;
+  priceValidUntil: string;
+  status: "current" | "review-soon" | "refresh-due";
+  label: string;
+  description: string;
+};
+
 export type ProductBestFor = {
   label: string;
   description: string;
@@ -229,6 +238,55 @@ export const getProductFreshness = (product: Product, referenceDate = new Date()
   }
 
   return null;
+};
+
+export const formatDateLabel = (value: string) =>
+  new Date(`${value}T00:00:00Z`).toLocaleDateString("en-US", {
+    month: "long",
+    day: "numeric",
+    year: "numeric",
+    timeZone: "UTC"
+  });
+
+export const getProductPriceReview = (product: Product, referenceDate = new Date()): ProductPriceReview => {
+  const checkedAt = new Date(`${product.priceCheckedAt}T00:00:00Z`);
+  const reference = new Date(
+    Date.UTC(referenceDate.getUTCFullYear(), referenceDate.getUTCMonth(), referenceDate.getUTCDate())
+  );
+  const ageInDays = Math.max(0, Math.floor((reference.getTime() - checkedAt.getTime()) / 86_400_000));
+  const validUntil = new Date(checkedAt);
+  validUntil.setUTCDate(validUntil.getUTCDate() + 45);
+
+  if (ageInDays > 60) {
+    return {
+      ageInDays,
+      checkedAtLabel: formatDateLabel(product.priceCheckedAt),
+      priceValidUntil: validUntil.toISOString().slice(0, 10),
+      status: "refresh-due",
+      label: "Refresh due",
+      description: "This price is kept as historical context until the listing is refreshed."
+    };
+  }
+
+  if (ageInDays > 45) {
+    return {
+      ageInDays,
+      checkedAtLabel: formatDateLabel(product.priceCheckedAt),
+      priceValidUntil: validUntil.toISOString().slice(0, 10),
+      status: "review-soon",
+      label: "Review soon",
+      description: "This price is nearing the normal refresh window."
+    };
+  }
+
+  return {
+    ageInDays,
+    checkedAtLabel: formatDateLabel(product.priceCheckedAt),
+    priceValidUntil: validUntil.toISOString().slice(0, 10),
+    status: "current",
+    label: "Checked",
+    description: "This product price is within the normal Findsera refresh window."
+  };
 };
 
 export const getProductBestFor = (product: Product): ProductBestFor => {
@@ -362,7 +420,7 @@ export const getSearchItems = (): SearchItem[] => [
 export const getHeaderSearchItems = (): SearchItem[] => [
   ...allProducts
     .filter((product) => product.isTrending || product.priceCheckedAt >= "2026-05-13")
-    .slice(0, 24)
+    .slice(0, 12)
     .map((product) => ({
       title: product.title,
       href: `/products/${product.slug}/`,
@@ -370,7 +428,7 @@ export const getHeaderSearchItems = (): SearchItem[] => [
       meta: product.priceLabel,
       keywords: [product.brand, product.category, ...product.tags]
     })),
-  ...allRoundups.slice(0, 24).map((roundup) => ({
+  ...allRoundups.slice(0, 12).map((roundup) => ({
     title: roundup.title,
     href: `/${roundup.slug}/`,
     type: "Guide" as const,

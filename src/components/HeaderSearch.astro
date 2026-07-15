@@ -128,7 +128,7 @@ const searchId = `site-search-${Math.random().toString(36).slice(2, 10)}`;
         results.classList.remove("hidden");
       };
 
-      const searchHref = (query) => `/search?q=${encodeURIComponent(query.trim())}`;
+      const searchHref = (query) => `/search/?q=${encodeURIComponent(query.trim())}`;
 
       const getMatches = (query) => {
         const normalized = query.trim().toLowerCase();

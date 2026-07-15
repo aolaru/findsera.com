@@ -4,6 +4,7 @@ import Layout from "../layouts/Layout.astro";
 const title = "Privacy Policy | Findsera";
 const description =
   "Read how Findsera handles basic analytics, affiliate links, cookies, advertising partners, and contact email.";
+const contactAddress = "hello [at] findsera [dot] com";
 ---
 
 <Layout title={title} description={description} canonicalPath="/privacy-policy/">
@@ -17,7 +18,7 @@ const description =
         This policy explains the basic information Findsera may collect when readers browse product pages,
         use site search, click affiliate links, or contact the site.
       </p>
-      <p class="mt-4 text-sm leading-7 text-ink-700">Last updated: June 14, 2026</p>
+      <p class="mt-4 text-sm leading-7 text-ink-700">Last updated: July 15, 2026</p>
     </div>
   </section>
 
@@ -100,10 +101,8 @@ const description =
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
         <h2 class="font-serif text-3xl font-semibold tracking-tight text-ink-900">Contact</h2>
         <p class="mt-4 text-sm leading-7 text-ink-700">
-          For privacy questions or correction requests, email
-          <a href="mailto:hello@findsera.com" class="font-semibold text-accent-600 hover:text-accent-500">
-            hello@findsera.com
-          </a>.
+          For privacy questions or correction requests, write to
+          <span class="font-semibold text-ink-900">{contactAddress}</span>.
         </p>
       </article>
     </div>

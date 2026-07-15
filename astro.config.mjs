@@ -2,6 +2,13 @@
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
+import topics from "./src/data/generated/topics.generated.json" with { type: "json" };
+
+const thinTopicPaths = new Set(
+  topics
+    .filter((topic) => topic.productCount < 2 && topic.roundupCount === 0)
+    .map((topic) => `/topics/${topic.slug}/`)
+);
 
 export default defineConfig({
   site: "https://findsera.com",
@@ -33,7 +40,7 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const { pathname } = new URL(page);
-        return pathname !== "/search/" && pathname !== "/404/";
+        return pathname !== "/search/" && pathname !== "/404/" && !thinTopicPaths.has(pathname);
       }
     })
   ],

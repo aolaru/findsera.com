@@ -7,7 +7,14 @@ import ProductCard from "../components/ProductCard.astro";
 import RoundupCard from "../components/RoundupCard.astro";
 import SectionHeader from "../components/SectionHeader.astro";
 import TopicBadgeList from "../components/TopicBadgeList.astro";
-import { allRoundups, allTopics, categoryLabels, getProductsForRoundup } from "../data/catalog";
+import {
+  allRoundups,
+  allTopics,
+  categoryLabels,
+  getProductPriceReview,
+  getProductsForRoundup,
+  withTrailingSlash
+} from "../data/catalog";
 import Layout from "../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -35,7 +42,7 @@ const formattedUpdatedAt = new Date(`${roundup.updatedAt}T00:00:00Z`).toLocaleDa
 const formatTag = (value: string) =>
   value
     .split("-")
-    .map((chunk) => chunk.charAt(0).toUpperCase() + chunk.slice(1))
+    .map((chunk) => (chunk === "iphone" ? "iPhone" : chunk.charAt(0).toUpperCase() + chunk.slice(1)))
     .join(" ");
 
 const getBestForLabel = (product: (typeof products)[number]) => {
@@ -98,7 +105,7 @@ const boundaryDecisionCards = decisionSummary
       {
         label: "Read instead if",
         title: decisionSummary.readInstead.label,
-        href: decisionSummary.readInstead.href,
+        href: withTrailingSlash(decisionSummary.readInstead.href),
         note: decisionSummary.readInstead.reason
       }
     ]
@@ -145,7 +152,9 @@ const structuredData = {
               priceCurrency: "USD",
               price: product.price,
               url: product.affiliateUrl,
-              availability: "https://schema.org/InStock"
+              availability: "https://schema.org/InStock",
+              itemCondition: "https://schema.org/NewCondition",
+              priceValidUntil: getProductPriceReview(product).priceValidUntil
             }
           }
         }))
@@ -284,7 +293,7 @@ const structuredData = {
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">How to choose</p>
           <h2 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
-            Choose by the job this purchase needs to handle
+            How to choose {roundup.eyebrow.toLowerCase()}
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
             {
@@ -296,7 +305,7 @@ const structuredData = {
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">More ways to compare</p>
           <h2 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
-            What narrows this guide
+            {roundup.eyebrow} tradeoffs to check
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
             {editorial?.audience ?? "Compare the same products by budget, gift fit, setup effort, or the daily routine they are meant to improve."}
@@ -332,7 +341,7 @@ const structuredData = {
 
         <ProductComparisonTable
           products={products}
-          title="Compare price, fit, and tradeoffs"
+          title={`Compare ${roundup.eyebrow.toLowerCase()} picks`}
           description="A quick spec-style view of the products below, including strongest use case, main reason to buy, current listed price, and last price-check date."
         />
       </div>
@@ -378,7 +387,7 @@ const structuredData = {
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Who these picks fit</p>
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
-            Best fit for this guide
+            Who should use this {roundup.eyebrow.toLowerCase()} guide
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
             {
@@ -428,7 +437,7 @@ const structuredData = {
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Ready to shop</p>
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
-            Start with the closest match
+            Start with {topPick.title}
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
             Start with {topPick.title} if the main need matches your routine. Use {budgetPick.title} when budget is
@@ -503,7 +512,7 @@ const structuredData = {
       <section class="pb-10">
         <div class="container-shell">
           <SectionHeader
-            title="Related Topics"
+            title={`${roundup.eyebrow} Topics`}
             description="Use these tags to keep browsing products and guides around the same theme."
           />
           <TopicBadgeList topics={relatedTopics.map((topic) => ({ slug: topic.slug, title: topic.title }))} />
@@ -527,7 +536,7 @@ const structuredData = {
 
   <section class="section-spacing">
     <div class="container-shell">
-      <FAQList items={roundup.faqs} />
+      <FAQList title={`Questions about ${roundup.eyebrow.toLowerCase()}`} items={roundup.faqs} />
     </div>
   </section>
 
@@ -536,7 +545,7 @@ const structuredData = {
       <section class="section-spacing">
         <div class="container-shell">
           <SectionHeader
-            title="Related Guides"
+            title={`More ${categoryLabel.toLowerCase()} guides`}
             description="More buying guides that may help narrow the choice."
           />
           <div class="grid gap-6 lg:grid-cols-3">

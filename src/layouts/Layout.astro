@@ -54,6 +54,13 @@ const shouldLoadAdSense = adsenseEnabled && adsenseApproved && !robots.toLowerCa
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180.png" />
     <meta name="theme-color" content="#e97d2f" />
     <meta name="generator" content={Astro.generator} />
+    <script is:inline>
+      if (window.location.hostname === "www.findsera.com") {
+        window.location.replace(
+          `https://findsera.com${window.location.pathname}${window.location.search}${window.location.hash}`
+        );
+      }
+    </script>
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="canonical" href={canonicalUrl} />

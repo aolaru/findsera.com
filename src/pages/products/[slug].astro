@@ -12,6 +12,7 @@ import {
   allProducts,
   categoryLabels,
   getProductFreshness,
+  getProductPriceReview,
   getRelatedProducts,
   getRoundupsForProduct,
   getTopicsForProduct,
@@ -45,17 +46,16 @@ const { product, relatedRoundups, relatedProducts, relatedTopics } = Astro.props
 };
 
 const categoryLabel = categoryLabels[product.category];
-const formattedUpdatedAt = new Date(`${product.priceCheckedAt}T00:00:00Z`).toLocaleDateString("en-US", {
-  month: "long",
-  day: "numeric",
-  year: "numeric",
-  timeZone: "UTC"
-});
+const priceReview = getProductPriceReview(product);
+const formattedUpdatedAt = priceReview.checkedAtLabel;
+const sourceIsAmazon = /^https?:\/\/(?:www\.)?amazon\./i.test(product.sourceUrl);
+const sourceRel = sourceIsAmazon ? "noopener noreferrer nofollow" : "noopener noreferrer";
+const sourceLabel = sourceIsAmazon ? "View source listing" : "View brand source";
 
 const formatTag = (value: string) =>
   value
     .split("-")
-    .map((chunk) => chunk.charAt(0).toUpperCase() + chunk.slice(1))
+    .map((chunk) => (chunk === "iphone" ? "iPhone" : chunk.charAt(0).toUpperCase() + chunk.slice(1)))
     .join(" ");
 
 const useCase = product.tags[0] ? formatTag(product.tags[0].replace(/\s+/g, "-")) : categoryLabel;
@@ -77,7 +77,7 @@ const cons = [
 const trustReasons = [
   editorial?.verification ?? `${product.brand} product details and the current retailer path were checked for the buying notes on this page.`,
   `${product.title} is compared against ${relatedProducts.length} nearby alternative${relatedProducts.length === 1 ? "" : "s"} from the same category or use case.`,
-  `Price was last checked on ${formattedUpdatedAt}; confirm the live total, seller, and delivery terms before buying.`,
+  `The price reference was last checked on ${formattedUpdatedAt}. ${priceReview.description}`,
   product.affiliateMode === "exact"
     ? "The Amazon button opens a specific product listing."
     : "The Amazon button opens search results so you can verify seller, variant, and price."
@@ -98,7 +98,7 @@ const faqItems = [
   },
   {
     question: `When was the ${product.title} price last checked?`,
-    answer: `${product.title} was last checked on ${formattedUpdatedAt}. Amazon prices can move quickly, so confirm the live total before buying.`
+    answer: `${product.title} was last checked on ${formattedUpdatedAt}. ${priceReview.description} Confirm the live total before buying because retailer prices and seller availability can move quickly.`
   }
 ];
 
@@ -145,7 +145,10 @@ const structuredData = {
         "@type": "Offer",
         priceCurrency: "USD",
         price: product.price,
-        url: product.affiliateUrl
+        url: product.affiliateUrl,
+        availability: "https://schema.org/InStock",
+        itemCondition: "https://schema.org/NewCondition",
+        priceValidUntil: priceReview.priceValidUntil
       }
     },
     {
@@ -183,8 +186,18 @@ const structuredData = {
               {categoryLabel}
             </span>
             <span class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">
-              Price checked {formattedUpdatedAt}
+              Price reference {formattedUpdatedAt}
             </span>
+            {
+              priceReview.status !== "current" && (
+                <span
+                  title={priceReview.description}
+                  class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-accent-600"
+                >
+                  {priceReview.label}
+                </span>
+              )
+            }
             {
               freshness && (
                 <span
@@ -242,10 +255,10 @@ const structuredData = {
             <a
               href={product.sourceUrl}
               target="_blank"
-              rel="noopener noreferrer"
+              rel={sourceRel}
               class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
             >
-              View brand source
+              {sourceLabel}
             </a>
           </div>
           <div class="mt-8 rounded-[1.5rem] border border-black/6 bg-sand-50 p-5">
@@ -351,6 +364,7 @@ const structuredData = {
         useCase={useCase}
         secondaryUseCase={secondaryUseCase}
         priceTier={priceTier}
+        title={`Buying details for ${product.title}`}
       />
       <div class="grid gap-6 lg:grid-cols-[minmax(0,1fr),minmax(0,1fr)]">
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
@@ -389,7 +403,7 @@ const structuredData = {
     <section class="pb-10">
       <div class="container-shell">
         <SectionHeader
-          title="Where else it fits"
+          title={`Guides featuring ${product.title}`}
           description={`Compare ${product.title} with nearby picks when budget, room, routine, or gift fit matters.`}
         />
         <div class="grid gap-6 md:grid-cols-2">
@@ -403,8 +417,8 @@ const structuredData = {
     <section class="pb-10">
       <div class="container-shell">
         <SectionHeader
-          title="Similar products"
-          description="Nearby alternatives from the same category or shopping need."
+          title={`Similar ${categoryLabel.toLowerCase()} picks`}
+          description={`Nearby alternatives to ${product.title} from the same category or shopping need.`}
         />
         <div class="mb-6 grid gap-4 lg:grid-cols-3">
           {relatedProducts.map((entry) => (
@@ -422,7 +436,7 @@ const structuredData = {
         <div class="mb-6">
           <ProductComparisonTable
             products={[product, ...relatedProducts]}
-            title="Compare this product with nearby alternatives"
+            title={`Compare ${product.title} alternatives`}
             description={`A spec-style view of ${product.title} against similar products from the same category or shopping need.`}
           />
         </div>
@@ -438,9 +452,9 @@ const structuredData = {
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
         <div class="flex flex-wrap items-center justify-between gap-4">
           <div>
-            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Ready to shop</p>
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Current listing check</p>
             <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
-              View the current Amazon listing
+              Check current listing for {product.title}
             </h2>
             <p class="mt-3 text-sm leading-7 text-ink-700">
               If the product still matches what you need, use the Amazon link below to check the current price, variants, and availability.

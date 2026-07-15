@@ -28,7 +28,13 @@ const slugify = (value) =>
 const startCase = (value) =>
   value
     .split("-")
-    .map((chunk) => chunk.charAt(0).toUpperCase() + chunk.slice(1))
+    .map((chunk) => {
+      if (chunk === "iphone") {
+        return "iPhone";
+      }
+
+      return chunk.charAt(0).toUpperCase() + chunk.slice(1);
+    })
     .join(" ");
 
 const formatPrice = (price) =>
@@ -129,7 +135,7 @@ for (const product of generatedProducts) {
     const current = topicMap.get(slug) ?? {
       slug,
       title: startCase(slug),
-      description: `Findsera content related to ${tag}.`,
+      description: `Findsera content related to ${startCase(slug)}.`,
       productIds: [],
       roundupSlugs: [],
       categoryCounts: {}
@@ -145,7 +151,7 @@ for (const roundup of generatedRoundups) {
   const topic = topicMap.get(slugify(roundup.cluster)) ?? {
     slug: slugify(roundup.cluster),
     title: startCase(slugify(roundup.cluster)),
-    description: `Findsera content related to ${roundup.cluster}.`,
+    description: `Findsera content related to ${startCase(slugify(roundup.cluster))}.`,
     productIds: [],
     roundupSlugs: [],
     categoryCounts: {}

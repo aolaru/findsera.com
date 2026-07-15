@@ -5,7 +5,7 @@ import ProductComparisonTable from "../../components/ProductComparisonTable.astr
 import ProductCard from "../../components/ProductCard.astro";
 import RoundupCard from "../../components/RoundupCard.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
-import { allTopics, categoryLabels, getProductsForTopic, getRoundupsForTopic } from "../../data/catalog";
+import { allRoundups, allTopics, categoryLabels, getProductsForTopic, getRoundupsForTopic } from "../../data/catalog";
 import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -28,8 +28,15 @@ const dominantCategory = Object.entries(topic.categoryCounts).sort((a, b) => b[1
 const dominantCategoryLabel = dominantCategory
   ? categoryLabels[dominantCategory as keyof typeof categoryLabels]
   : "Practical shopping";
+const fallbackRoundups = dominantCategory
+  ? allRoundups.filter((roundup) => roundup.category === dominantCategory).slice(0, 3)
+  : [];
+const displayRoundups = roundups.length > 0 ? roundups : fallbackRoundups;
+const isThinTopic = topic.productCount < 2 && topic.roundupCount === 0;
 const pageDescription =
-  topic.productCount > 0
+  isThinTopic && leadProduct
+    ? `${topic.title} product notes with nearby ${dominantCategoryLabel.toLowerCase()} guides for broader comparison.`
+    : topic.productCount > 0
     ? `${topic.title} products and shopping guides for comparing practical picks by need, price, and everyday fit.`
     : `${topic.title} shopping guides organized around practical buying situations.`;
 const comparisonProducts = products.slice(0, 5);
@@ -78,6 +85,7 @@ const faqItems = [
   title={`${topic.title} | Findsera`}
   description={pageDescription}
   canonicalPath={`/topics/${topic.slug}/`}
+  robots={isThinTopic ? "noindex, follow" : "index, follow"}
   image={leadProduct?.image ?? "/images/findsera-social-card.svg"}
   structuredData={structuredData}
 >
@@ -118,7 +126,7 @@ const faqItems = [
   <section class="pb-10">
     <div class="container-shell grid gap-6 lg:grid-cols-3">
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Where to start</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Start with {topic.title}</p>
         <p class="mt-4 text-sm leading-7 text-ink-700">
           {leadProduct
             ? `Start with ${leadProduct.title} if it matches the job you need solved, then compare price, setup effort, and the main tradeoff before opening a retailer listing.`
@@ -126,14 +134,14 @@ const faqItems = [
         </p>
       </article>
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">How to compare</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Compare {topic.title}</p>
         <p class="mt-4 text-sm leading-7 text-ink-700">
           Compare the products by the job behind this topic, the price range you are willing to accept, and the setup
           friction you will notice after the first week.
         </p>
       </article>
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
-        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">When to use a guide</p>
+        <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Use a guide when</p>
         <p class="mt-4 text-sm leading-7 text-ink-700">
           Use a related guide when the topic is still too broad, especially for budget limits, gift decisions,
           beginner setups, or direct comparisons between nearby products.
@@ -145,8 +153,12 @@ const faqItems = [
   <section class="pb-16">
     <div class="container-shell">
       <SectionHeader
-        title="Products"
-        description={`Products connected to ${topicName}, grouped for faster comparison.`}
+        title={`${topic.title} Products`}
+        description={
+          isThinTopic
+            ? `The current ${topicName} product match, with nearby guide paths below for broader comparison.`
+            : `Products connected to ${topicName}, grouped for faster comparison.`
+        }
       />
       {
         products.length > 0 ? (
@@ -177,15 +189,19 @@ const faqItems = [
   }
 
   {
-    roundups.length > 0 && (
+    displayRoundups.length > 0 && (
       <section class="section-spacing">
         <div class="container-shell">
           <SectionHeader
-            title="Related Guides"
-            description={`Related guides that make ${topicName} easier to compare by budget, use case, room, or product pair.`}
+            title={`${topic.title} Guide Paths`}
+            description={
+              roundups.length > 0
+                ? `Related guides that make ${topicName} easier to compare by budget, use case, room, or product pair.`
+                : `Nearby ${dominantCategoryLabel.toLowerCase()} guides to use when this topic has only one direct product match.`
+            }
           />
           <div class="grid gap-6 lg:grid-cols-3">
-            {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}
+            {displayRoundups.map((roundup) => <RoundupCard roundup={roundup} />)}
           </div>
         </div>
       </section>

@@ -1,5 +1,5 @@
 ---
-import { getProductBestFor, getProductFreshness } from "../data/catalog";
+import { getProductBestFor, getProductFreshness, getProductPriceReview } from "../data/catalog";
 import type { Product } from "../data/catalog";
 
 interface Props {
@@ -9,6 +9,7 @@ interface Props {
 const { product } = Astro.props;
 const freshness = getProductFreshness(product);
 const bestFor = getProductBestFor(product);
+const priceReview = getProductPriceReview(product);
 ---
 
 <article class="group flex h-full flex-col overflow-hidden rounded-[1.75rem] border border-black/6 bg-white shadow-card">
@@ -84,7 +85,8 @@ const bestFor = getProductBestFor(product);
     </ul>
 
     <div class="mt-4 flex flex-wrap items-center gap-2 text-xs font-medium uppercase tracking-[0.14em] text-ink-700/70">
-      <span>Price checked {product.priceCheckedAt}</span>
+      <span>Price reference {product.priceCheckedAt}</span>
+      {priceReview.status !== "current" && <span class="text-accent-600">· {priceReview.label}</span>}
       {freshness && <span class="text-accent-600">· {freshness.description}</span>}
     </div>
 
