@@ -53,6 +53,38 @@ const readJpegDimensions = (buffer) => {
   return null;
 };
 
+const readWebpDimensions = (buffer) => {
+  if (buffer.toString("ascii", 0, 4) !== "RIFF" || buffer.toString("ascii", 8, 12) !== "WEBP") {
+    return null;
+  }
+
+  const chunkType = buffer.toString("ascii", 12, 16);
+
+  if (chunkType === "VP8X" && buffer.length >= 30) {
+    const width = 1 + buffer.readUIntLE(24, 3);
+    const height = 1 + buffer.readUIntLE(27, 3);
+    return { width, height };
+  }
+
+  if (chunkType === "VP8L" && buffer.length >= 25 && buffer[20] === 0x2f) {
+    const b0 = buffer[21];
+    const b1 = buffer[22];
+    const b2 = buffer[23];
+    const b3 = buffer[24];
+    const width = 1 + (((b1 & 0x3f) << 8) | b0);
+    const height = 1 + (((b3 & 0x0f) << 10) | (b2 << 2) | ((b1 & 0xc0) >> 6));
+    return { width, height };
+  }
+
+  if (chunkType === "VP8 " && buffer.length >= 30 && buffer[23] === 0x9d && buffer[24] === 0x01 && buffer[25] === 0x2a) {
+    const width = buffer.readUInt16LE(26) & 0x3fff;
+    const height = buffer.readUInt16LE(28) & 0x3fff;
+    return { width, height };
+  }
+
+  return null;
+};
+
 const readImageDimensions = (buffer, extension) => {
   if (extension === ".png") {
     return readPngDimensions(buffer);
@@ -62,6 +94,10 @@ const readImageDimensions = (buffer, extension) => {
     return readJpegDimensions(buffer);
   }
 
+  if (extension === ".webp") {
+    return readWebpDimensions(buffer);
+  }
+
   return null;
 };
 
@@ -69,8 +105,8 @@ for (const product of products) {
   const imagePath = path.join(root, "public", product.image.replace(/^\//, ""));
   const extension = path.extname(product.image).toLowerCase();
 
-  if (extension === ".svg" || ![".png", ".jpg", ".jpeg"].includes(extension)) {
-    unsupported.push(`${product.title} (${product.id}) must use a raster PNG/JPG product image: ${product.image}`);
+  if (extension === ".svg" || ![".png", ".jpg", ".jpeg", ".webp"].includes(extension)) {
+    unsupported.push(`${product.title} (${product.id}) must use a raster PNG/JPG/WebP product image: ${product.image}`);
     continue;
   }
 

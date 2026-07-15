@@ -9,6 +9,7 @@ interface Props {
   canonicalPath?: string;
   robots?: string;
   adsenseEnabled?: boolean;
+  image?: string;
   structuredData?: Record<string, unknown>;
 }
 
@@ -18,12 +19,29 @@ const {
   canonicalPath = Astro.url.pathname,
   robots = "index, follow",
   adsenseEnabled = true,
+  image = "/images/findsera-social-card.svg",
   structuredData
 } = Astro.props;
 
-const canonicalUrl = new URL(canonicalPath, Astro.site ?? Astro.url.origin).toString();
+const siteOrigin = Astro.site ?? new URL(Astro.url.origin);
+const hasFileExtension = (pathname: string) => /\.[a-z0-9]+$/i.test(pathname);
+const normalizeUrl = (value: string) => {
+  const url = new URL(value, siteOrigin);
+
+  if (url.origin === siteOrigin.toString().replace(/\/$/, "") && !hasFileExtension(url.pathname)) {
+    url.pathname = url.pathname === "/" ? "/" : `${url.pathname.replace(/\/$/, "")}/`;
+  }
+
+  return url.toString();
+};
+
+const canonicalUrl = normalizeUrl(canonicalPath);
+const socialImageUrl = new URL(image, siteOrigin).toString();
 const googleSiteVerification = import.meta.env.PUBLIC_GOOGLE_SITE_VERIFICATION;
-const shouldLoadAdSense = adsenseEnabled && !robots.toLowerCase().includes("noindex");
+const analyticsId = import.meta.env.PUBLIC_GA_MEASUREMENT_ID ?? "G-8T3PBQ9MMP";
+const analyticsEnabled = import.meta.env.PUBLIC_ENABLE_ANALYTICS !== "false";
+const adsenseApproved = import.meta.env.PUBLIC_ENABLE_ADSENSE === "true";
+const shouldLoadAdSense = adsenseEnabled && adsenseApproved && !robots.toLowerCase().includes("noindex");
 ---
 
 <!doctype html>
@@ -45,9 +63,11 @@ const shouldLoadAdSense = adsenseEnabled && !robots.toLowerCase().includes("noin
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImageUrl} />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
     <meta name="google-adsense-account" content="ca-pub-4706844277814411" />
     {googleSiteVerification && <meta name="google-site-verification" content={googleSiteVerification} />}
     {
@@ -59,29 +79,70 @@ const shouldLoadAdSense = adsenseEnabled && !robots.toLowerCase().includes("noin
         ></script>
       )
     }
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-8T3PBQ9MMP"></script>
-    <script is:inline>
+    <script is:inline define:vars={{ analyticsId, analyticsEnabled }}>
       window.dataLayer = window.dataLayer || [];
-      function gtag() {
+      window.gtag = window.gtag || function gtag() {
         window.dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
-      gtag("config", "G-8T3PBQ9MMP");
+      };
 
-      document.addEventListener("click", (event) => {
-        const link = event.target.closest("a[href*='amazon.com']");
+      (() => {
+        const storageKey = "findsera_cookie_choice";
+        const banner = document.querySelector("[data-consent-banner]");
+        const acceptButton = document.querySelector("[data-consent-accept]");
+        const declineButton = document.querySelector("[data-consent-decline]");
+        let loaded = false;
 
-        if (!link || typeof gtag !== "function") {
-          return;
-        }
+        const loadAnalytics = () => {
+          if (!analyticsEnabled || loaded) return;
+          loaded = true;
+          const script = document.createElement("script");
+          script.async = true;
+          script.src = `https://www.googletagmanager.com/gtag/js?id=${analyticsId}`;
+          document.head.appendChild(script);
+          window.gtag("js", new Date());
+          window.gtag("config", analyticsId, { anonymize_ip: true });
+        };
 
-        gtag("event", "affiliate_click", {
-          event_category: "affiliate",
-          event_label: link.dataset.productId || link.textContent.trim(),
-          link_url: link.href,
-          page_path: window.location.pathname
+        const setChoice = (choice) => {
+          try {
+            window.localStorage.setItem(storageKey, choice);
+          } catch (error) {
+            // Ignore blocked storage and keep the page usable.
+          }
+          banner?.classList.add("hidden");
+          if (choice === "accepted") loadAnalytics();
+        };
+
+        const getChoice = () => {
+          try {
+            return window.localStorage.getItem(storageKey);
+          } catch (error) {
+            return null;
+          }
+        };
+
+        const choice = getChoice();
+        if (choice === "accepted") loadAnalytics();
+        else if (!choice) banner?.classList.remove("hidden");
+
+        acceptButton?.addEventListener("click", () => setChoice("accepted"));
+        declineButton?.addEventListener("click", () => setChoice("declined"));
+
+        document.addEventListener("click", (event) => {
+          const link = event.target.closest("a[href*='amazon.com']");
+
+          if (!link || typeof window.gtag !== "function") {
+            return;
+          }
+
+          window.gtag("event", "affiliate_click", {
+            event_category: "affiliate",
+            event_label: link.dataset.productId || link.textContent.trim(),
+            link_url: link.href,
+            page_path: window.location.pathname
+          });
         });
-      });
+      })();
     </script>
     {
       structuredData && (
@@ -95,5 +156,32 @@ const shouldLoadAdSense = adsenseEnabled && !robots.toLowerCase().includes("noin
       <slot />
     </main>
     <Footer />
+    <div
+      data-consent-banner
+      class="hidden fixed inset-x-4 bottom-4 z-50 mx-auto max-w-3xl rounded-[1.25rem] border border-black/10 bg-white p-4 text-sm leading-6 text-ink-700 shadow-card"
+    >
+      <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <p>
+          Findsera uses optional analytics cookies to understand aggregate traffic. Affiliate links work without
+          accepting analytics.
+        </p>
+        <div class="flex shrink-0 gap-2">
+          <button
+            type="button"
+            data-consent-decline
+            class="rounded-full border border-black/10 bg-white px-4 py-2 text-sm font-semibold text-ink-900 hover:border-accent-500"
+          >
+            Decline
+          </button>
+          <button
+            type="button"
+            data-consent-accept
+            class="rounded-full bg-ink-900 px-4 py-2 text-sm font-semibold text-white hover:bg-accent-600"
+          >
+            Accept
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

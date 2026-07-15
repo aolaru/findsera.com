@@ -1,0 +1,41 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const title = "Page Not Found | Findsera";
+const description =
+  "The Findsera page you requested could not be found. Use the guide, product, or search paths to keep browsing.";
+---
+
+<Layout title={title} description={description} canonicalPath="/404/" robots="noindex, follow" adsenseEnabled={false}>
+  <section class="section-spacing">
+    <div class="container-shell max-w-3xl">
+      <span class="eyebrow">404</span>
+      <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
+        Page not found
+      </h1>
+      <p class="mt-5 text-lg leading-8 text-ink-700">
+        This page may have moved, or the address may be wrong. Start from a current Findsera path below.
+      </p>
+      <div class="mt-8 flex flex-wrap gap-3">
+        <a
+          href="/guides/"
+          class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
+        >
+          Browse guides
+        </a>
+        <a
+          href="/products/"
+          class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+        >
+          View products
+        </a>
+        <a
+          href="/search/"
+          class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+        >
+          Search Findsera
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

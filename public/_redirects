@@ -1,0 +1,14 @@
+https://www.findsera.com/* https://findsera.com/:splat 301
+
+/clusters/budget-finds /guides/ 301
+/clusters/budget-finds/ /guides/ 301
+/clusters/coffee-gear /guides/ 301
+/clusters/coffee-gear/ /guides/ 301
+/clusters/home-office /guides/ 301
+/clusters/home-office/ /guides/ 301
+/clusters/precision-cooking /guides/ 301
+/clusters/precision-cooking/ /guides/ 301
+/clusters/travel-tech /guides/ 301
+/clusters/travel-tech/ /guides/ 301
+
+/* /404.html 404

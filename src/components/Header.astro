@@ -1,16 +1,16 @@
 ---
 import BrandLogo from "./BrandLogo.astro";
 import HeaderSearch from "./HeaderSearch.astro";
-import { getSearchItems } from "../data/catalog";
+import { getHeaderSearchItems } from "../data/catalog";
 
 const navItems = [
-  { href: "/products", label: "Products" },
-  { href: "/guides", label: "Guides" },
-  { href: "/about", label: "About" },
-  { href: "/search", label: "Search" }
+  { href: "/products/", label: "Products" },
+  { href: "/guides/", label: "Guides" },
+  { href: "/about/", label: "About" },
+  { href: "/search/", label: "Search" }
 ];
 
-const searchItems = getSearchItems();
+const searchItems = getHeaderSearchItems();
 ---
 
 <header class="sticky top-0 z-40 border-b border-black/5 bg-white/90 backdrop-blur">
@@ -20,8 +20,8 @@ const searchItems = getSearchItems();
         <BrandLogo showTagline={true} />
       </a>
       <nav class="flex items-center gap-4 text-sm font-semibold text-ink-700 lg:hidden" aria-label="Mobile navigation">
-        <a href="/products" class="hover:text-accent-600">Products</a>
-        <a href="/guides" class="hover:text-accent-600">Guides</a>
+        <a href="/products/" class="hover:text-accent-600">Products</a>
+        <a href="/guides/" class="hover:text-accent-600">Guides</a>
       </nav>
     </div>
 

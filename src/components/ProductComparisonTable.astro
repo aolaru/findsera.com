@@ -94,7 +94,7 @@ const formatDate = (value: string) =>
           products.map((product) => (
             <tr class="border-b border-black/6 align-top last:border-b-0">
               <td class="py-3 pr-4">
-                <a href={`/products/${product.slug}`} class="font-semibold text-ink-900 hover:text-accent-600">
+                <a href={`/products/${product.slug}/`} class="font-semibold text-ink-900 hover:text-accent-600">
                   {product.title}
                 </a>
                 {product.retailerTitle && product.retailerTitle !== product.title && (

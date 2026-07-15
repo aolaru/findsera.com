@@ -5,7 +5,7 @@ import ProductComparisonTable from "../../components/ProductComparisonTable.astr
 import ProductCard from "../../components/ProductCard.astro";
 import RoundupCard from "../../components/RoundupCard.astro";
 import SectionHeader from "../../components/SectionHeader.astro";
-import { allTopics, getProductsForTopic, getRoundupsForTopic } from "../../data/catalog";
+import { allTopics, categoryLabels, getProductsForTopic, getRoundupsForTopic } from "../../data/catalog";
 import Layout from "../../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -22,19 +22,48 @@ export function getStaticPaths() {
 const { topic, products, roundups } = Astro.props;
 const leadProduct = products[0];
 const secondaryProduct = products[1];
+const leadRoundup = roundups[0];
 const topicName = topic.title.toLowerCase();
+const dominantCategory = Object.entries(topic.categoryCounts).sort((a, b) => b[1] - a[1])[0]?.[0];
+const dominantCategoryLabel = dominantCategory
+  ? categoryLabels[dominantCategory as keyof typeof categoryLabels]
+  : "Practical shopping";
 const pageDescription =
   topic.productCount > 0
-    ? `${topic.title} products and shopping roundups for comparing practical picks by need, price, and everyday fit.`
-    : `${topic.title} shopping roundups organized around practical buying situations.`;
+    ? `${topic.title} products and shopping guides for comparing practical picks by need, price, and everyday fit.`
+    : `${topic.title} shopping guides organized around practical buying situations.`;
 const comparisonProducts = products.slice(0, 5);
+const structuredData = {
+  "@context": "https://schema.org",
+  "@type": "CollectionPage",
+  name: topic.title,
+  description: pageDescription,
+  url: `https://findsera.com/topics/${topic.slug}/`,
+  mainEntity: {
+    "@type": "ItemList",
+    itemListElement: [
+      ...products.slice(0, 10).map((product, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: product.title,
+        url: `https://findsera.com/products/${product.slug}/`
+      })),
+      ...roundups.slice(0, 10).map((roundup, index) => ({
+        "@type": "ListItem",
+        position: products.slice(0, 10).length + index + 1,
+        name: roundup.title,
+        url: `https://findsera.com/${roundup.slug}/`
+      }))
+    ]
+  }
+};
 const faqItems = [
   {
     question: `What does the ${topic.title} topic cover?`,
     answer:
       topic.productCount > 0
         ? `It brings together ${topicName} products with similar buying jobs, so you can compare a smaller set before checking prices or variants.`
-        : `It brings together ${topicName} shopping roundups so you can start from a practical buying situation instead of a generic product grid.`
+        : `It brings together ${topicName} shopping guides so you can start from a practical buying situation instead of a generic product grid.`
   },
   {
     question: `Where should I start with ${topic.title}?`,
@@ -48,12 +77,13 @@ const faqItems = [
 <Layout
   title={`${topic.title} | Findsera`}
   description={pageDescription}
-  canonicalPath={`/topics/${topic.slug}`}
-  robots="noindex, follow"
+  canonicalPath={`/topics/${topic.slug}/`}
+  image={leadProduct?.image ?? "/images/findsera-social-card.svg"}
+  structuredData={structuredData}
 >
   <section class="section-spacing">
     <div class="container-shell">
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/topics/${topic.slug}`, label: topic.title }]} />
+      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/topics/${topic.slug}/`, label: topic.title }]} />
       <span class="eyebrow">Topic tag</span>
       <h1 class="mt-6 font-serif text-5xl font-semibold tracking-tight text-ink-900">{topic.title}</h1>
       <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{pageDescription}</p>
@@ -62,14 +92,23 @@ const faqItems = [
           <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">Products</p>
           <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{topic.productCount}</p>
         </div>
-        <div class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card">
-          <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">Guides</p>
-          <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{topic.roundupCount}</p>
-        </div>
+        {
+          topic.roundupCount > 0 ? (
+            <div class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">Guides</p>
+              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{topic.roundupCount}</p>
+            </div>
+          ) : (
+            <div class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card">
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">Main category</p>
+              <p class="mt-2 font-serif text-3xl font-semibold text-ink-900">{dominantCategoryLabel}</p>
+            </div>
+          )
+        }
         <div class="rounded-[1.5rem] border border-black/6 bg-white p-5 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.16em] text-accent-600">Best starting point</p>
           <p class="mt-2 text-sm font-semibold leading-6 text-ink-900">
-            {leadProduct?.title ?? roundups[0]?.title ?? "Browse related guides"}
+            {leadProduct?.title ?? leadRoundup?.title ?? "Browse related guides"}
           </p>
         </div>
       </div>
@@ -81,22 +120,23 @@ const faqItems = [
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
         <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Where to start</p>
         <p class="mt-4 text-sm leading-7 text-ink-700">
-          Start with the product or guide that matches the job you need solved, then compare price, setup effort, and
-          the main tradeoff before opening a retailer listing.
+          {leadProduct
+            ? `Start with ${leadProduct.title} if it matches the job you need solved, then compare price, setup effort, and the main tradeoff before opening a retailer listing.`
+            : `Start with ${leadRoundup?.title ?? "the closest related guide"} when you need a narrower buying path for ${topicName}.`}
         </p>
       </article>
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
         <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">How to compare</p>
         <p class="mt-4 text-sm leading-7 text-ink-700">
-          Look for the repeated job first: travel, desk comfort, coffee consistency, storage, smart-home control, or
-          another daily routine. The best pick is the one that solves that job with the least friction.
+          Compare the products by the job behind this topic, the price range you are willing to accept, and the setup
+          friction you will notice after the first week.
         </p>
       </article>
       <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
         <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">When to use a guide</p>
         <p class="mt-4 text-sm leading-7 text-ink-700">
-          Use the related guides when you need a narrower answer, such as a budget limit, a gift angle, a beginner
-          setup, or a direct comparison between two products.
+          Use a related guide when the topic is still too broad, especially for budget limits, gift decisions,
+          beginner setups, or direct comparisons between nearby products.
         </p>
       </article>
     </div>
@@ -115,7 +155,7 @@ const faqItems = [
           </div>
         ) : (
           <div class="rounded-[1.75rem] border border-black/6 bg-white p-6 text-sm leading-7 text-ink-700 shadow-card">
-            This topic is currently guide-led. Start with the related roundups below for the strongest shopping paths.
+            This topic is currently guide-led. Start with the related guides below for the strongest shopping paths.
           </div>
         )
       }
@@ -141,7 +181,7 @@ const faqItems = [
       <section class="section-spacing">
         <div class="container-shell">
           <SectionHeader
-            title="Related Roundups"
+            title="Related Guides"
             description={`Related guides that make ${topicName} easier to compare by budget, use case, room, or product pair.`}
           />
           <div class="grid gap-6 lg:grid-cols-3">

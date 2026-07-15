@@ -75,16 +75,15 @@ const cons = [
     : `Most useful for ${useCase.toLowerCase()} buyers rather than general-purpose shoppers.`
 ];
 const trustReasons = [
-  editorial?.verification,
-  `Price was last checked on ${formattedUpdatedAt}, so the listing context is easy to judge.`,
-  "Buying notes focus on fit, tradeoffs, and everyday use instead of only repeating retailer specs.",
-  "Nearby alternatives and comparison guides are linked below when they help narrow the decision.",
+  editorial?.verification ?? `${product.brand} product details and the current retailer path were checked for the buying notes on this page.`,
+  `${product.title} is compared against ${relatedProducts.length} nearby alternative${relatedProducts.length === 1 ? "" : "s"} from the same category or use case.`,
+  `Price was last checked on ${formattedUpdatedAt}; confirm the live total, seller, and delivery terms before buying.`,
   product.affiliateMode === "exact"
     ? "The Amazon button opens a specific product listing."
     : "The Amazon button opens search results so you can verify seller, variant, and price."
 ].filter((item): item is string => Boolean(item));
 const reviewScope =
-  "Scope: public product details, retailer links, price context, and nearby alternatives. Hands-on testing or lab measurements are only included when directly described.";
+  `${product.title} notes are based on product-page details, brand information where available, current retailer paths, price context, and comparisons with nearby alternatives. Hands-on testing or lab measurements are only used when they are explicitly stated.`;
 
 const faqItems = [
   {
@@ -94,19 +93,20 @@ const faqItems = [
       `${product.title} makes the most sense for shoppers focused on ${useCase.toLowerCase()} and ${secondaryUseCase.toLowerCase()}, especially when they want a clearer fit than a generic bestseller list.`
   },
   {
-    question: `When was the ${product.title} price last checked?`,
-    answer: `${product.title} was last checked on ${formattedUpdatedAt}. Amazon prices can move quickly, so confirm the current total, seller, and delivery details before buying.`
+    question: `What should I compare before buying ${product.title}?`,
+    answer: `Compare the current price, seller, return window, variant, and whether the main tradeoff fits your routine: ${cons[0]}`
   },
   {
-    question: `Does ${product.title} link directly to Amazon?`,
-    answer: product.affiliateMode === "exact"
-      ? `Yes. This product currently points to a specific Amazon product listing.`
-      : `This product currently points to Amazon search results so readers can confirm the current listing, seller, variants, and price.`
+    question: `When was the ${product.title} price last checked?`,
+    answer: `${product.title} was last checked on ${formattedUpdatedAt}. Amazon prices can move quickly, so confirm the live total before buying.`
   }
 ];
 
-const pageTitle = `${product.title} Buying Guide, Price, and Alternatives | Findsera`;
-const pageDescription = `${product.description} See price context, decision notes, alternatives, and the current retailer path for ${product.title}.`;
+const truncate = (value: string, maxLength = 155) =>
+  value.length <= maxLength ? value : `${value.slice(0, maxLength - 1).replace(/\s+\S*$/, "")}.`;
+
+const pageTitle = `${product.title} | Findsera`;
+const pageDescription = truncate(product.description);
 
 const structuredData = {
   "@context": "https://schema.org",
@@ -119,13 +119,13 @@ const structuredData = {
           "@type": "ListItem",
           position: 2,
           name: categoryLabel,
-          item: `https://findsera.com/category/${product.category}`
+          item: `https://findsera.com/category/${product.category}/`
         },
         {
           "@type": "ListItem",
           position: 3,
           name: product.title,
-          item: `https://findsera.com/products/${product.slug}`
+          item: `https://findsera.com/products/${product.slug}/`
         }
       ]
     },
@@ -138,9 +138,9 @@ const structuredData = {
       },
       description: product.description,
       category: categoryLabel,
-      image: product.image,
+      image: `https://findsera.com${product.image}`,
       sku: product.id,
-      url: `https://findsera.com/products/${product.slug}`,
+      url: `https://findsera.com/products/${product.slug}/`,
       offers: {
         "@type": "Offer",
         priceCurrency: "USD",
@@ -163,7 +163,8 @@ const structuredData = {
 <Layout
   title={pageTitle}
   description={pageDescription}
-  canonicalPath={`/products/${product.slug}`}
+  canonicalPath={`/products/${product.slug}/`}
+  image={product.image}
   structuredData={structuredData}
 >
   <section class="section-spacing">
@@ -171,8 +172,8 @@ const structuredData = {
       <Breadcrumbs
         items={[
           { href: "/", label: "Home" },
-          { href: `/category/${product.category}`, label: categoryLabel },
-          { href: `/products/${product.slug}`, label: product.title }
+          { href: `/category/${product.category}/`, label: categoryLabel },
+          { href: `/products/${product.slug}/`, label: product.title }
         ]}
       />
       <div class="grid gap-8 lg:grid-cols-[minmax(0,1.1fr),minmax(0,0.9fr)]">
@@ -225,6 +226,10 @@ const structuredData = {
               )
             }
           </div>
+          <p class="mt-4 max-w-2xl rounded-[1.25rem] border border-black/6 bg-white px-4 py-3 text-sm leading-6 text-ink-700 shadow-sm">
+            Findsera may earn a commission if you buy through qualifying links on this page. This does not change the
+            price you pay.
+          </p>
           <div class="mt-8 flex flex-wrap gap-3">
             <a
               href={product.affiliateUrl}
@@ -369,7 +374,7 @@ const structuredData = {
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Why trust this pick</p>
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
-            More context than a retailer listing alone
+            What was checked for {product.title}
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">{reviewScope}</p>
           <ul class="mt-5 space-y-3 text-sm leading-7 text-ink-700">
@@ -408,7 +413,7 @@ const structuredData = {
                 Better if you need {entry.tags[0] ? formatTag(entry.tags[0].replace(/\s+/g, "-")) : categoryLabel}
               </p>
               <h3 class="mt-3 font-serif text-2xl font-semibold tracking-tight text-ink-900">
-                <a href={`/products/${entry.slug}`} class="hover:text-accent-600">{entry.title}</a>
+                <a href={`/products/${entry.slug}/`} class="hover:text-accent-600">{entry.title}</a>
               </h3>
               <p class="mt-3 text-sm leading-7 text-ink-700">{entry.highlights[0]}</p>
             </article>

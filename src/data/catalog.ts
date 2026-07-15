@@ -111,6 +111,23 @@ export type SearchItem = {
   keywords?: string[];
 };
 
+export const withTrailingSlash = (href: string) => {
+  if (
+    href === "/" ||
+    href.startsWith("#") ||
+    href.startsWith("mailto:") ||
+    href.startsWith("tel:") ||
+    /^https?:\/\//i.test(href)
+  ) {
+    return href;
+  }
+
+  const [pathWithQuery, hash = ""] = href.split("#");
+  const [path, query = ""] = pathWithQuery.split("?");
+  const normalizedPath = /\.[a-z0-9]+$/i.test(path) ? path : `${path.replace(/\/$/, "")}/`;
+  return `${normalizedPath}${query ? `?${query}` : ""}${hash ? `#${hash}` : ""}`;
+};
+
 export type ProductFreshness = {
   status: "new" | "updated";
   label: "NEW" | "UPDATED";
@@ -148,35 +165,35 @@ export const categories = Object.keys(categoryLabels).map((slug) => ({
 const staticSearchPages: SearchItem[] = [
   {
     title: "About Findsera",
-    href: "/about",
+    href: "/about/",
     type: "Page",
     meta: "About",
     keywords: ["about", "findsera", "mission", "editorial"]
   },
   {
     title: "How We Pick Products",
-    href: "/how-we-pick-products",
+    href: "/how-we-pick-products/",
     type: "Page",
     meta: "Methodology",
     keywords: ["how we pick products", "methodology", "reviews", "editorial process"]
   },
   {
     title: "Affiliate Disclosure",
-    href: "/affiliate-disclosure",
+    href: "/affiliate-disclosure/",
     type: "Page",
     meta: "Disclosure",
     keywords: ["affiliate disclosure", "commission", "links", "amazon associates"]
   },
   {
     title: "Privacy Policy",
-    href: "/privacy-policy",
+    href: "/privacy-policy/",
     type: "Page",
     meta: "Privacy",
     keywords: ["privacy policy", "cookies", "analytics", "advertising"]
   },
   {
     title: "Contact Findsera",
-    href: "/contact",
+    href: "/contact/",
     type: "Page",
     meta: "Contact",
     keywords: ["contact", "support", "editorial questions", "brand requests"]
@@ -320,21 +337,49 @@ export const sortProductsByPrice = (collection: Product[]) =>
 export const getSearchItems = (): SearchItem[] => [
   ...allProducts.map((product) => ({
     title: product.title,
-    href: `/products/${product.slug}`,
+    href: `/products/${product.slug}/`,
     type: "Product" as const,
     meta: product.priceLabel,
     keywords: [product.brand, product.category, ...product.tags]
   })),
   ...allRoundups.map((roundup) => ({
     title: roundup.title,
-    href: `/${roundup.slug}`,
+    href: `/${roundup.slug}/`,
     type: "Guide" as const,
     meta: roundup.category ?? "All categories",
     keywords: [roundup.cluster, roundup.eyebrow, roundup.description]
   })),
   ...categories.map((category) => ({
     title: category.label,
-    href: `/category/${category.slug}`,
+    href: `/category/${category.slug}/`,
+    type: "Category" as const,
+    meta: "Browse category",
+    keywords: [category.slug, category.description]
+  })),
+  ...staticSearchPages
+];
+
+export const getHeaderSearchItems = (): SearchItem[] => [
+  ...allProducts
+    .filter((product) => product.isTrending || product.priceCheckedAt >= "2026-05-13")
+    .slice(0, 24)
+    .map((product) => ({
+      title: product.title,
+      href: `/products/${product.slug}/`,
+      type: "Product" as const,
+      meta: product.priceLabel,
+      keywords: [product.brand, product.category, ...product.tags]
+    })),
+  ...allRoundups.slice(0, 24).map((roundup) => ({
+    title: roundup.title,
+    href: `/${roundup.slug}/`,
+    type: "Guide" as const,
+    meta: roundup.category ?? "All categories",
+    keywords: [roundup.cluster, roundup.eyebrow, roundup.description]
+  })),
+  ...categories.map((category) => ({
+    title: category.label,
+    href: `/category/${category.slug}/`,
     type: "Category" as const,
     meta: "Browse category",
     keywords: [category.slug, category.description]

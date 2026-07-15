@@ -84,7 +84,7 @@ const structuredData = {
   "@type": "CollectionPage",
   name: title,
   description: metaDescription,
-  url: `https://findsera.com/category/${slug}`,
+  url: `https://findsera.com/category/${slug}/`,
   about: label,
   mainEntity: {
     "@type": "ItemList",
@@ -101,7 +101,7 @@ const structuredData = {
 <Layout title={title} description={metaDescription} structuredData={structuredData}>
   <section class="section-spacing">
     <div class="container-shell">
-      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/category/${slug}`, label }]} />
+      <Breadcrumbs items={[{ href: "/", label: "Home" }, { href: `/category/${slug}/`, label }]} />
       <span class="eyebrow">Category</span>
       <div class="mt-6 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div class="max-w-3xl">
@@ -149,8 +149,8 @@ const structuredData = {
       <section class="section-spacing">
         <div class="container-shell">
           <SectionHeader
-            title={`Related ${label} Roundups`}
-            description={`Use these ${label.toLowerCase()} roundups when you want a narrower product set built around a specific budget, room, routine, or comparison.`}
+            title={`Related ${label} Guides`}
+            description={`Use these ${label.toLowerCase()} guides when you want a narrower product set built around a specific budget, room, routine, or comparison.`}
           />
           <div class="grid gap-6 lg:grid-cols-3">
             {roundups.map((roundup) => <RoundupCard roundup={roundup} />)}

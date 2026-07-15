@@ -23,9 +23,9 @@ import { categories } from "../data/catalog";
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Browse</p>
         <ul class="mt-4 space-y-3 text-sm text-ink-700">
           <li><a href="/" class="hover:text-accent-600">Home</a></li>
-          <li><a href="/products" class="hover:text-accent-600">Products</a></li>
-          <li><a href="/guides" class="hover:text-accent-600">Buying Guides</a></li>
-          <li><a href="/search" class="hover:text-accent-600">Search</a></li>
+          <li><a href="/products/" class="hover:text-accent-600">Products</a></li>
+          <li><a href="/guides/" class="hover:text-accent-600">Buying Guides</a></li>
+          <li><a href="/search/" class="hover:text-accent-600">Search</a></li>
         </ul>
       </div>
 
@@ -35,7 +35,7 @@ import { categories } from "../data/catalog";
           {
             categories.map((category) => (
               <li>
-                <a href={`/category/${category.slug}`} class="hover:text-accent-600">
+                <a href={`/category/${category.slug}/`} class="hover:text-accent-600">
                   {category.label}
                 </a>
               </li>
@@ -47,11 +47,11 @@ import { categories } from "../data/catalog";
       <div>
         <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Trust</p>
         <ul class="mt-4 space-y-3 text-sm text-ink-700">
-          <li><a href="/about" class="hover:text-accent-600">About</a></li>
-          <li><a href="/how-we-pick-products" class="hover:text-accent-600">How We Pick Products</a></li>
-          <li><a href="/affiliate-disclosure" class="hover:text-accent-600">Affiliate Disclosure</a></li>
-          <li><a href="/privacy-policy" class="hover:text-accent-600">Privacy Policy</a></li>
-          <li><a href="/contact" class="hover:text-accent-600">Contact</a></li>
+          <li><a href="/about/" class="hover:text-accent-600">About</a></li>
+          <li><a href="/how-we-pick-products/" class="hover:text-accent-600">How We Pick Products</a></li>
+          <li><a href="/affiliate-disclosure/" class="hover:text-accent-600">Affiliate Disclosure</a></li>
+          <li><a href="/privacy-policy/" class="hover:text-accent-600">Privacy Policy</a></li>
+          <li><a href="/contact/" class="hover:text-accent-600">Contact</a></li>
         </ul>
       </div>
     </div>

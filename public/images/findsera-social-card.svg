@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-labelledby="title desc">
+  <title id="title">Findsera</title>
+  <desc id="desc">Findsera product discovery social preview card.</desc>
+  <rect width="1200" height="630" fill="#fff9ef"/>
+  <rect x="70" y="70" width="1060" height="490" rx="48" fill="#ffffff" stroke="#eadfce" stroke-width="2"/>
+  <rect x="120" y="130" width="104" height="104" rx="30" fill="#e97d2f"/>
+  <path d="M154 157c0-5 4-9 9-9h45c5 0 9 4 9 9v15c0 5-4 9-9 9h-28v21h22c5 0 9 4 9 9v14c0 5-4 9-9 9h-22v41c0 5-4 9-9 9h-8c-5 0-9-4-9-9V157Z" fill="#fff9ef"/>
+  <circle cx="220" cy="146" r="18" fill="#0f8b8d"/>
+  <text x="260" y="178" font-family="Georgia, 'Times New Roman', serif" font-size="58" font-weight="700" fill="#1f1a16">Findsera</text>
+  <text x="120" y="310" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700" fill="#1f1a16">Focused buying guides for practical products</text>
+  <text x="120" y="376" font-family="Inter, Arial, sans-serif" font-size="27" fill="#5d5146">Compare fewer products, understand the tradeoffs, and check current retailer paths.</text>
+  <g fill="#0f8b8d" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="700">
+    <text x="120" y="470">Travel tech</text>
+    <text x="300" y="470">Desk setups</text>
+    <text x="500" y="470">Coffee gear</text>
+    <text x="690" y="470">Home upgrades</text>
+  </g>
+</svg>

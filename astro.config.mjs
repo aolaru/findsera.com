@@ -6,33 +6,34 @@ import { defineConfig } from "astro/config";
 export default defineConfig({
   site: "https://findsera.com",
   output: "static",
+  trailingSlash: "always",
   redirects: {
     "/clusters/budget-finds": {
       status: 301,
-      destination: "/guides"
+      destination: "/guides/"
     },
     "/clusters/coffee-gear": {
       status: 301,
-      destination: "/guides"
+      destination: "/guides/"
     },
     "/clusters/home-office": {
       status: 301,
-      destination: "/guides"
+      destination: "/guides/"
     },
     "/clusters/precision-cooking": {
       status: 301,
-      destination: "/guides"
+      destination: "/guides/"
     },
     "/clusters/travel-tech": {
       status: 301,
-      destination: "/guides"
+      destination: "/guides/"
     }
   },
   integrations: [
     sitemap({
       filter: (page) => {
         const { pathname } = new URL(page);
-        return pathname !== "/search/" && !pathname.startsWith("/topics/");
+        return pathname !== "/search/" && pathname !== "/404/";
       }
     })
   ],

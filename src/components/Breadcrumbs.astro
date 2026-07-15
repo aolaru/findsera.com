@@ -1,4 +1,6 @@
 ---
+import { withTrailingSlash } from "../data/catalog";
+
 type Crumb = {
   href: string;
   label: string;
@@ -17,7 +19,7 @@ const { items } = Astro.props;
       items.map((item, index) => (
         <>
           <li>
-            <a href={item.href} class="hover:text-accent-600">
+            <a href={withTrailingSlash(item.href)} class="hover:text-accent-600">
               {item.label}
             </a>
           </li>

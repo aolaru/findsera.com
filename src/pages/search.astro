@@ -3,13 +3,18 @@ import { getSearchItems } from "../data/catalog";
 import Layout from "../layouts/Layout.astro";
 
 const items = getSearchItems();
+const suggestedItems = [
+  ...items.filter((item) => item.type === "Guide").slice(0, 6),
+  ...items.filter((item) => item.type === "Product").slice(0, 4),
+  ...items.filter((item) => item.type === "Category").slice(0, 2)
+];
 
 const title = "Search Findsera | Findsera";
 const description =
   "Search products, buying guides, categories, and editorial pages from one place.";
 ---
 
-<Layout title={title} description={description} canonicalPath="/search" robots="noindex, follow">
+<Layout title={title} description={description} canonicalPath="/search/" robots="noindex, follow" adsenseEnabled={false}>
   <section class="section-spacing">
     <div class="container-shell">
       <span class="eyebrow">Search</span>
@@ -36,9 +41,10 @@ const description =
         </label>
         <div class="mt-4 flex flex-wrap items-center justify-between gap-3 text-sm text-ink-700">
           <p>
-            <span data-search-page-count class="font-semibold text-ink-900">{items.length}</span> matching pages
+            <span data-search-page-count class="font-semibold text-ink-900">{suggestedItems.length}</span>
+            <span data-search-page-count-label> suggested starting points</span>
           </p>
-          <a href="/products" class="font-semibold text-accent-600 hover:text-accent-500">
+          <a href="/products/" class="font-semibold text-accent-600 hover:text-accent-500">
             Browse all products
           </a>
         </div>
@@ -56,16 +62,19 @@ const description =
   </section>
 
   <script type="application/json" data-search-page-items set:html={JSON.stringify(items)} />
+  <script type="application/json" data-search-page-suggested-items set:html={JSON.stringify(suggestedItems)} />
 
   <script is:inline>
     (() => {
       const input = document.querySelector("[data-search-page-input]");
       const count = document.querySelector("[data-search-page-count]");
+      const countLabel = document.querySelector("[data-search-page-count-label]");
       const results = document.querySelector("[data-search-page-results]");
       const empty = document.querySelector("[data-search-page-empty]");
       const itemsElement = document.querySelector("[data-search-page-items]");
+      const suggestedItemsElement = document.querySelector("[data-search-page-suggested-items]");
 
-      if (!input || !count || !results || !empty || !itemsElement) return;
+      if (!input || !count || !countLabel || !results || !empty || !itemsElement || !suggestedItemsElement) return;
 
       const items = JSON.parse(itemsElement.textContent || "[]").map((item) => ({
         ...item,
@@ -73,6 +82,7 @@ const description =
           .join(" ")
           .toLowerCase()
       }));
+      const suggestedItems = JSON.parse(suggestedItemsElement.textContent || "[]");
 
       const escapeHtml = (value) =>
         value
@@ -94,7 +104,7 @@ const description =
 
       const getMatches = (query) => {
         const normalized = query.trim().toLowerCase();
-        if (!normalized) return items;
+        if (!normalized) return suggestedItems;
         return items
           .filter((item) => item.haystack.includes(normalized))
           .sort((a, b) => {
@@ -106,8 +116,10 @@ const description =
       };
 
       const render = () => {
-        const matches = getMatches(input.value);
+        const query = input.value.trim();
+        const matches = getMatches(query);
         count.textContent = String(matches.length);
+        countLabel.textContent = query ? " matching pages" : " suggested starting points";
         empty.classList.toggle("hidden", matches.length !== 0);
         results.innerHTML = matches
           .map(
