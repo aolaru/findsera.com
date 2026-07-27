@@ -2,13 +2,10 @@
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
-import topics from "./src/data/generated/topics.generated.json" with { type: "json" };
+import flagshipGuideSlugs from "./src/data/flagship-guide-slugs.json" with { type: "json" };
 
-const thinTopicPaths = new Set(
-  topics
-    .filter((topic) => topic.productCount < 2 && topic.roundupCount === 0)
-    .map((topic) => `/topics/${topic.slug}/`)
-);
+const flagshipGuidePaths = new Set(flagshipGuideSlugs.map((slug) => `/${slug}/`));
+const referencePathPattern = /^\/(?:products|topics|category)(?:\/|$)/;
 
 export default defineConfig({
   site: "https://findsera.com",
@@ -40,7 +37,18 @@ export default defineConfig({
     sitemap({
       filter: (page) => {
         const { pathname } = new URL(page);
-        return pathname !== "/search/" && pathname !== "/404/" && !thinTopicPaths.has(pathname);
+        if (pathname === "/search/" || pathname === "/404/" || referencePathPattern.test(pathname)) {
+          return false;
+        }
+
+        return !pathname.endsWith("/") || pathname === "/" || flagshipGuidePaths.has(pathname) || [
+          "/about/",
+          "/affiliate-disclosure/",
+          "/contact/",
+          "/guides/",
+          "/how-we-pick-products/",
+          "/privacy-policy/"
+        ].includes(pathname);
       }
     })
   ],

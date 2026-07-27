@@ -2,6 +2,7 @@ import clusters from "./generated/clusters.generated.json";
 import products from "./generated/products.generated.json";
 import roundups from "./generated/roundups.generated.json";
 import topics from "./generated/topics.generated.json";
+import flagshipGuideSlugs from "./flagship-guide-slugs.json";
 
 export type ProductCategory = "gadgets" | "kitchen" | "home";
 export type AffiliateMode = "exact" | "search";
@@ -152,6 +153,9 @@ export const allProducts = [...products] as Product[];
 export const allRoundups = [...roundups] as Roundup[];
 export const allTopics = [...topics] as Topic[];
 export const allClusters = [...clusters] as Cluster[];
+export const flagshipGuideSlugSet = new Set(flagshipGuideSlugs);
+export const isFlagshipGuide = (slug: string) => flagshipGuideSlugSet.has(slug);
+export const flagshipGuides = allRoundups.filter((roundup) => isFlagshipGuide(roundup.slug));
 
 export const categoryLabels: Record<ProductCategory, string> = {
   gadgets: "Gadgets",
@@ -393,54 +397,23 @@ export const sortProductsByPrice = (collection: Product[]) =>
   [...collection].sort((a, b) => a.price - b.price);
 
 export const getSearchItems = (): SearchItem[] => [
-  ...allProducts.map((product) => ({
-    title: product.title,
-    href: `/products/${product.slug}/`,
-    type: "Product" as const,
-    meta: product.priceLabel,
-    keywords: [product.brand, product.category, ...product.tags]
-  })),
-  ...allRoundups.map((roundup) => ({
+  ...flagshipGuides.map((roundup) => ({
     title: roundup.title,
     href: `/${roundup.slug}/`,
     type: "Guide" as const,
     meta: roundup.category ?? "All categories",
     keywords: [roundup.cluster, roundup.eyebrow, roundup.description]
-  })),
-  ...categories.map((category) => ({
-    title: category.label,
-    href: `/category/${category.slug}/`,
-    type: "Category" as const,
-    meta: "Browse category",
-    keywords: [category.slug, category.description]
   })),
   ...staticSearchPages
 ];
 
 export const getHeaderSearchItems = (): SearchItem[] => [
-  ...allProducts
-    .filter((product) => product.isTrending || product.priceCheckedAt >= "2026-05-13")
-    .slice(0, 12)
-    .map((product) => ({
-      title: product.title,
-      href: `/products/${product.slug}/`,
-      type: "Product" as const,
-      meta: product.priceLabel,
-      keywords: [product.brand, product.category, ...product.tags]
-    })),
-  ...allRoundups.slice(0, 12).map((roundup) => ({
+  ...flagshipGuides.map((roundup) => ({
     title: roundup.title,
     href: `/${roundup.slug}/`,
     type: "Guide" as const,
     meta: roundup.category ?? "All categories",
     keywords: [roundup.cluster, roundup.eyebrow, roundup.description]
-  })),
-  ...categories.map((category) => ({
-    title: category.label,
-    href: `/category/${category.slug}/`,
-    type: "Category" as const,
-    meta: "Browse category",
-    keywords: [category.slug, category.description]
   })),
   ...staticSearchPages
 ];

@@ -11,7 +11,7 @@ interface Props {
 const {
   products,
   title = "Compare the picks",
-  description = "Use this table to compare price, category fit, standout strengths, and the main tradeoff before opening Amazon."
+  description = "Use this table to compare category fit, standout strengths, and the main tradeoff before checking a retailer listing."
 } = Astro.props;
 
 const getBestFor = (product: Product) => {
@@ -93,8 +93,8 @@ const formatDate = (value: string) =>
                   {getBestFor(product)}
                 </p>
               </div>
-              <p class="shrink-0 rounded-full bg-white px-3 py-1 text-sm font-semibold text-ink-900">
-                {product.priceLabel}
+              <p class="shrink-0 rounded-full bg-white px-3 py-1 text-xs font-semibold text-ink-900">
+                {priceReview.status === "current" ? product.priceLabel : "Check price"}
               </p>
             </div>
             <dl class="mt-4 grid gap-3 text-sm leading-6 text-ink-700">
@@ -111,10 +111,9 @@ const formatDate = (value: string) =>
                 <dd class="mt-1 text-ink-900">{getTradeoff(product)}</dd>
               </div>
               <div>
-                <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-700/60">Price reference</dt>
+                <dt class="text-xs font-semibold uppercase tracking-[0.14em] text-ink-700/60">Listing check</dt>
                 <dd class="mt-1 text-ink-900">
-                  {priceReview.checkedAtLabel}
-                  {priceReview.status !== "current" && ` · ${priceReview.label}`}
+                  {priceReview.status === "current" ? priceReview.checkedAtLabel : "Confirm current price and availability with the retailer."}
                 </dd>
               </div>
             </dl>
@@ -126,7 +125,7 @@ const formatDate = (value: string) =>
               data-product-id={product.id}
               class="mt-4 inline-flex rounded-full bg-ink-900 px-4 py-2 text-xs font-semibold text-white hover:bg-accent-600"
             >
-              View on Amazon
+              Check listing
             </a>
           </article>
         );
@@ -142,8 +141,8 @@ const formatDate = (value: string) =>
           <th class="pb-3 pr-4 font-semibold">Category</th>
           <th class="pb-3 pr-4 font-semibold">Standout spec</th>
           <th class="pb-3 pr-4 font-semibold">Tradeoff</th>
-          <th class="pb-3 pr-4 font-semibold">Price</th>
-          <th class="pb-3 pr-4 font-semibold">Checked</th>
+          <th class="pb-3 pr-4 font-semibold">Listing price</th>
+          <th class="pb-3 pr-4 font-semibold">Verification</th>
           <th class="pb-3 font-semibold">Shop</th>
         </tr>
       </thead>
@@ -166,12 +165,11 @@ const formatDate = (value: string) =>
                 <td class="py-3 pr-4">{categoryLabels[product.category]}</td>
                 <td class="py-3 pr-4">{product.editorial?.whyIncluded ?? product.highlights[0]}</td>
                 <td class="py-3 pr-4">{getTradeoff(product)}</td>
-                <td class="py-3 pr-4 font-semibold text-ink-900">{product.priceLabel}</td>
+                <td class="py-3 pr-4 font-semibold text-ink-900">
+                  {priceReview.status === "current" ? product.priceLabel : "Check current listing"}
+                </td>
                 <td class="py-3 pr-4">
-                  {formatDate(product.priceCheckedAt)}
-                  {priceReview.status !== "current" && (
-                    <p class="mt-1 text-xs font-semibold text-accent-600">{priceReview.label}</p>
-                  )}
+                  {priceReview.status === "current" ? formatDate(product.priceCheckedAt) : "Refresh required"}
                 </td>
                 <td class="py-3">
                   <a
@@ -182,7 +180,7 @@ const formatDate = (value: string) =>
                     data-product-id={product.id}
                     class="inline-flex rounded-full bg-ink-900 px-3 py-2 text-xs font-semibold text-white hover:bg-accent-600"
                   >
-                    Amazon
+                    Listing
                   </a>
                 </td>
               </tr>

@@ -13,8 +13,10 @@ import {
   categoryLabels,
   getProductPriceReview,
   getProductsForRoundup,
+  isFlagshipGuide,
   withTrailingSlash
 } from "../data/catalog";
+import { flagshipGuideContent } from "../data/flagshipGuides";
 import Layout from "../layouts/Layout.astro";
 
 export function getStaticPaths() {
@@ -24,7 +26,10 @@ export function getStaticPaths() {
       roundup,
       products: getProductsForRoundup(roundup),
       relatedRoundups: allRoundups
-        .filter((entry) => entry.slug !== roundup.slug && entry.category === roundup.category)
+        .filter(
+          (entry) =>
+            entry.slug !== roundup.slug && entry.category === roundup.category && isFlagshipGuide(entry.slug)
+        )
         .slice(0, 3),
       relatedTopics: allTopics.filter((topic) => topic.roundupSlugs.includes(roundup.slug)).slice(0, 5)
     }
@@ -74,9 +79,16 @@ const exactLinkCount = products.filter((product) => product.affiliateMode === "e
 const isComparisonGuide = roundup.slug.includes("-vs-") && products.length >= 2;
 const comparisonProducts = products.slice(0, 2);
 const editorial = roundup.editorial;
+const isFlagship = isFlagshipGuide(roundup.slug);
+const flagshipContent = flagshipGuideContent[roundup.slug];
 const decisionSummary = editorial?.decisionSummary;
 const categoryLabel = roundup.category ? categoryLabels[roundup.category] : "All categories";
 const guideTitle = `${roundup.title} | Findsera`;
+const formatEditorialCheck = (value: string) =>
+  value.replace(
+    /current listed prices? and (?:last )?price-check dates?/i,
+    "retailer details and verification status"
+  );
 const quickDecisionCards = [
   {
     label: "Best overall",
@@ -147,15 +159,19 @@ const structuredData = {
             description: product.description,
             image: `https://findsera.com${product.image}`,
             url: `https://findsera.com/products/${product.slug}/`,
-            offers: {
-              "@type": "Offer",
-              priceCurrency: "USD",
-              price: product.price,
-              url: product.affiliateUrl,
-              availability: "https://schema.org/InStock",
-              itemCondition: "https://schema.org/NewCondition",
-              priceValidUntil: getProductPriceReview(product).priceValidUntil
-            }
+            ...(getProductPriceReview(product).status === "current"
+              ? {
+                  offers: {
+                    "@type": "Offer",
+                    priceCurrency: "USD",
+                    price: product.price,
+                    url: product.affiliateUrl,
+                    availability: "https://schema.org/InStock",
+                    itemCondition: "https://schema.org/NewCondition",
+                    priceValidUntil: getProductPriceReview(product).priceValidUntil
+                  }
+                }
+              : {})
           }
         }))
       }
@@ -176,6 +192,7 @@ const structuredData = {
   title={guideTitle}
   description={roundup.description}
   canonicalPath={`/${roundup.slug}/`}
+  robots={isFlagship ? "index, follow" : "noindex, follow"}
   image={topPick.image}
   structuredData={structuredData}
 >
@@ -187,10 +204,10 @@ const structuredData = {
         <div>
           <div class="mb-5 flex flex-wrap gap-3">
             <span class="rounded-full bg-sand-100 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-900">
-              Last updated {formattedUpdatedAt}
+              Editorial record {formattedUpdatedAt}
             </span>
             <span class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">
-              Shortlist reviewed
+              Decision guide
             </span>
             {
               editorial && (
@@ -204,6 +221,20 @@ const structuredData = {
             {roundup.title}
           </h1>
           <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{roundup.intro}</p>
+          {
+            flagshipContent && (
+              <div class="mt-8 max-w-3xl space-y-5 text-base leading-8 text-ink-700">
+                <p>{flagshipContent.premise}</p>
+                <div class="rounded-[1.5rem] border border-black/6 bg-sand-50 p-5">
+                  <h2 class="font-serif text-2xl font-semibold text-ink-900">A practical way to decide</h2>
+                  <ul class="mt-4 space-y-3">
+                    {flagshipContent.decisionPath.map((step) => <li>- {step}</li>)}
+                  </ul>
+                </div>
+                <p>{flagshipContent.realityCheck}</p>
+              </div>
+            )
+          }
           <div class="mt-8 grid gap-4 sm:grid-cols-2 xl:grid-cols-5">
             {[...quickDecisionCards, ...boundaryDecisionCards].map((item) => (
               <article class="rounded-[1.5rem] border border-black/6 bg-white p-4 shadow-card">
@@ -222,21 +253,13 @@ const structuredData = {
             ))}
           </div>
           <p class="mt-5 max-w-2xl rounded-[1.25rem] border border-black/6 bg-white px-4 py-3 text-sm leading-6 text-ink-700 shadow-sm">
-            Findsera may earn a commission if you buy through qualifying links on this guide. Prices and availability
-            can change after the listed check date.
+            Findsera may earn a commission if you buy through qualifying links. Current price, stock, and seller
+            details are verified only on the retailer listing.
           </p>
           <div class="mt-6 flex flex-wrap gap-3">
             <a
-              href={topPick.affiliateUrl}
-              target="_blank"
-              rel="noopener noreferrer sponsored"
-              class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
-            >
-              Shop best overall
-            </a>
-            <a
               href="#comparison"
-              class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
+              class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
             >
               Compare picks
             </a>
@@ -278,6 +301,15 @@ const structuredData = {
   <section class="pb-10" id="top-picks">
     <div class="container-shell space-y-8">
       <AffiliateDisclosure />
+      {
+        flagshipContent && (
+          <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
+            <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Before you buy</p>
+            <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">Keep the shortlist honest</h2>
+            <p class="mt-4 max-w-3xl text-sm leading-7 text-ink-700">{flagshipContent.closing}</p>
+          </article>
+        )
+      }
       <div class="grid gap-6 lg:grid-cols-3">
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Review status</p>
@@ -285,8 +317,8 @@ const structuredData = {
             {categoryLabel} shortlist reviewed
           </h2>
           <p class="mt-4 text-sm leading-7 text-ink-700">
-            Last reviewed on {formattedUpdatedAt}. This set includes {products.length}
-            products, with {exactLinkCount} direct retailer product links where available.{" "}
+            This guide has an editorial record dated {formattedUpdatedAt} and compares {products.length}
+            products. Retailer links are included only after the decision context.{" "}
             {editorial?.reviewNote}
           </p>
         </article>
@@ -334,7 +366,7 @@ const structuredData = {
                 "Everyday-use framing instead of generic feature dumping",
                 "A useful spread across budget, upgrade, and specific use cases",
                 "Preference for direct product links when available"
-              ]).map((criterion) => <li>- {criterion}</li>)
+              ]).map((criterion) => <li>- {formatEditorialCheck(criterion)}</li>)
             }
           </ul>
         </article>
@@ -408,7 +440,7 @@ const structuredData = {
                 "Products are chosen for a clear use case, not to inflate the list length.",
                 "Preference goes to products that are easy to compare and act on.",
                 "The product set stays tight so differences are easier to understand."
-              ]).map((criterion) => <li>- {criterion}</li>)
+              ]).map((criterion) => <li>- {formatEditorialCheck(criterion)}</li>)
             }
           </ul>
         </article>
@@ -419,13 +451,13 @@ const structuredData = {
           <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Trust signals</p>
           <div class="mt-4 grid gap-4 sm:grid-cols-3">
             <div class="rounded-[1.5rem] bg-sand-50 p-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Updated</p>
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Editorial record</p>
               <p class="mt-2 text-sm font-semibold text-ink-900">{formattedUpdatedAt}</p>
             </div>
             <div class="rounded-[1.5rem] bg-sand-50 p-4">
-              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Affiliate links</p>
+              <p class="text-xs font-semibold uppercase tracking-[0.16em] text-ink-700/70">Retailer paths</p>
               <p class="mt-2 text-sm font-semibold text-ink-900">
-                {exactLinkCount} direct product link{exactLinkCount === 1 ? "" : "s"}
+                {exactLinkCount} direct product path{exactLinkCount === 1 ? "" : "s"}
               </p>
             </div>
             <div class="rounded-[1.5rem] bg-sand-50 p-4">
@@ -435,7 +467,7 @@ const structuredData = {
           </div>
         </article>
         <article class="rounded-[1.75rem] border border-black/6 bg-white p-6 shadow-card">
-          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Ready to shop</p>
+          <p class="text-xs font-semibold uppercase tracking-[0.18em] text-accent-600">Check a retailer only after deciding</p>
           <h2 class="mt-3 font-serif text-3xl font-semibold tracking-tight text-ink-900">
             Start with {topPick.title}
           </h2>
@@ -450,7 +482,7 @@ const structuredData = {
               rel="noopener noreferrer sponsored"
               class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
             >
-              View {topPick.title}
+              Check {topPick.title}
             </a>
             <a
               href={budgetPick.affiliateUrl}
@@ -458,7 +490,7 @@ const structuredData = {
               rel="noopener noreferrer sponsored"
               class="inline-flex items-center rounded-full border border-black/10 bg-white px-5 py-3 text-sm font-semibold text-ink-900 hover:border-accent-500 hover:text-accent-600"
             >
-              See value pick
+              Check value option
             </a>
           </div>
         </article>

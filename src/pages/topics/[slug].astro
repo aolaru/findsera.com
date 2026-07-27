@@ -85,7 +85,7 @@ const faqItems = [
   title={`${topic.title} | Findsera`}
   description={pageDescription}
   canonicalPath={`/topics/${topic.slug}/`}
-  robots={isThinTopic ? "noindex, follow" : "index, follow"}
+  robots="noindex, follow"
   image={leadProduct?.image ?? "/images/findsera-social-card.svg"}
   structuredData={structuredData}
 >

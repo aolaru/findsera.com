@@ -12,18 +12,19 @@ interface Props {
 
 const { product, useCase, secondaryUseCase, priceTier, title = `Buying details for ${product.title}` } = Astro.props;
 const priceReview = getProductPriceReview(product);
+const hasCurrentPrice = priceReview.status === "current";
 
 const rows = [
   ["Brand", product.brand],
   ["Category", categoryLabels[product.category]],
-  ["Current listed price", product.priceLabel],
-  ["Price status", priceReview.label],
+  ["Listing price", hasCurrentPrice ? product.priceLabel : "Check the retailer for current price"],
+  ["Price status", hasCurrentPrice ? "Checked" : "Refresh required before publishing a price"],
   ["Price tier", priceTier],
   ...(product.editorial ? [["Best fit", product.editorial.bestFor]] : []),
   ["Primary use", useCase],
   ["Secondary use", secondaryUseCase],
   ["Retailer title", product.retailerTitle ?? product.title],
-  ["Price reference", priceReview.checkedAtLabel],
+  ["Last verified", hasCurrentPrice ? priceReview.checkedAtLabel : "Not currently published"],
   ["Retailer path", product.affiliateMode === "exact" ? "Direct product listing" : "Amazon search results"],
   ["Tags", product.tags.join(", ")]
 ];

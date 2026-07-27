@@ -1,9 +1,9 @@
 ---
 import SectionHeader from "../../components/SectionHeader.astro";
-import { allRoundups, type Roundup } from "../../data/catalog";
+import { flagshipGuides, type Roundup } from "../../data/catalog";
 import Layout from "../../layouts/Layout.astro";
 
-const guides = [...allRoundups].sort((a, b) => a.title.localeCompare(b.title));
+const guides = [...flagshipGuides].sort((a, b) => a.title.localeCompare(b.title));
 const guideBySlug = new Map(guides.map((guide) => [guide.slug, guide]));
 
 const isComparisonGuide = (guide: Roundup) => guide.slug.includes("-vs-") || guide.slug.startsWith("is-");
@@ -74,7 +74,7 @@ const quickLinks = [
 
 const title = "Buying Guides | Findsera";
 const description =
-  "Browse Findsera buying guides grouped by shopping intent, including budget picks, coffee gear, travel tech, desk setups, home upgrades, and product comparisons.";
+  "Browse Findsera's editorial buying guides for coffee, travel, small spaces, smart-home basics, and practical desk setups.";
 ---
 
 <Layout title={title} description={description} canonicalPath="/guides/">
@@ -84,11 +84,11 @@ const description =
       <div class="mt-6 grid gap-8 lg:grid-cols-[minmax(0,0.9fr),minmax(0,1.1fr)] lg:items-end">
         <div>
           <h1 class="font-serif text-5xl font-semibold tracking-tight text-ink-900 sm:text-6xl">
-            Pick a guide by shopping intent
+            Start with a real buying decision
           </h1>
           <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">
-            Start with the situation that matches the purchase: budget, coffee, travel, desk work, home upgrades, or a
-            direct product comparison.
+            These guides are maintained as focused decision pages. Each starts with the use case, the tradeoffs that
+            matter, and reasons to skip a purchase before linking to a retailer.
           </p>
         </div>
         <nav class="flex flex-wrap gap-3" aria-label="Guide groups">

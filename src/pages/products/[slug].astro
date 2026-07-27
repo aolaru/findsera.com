@@ -47,6 +47,7 @@ const { product, relatedRoundups, relatedProducts, relatedTopics } = Astro.props
 
 const categoryLabel = categoryLabels[product.category];
 const priceReview = getProductPriceReview(product);
+const hasCurrentPrice = priceReview.status === "current";
 const formattedUpdatedAt = priceReview.checkedAtLabel;
 const sourceIsAmazon = /^https?:\/\/(?:www\.)?amazon\./i.test(product.sourceUrl);
 const sourceRel = sourceIsAmazon ? "noopener noreferrer nofollow" : "noopener noreferrer";
@@ -141,15 +142,19 @@ const structuredData = {
       image: `https://findsera.com${product.image}`,
       sku: product.id,
       url: `https://findsera.com/products/${product.slug}/`,
-      offers: {
-        "@type": "Offer",
-        priceCurrency: "USD",
-        price: product.price,
-        url: product.affiliateUrl,
-        availability: "https://schema.org/InStock",
-        itemCondition: "https://schema.org/NewCondition",
-        priceValidUntil: priceReview.priceValidUntil
-      }
+      ...(hasCurrentPrice
+        ? {
+            offers: {
+              "@type": "Offer",
+              priceCurrency: "USD",
+              price: product.price,
+              url: product.affiliateUrl,
+              availability: "https://schema.org/InStock",
+              itemCondition: "https://schema.org/NewCondition",
+              priceValidUntil: priceReview.priceValidUntil
+            }
+          }
+        : {})
     },
     {
       "@type": "FAQPage",
@@ -167,6 +172,7 @@ const structuredData = {
   title={pageTitle}
   description={pageDescription}
   canonicalPath={`/products/${product.slug}/`}
+  robots="noindex, follow"
   image={product.image}
   structuredData={structuredData}
 >
@@ -186,7 +192,7 @@ const structuredData = {
               {categoryLabel}
             </span>
             <span class="rounded-full border border-black/8 bg-white px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-ink-700">
-              Price reference {formattedUpdatedAt}
+              Retailer details last checked {formattedUpdatedAt}
             </span>
             {
               priceReview.status !== "current" && (
@@ -226,7 +232,7 @@ const structuredData = {
           <p class="mt-5 max-w-3xl text-lg leading-8 text-ink-700">{product.description}</p>
           <div class="mt-8 flex flex-wrap gap-4">
             <p class="rounded-full bg-white px-5 py-3 text-base font-semibold text-ink-900 shadow-card">
-              {product.priceLabel}
+              {hasCurrentPrice ? product.priceLabel : "Check current listing"}
             </p>
             <p class="rounded-full border border-black/8 bg-white px-5 py-3 text-base font-semibold text-ink-700">
               {priceTier}
@@ -250,7 +256,7 @@ const structuredData = {
               rel="noopener noreferrer sponsored"
               class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
             >
-              View on Amazon
+              Check current listing
             </a>
             <a
               href={product.sourceUrl}
@@ -466,7 +472,7 @@ const structuredData = {
             rel="noopener noreferrer sponsored"
             class="inline-flex items-center rounded-full bg-ink-900 px-5 py-3 text-sm font-semibold text-white hover:bg-accent-600"
           >
-            View on Amazon
+            Check current listing
           </a>
         </div>
       </article>

@@ -22,7 +22,7 @@ const description =
   "Browse Findsera products across gadgets, home, and kitchen, with filters for category, price range, trend status, and use case.";
 ---
 
-<Layout title={title} description={description} canonicalPath="/products/">
+<Layout title={title} description={description} canonicalPath="/products/" robots="noindex, follow">
   <section class="section-spacing">
     <div class="container-shell">
       <span class="eyebrow">Products</span>
@@ -38,8 +38,8 @@ const description =
   <section class="pb-20">
     <div class="container-shell">
       <SectionHeader
-        title={`${products.length} live products`}
-        description="Every product listed below has decision notes, a visible price-check date, and related ways to compare."
+        title={`${products.length} reference products`}
+        description="This reference catalogue is retained for comparison. Confirm current retailer details before buying."
       />
 
       <div class="rounded-[1.75rem] border border-black/6 bg-white p-5 shadow-card">
