@@ -1,6 +1,6 @@
 # Amazon PA-API refresh report
 
-- Run date: 2026-08-06
+- Run date: 2026-08-07
 - Status: skipped
 - Reason: missing AMAZON_PAAPI_ACCESS_KEY or AMAZON_PAAPI_SECRET_KEY
 
