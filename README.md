@@ -1,4 +1,8 @@
-# Findsera
+# Findsera (archived)
+
+This project is archived and is no longer maintained or operated as a product-discovery or affiliate site. Automated
+publishing schedules, advertising, analytics, and affiliate interaction are disabled. The repository is retained as a
+technical reference for its Astro static-site, catalogue, and content-maintenance tooling.
 
 Production-ready Astro MVP for an affiliate product discovery site focused on SEO, static generation, and source-driven affiliate content publishing.
 

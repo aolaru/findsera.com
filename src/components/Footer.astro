@@ -1,10 +1,9 @@
 ---
 import BrandLogo from "./BrandLogo.astro";
-import { categories } from "../data/catalog";
 ---
 
 <footer class="border-t border-black/5 bg-white/90">
-  <div class="container-shell grid gap-10 py-12 md:grid-cols-[1.1fr,0.9fr]">
+  <div class="container-shell py-12">
     <div class="space-y-4">
       <div class="inline-flex items-center">
         <BrandLogo
@@ -13,47 +12,9 @@ import { categories } from "../data/catalog";
         />
       </div>
       <p class="max-w-xl text-sm leading-7 text-ink-700">
-        Findsera helps you compare practical products faster with curated picks, simple buying guides,
-        and direct paths to the products worth checking first.
+        Findsera is archived. No new guides, retailer updates, advertising, analytics, or affiliate activity are
+        being maintained.
       </p>
-    </div>
-
-    <div class="grid gap-8 sm:grid-cols-3">
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Browse</p>
-        <ul class="mt-4 space-y-3 text-sm text-ink-700">
-          <li><a href="/" class="hover:text-accent-600">Home</a></li>
-          <li><a href="/products/" class="hover:text-accent-600">Products</a></li>
-          <li><a href="/guides/" class="hover:text-accent-600">Buying Guides</a></li>
-          <li><a href="/search/" class="hover:text-accent-600">Search</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Categories</p>
-        <ul class="mt-4 space-y-3 text-sm text-ink-700">
-          {
-            categories.map((category) => (
-              <li>
-                <a href={`/category/${category.slug}/`} class="hover:text-accent-600">
-                  {category.label}
-                </a>
-              </li>
-            ))
-          }
-        </ul>
-      </div>
-
-      <div>
-        <p class="text-sm font-semibold uppercase tracking-[0.18em] text-ink-700">Trust</p>
-        <ul class="mt-4 space-y-3 text-sm text-ink-700">
-          <li><a href="/about/" class="hover:text-accent-600">About</a></li>
-          <li><a href="/how-we-pick-products/" class="hover:text-accent-600">How We Pick Products</a></li>
-          <li><a href="/affiliate-disclosure/" class="hover:text-accent-600">Affiliate Disclosure</a></li>
-          <li><a href="/privacy-policy/" class="hover:text-accent-600">Privacy Policy</a></li>
-          <li><a href="/contact/" class="hover:text-accent-600">Contact</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 </footer>

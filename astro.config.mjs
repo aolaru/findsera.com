@@ -1,11 +1,6 @@
 // @ts-check
-import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "astro/config";
-import flagshipGuideSlugs from "./src/data/flagship-guide-slugs.json" with { type: "json" };
-
-const flagshipGuidePaths = new Set(flagshipGuideSlugs.map((slug) => `/${slug}/`));
-const referencePathPattern = /^\/(?:products|topics|category)(?:\/|$)/;
 
 export default defineConfig({
   site: "https://findsera.com",
@@ -33,25 +28,6 @@ export default defineConfig({
       destination: "/guides/"
     }
   },
-  integrations: [
-    sitemap({
-      filter: (page) => {
-        const { pathname } = new URL(page);
-        if (pathname === "/search/" || pathname === "/404/" || referencePathPattern.test(pathname)) {
-          return false;
-        }
-
-        return !pathname.endsWith("/") || pathname === "/" || flagshipGuidePaths.has(pathname) || [
-          "/about/",
-          "/affiliate-disclosure/",
-          "/contact/",
-          "/guides/",
-          "/how-we-pick-products/",
-          "/privacy-policy/"
-        ].includes(pathname);
-      }
-    })
-  ],
   vite: {
     plugins: [tailwindcss()]
   }
