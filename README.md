@@ -59,7 +59,7 @@ npm run content:report
 npm run content:maintain
 ```
 
-The maintenance and affiliate-related commands remain for code-reference purposes. The GitHub Actions workflows are manual-only and should be reviewed before use in a fork. Never add retailer credentials or re-enable a workflow without understanding the data it changes and the destination it publishes to.
+The maintenance and affiliate-related commands remain for code-reference purposes. This archive intentionally contains no GitHub Actions workflows. A fork operator who adds automation is responsible for reviewing its permissions, credentials, data changes, and deployment target before enabling it.
 
 ## Project structure
 
@@ -81,7 +81,7 @@ The code is available under the [MIT License](LICENSE). `Findsera`, its domain, 
 
 ## Contributing
 
-This archive is not an actively maintained product. Small fixes that make the starter easier to understand, build, or fork are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). Do not submit affiliate credentials, retailer data, generated buying advice, or changes intended to reactivate the original service.
+This archive is not an actively maintained product. Small fixes that make the starter easier to understand, build, or fork are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md) and [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md). Do not submit affiliate credentials, retailer data, generated buying advice, or changes intended to reactivate the original service.
 
 ## Security
 
