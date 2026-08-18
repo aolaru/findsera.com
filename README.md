@@ -1,145 +1,88 @@
-# Findsera (archived)
+# Findsera Archive
 
-This project is archived and is no longer maintained or operated as a product-discovery or affiliate site. Automated
-publishing schedules, advertising, analytics, and affiliate interaction are disabled. The repository is retained as a
-technical reference for its Astro static-site, catalogue, and content-maintenance tooling.
+Findsera is an archived Astro site for publishing a static, source-driven product catalogue and editorial guides. It is no longer operated as a shopping, affiliate, advertising, or analytics service.
 
-Production-ready Astro MVP for an affiliate product discovery site focused on SEO, static generation, and source-driven affiliate content publishing.
+The repository is retained as a reusable starter for teams that want an Astro site with structured content, static route generation, Tailwind styling, and local content-validation scripts. Fork it, replace the brand and content, and operate it under your own editorial and legal standards.
 
-## Stack
+## What is included
 
-- Astro
-- Tailwind CSS 4 via the Vite plugin
-- Static site generation
-- Source-to-catalog JSON content pipeline
-- Cloudflare Pages-friendly output
+- Astro 6 static site with Tailwind CSS 4
+- JSON source files for products, guides, categories, and topics
+- Content generator and validation scripts
+- Product import, refresh, image-check, and maintenance utilities
+- Cloudflare Pages-compatible static output
 
-## Project structure
+## Archive status
 
-```text
-/
-├── public/
-│   ├── images/
-│   └── robots.txt
-├── src/
-│   ├── components/
-│   ├── data/
-│   │   ├── generated/
-│   │   └── source/
-│   ├── layouts/
-│   ├── pages/
-│   └── styles/
-├── scripts/
-├── astro.config.mjs
-└── package.json
-```
+The checked-in site deliberately renders an archive notice and applies `noindex, nofollow` to every route. Advertising, analytics, affiliate links, structured data, and scheduled publishing are disabled.
 
-## Local development
+This is intentional. Before using a fork as a public site, review the content and all third-party integrations, set your own domain, and change the archive mode in `src/layouts/Layout.astro`. Do not re-enable monetization or indexing until the resulting site is accurate, useful, and legally compliant for your audience.
+
+## Quick start
+
+Requirements: Node.js 22.12 or newer and npm.
 
 ```bash
+git clone https://github.com/aolaru/findsera.com.git my-site
+cd my-site
 npm install
 npm run dev
 ```
 
-Open `http://localhost:4321`.
-
-## Production build
+Open `http://localhost:4321`. Build the production output with:
 
 ```bash
 npm run build
 ```
 
-The production output is generated into `dist/`.
+Astro writes the static site to `dist/`.
 
-## Content workflow
+## Make it yours
+
+1. Fork the repository and update the site name, domain, favicon, social image, and contact details.
+2. Replace the example product and guide data in `src/data/source/` with content you have researched and can maintain.
+3. Run `npm run content:build` after each source-data change, then run `npm run build` before deploying.
+4. Review `src/layouts/Layout.astro`; the `archivedSite` flag is intentionally enabled in this archive.
+5. Set your platform's build command to `npm run build` and output directory to `dist`.
+
+The project has been used with Cloudflare Pages, but it produces ordinary static files and can be deployed to any compatible static host.
+
+## Content commands
 
 ```bash
 npm run content:build
-```
-
-Edit `src/data/source/products.source.json` and `src/data/source/roundups.source.json`, then regenerate the catalog. The generator validates references and builds Amazon affiliate search links using `tag=kreativauto-20`.
-
-## Import and refresh workflow
-
-```bash
+npm run content:check
 npm run content:import -- src/data/source/import-products.sample.json
 npm run content:refresh -- src/data/source/refresh-overrides.sample.json
-npm run content:paapi
+npm run content:images
 npm run content:report
 npm run content:maintain
 ```
 
-- `content:import` upserts products into the source catalog from a JSON file
-- `content:refresh` applies price/image/Amazon URL overrides in bulk
-- `content:paapi` refreshes Amazon title, price, image URL, and optional local images from Product Advertising API when credentials are configured
-- `content:report` lists products still missing exact Amazon product URLs
-- `content:maintain` adds queued products, applies queued product refreshes, optionally adds queued guides, then writes a richer maintenance report
+The maintenance and affiliate-related commands remain for code-reference purposes. The GitHub Actions workflows are manual-only and should be reviewed before use in a fork. Never add retailer credentials or re-enable a workflow without understanding the data it changes and the destination it publishes to.
 
-## Deployment notes
+## Project structure
 
-- Build command: `npm run build`
-- Output directory: `dist`
-- Target platform: Cloudflare Pages
-
-## Search Console
-
-To enable Google Search Console verification through the site markup, set:
-
-```bash
-PUBLIC_GOOGLE_SITE_VERIFICATION=your-verification-token
+```text
+src/
+  components/      Shared UI
+  data/source/     Hand-authored source content
+  data/generated/  Generated runtime content
+  layouts/         Page shell and metadata
+  pages/           Astro routes
+  styles/          Global styling
+scripts/           Content import, validation, and generation tools
+public/            Static assets
 ```
 
-The layout will emit the corresponding `google-site-verification` meta tag automatically. After deployment:
+## Reuse and attribution
 
-- add `https://findsera.com` as a property in Google Search Console
-- confirm the meta-tag verification method
-- submit `https://findsera.com/sitemap-index.xml`
-- use the query and performance reports to improve titles, meta descriptions, and underperforming pages
+The code is available under the [MIT License](LICENSE). `Findsera`, its domain, and any third-party product names, logos, images, URLs, prices, or retailer data are not a grant to use another party's intellectual property. Replace those materials in any public fork and check the terms for every data source you use.
 
-## Content model
+## Contributing
 
-Source content lives in `src/data/source/`. Generated runtime data is written to `src/data/generated/`, which powers the homepage, guide routes, category pages, topic pages, and theme landing pages.
+This archive is not an actively maintained product. Small fixes that make the starter easier to understand, build, or fork are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md). Do not submit affiliate credentials, retailer data, generated buying advice, or changes intended to reactivate the original service.
 
-## Daily automation
+## Security
 
-- Product queue: `src/data/source/product-backlog.json`
-- Product refresh queue: `src/data/source/product-refresh-backlog.json`
-- Guide queue: `src/data/source/guide-backlog.json`
-- Report output: `reports/daily-maintenance.md`
-- Workflow: `.github/workflows/daily-content-maintenance.yml`
-- Schedule: daily at `05:15 UTC`
-- Weekly guide workflow: `.github/workflows/weekly-guide-publish.yml`
-- Weekly guide schedule: Mondays at `05:30 UTC`
-
-The workflow:
-- refreshes up to 8 Amazon products through Product Advertising API when credentials are available
-- adds 1 product per daily run from the backlog queue
-- applies up to 2 existing-product refreshes per daily run from the refresh queue
-- daily workflow adds 0 guides by default
-- weekly workflow adds up to 1 guide per run from the guide backlog queue
-- regenerates the content catalog
-- builds the site to catch broken content references
-- commits the changes automatically when there is a diff
-
-Important:
-- Product Advertising API refreshes require GitHub Actions secrets: `AMAZON_PAAPI_ACCESS_KEY`, `AMAZON_PAAPI_SECRET_KEY`, and optionally `AMAZON_PAAPI_PARTNER_TAG`
-- Add them in GitHub under `Settings` -> `Secrets and variables` -> `Actions` -> `New repository secret`
-- CLI alternative: `gh secret set AMAZON_PAAPI_ACCESS_KEY`, `gh secret set AMAZON_PAAPI_SECRET_KEY`, and `gh secret set AMAZON_PAAPI_PARTNER_TAG --body kreativauto-20`
-- Without those secrets, the PA-API step writes a skipped report and the workflow continues safely
-- PA-API refreshes use GetItems with `ItemInfo.Title`, `Images.Primary.Large`, and `OffersV2.Listings.Price`; they update `price`, `priceCheckedAt`, `retailerTitle`, `retailerImageUrl`, canonical `amazonUrl`, and local product images when enabled
-- Amazon's PA-API docs now point developers toward Creators API, so keep this integration isolated behind `content:paapi` for an easier future migration
-- It can apply pre-queued refreshes to existing products, but it still does not discover live price changes on its own
-- It flags stale `priceCheckedAt` values so you know which products still need manual refreshes or a later provider/API integration
-- It also reports unused products, guides with short intros, guides with too few products, and validation failures before commit
-
-## Automation hardening
-
-- Daily and weekly content workflows now share a single concurrency group so they do not mutate the same files at the same time.
-- Both workflows rebase on the latest `origin/main` before pushing, which reduces fast-forward push failures.
-- The weekly workflow supports manual review mode through `workflow_dispatch` input `review_mode=true`, which opens a pull request instead of pushing directly to `main`.
-- The maintenance script now validates queued products, queued refreshes, and queued guides before writing any files.
-- If you want to require exact Amazon URLs before queued products can be promoted, run maintenance with:
-
-```bash
-REQUIRE_EXACT_AMAZON_URLS=true npm run content:maintain
-```
+Please use a private GitHub security advisory for vulnerabilities. See [SECURITY.md](SECURITY.md).

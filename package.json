@@ -1,7 +1,15 @@
 {
   "name": "findsera.com",
+  "description": "Archived Astro starter for a source-driven static catalogue and guide site.",
   "type": "module",
   "version": "0.0.1",
+  "license": "MIT",
+  "keywords": [
+    "astro",
+    "static-site",
+    "content-pipeline",
+    "catalogue"
+  ],
   "engines": {
     "node": ">=22.12.0"
   },

@@ -1,0 +1,24 @@
+name: Starter improvement
+description: Suggest a narrowly scoped improvement for people forking this project.
+title: "starter: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Suggest improvements to the reusable starter, not new commercial content, affiliate integrations, or changes to the archived Findsera domain.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem to solve
+      description: Explain the obstacle for a person creating a fork.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed change
+      description: Describe the smallest useful change and any alternatives considered.
+    validations:
+      required: true
